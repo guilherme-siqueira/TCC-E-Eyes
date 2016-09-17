@@ -3,10 +3,8 @@ package br.usp.guilherme_galdino_siqueira.e_eyes.activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Display;
@@ -18,8 +16,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.api.services.vision.v1.model.Vertex;
 
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -55,7 +51,7 @@ public class ViewFileActivity extends Activity {
 
     //String faces;
 
-    ArrayList<Integer> faces = new ArrayList<Integer>();
+    ArrayList<Float> faces = new ArrayList<Float>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,10 +84,10 @@ public class ViewFileActivity extends Activity {
                     return true;
                 }
             });
-            mutableBitmap = myBitmap.copy(Bitmap.Config.ARGB_8888, true);
-            canvas = new Canvas(mutableBitmap);
-            paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-            paint.setColor(Color.BLACK);
+            ////mutableBitmap = myBitmap.copy(Bitmap.Config.ARGB_8888, true);
+            ////canvas = new Canvas(mutableBitmap);
+            ////paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+            ////paint.setColor(Color.BLACK);
 
             //Rect rect = new Rect(100,200,200,250);
 
@@ -101,7 +97,9 @@ public class ViewFileActivity extends Activity {
 
             //myImage.setRotation(90);
 
-            myImage.setImageBitmap(mutableBitmap);
+            ////myImage.setImageBitmap(mutableBitmap);
+
+            myImage.setImageBitmap(myBitmap);
 
             display = getWindowManager().getDefaultDisplay();
             size = new Point();
@@ -109,8 +107,14 @@ public class ViewFileActivity extends Activity {
 
             screenWidth = size.x;
             screenHeight = size.y;
+
+            System.out.println("screen: " + screenWidth + "-" + screenHeight);
+
             realPhotoWidth = myBitmap.getWidth();
             realPhotoHeight = myBitmap.getHeight();
+
+            System.out.println("photo: " + realPhotoWidth + "-" + realPhotoHeight);
+
 
             if (realPhotoWidth > realPhotoHeight)
             {
@@ -123,40 +127,101 @@ public class ViewFileActivity extends Activity {
                 photoWidth = photoHeight * realPhotoWidth / realPhotoHeight;
             }
 
+            System.out.println("normalized photo: " + photoWidth + "-" + photoHeight);
+
+
             photoTop = (screenHeight/2 - photoHeight)/2;
+
+
 
             //photoBottom = screenHeight/2 + photoHeight/2;
             //photoRight = screenWidth/2 + photoWidth/2;
             photoLeft = (screenWidth - photoWidth)/2;
+
+            System.out.println("top/left: " + photoTop + "-" + photoLeft);
+
 
             //photoBottom = photoBottom - photoTop;
             //photoTop = 0;
             //photoRight = photoRight - photoLeft;
             //photoLeft = 0;
 
-            System.out.println("photoTop: "+photoTop);
-            System.out.println("photoLeft: "+photoLeft);
+            ////System.out.println("photoTop: "+photoTop);
+            ////System.out.println("photoLeft: "+photoLeft);
 
         }
 
         if(txtFaceFile.exists()){
 
             //Read text from file
-            StringBuilder facePositions = new StringBuilder();
+            //StringBuilder facePositions = new StringBuilder();
+
+            float coord;
 
             try {
                 BufferedReader br = new BufferedReader(new FileReader(txtFaceFile));
                 String line;
+                int lineCounter = 0;
 
-                while ((line = br.readLine()) != null) {
-                    facePositions.append(line);
+                //if (realPhotoWidth > realPhotoHeight)
+                //{
+                    while ((line = br.readLine()) != null) {
+                        //facePositions.append(line);
 
+                        coord = Integer.parseInt(line);
 
+                        if (lineCounter == 0) {
 
-                    faces.add(Integer.parseInt(line));
+                            coord = coord* photoWidth /realPhotoWidth + photoLeft;
+                            lineCounter = 1;
+                            System.out.print("x"+coord+"-");
 
-                    facePositions.append('\n');
+                        }
+                        else
+                        {
+                            //coord = photoWidth * realPhotoHeight / realPhotoWidth - photoTop;
+
+                            //coord = coord*screenHeight/realPhotoHeight;
+                            coord = coord* photoHeight /realPhotoHeight + photoTop;
+
+                            lineCounter = 0;
+                            System.out.println("y" + coord);
+
+                        }
+
+                        faces.add(coord);
+
+                        //facePositions.append('\n');
+                    }
+                //}
+               /* else
+                {
+                    while ((line = br.readLine()) != null) {
+                        //facePositions.append(line);
+
+                        coord = Integer.parseInt(line);
+
+                        if (lineCounter == 0) {
+                            coord = photoHeight * realPhotoWidth / realPhotoHeight - photoLeft;
+                            lineCounter = 1;
+                            System.out.print("x"+coord+"-");
+
+                        }
+                        else
+                        {
+                            coord = screenHeight/2;
+                            lineCounter = 0;
+                            System.out.println("y" + coord);
+
+                        }
+
+                        faces.add(coord);
+
+                        //facePositions.append('\n');
+                    }
                 }
+*/
+
                 br.close();
             }
             catch (IOException e) {
@@ -217,19 +282,28 @@ public class ViewFileActivity extends Activity {
         for (int i = 0; i < faces.size(); i+=8)
         {
 
-            float x1 = faces.get(i) - photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
-            float y1 = faces.get(i+1) - photoTop;//*photoHeight/realPhotoHeight + photoTop;
+
+            float x1 = faces.get(i); //- photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
+            float y1 = faces.get(i+1);// - photoTop;//*photoHeight/realPhotoHeight + photoTop;
 
 
 
-            float x2 = faces.get(i+2) - photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
-            float y2 = faces.get(i+3) - photoTop;//*photoHeight/realPhotoHeight + photoTop;
-            float x3 = faces.get(i+4) - photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
-            float y3 = faces.get(i+5) - photoTop;//*photoHeight/realPhotoHeight + photoTop;
-            float x4 = faces.get(i+6) - photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
-            float y4 = faces.get(i+7) - photoTop;//*photoHeight/realPhotoHeight + photoTop;
+            float x2 = faces.get(i+2);// - photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
+            float y2 = faces.get(i+3);// - photoTop;//*photoHeight/realPhotoHeight + photoTop;
+            float x3 = faces.get(i+4);// - photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
+            float y3 = faces.get(i+5);// - photoTop;//*photoHeight/realPhotoHeight + photoTop;
+            float x4 = faces.get(i+6); //- photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
+            float y4 = faces.get(i+7);// - photoTop;//*photoHeight/realPhotoHeight + photoTop;
 
-            System.out.println(x + "-" + y);
+
+
+
+
+            System.out.println("clicked: "+x + "-" + y);
+
+
+
+
 
 
             if (x > x1 && y > y1 && x < x2 && y > y2 && x < x3 && y < y3 && x > x4 && y < y4)
@@ -243,6 +317,8 @@ public class ViewFileActivity extends Activity {
                 System.out.println(faces.get(i + 6) + "-" + faces.get(i + 7));
 
             }
+
+
         }
 
     }

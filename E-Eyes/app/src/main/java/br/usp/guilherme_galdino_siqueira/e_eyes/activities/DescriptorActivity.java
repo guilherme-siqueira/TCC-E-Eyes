@@ -198,7 +198,7 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
                 effects.playCameraShutter();
 
-                feedbackMessage.savePhoto();
+                //feedbackMessage.savePhoto();
 
                 bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
 
@@ -233,7 +233,7 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
                 }
                 */
 
-                photoDescriptor.savePicture(data);
+                //photoDescriptor.savePicture(data);
 
                     //outStream = new FileOutputStream(String.format("/sdcard/%s.jpg", "E_Eyes_temp2"));
 
@@ -1013,12 +1013,15 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
                         // Just in case it's a format that Android understands but Cloud Vision
                         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
+
                         startCompressTime = System.currentTimeMillis();
                         bitmap.compress(Bitmap.CompressFormat.JPEG, 90, byteArrayOutputStream);
                         endCompressTime = System.currentTimeMillis();
 
                         byte[] imageBytes = byteArrayOutputStream.toByteArray();
 
+                        //feedbackMessage.savePhoto();
+                        //photoDescriptor.savePicture(imageBytes);
 
                         // Base64 encode the JPEG
                         startEncodeTime = System.currentTimeMillis();
@@ -1154,6 +1157,7 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
     public void uploadImage(Bitmap bitmap) {
         if (bitmap != null) {
+
             try {
                 // scale the image to save on bandwidth
                 //bitmap = scaleBitmapDown(bitmap, 1200);
@@ -1162,6 +1166,14 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
                     if (dimension < dimensions.length)
                     {
                         bitmap = scaleBitmapDown(bitmap, dimensions[dimension]);
+
+                        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                        bitmap.compress(Bitmap.CompressFormat.JPEG, 90, byteArrayOutputStream);
+                        byte[] imageBytes = byteArrayOutputStream.toByteArray();
+                        feedbackMessage.savePhoto();
+                        photoDescriptor.savePicture(imageBytes);
+
+
                         getDescription(bitmap);
                         dimension++;
                     }
@@ -1172,6 +1184,13 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
                 else
                 {
                     bitmap = scaleBitmapDown(bitmap, defaultDimension);
+
+                    ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 90, byteArrayOutputStream);
+                    byte[] imageBytes = byteArrayOutputStream.toByteArray();
+                    feedbackMessage.savePhoto();
+                    photoDescriptor.savePicture(imageBytes);
+
                     getDescription(bitmap);
                 }
 

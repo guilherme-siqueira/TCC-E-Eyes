@@ -172,8 +172,8 @@ public class TextAdapter {
                     //String xy = face.getBoundingPoly().getVertices().get(j).getX() + "\n" + face.getBoundingPoly().getVertices().get(j).getY();
                     //String xy = "(" + face.getBoundingPoly().getVertices().get(j).getX() + ", " + face.getBoundingPoly().getVertices().get(j).getY() + ")";
                     //facePosition.concat(xy);
-                    //facePosition.concat(face.getBoundingPoly().getVertices().get(j).getX().toString());
-                    //facePosition.concat(face.getBoundingPoly().getVertices().get(j).getY().toString());
+                    facePosition.concat(face.getBoundingPoly().getVertices().get(j).getX().toString());
+                    facePosition.concat(face.getBoundingPoly().getVertices().get(j).getY().toString());
                 }
 
 
