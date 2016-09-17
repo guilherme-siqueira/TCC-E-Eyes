@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorOpacity">#BB000000</color>
+
+
+
+    <color name="greenOpacity">#BB8BC34A</color>
+
+    <color name="blueOpacity">#BB2196F3</color>
+
+    <color name="greenLightOpacity">#778BC34A</color>
+    <color name="yellowLightOpacity">#77FFC107</color>
+    <color name="redLightOpacity">#77F44336</color>
+    <color name="blueLightOpacity">#772196F3</color>
+
+    <color name="colorButton1A">#64ff00</color>
+    <color name="colorButton2A">#d5d500</color>
+    <color name="colorButton3A">#ff6400</color>
+    <color name="colorButton4A">#00e9ed</color>
+
+
+
+
+
+
+
+    <!-- Cor dos botões. -->
+    <color name="colorButton1">#FFC107</color>
+    <color name="colorButton2">#8BC34A</color>
+    <color name="colorButton3">#F44336</color>
+    <color name="colorButton4">#2196F3</color>
+
+    <!-- Cor do da tela de lista. -->
+    <color name="colorEvenListItem">#558B2F</color>
+    <color name="colorOddListItem">#689F38</color>
+    <color name="colorBackgroundList">#8BC34A</color>
+    <color name="colorTitleList">#33691E</color>
+
+    <!-- Cor de fundo dos textos. -->
+    <color name="yellowOpacity">#BBFFC107</color>
+    <color name="redOpacity">#BBF44336</color>
+
+    <!-- Cor do texto. -->
+    <color name="colorLetters">#FFFFFF</color>
+
+
+</resources>
