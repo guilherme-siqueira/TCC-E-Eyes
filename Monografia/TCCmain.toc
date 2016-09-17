@@ -1,0 +1,55 @@
+\select@language {brazil}
+\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{27}
+\contentsline {section}{\numberline {1.1}Motiva\c c\~ao}{27}
+\contentsline {section}{\numberline {1.2}Estado da arte}{28}
+\contentsline {subsection}{\numberline {1.2.1}Vis\~ao computacional}{28}
+\contentsline {subsection}{\numberline {1.2.2}Ecolocaliza\c c\~ao}{29}
+\contentsline {subsection}{\numberline {1.2.3}Cen\'ario no Brasil}{29}
+\contentsline {section}{\numberline {1.3}Objetivos}{29}
+\contentsline {section}{\numberline {1.4}Justificativas}{31}
+\contentsline {section}{\numberline {1.5}Organiza\c c\~ao do Trabalho}{32}
+\contentsline {chapter}{\numberline {2}Embasamento Te\'orico}{33}
+\contentsline {section}{\numberline {2.1}Tecnologia assistiva}{33}
+\contentsline {section}{\numberline {2.2}Design universal e acessibilidade}{33}
+\contentsline {subsection}{\numberline {2.2.1}Talkback}{34}
+\contentsline {section}{\numberline {2.3}Computa\c c\~ao em nuvem}{34}
+\contentsline {section}{\numberline {2.4}Vis\~ao computacional}{35}
+\contentsline {subsection}{\numberline {2.4.1}Reconhecimento \'optico de caractere}{35}
+\contentsline {subsection}{\numberline {2.4.2}Classifica\c c\~ao de imagens}{36}
+\contentsline {section}{\numberline {2.5}Ecolocaliza\c c\~ao e localiza\c c\~ao sonora}{37}
+\contentsline {chapter}{\numberline {3}Material e M\'etodos}{39}
+\contentsline {section}{\numberline {3.1}Materiais}{40}
+\contentsline {subsection}{\numberline {3.1.1}Smartphone}{40}
+\contentsline {subsection}{\numberline {3.1.2}Android Studio}{41}
+\contentsline {subsection}{\numberline {3.1.3}Ardu\IeC {\'\i }no}{41}
+\contentsline {subsection}{\numberline {3.1.4}Sensor}{42}
+\contentsline {subsection}{\numberline {3.1.5}BlueTooth}{42}
+\contentsline {subsection}{\numberline {3.1.6}Componentes eletr\^onicos em geral}{43}
+\contentsline {section}{\numberline {3.2}M\'etodos}{43}
+\contentsline {subsection}{\numberline {3.2.1}Configura\c c\~oes iniciais de programa\c c\~ao}{43}
+\contentsline {subsection}{\numberline {3.2.2}Constru\c c\~ao de interface acess\IeC {\'\i }vel}{43}
+\contentsline {subsection}{\numberline {3.2.3}Extra\c c\~ao de dados em imagem}{46}
+\contentsline {subsection}{\numberline {3.2.4}Adapta\c c\~ao textual do dado retornado}{48}
+\contentsline {subsection}{\numberline {3.2.5}Tradu\c c\~ao de r\'otulos}{48}
+\contentsline {subsection}{\numberline {3.2.6}Captura e exibi\c c\~ao de resultado}{48}
+\contentsline {subsection}{\numberline {3.2.7}Implementa\c c\~ao de op\c c\~oes de reconhecimento}{49}
+\contentsline {subsection}{\numberline {3.2.8}Registro de descri\c c\~oes}{50}
+\contentsline {subsection}{\numberline {3.2.9}Tratamento de sinais ultrass\^onicos}{51}
+\contentsline {subsection}{\numberline {3.2.10}Comunica\c c\~ao Arduino-BlueTooth}{52}
+\contentsline {subsection}{\numberline {3.2.11}Comunica\c c\~ao Smartphone-BlueTooth}{52}
+\contentsline {chapter}{\numberline {4}Resultados e Discuss\~oes}{55}
+\contentsline {section}{\numberline {4.1}Descri\c c\~ao de Imagens}{55}
+\contentsline {subsection}{\numberline {4.1.1}Teste para diferentes dimens\~oes de imagens}{55}
+\contentsline {subsection}{\numberline {4.1.2}Teste para reconhecimento de texto girado}{58}
+\contentsline {subsection}{\numberline {4.1.3}Teste para reconhecimento de texto com letra cursiva}{59}
+\contentsline {subsection}{\numberline {4.1.4}Teste para rotula\c c\~ao de elementos da cena}{60}
+\contentsline {subsection}{\numberline {4.1.5}Teste para classifica\c c\~ao de express\~ao facial}{63}
+\contentsline {section}{\numberline {4.2}Detec\c c\~ao de Obst\'aculos}{63}
+\contentsline {chapter}{\numberline {5}Conclus\~ao ou Conclus\~oes}{65}
+\contentsline {chapter}{Refer\^encias}{65}
+\contentsline {chapter}{\numberline {A}Cuidados e orienta\c c\~oes para a elabora\c c\~ao de texto}{71}
+\contentsline {chapter}{\numberline {B}Apresenta\c c\~ao do TCC}{75}
+\contentsline {chapter}{\numberline {C}Monografia Parcial do TCC}{77}
+\contentsline {chapter}{\numberline {I}Datasheet Arduino}{79}
+\contentsline {chapter}{\numberline {II}Datasheet HC-05}{88}
+\contentsline {chapter}{\numberline {III}Datasheet HC-SR04}{102}

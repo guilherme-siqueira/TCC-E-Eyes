@@ -1,0 +1,99 @@
+\chapter{Embasamento Teórico}
+\label{EmbasamentoTeorico}
+
+Antes de entender o funcionamento do sistema, é de extrema importância que se explique os principais conceitos que dão base a criação do projeto, a fim de que a leitura não se limite apenas a fornecer conhecimento funcional, mas também propiciar uma completa compreensão estrutural do sistema. 
+
+\section{Tecnologia assistiva}
+
+O CAT, Comitê de Ajudas Técnicas, instituído pela PORTARIA N° 142, DE 16 DE NOVEMBRO DE 2006 por meio da Secretaria Especial dos Direitos Humanos, propôs a seguinte definição para o termo Tecnologia Assistiva: "Tecnologia Assistiva é uma área do conhecimento, de característica interdisciplinar, que engloba produtos, recursos, metodologias, estratégias, práticas e serviços que objetivam promover a funcionalidade, relacionada à atividade e participação, de pessoas com deficiência, incapacidades ou mobilidade reduzida, visando sua autonomia, independência, qualidade de vida e inclusão social\cite{LivroTecAss}."
+
+De forma resumida, a Tecnologia Assistiva consiste em todo o conjunto de ferramentas tecnológicas que visam promover a melhoria da qualidade de vida de pessoas com alguma limitação. Baseado nesse conceito, o projeto procurou seguir a ideia de desenvolver um sistema para atender as necessidades de pessoas com deficiência visual.
+
+
+\section{Design universal e acessibilidade}
+Design universal é definido por S. L. Henry et al como o processo de criação de produtos que atendam a usabilidade de pessoas com as mais variadas habilidades e nas mais diversas situações. Por outro lado, o conceito de acessibilidade é mais limitado, sendo melhor definido como o planejamento voltado especificamente para pessoas com alguma deficiência. Apesar disso, todos os estudos focados em acessibilidade terminam por trazer benefícios para todas as pessoas \cite{Henry}.
+
+Especificamente em relação a dispositivos móveis, ferramentas que permitem a criação de sistemas com acessibilidade tem se mostrado em grande ascensão no ambiente de desenvolvedores de aplicativos. O Android, por exemplo, inclui ferramentas e serviços de auxílio a navegação, como text-to-speech, feedback tátil, navegação por gestos, entre outros, que buscam incluir usuários com limitações visuais, auditivas, físicas ou mesmo relacionadas a idade \cite{Android}.
+
+\subsection{Talkback}
+
+O Talkback é um recurso de acessibilidade fornecido pelo Android cuja função é permitir que deficientes visuais sejam capazes de utilizar um smartphone. Além de pronunciar todo tipo de texto presente na tela, ele também altera a lógica de toques e permite a descrição dos componentes presentes no layout.
+
+Quando o Talkback está ativado, um clique sobre qualquer item da tela funciona como uma solicitação de descrição. O dispositivo vibra, o conteúdo escrito do item e o texto de acessibilidade, quando há, são pronunciados.
+
+
+
+\section{Computação em nuvem}
+De acordo com a definição de Michael Armbrust et al, computação em nuvem se refere tanto a aplicações retornadas como serviço pela Internet, como ao hardware e software dos sistemas nos data centers que proporcionam os serviços. Os serviços são oferecidos por software (SaaS), e o conjunto hardware mais software dos data centers dão origem à nuvem. O serviço vendido por uma nuvem pública é denominado Computação Utilitária, e sua união com os SaaS é, portanto, o que se conhece como Computação em Nuvem \cite{Armbrust}. De maneira simplificada, o funcionamento da computação em nuvem pode ser facilmente compreendido pela Figura \ref{Cloud} que, inclusive, permite uma classificação do projeto: A Google pode ser vista na base como a provedora de nuvem por oferecer a infraestrutura física necessária para o processamento de imagem. No entanto, ela também pode ser considerada como uma provedora SaaS, por oferecer o Cloud Vision API e diversas outras aplicações de sua autoria. O aplicativo Android ficaria então exatamente no estágio intermediário, por oferecer uma aplicação móvel como serviço (SaaS) e ao mesmo tempo por utilizar a nuvem. A pessoa que faz uso desse aplicativo seria, por fim, o usuário SaaS.
+
+\begin{figure}[H]
+	\centering	
+	
+	\includegraphics[scale=0.4]{./Resources/cloud.png}
+	\captionof{figure}{Diagrama da computação em nuvem}
+	\caption*{Fonte: Michael Armbrust et al \cite{Armbrust}}	
+	\label{Cloud}
+	
+\end{figure}
+
+\section{Visão computacional}
+Visão computacional é o campo da computação responsável pela análise de imagens digitais com o objetivo da extração automática de informações. A informação pode ser tanto simples, como responder qual a cor da imagem, quanto dizer de quem é a face em uma foto \cite{LivroCV}. No contexto desse projeto, dois pontos importantes devem ser compreendidos: o reconhecimento óptico de caracteres e a classificação de imagens, que são apresentados a seguir.
+
+
+\subsection{Reconhecimento óptico de caractere}
+
+Reconhecimento óptico de caractere (OCR) é considerado como o problema de reconhecimento automático de letras, dígitos, ou algum símbolo em imagens. A utilidade dessa abordagem está no fato de que muita informação é armazenada em palavras impressas. Ao aplicar uma página de texto, por exemplo, como entrada para um sistema que possua tal função, ocorre primeiramente uma confirmação da orientação do texto, seguida de uma segmentação em preto e branco dos pixels, uma divisão em linhas de texto, e por último em símbolos individuais. Ao fim desse processo, um algoritmo de reconhecimento é aplicado a cada símbolo. Se o sistema tiver sido previamente treinado para reconhecer tal símbolo, calcula-se uma probabilidade de sua interpretação estar correta, são agrupados em palavras e em sentenças e a informação completa é retornada em ordem \cite{LivroCV}. Na Figura \ref{OCR}, um simbolo é enviado como entrada do sistema para ser comparado com os símbolos da base de dados. Nela, o simbolo apresenta maior similaridade com o símbolo '8' (coincidência de 8 pixels), do que com 'A' (coincidência de 20 pixels), e sua classificação seria dada de acordo com o símbolo com o qual ele tivesse maior valor de semelhança, medido pelo número de pixels coincidentes.
+
+\begin{figure}[H]
+	\centering	
+	
+	\includegraphics[scale=0.4]{./Resources/ocr.png}
+	\captionof{figure}{Análise de um simbolo sobre a base de dados. (a) Simbolo de entrada. (b) Pixels coincidentes, em preto, entre o simbolo de entrada e o simbolo 'A'. (c) Pixels coincidentes, em preto, entre o simbolo de entrada e o simbolo '8'.}
+	\caption*{Fonte: Parker, J. R. \cite{LivroCV}}	
+	\label{OCR}
+	
+\end{figure}
+
+\subsection{Classificação de imagens}
+
+Para que um sistema seja capaz de classificar uma imagem, e posteriormente promover uma descrição, que é o caso desse projeto, é necessário que esse sistema esteja previamente treinado com imagens. Um processo como esse, na verdade envolve busca e comparação de imagens. J. R. Parker sugere em seu livro \cite{LivroCV} um método para se realizar buscas de imagens, inserindo imagens como entrada. 
+
+Primeiramente, assume-se que existe um conjunto de imagens, previamente rotuladas e devidamente classificadas de acordo com seu conteúdo. Então, o que ocorre em seguida é uma análise computacional da imagem para extração de dados. Esses dados são comparados com os dados das imagens cujas características já são conhecidas e baseado em sua similaridade, ocorre a classificação da imagem, que reflete seu conteúdo e que possibilita gerar descrição. A Figura \ref{imageRecog} ilustra a tentativa de classificar um objeto por meio da medida de semelhança contra outras imagens da base de dados. Os mais similares são considerados iguais, apesar de o resultado não ser exatamente igual.
+
+\begin{figure}[H]
+	\centering	
+	
+	\includegraphics[scale=0.5]{./Resources/imageRecog.png}
+	\captionof{figure}{Classificação de imagem de acordo com sua similaridade em relação ao conjunto de imagens da base de dados.}
+	\caption*{Fonte: Parker, J. R. \cite{LivroCV}}	
+	\label{imageRecog}
+	
+\end{figure} 
+
+Uma pergunta que poderia surgir é: Que informação poderia ser extraída de uma imagem para servir de critério de comparação? A cor é uma possibilidade. Através da contagem de pixels com cada cor presente na imagem é possível criar um histograma da distribuição dessas cores. E assim, a comparação poderia ser realizada sobre a similaridade entre histogramas.
+
+
+
+\section{Ecolocalização e localização sonora}
+
+A habilidade de se locomover independentemente pelo espaço, localizar lugares ocultos e planejar trajetórias é de extrema importância para se realizar as tarefas do cotidiano. Não é difícil encontrar razões para afirmar que essa capacidade, em pessoas, resulta em grande dependência do sentido visual, já que a quantidade de informações que podem ser captadas visualmente é consideravelmente maior que a dos outros sentidos. Os objetos com os quais se interage no dia-a-dia possuem partes visíveis, porém não necessariamente emitem outros sinais que possam permitir sua percepção não visual. Apesar de ser considerada uma medida muito mais imprecisa, sinais sonoros permitem uma aproximação do cálculo de distancia. O som varia sua intensidade ao se propagar de acordo com o inverso da distância até seu emissor, assim, sua intensidade se perde mais rapidamente, o que a torna um método limitado \cite{blind}.
+
+A localização sonora se baseia nesse efeito, ao permitir que um indivíduo estime a sua distância até o objeto emissor de som, e é uma técnica utilizada e bastante desenvolvida por pessoas com deficiência visual para mapear a sua posição e a dos elementos no ambiente ao redor. Entretanto, existe também uma técnica capaz de complementar a eficiência da localização conhecida como ecolocalização. É sabido que os humanos, e especificamente pessoas cegas, são capazes de utilizar o eco de sons intencionalmente emitidos para detectar objetos e conseguir andar. Esse fenômeno que também é encontrado em outras espécies de animais, como golfinho e morcego, por exemplo, podem ser gerados não só biologicamente pela voz, mas também por toques com sapatos ou bengalas \cite{echo}.
+
+
+
+
+
+
+
+%{Existem diversos projetos ETAs que utilizam sensores ultrassônicos. Wong et Al. na intensão de evitar maus hábitos de uso da bengala e contornar suas limitações, propôs um sistema composto por sensores que continuamente procuram por objetos também em alturas maiores. O sistema utiliza um microcontrolador para calcular a distância baseada em sinais ultrassônicos enviados e recebidos por dois transdutores fixados na bengala, um para detecção em pequenas alturas, e o outro para grandes \cite{Wong}. Então depois de emitir os sinais, captura sua reflexão, calcula a distância e gera um sinal sonoro de retorno ao usuário.
+
+%Alternativamente, Ben Leduc-Mills et Al. apresenta um projeto mais recente envolvendo uma placa IOIO, baseada em PIC, que permite que aplicações Android interajam com dispositivos eletrônicos externos \cite{Ben}. A placa recebe os sinais de sensores ultrassônicos e os envia ao aplicativo Android via Bluetooth. Então o aplicativo fica responsável por tratar o sinal e alertar o usuário se há algum objeto em um limite mínimo de distância e a que altura está. O alerta por fim se dá via audição e tato.
+
+
+%Há também diversos projetos com foco na transcrição de informações de imagens. Mauro Avila et al faz uma avaliação do aplicativo móvel Be My Eyes \cite{BeMyEyes}, um sistema em rede que conecta usuários cegos a voluntários por meio de vídeo chamadas e áudio. O trabalho realizou uma pesquisa com 15 homens e 15 mulheres através de mídias sociais. A maioria dos entrevistados tinha entre 36 e 65 anos de idade. O trabalho concluiu que os usuários consideram o aplicativo muito útil para leitura de textos, localização de objetos, assistência a compras, entre outros \cite{Mauro}.
+
+%Outro trabalho bastante interessante é o realizado pela Universidade Hamad Bin Khalifa. H. Kwak e J. An analisaram mais de 2 milhões de fotos de jornais publicadas em Janeiro de 2016 por meio da API Google Cloud Vision. A pesquisa avaliou a frequência de exibição e expressões faciais em fotos dos então candidatos a presidência dos Estados Unidos, nos principais jornais, e concluiu que a API foi o ponto chave de sucesso do trabalho devido a alta acurácia e pontuações de confiabilidade de cada resultado \cite{Kwak}.
+
+
+%Baseado nos trabalhos apresentados, nota-se que para a transcrição de informações de imagens, o Google Cloud API é uma boa alternativa. Quanto a funcionalidade de detecção de obstáculos, a utilização de sensor ultrassônico mostra-se como a solução mais adequada ao problema.}
