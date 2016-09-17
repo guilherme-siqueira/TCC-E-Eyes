@@ -54,14 +54,14 @@ public class TextAdapter {
     private String FACE_SURPRISE = "surpresa";
     private String FACE_NO_SURPRISE = "";
 
-    private String FACE_SORROW = "triste";
+    private String FACE_SORROW = "chateada";
     private String FACE_NO_SORROW = ".";
 
-    private String FACE_HAT = "usando boné";
+    private String FACE_HAT = "usando algum chapéu";
     private String FACE_NO_HAT = "";
 
 
-    private static String TEXT_INTRO = "nesta imagem está escrito: ";
+    private static String TEXT_INTRO = "Nesta imagem está escrito: ";
 
     private int nFaces = 0;
 
@@ -348,11 +348,11 @@ public class TextAdapter {
         } else if (nFaces != 0) {
             textualDescription = FACE_INTRO;
             if (nFaces == 1)
-                textualDescription += ONE_FACE + ". " + faceElement.getText();
+                textualDescription += ONE_FACE + faceElement.getText();
             else if (nFaces == 2)
-                textualDescription += TWO_FACES + ". " + faceElement.getText();
+                textualDescription += TWO_FACES + faceElement.getText();
             else if (nFaces > 2)
-                textualDescription += MORE_FACES_BEGINNING + nFaces + MORE_FACES_END + ". " + faceElement.getText();
+                textualDescription += MORE_FACES_BEGINNING + nFaces + MORE_FACES_END + faceElement.getText();
 
             if (labelElement.getText() != null) {
                 labelElement.translate();

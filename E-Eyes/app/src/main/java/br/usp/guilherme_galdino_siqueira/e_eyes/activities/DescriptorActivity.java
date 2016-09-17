@@ -4,19 +4,14 @@ package br.usp.guilherme_galdino_siqueira.e_eyes.activities;
  * Created by gsiqueira on 7/14/16.
  */
 import android.app.Activity;
-import android.content.Context;
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
 import android.hardware.Camera;
 import android.hardware.Camera.PictureCallback;
-import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Display;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -30,7 +25,6 @@ import android.view.MotionEvent;
 import android.view.GestureDetector;
 import android.content.ClipboardManager;
 import android.content.ClipData;
-import android.view.WindowManager;
 import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
@@ -63,14 +57,6 @@ import br.usp.guilherme_galdino_siqueira.e_eyes.feedback_signal.Effects;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-
-import java.net.HttpURLConnection;
-import java.io.OutputStream;
-import java.io.InputStream;
-import java.net.URL;
-
-import android.net.wifi.WifiInfo;
-import android.widget.Toast;
 
 public class DescriptorActivity extends Activity implements SurfaceHolder.Callback {
 
@@ -105,7 +91,9 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
     int dimension = 0;
 
-    int fixedDimension = 1600;
+    int defaultDimension;
+
+    int defaultDimensionIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,7 +114,15 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
         addRequests(intent, "LANDMARK");
         addRequests(intent, "LOGO");
 
+        defaultDimension = intent.getIntExtra("DIMENSION",640);
 
+        for (int i = 0; i < dimensions.length; i++) {
+            if (defaultDimension == dimensions[i])
+            {
+                defaultDimensionIndex = i;
+                break;
+            }
+        }
 
 
 
@@ -489,6 +485,8 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
         else
             menu.findItem(R.id.soundEffect).setTitle("Habilitar tic-tac");
 
+            menu.findItem(R.id.dim).setTitle("Dimensão: "+defaultDimension);
+
 
         return true;
 
@@ -604,6 +602,38 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
                 else
                     item.setTitle("Desabilitar teste");
                 Preferences.isSequenceRequestsEnable = !Preferences.isSequenceRequestsEnable;
+
+            case R.id.dim:
+                if (Preferences.isChangeDimensionEnable)
+                {
+                    if (Preferences.increaseDimension && defaultDimensionIndex > 0)
+                    {
+                        defaultDimensionIndex--;
+                        defaultDimension = dimensions[defaultDimensionIndex];
+                    }
+
+                    else if (!Preferences.increaseDimension && defaultDimensionIndex < dimensions.length - 1)
+                    {
+                        defaultDimensionIndex++;
+                        defaultDimension = dimensions[defaultDimensionIndex];
+                    }
+
+                    else if (defaultDimension == Preferences.maxDimension)
+                    {
+                        Preferences.increaseDimension = false;
+                        defaultDimensionIndex++;
+                        defaultDimension = dimensions[defaultDimensionIndex];
+                    }
+
+                    else if (defaultDimension == Preferences.minDimension)
+                    {
+                        Preferences.increaseDimension = true;
+                        defaultDimensionIndex--;
+                        defaultDimension = dimensions[defaultDimensionIndex];
+                    }
+
+                }
+                item.setTitle("Dimensão: " + defaultDimension);
                 return true;
 
             default:
@@ -1141,7 +1171,7 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
                 else
                 {
-                    bitmap = scaleBitmapDown(bitmap,fixedDimension);
+                    bitmap = scaleBitmapDown(bitmap, defaultDimension);
                     getDescription(bitmap);
                 }
 

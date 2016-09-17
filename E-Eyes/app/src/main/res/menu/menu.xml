@@ -47,6 +47,10 @@
         android:checked="true"/>
     <item android:id="@+id/seq"
         android:title="haha"
+        android:enabled="false"
+        android:visible="false"/>
+    <item android:id="@+id/dim"
+        android:title="haha"
         android:checked="true"
         android:actionViewClass="android.widget.SearchView"/>
 </menu>

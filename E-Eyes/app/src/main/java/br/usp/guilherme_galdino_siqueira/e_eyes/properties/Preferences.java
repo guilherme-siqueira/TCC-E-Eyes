@@ -32,5 +32,13 @@ public class Preferences {
 
     public static boolean isSequenceRequestsEnable = false;
 
+    public static boolean isChangeDimensionEnable = true;
+
+    public static int maxDimension = 2560;
+
+    public static int minDimension = 480;
+
+    public static boolean increaseDimension = true;
+
 
 }

@@ -18,6 +18,8 @@ public class MainMenuActivity extends Activity {
     private boolean optionClicked = false;
     private boolean isOnline;
 
+    private int dimension;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,12 +35,13 @@ public class MainMenuActivity extends Activity {
             Toast.makeText(getApplicationContext(), NO_CONNECTION, Toast.LENGTH_LONG).show();
             return;
         }
-
+        dimension = 1600;
         Intent intent = new Intent(this, DescriptorActivity.class);
 
         //intent.putExtra("LABEL","LABEL_DETECTION");
         //intent.putExtra("TEXT","TEXT_DETECTION");
         intent.putExtra("FACE","FACE_DETECTION");
+        intent.putExtra("DIMENSION",dimension);
         //intent.putExtra("LANDMARK","LANDMARK_DETECTION");
         //intent.putExtra("LOGO", "LOGO_DETECTION");
         startActivity(intent);
@@ -69,8 +72,13 @@ public class MainMenuActivity extends Activity {
             return;
         }
 
+        dimension = 1024;
+
         Intent intent = new Intent(this, DescriptorActivity.class);
         intent.putExtra("TEXT","TEXT_DETECTION");
+
+        intent.putExtra("DIMENSION",dimension);
+
         startActivity(intent);
     }
     public void detection(View view)
