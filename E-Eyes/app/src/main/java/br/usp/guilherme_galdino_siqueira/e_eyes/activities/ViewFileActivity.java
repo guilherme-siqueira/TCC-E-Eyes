@@ -299,7 +299,7 @@ public class ViewFileActivity extends Activity {
 
 
 
-            System.out.println("clicked: "+x + "-" + y);
+            //System.out.println("clicked: "+x + "-" + y);
 
 
 
@@ -308,13 +308,19 @@ public class ViewFileActivity extends Activity {
 
             if (x > x1 && y > y1 && x < x2 && y > y2 && x < x3 && y < y3 && x > x4 && y < y4)
             {
-                Toast.makeText(getApplicationContext(), "" + x + "-" + y, Toast.LENGTH_LONG).show();
+                int personNumber = i/8 + 1;
 
+
+                Toast.makeText(getApplicationContext(), "Você clicou na " + personNumber + "ª pessoa.", Toast.LENGTH_LONG).show();
+
+                /*
                 System.out.println(x + "-" + y);
                 System.out.println(faces.get(i) + "-" + faces.get(i + 1));
                 System.out.println(faces.get(i + 2) + "-" + faces.get(i + 3));
                 System.out.println(faces.get(i + 4) + "-" + faces.get(i + 5));
                 System.out.println(faces.get(i + 6) + "-" + faces.get(i + 7));
+                */
+
 
             }
 
