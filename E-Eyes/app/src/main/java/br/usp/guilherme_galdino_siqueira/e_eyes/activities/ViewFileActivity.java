@@ -16,11 +16,21 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.os.SystemClock;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.widget.EditText;
+import android.text.InputType;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+
+import br.usp.guilherme_galdino_siqueira.e_eyes.photo_descriptor.FileManager;
 
 /**
  * Created by gsiqueira on 7/24/16.
@@ -46,6 +56,14 @@ public class ViewFileActivity extends Activity {
     float photoRight;
     float photoLeft;
 
+    String folder;
+    String textFileName = "Texto";
+    String textFileType = "txt";
+
+    String newName = "";
+
+    TextView myText;
+
     Canvas canvas;
     Paint paint;
 
@@ -60,11 +78,11 @@ public class ViewFileActivity extends Activity {
 
         Intent intent = this.getIntent();
 
-        String folder = intent.getStringExtra("FOLDER");
+        folder = intent.getStringExtra("FOLDER");
 
         File imgFile = new  File("/sdcard/E-EYES/" + folder + "/Imagem.jpg");
 
-        File txtFile = new  File("/sdcard/E-EYES/" + folder + "/Texto.txt");
+        File txtFile = new  File("/sdcard/E-EYES/" + folder + "/" + textFileName + ".txt");
 
         File txtFaceFile = new  File("/sdcard/E-EYES/" + folder + "/PosiçãoFaces.txt");
 
@@ -72,17 +90,28 @@ public class ViewFileActivity extends Activity {
 
             myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
 
-
-
             ImageView myImage = (ImageView) findViewById(R.id.imageFile);
 
             myImage.setOnTouchListener(new View.OnTouchListener() {
+
+                private long mLastClickTime = 0;
+
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
 
+                    if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
+                        return true;
+                    }
+
+                    mLastClickTime = SystemClock.elapsedRealtime();
+
                     onPhotoClick(event.getX(), event.getY());
+
                     return true;
                 }
+
+
+
             });
             ////mutableBitmap = myBitmap.copy(Bitmap.Config.ARGB_8888, true);
             ////canvas = new Canvas(mutableBitmap);
@@ -247,10 +276,6 @@ public class ViewFileActivity extends Activity {
                 BufferedReader br = new BufferedReader(new FileReader(txtFile));
                 String line;
 
-
-
-
-
                 while ((line = br.readLine()) != null) {
 
                     text.append(line);
@@ -262,9 +287,11 @@ public class ViewFileActivity extends Activity {
                 //You'll need to add proper error handling here
             }
 
-            TextView myText = (TextView) findViewById(R.id.textFile);
+            myText = (TextView) findViewById(R.id.textFile);
 
             myText.setText(text.toString());
+
+            myText.setContentDescription(getString(R.string.activity_descriptor_text) + text.toString());
 
             myText.setMovementMethod(new ScrollingMovementMethod());
 
@@ -308,19 +335,57 @@ public class ViewFileActivity extends Activity {
 
             if (x > x1 && y > y1 && x < x2 && y > y2 && x < x3 && y < y3 && x > x4 && y < y4)
             {
-                int personNumber = i/8 + 1;
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(ViewFileActivity.this);
+                builder.setTitle("Você clicou em uma pessoa.");
+                final EditText input = new EditText(ViewFileActivity.this);
+
+                input.setInputType(InputType.TYPE_CLASS_TEXT);
+                builder.setView(input);
+
+                final int personNumber = i/8 + 1;
 
 
-                Toast.makeText(getApplicationContext(), "Você clicou na " + personNumber + "ª pessoa.", Toast.LENGTH_LONG).show();
 
-                /*
-                System.out.println(x + "-" + y);
-                System.out.println(faces.get(i) + "-" + faces.get(i + 1));
-                System.out.println(faces.get(i + 2) + "-" + faces.get(i + 3));
-                System.out.println(faces.get(i + 4) + "-" + faces.get(i + 5));
-                System.out.println(faces.get(i + 6) + "-" + faces.get(i + 7));
-                */
 
+                    //Toast.makeText(getApplicationContext(), "Você tocou no rosto da " + personNumber + "ª pessoa.", Toast.LENGTH_LONG).show();
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            String newName = input.getText().toString();
+                            newName = newName.replace(newName,". " + newName + " não está");
+
+                            String description = myText.getText().toString();
+
+                            Pattern p = Pattern.compile("\\.\\s[\\w\\s]*não\\sestá", Pattern.CASE_INSENSITIVE);
+                            Matcher m = p.matcher(description);
+                            boolean result;
+
+                            for (int j = 0; j < personNumber; j++)
+                            {
+                                m.find();
+                            }
+
+                            String oldName = m.group(0);
+
+                            description = description.replace(oldName, newName);
+
+                            myText.setText(description);
+                            FileManager.save(ViewFileActivity.this, description.getBytes(), folder, textFileName, textFileType);
+
+                        }
+                    });
+
+                    builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+
+
+                builder.show();
 
             }
 

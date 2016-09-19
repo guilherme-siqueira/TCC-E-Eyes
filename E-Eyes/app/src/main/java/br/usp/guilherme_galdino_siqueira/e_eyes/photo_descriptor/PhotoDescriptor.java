@@ -126,6 +126,8 @@ public class PhotoDescriptor {
 
     private void save(byte[] contentInBytes, String fileName, String fileType)
     {
+        FileManager.save(activity,contentInBytes,folderName,fileName,fileType);
+        /*
         FileOutputStream fos = null;
 
         try {
@@ -166,6 +168,8 @@ public class PhotoDescriptor {
         } catch (Exception e) {
             Toast.makeText(activity.getBaseContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
         }
+
+        */
     }
 
     public void stopAudioDescription()
