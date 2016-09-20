@@ -44,12 +44,12 @@
 \contentsline {subsection}{\numberline {4.1.3}Teste para reconhecimento de texto com letra cursiva}{59}
 \contentsline {subsection}{\numberline {4.1.4}Teste para rotula\c c\~ao de elementos da cena}{60}
 \contentsline {subsection}{\numberline {4.1.5}Teste para classifica\c c\~ao de express\~ao facial}{63}
-\contentsline {section}{\numberline {4.2}Detec\c c\~ao de Obst\'aculos}{63}
-\contentsline {chapter}{\numberline {5}Conclus\~ao ou Conclus\~oes}{65}
-\contentsline {chapter}{Refer\^encias}{65}
-\contentsline {chapter}{\numberline {A}Cuidados e orienta\c c\~oes para a elabora\c c\~ao de texto}{71}
-\contentsline {chapter}{\numberline {B}Apresenta\c c\~ao do TCC}{75}
-\contentsline {chapter}{\numberline {C}Monografia Parcial do TCC}{77}
-\contentsline {chapter}{\numberline {I}Datasheet Arduino}{79}
-\contentsline {chapter}{\numberline {II}Datasheet HC-05}{88}
-\contentsline {chapter}{\numberline {III}Datasheet HC-SR04}{102}
+\contentsline {section}{\numberline {4.2}Detec\c c\~ao de Obst\'aculos}{64}
+\contentsline {chapter}{\numberline {5}Conclus\~ao ou Conclus\~oes}{67}
+\contentsline {chapter}{Refer\^encias}{67}
+\contentsline {chapter}{\numberline {A}Cuidados e orienta\c c\~oes para a elabora\c c\~ao de texto}{73}
+\contentsline {chapter}{\numberline {B}Apresenta\c c\~ao do TCC}{77}
+\contentsline {chapter}{\numberline {C}Monografia Parcial do TCC}{79}
+\contentsline {chapter}{\numberline {I}Datasheet Arduino}{81}
+\contentsline {chapter}{\numberline {II}Datasheet HC-05}{90}
+\contentsline {chapter}{\numberline {III}Datasheet HC-SR04}{104}

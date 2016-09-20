@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.1.7)  17 SEP 2016 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.1.7)  19 SEP 2016 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1653,26 +1653,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62 <./Resources/labelsComputer2.png> <./Resources/labelCadeira.png>])
-(./Content/7_Conclusao.tex
+[62 <./Resources/labelsComputer2.png> <./Resources/labelCadeira.png>]
+<./Resources/expressoes.png, id=252, 1068.99374pt x 572.1375pt>
+File: ./Resources/expressoes.png Graphic file (type png)
+
+<use ./Resources/expressoes.png>
+Package pdftex.def Info: ./Resources/expressoes.png used on input line 309.
+(pdftex.def)             Requested size: 427.58992pt x 228.85094pt.
+
+Underfull \vbox (badness 1968) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[63]
+[63 <./Resources/expressoes.png>]
+<./Resources/triste.png, id=257, 874.26625pt x 504.88625pt>
+File: ./Resources/triste.png Graphic file (type png)
+
+<use ./Resources/triste.png>
+Package pdftex.def Info: ./Resources/triste.png used on input line 319.
+(pdftex.def)             Requested size: 437.13205pt x 252.44249pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64
-
-]
-Cap\'{\i }tulo 5.
-) (./TCCmain.bbl
+[64 <./Resources/triste.png>]) (./Content/7_Conclusao.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1689,6 +1701,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [66
 
 ]
+Cap\'{\i }tulo 5.
+) (./TCCmain.bbl
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1702,7 +1716,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68]) (./Content/8_Apendices.tex
+[68
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1716,12 +1732,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[70
-
-]
-Ap\^endice A.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 10.
+[70]) (./Content/8_Apendices.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1735,7 +1746,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[72]
+[72
+
+]
+Ap\^endice A.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 10.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1749,10 +1765,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[74
-
-]
-Ap\^endice B.
+[74]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1769,11 +1782,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [76
 
 ]
-Ap\^endice C.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 102.
-
-) (./Content/9_Anexos.tex
+Ap\^endice B.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1790,8 +1799,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [78
 
 ]
+Ap\^endice C.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 102.
+
+) (./Content/9_Anexos.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[79]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[80
+
+]
 Anexo I.
-<Resources/ARDUINO-UNO.pdf, id=303, 597.23125pt x 845.1575pt>
+<Resources/ARDUINO-UNO.pdf, id=314, 597.23125pt x 845.1575pt>
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
 <use Resources/ARDUINO-UNO.pdf>
@@ -1808,7 +1838,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[79] <Resources/ARDUINO-UNO.pdf, id=310, page=1, 597.23125pt x 845.1575pt>
+[81] <Resources/ARDUINO-UNO.pdf, id=320, page=1, 597.23125pt x 845.1575pt>
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
 <use Resources/ARDUINO-UNO.pdf, page 1>
@@ -1839,149 +1869,149 @@ File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page1 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [80 <./Resources/ARDUINO-UNO.pdf>]
-<Resources/ARDUINO-UNO.pdf, id=393, page=2, 597.23125pt x 845.1575pt>
-File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
-
-<use Resources/ARDUINO-UNO.pdf, page 2>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page2 used on input line 5.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
-
-<use Resources/ARDUINO-UNO.pdf, page 2>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page2 used on input line 5.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
-
-<use Resources/ARDUINO-UNO.pdf, page 2>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page2 used on input line 5.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [81 <./Resources/ARDUINO-UNO.pdf>]
-<Resources/ARDUINO-UNO.pdf, id=398, page=3, 597.23125pt x 845.1575pt>
-File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
-
-<use Resources/ARDUINO-UNO.pdf, page 3>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page3 used on input line 5.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
-
-<use Resources/ARDUINO-UNO.pdf, page 3>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page3 used on input line 5.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
-
-<use Resources/ARDUINO-UNO.pdf, page 3>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page3 used on input line 5.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [82 <./Resources/ARDUINO-UNO.pdf>]
-<Resources/ARDUINO-UNO.pdf, id=403, page=4, 597.23125pt x 845.1575pt>
+<Resources/ARDUINO-UNO.pdf, id=403, page=2, 597.23125pt x 845.1575pt>
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 4>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page4 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 2>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page2 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 4>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page4 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 2>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page2 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 4>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page4 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 2>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page2 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [83 <./Resources/ARDUINO-UNO.pdf>]
-<Resources/ARDUINO-UNO.pdf, id=409, page=5, 597.23125pt x 845.1575pt>
+<Resources/ARDUINO-UNO.pdf, id=408, page=3, 597.23125pt x 845.1575pt>
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 5>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page5 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 3>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page3 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 5>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page5 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 3>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page3 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 5>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page5 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 3>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page3 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [84 <./Resources/ARDUINO-UNO.pdf>]
-<Resources/ARDUINO-UNO.pdf, id=414, page=6, 597.23125pt x 845.1575pt>
+<Resources/ARDUINO-UNO.pdf, id=414, page=4, 597.23125pt x 845.1575pt>
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 6>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page6 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 4>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page4 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 6>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page6 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 4>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page4 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 6>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page6 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 4>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page4 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [85 <./Resources/ARDUINO-UNO.pdf>]
-<Resources/ARDUINO-UNO.pdf, id=420, page=7, 597.23125pt x 845.1575pt>
+<Resources/ARDUINO-UNO.pdf, id=420, page=5, 597.23125pt x 845.1575pt>
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 7>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page7 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 5>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page5 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 7>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page7 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 5>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page5 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 7>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page7 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 5>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page5 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [86 <./Resources/ARDUINO-UNO.pdf>]
-<Resources/ARDUINO-UNO.pdf, id=425, page=8, 597.23125pt x 845.1575pt>
+<Resources/ARDUINO-UNO.pdf, id=425, page=6, 597.23125pt x 845.1575pt>
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 8>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page8 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 6>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page6 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 8>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page8 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 6>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page6 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
 
-<use Resources/ARDUINO-UNO.pdf, page 8>
-Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page8 used on input line 5.
+<use Resources/ARDUINO-UNO.pdf, page 6>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page6 used on input line 5.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
  [87 <./Resources/ARDUINO-UNO.pdf>]
+<Resources/ARDUINO-UNO.pdf, id=430, page=7, 597.23125pt x 845.1575pt>
+File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
+
+<use Resources/ARDUINO-UNO.pdf, page 7>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page7 used on input line 5.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
+
+<use Resources/ARDUINO-UNO.pdf, page 7>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page7 used on input line 5.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
+
+<use Resources/ARDUINO-UNO.pdf, page 7>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page7 used on input line 5.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [88 <./Resources/ARDUINO-UNO.pdf>]
+<Resources/ARDUINO-UNO.pdf, id=435, page=8, 597.23125pt x 845.1575pt>
+File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
+
+<use Resources/ARDUINO-UNO.pdf, page 8>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page8 used on input line 5.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
+
+<use Resources/ARDUINO-UNO.pdf, page 8>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page8 used on input line 5.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/ARDUINO-UNO.pdf Graphic file (type pdf)
+
+<use Resources/ARDUINO-UNO.pdf, page 8>
+Package pdftex.def Info: Resources/ARDUINO-UNO.pdf, page8 used on input line 5.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [89 <./Resources/ARDUINO-UNO.pdf>]
 Anexo II.
-<Resources/HC-05.pdf, id=430, 597.55246pt x 845.07718pt>
+<Resources/HC-05.pdf, id=440, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf>
@@ -1998,9 +2028,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[88
+[90
 
-] <Resources/HC-05.pdf, id=436, page=1, 597.55246pt x 845.07718pt>
+] <Resources/HC-05.pdf, id=446, page=1, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 1>
@@ -2024,8 +2054,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 1>
 Package pdftex.def Info: Resources/HC-05.pdf, page1 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [89 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=467, page=2, 597.55246pt x 845.07718pt>
+ [91 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=478, page=2, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 2>
@@ -2040,8 +2070,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 2>
 Package pdftex.def Info: Resources/HC-05.pdf, page2 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [90 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=482, page=3, 597.55246pt x 845.07718pt>
+ [92 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=493, page=3, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 3>
@@ -2056,8 +2086,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 3>
 Package pdftex.def Info: Resources/HC-05.pdf, page3 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [91 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=490, page=4, 597.55246pt x 845.07718pt>
+ [93 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=500, page=4, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 4>
@@ -2072,8 +2102,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 4>
 Package pdftex.def Info: Resources/HC-05.pdf, page4 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [92 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=497, page=5, 597.55246pt x 845.07718pt>
+ [94 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=507, page=5, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 5>
@@ -2088,8 +2118,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 5>
 Package pdftex.def Info: Resources/HC-05.pdf, page5 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [93 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=503, page=6, 597.55246pt x 845.07718pt>
+ [95 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=513, page=6, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 6>
@@ -2104,8 +2134,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 6>
 Package pdftex.def Info: Resources/HC-05.pdf, page6 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [94 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=516, page=7, 597.55246pt x 845.07718pt>
+ [96 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=526, page=7, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 7>
@@ -2120,8 +2150,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 7>
 Package pdftex.def Info: Resources/HC-05.pdf, page7 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [95 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=521, page=8, 597.55246pt x 845.07718pt>
+ [97 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=532, page=8, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 8>
@@ -2136,8 +2166,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 8>
 Package pdftex.def Info: Resources/HC-05.pdf, page8 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [96 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=526, page=9, 597.55246pt x 845.07718pt>
+ [98 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=537, page=9, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 9>
@@ -2152,8 +2182,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 9>
 Package pdftex.def Info: Resources/HC-05.pdf, page9 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [97 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=532, page=10, 597.55246pt x 845.07718pt>
+ [99 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=542, page=10, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 10>
@@ -2168,8 +2198,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 10>
 Package pdftex.def Info: Resources/HC-05.pdf, page10 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [98 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=537, page=11, 597.55246pt x 845.07718pt>
+ [100 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=547, page=11, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 11>
@@ -2184,8 +2214,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 11>
 Package pdftex.def Info: Resources/HC-05.pdf, page11 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [99 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=542, page=12, 597.55246pt x 845.07718pt>
+ [101 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=552, page=12, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 12>
@@ -2200,8 +2230,8 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 12>
 Package pdftex.def Info: Resources/HC-05.pdf, page12 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [100 <./Resources/HC-05.pdf>]
-<Resources/HC-05.pdf, id=547, page=13, 597.55246pt x 845.07718pt>
+ [102 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=557, page=13, 597.55246pt x 845.07718pt>
 File: Resources/HC-05.pdf Graphic file (type pdf)
 
 <use Resources/HC-05.pdf, page 13>
@@ -2216,9 +2246,9 @@ File: Resources/HC-05.pdf Graphic file (type pdf)
 <use Resources/HC-05.pdf, page 13>
 Package pdftex.def Info: Resources/HC-05.pdf, page13 used on input line 12.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [101 <./Resources/HC-05.pdf>]
+ [103 <./Resources/HC-05.pdf>]
 Anexo III.
-<Resources/HCSR04.pdf, id=556, 597.23125pt x 845.1575pt>
+<Resources/HCSR04.pdf, id=567, 597.23125pt x 845.1575pt>
 File: Resources/HCSR04.pdf Graphic file (type pdf)
 
 <use Resources/HCSR04.pdf>
@@ -2235,9 +2265,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[102
+[104
 
-] <Resources/HCSR04.pdf, id=562, page=1, 597.23125pt x 845.1575pt>
+] <Resources/HCSR04.pdf, id=573, page=1, 597.23125pt x 845.1575pt>
 File: Resources/HCSR04.pdf Graphic file (type pdf)
 
 <use Resources/HCSR04.pdf, page 1>
@@ -2261,8 +2291,8 @@ File: Resources/HCSR04.pdf Graphic file (type pdf)
 <use Resources/HCSR04.pdf, page 1>
 Package pdftex.def Info: Resources/HCSR04.pdf, page1 used on input line 18.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [103 <./Resources/HCSR04.pdf>]
-<Resources/HCSR04.pdf, id=586, page=2, 597.23125pt x 845.1575pt>
+ [105 <./Resources/HCSR04.pdf>]
+<Resources/HCSR04.pdf, id=596, page=2, 597.23125pt x 845.1575pt>
 File: Resources/HCSR04.pdf Graphic file (type pdf)
 
 <use Resources/HCSR04.pdf, page 2>
@@ -2277,8 +2307,8 @@ File: Resources/HCSR04.pdf Graphic file (type pdf)
 <use Resources/HCSR04.pdf, page 2>
 Package pdftex.def Info: Resources/HCSR04.pdf, page2 used on input line 18.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [104 <./Resources/HCSR04.pdf>]
-<Resources/HCSR04.pdf, id=592, page=3, 597.23125pt x 845.1575pt>
+ [106 <./Resources/HCSR04.pdf>]
+<Resources/HCSR04.pdf, id=602, page=3, 597.23125pt x 845.1575pt>
 File: Resources/HCSR04.pdf Graphic file (type pdf)
 
 <use Resources/HCSR04.pdf, page 3>
@@ -2293,17 +2323,17 @@ File: Resources/HCSR04.pdf Graphic file (type pdf)
 <use Resources/HCSR04.pdf, page 3>
 Package pdftex.def Info: Resources/HCSR04.pdf, page3 used on input line 18.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [105 <./Resources/HCSR04.pdf>])
+ [107 <./Resources/HCSR04.pdf>])
 (./TCCmain.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22619 strings out of 495001
- 416596 string characters out of 6180681
+ 22633 strings out of 495001
+ 416900 string characters out of 6180681
  493049 words of memory out of 5000000
- 25278 multiletter control sequences out of 15000+600000
+ 25290 multiletter control sequences out of 15000+600000
  68261 words of font info for 105 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  61i,18n,85p,1325b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2313,10 +2343,10 @@ f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TCCmain.pdf (105 pages, 13925679 bytes).
+Output written on TCCmain.pdf (107 pages, 14724079 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
+ 631 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 333 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 
