@@ -19,7 +19,7 @@ import br.usp.guilherme_galdino_siqueira.e_eyes.properties.Preferences;
 
 public class Effects {
 
-    private MediaPlayer shutter, progress;
+    private MediaPlayer shutter, progress, alert;
 
     private Vibrator vibrator;
 
@@ -29,11 +29,16 @@ public class Effects {
 
     public Effects(Context context, Activity activity) {
         shutter = MediaPlayer.create(context, R.raw.camera);
+
+        alert = MediaPlayer.create(context, R.raw.alert);
+
+        alert.setLooping(true);
+
         progress = MediaPlayer.create(context, R.raw.time);
 
-        vibrator = (Vibrator) context.getSystemService(context.VIBRATOR_SERVICE);
-
         progress.setLooping(true);
+
+        vibrator = (Vibrator) context.getSystemService(context.VIBRATOR_SERVICE);
 
         progressIcon = (ImageView) activity.findViewById(R.id.blinkImage);
 
@@ -43,6 +48,17 @@ public class Effects {
     public void playCameraShutter() {
         if (Preferences.isSoundEffectEnable)
             shutter.start();
+    }
+
+    public void playAlert() {
+
+            alert.start();
+    }
+
+    public void pauseAlert()
+    {
+        if (alert.isPlaying())
+            alert.pause();
     }
 
     public void playClockTicks() {

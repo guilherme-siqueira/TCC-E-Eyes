@@ -23,20 +23,20 @@
 \contentsline {subsection}{\numberline {3.1.2}Android Studio}{41}
 \contentsline {subsection}{\numberline {3.1.3}Ardu\IeC {\'\i }no}{41}
 \contentsline {subsection}{\numberline {3.1.4}Sensor}{42}
-\contentsline {subsection}{\numberline {3.1.5}BlueTooth}{42}
+\contentsline {subsection}{\numberline {3.1.5}BlueTooth}{43}
 \contentsline {subsection}{\numberline {3.1.6}Componentes eletr\^onicos em geral}{43}
 \contentsline {section}{\numberline {3.2}M\'etodos}{43}
-\contentsline {subsection}{\numberline {3.2.1}Configura\c c\~oes iniciais de programa\c c\~ao}{43}
-\contentsline {subsection}{\numberline {3.2.2}Constru\c c\~ao de interface acess\IeC {\'\i }vel}{43}
-\contentsline {subsection}{\numberline {3.2.3}Extra\c c\~ao de dados em imagem}{46}
+\contentsline {subsection}{\numberline {3.2.1}Configura\c c\~oes iniciais de programa\c c\~ao}{44}
+\contentsline {subsection}{\numberline {3.2.2}Constru\c c\~ao de interface acess\IeC {\'\i }vel}{44}
+\contentsline {subsection}{\numberline {3.2.3}Extra\c c\~ao de dados em imagem}{47}
 \contentsline {subsection}{\numberline {3.2.4}Adapta\c c\~ao textual do dado retornado}{48}
 \contentsline {subsection}{\numberline {3.2.5}Tradu\c c\~ao de r\'otulos}{48}
-\contentsline {subsection}{\numberline {3.2.6}Captura e exibi\c c\~ao de resultado}{48}
-\contentsline {subsection}{\numberline {3.2.7}Implementa\c c\~ao de op\c c\~oes de reconhecimento}{49}
+\contentsline {subsection}{\numberline {3.2.6}Captura e exibi\c c\~ao de resultado}{49}
+\contentsline {subsection}{\numberline {3.2.7}Implementa\c c\~ao de op\c c\~oes de reconhecimento}{50}
 \contentsline {subsection}{\numberline {3.2.8}Registro de descri\c c\~oes}{50}
-\contentsline {subsection}{\numberline {3.2.9}Tratamento de sinais ultrass\^onicos}{51}
-\contentsline {subsection}{\numberline {3.2.10}Comunica\c c\~ao Arduino-BlueTooth}{52}
-\contentsline {subsection}{\numberline {3.2.11}Comunica\c c\~ao Smartphone-BlueTooth}{52}
+\contentsline {subsection}{\numberline {3.2.9}Tratamento de sinais ultrass\^onicos}{52}
+\contentsline {subsection}{\numberline {3.2.10}Comunica\c c\~ao Arduino-BlueTooth}{53}
+\contentsline {subsection}{\numberline {3.2.11}Comunica\c c\~ao Smartphone-BlueTooth}{53}
 \contentsline {chapter}{\numberline {4}Resultados e Discuss\~oes}{55}
 \contentsline {section}{\numberline {4.1}Descri\c c\~ao de Imagens}{55}
 \contentsline {subsection}{\numberline {4.1.1}Teste para diferentes dimens\~oes de imagens}{55}
@@ -45,6 +45,7 @@
 \contentsline {subsection}{\numberline {4.1.4}Teste para rotula\c c\~ao de elementos da cena}{60}
 \contentsline {subsection}{\numberline {4.1.5}Teste para classifica\c c\~ao de express\~ao facial}{63}
 \contentsline {section}{\numberline {4.2}Detec\c c\~ao de Obst\'aculos}{64}
+\contentsline {section}{\numberline {4.3}Avalia\c c\~ao de consumo do sistema}{65}
 \contentsline {chapter}{\numberline {5}Conclus\~ao ou Conclus\~oes}{67}
 \contentsline {chapter}{Refer\^encias}{67}
 \contentsline {chapter}{\numberline {A}Cuidados e orienta\c c\~oes para a elabora\c c\~ao de texto}{73}

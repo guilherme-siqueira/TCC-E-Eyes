@@ -160,13 +160,15 @@ public class ArduinoActivity extends Activity {
                 if (message[0] != null)
                 {
                     Toast.makeText(getApplicationContext(),message[0], Toast.LENGTH_LONG).show();
-                    effects.vibrate(6000);
+                    effects.stopVibration();
+                    effects.pauseAlert();
                 }
 
                 if (message[1] != null)
                 {
                     Toast.makeText(getApplicationContext(),message[1], Toast.LENGTH_LONG).show();
-                    effects.stopVibration();
+                    effects.vibrate(6000);
+                    effects.playAlert();
                 }
 
                 if (message[2] != null)
@@ -204,10 +206,9 @@ public class ArduinoActivity extends Activity {
         }
     }
 
-    private void turnBlueToothOff()
-    {
+    private void turnBlueToothOff() {
         BA.disable();
-        Toast.makeText(getApplicationContext(),"BlueTooth desligado" ,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"BlueTooth desligado", Toast.LENGTH_LONG).show();
     }
 
     public BluetoothDevice getArduino(){

@@ -5,8 +5,6 @@ Com as funcionalidades planejadas para o projeto concluídas, o passo seguinte fo
 
 \section{Descrição de Imagens}
 
-[tópico incompleto - testes em andamento]
-
 Na descrição de imagens duas variáveis foram consideradas mais importantes para avaliar o desempenho do sistema: o tempo de resposta, pois não é conveniente deixar o usuário esperando por muito tempo pela informação requisitada, e a qualidade dos resultados obtidos, para que o usuário receba aquilo que é esperado do sistema. Como a Google Cloud API é uma ferramenta online, a primeira dificuldade encontrada para eficiência de processamento foi o transporte de dados para o servidor da Google. Quanto mais dados são transmitidos pela rede e processados pela rotina no servidor, maior o tempo de latência para a resposta. Isso significa que a velocidade da Internet do usuário será sempre um limitador. 
 
 
@@ -160,6 +158,7 @@ Por outro lado, a quantidade de dados transmitida é flexível uma vez que a image
 	\caption{Tempos das fases da transcrição de imagem sobre a etiqueta do computador HP, ilustrada pela Figura \ref{Teste-HP}}	
 	
 	\begin{tabular}{llll}
+		
 		
 		Resultado							& Figura \ref{RI} 	& Figura \ref{RII}	& Figura \ref{RIII}\\
 		Resolução             	& 2560x1920	    	& 1024x768          & 480x360  	       \\
@@ -322,14 +321,16 @@ Apesar dos acertos nas descrições das faces, os resultados não foram sempre corr
 	
 \end{figure}
 
-Uma hipótese para os resultados falhos é a qualidade da imagem comprometida pela captura da câmera sobre a foto na tela do computador.
+Uma hipótese para os resultados falhos pode ser a qualidade da imagem comprometida pela captura da câmera sobre a foto vinda da tela do computador.
 
 
-\raggedright
+
+
+%\raggedright
 \section{Detecção de Obstáculos} 
 [tópico apenas iniciado - faltam testes]
 
 Na detecção de obstáculos, duas variáveis foram consideradas para o desenvolvimento e desempenho do sistema. Primeiramente, como havia a necessidade da criação de um circuito externo, o custo benefício foi analisado. Foi necessária a utilização de um Arduíno, um sensor de obstáculos, e um módulo de comunicação. O Arduíno em termos de capacidade de processamento se mostrou adequado  para a tarefa, que necessitava de baixíssimo poder computacional: leitura de sinais e encaminhamento de dados. O sensor de obstáculos por ter uma abrangência de 4 metros, mostrou ser aplicável para o propósito do projeto por fornecer margem suficiente de tempo de reação de um usuário caminhando [velocidade de caminhada, tempo de reação audição, tato, limite do sensor = 4m]. O módulo bluetooth utilizado também foi adequado, considerando que trata-se de dispositivos muito próximos em comunicação. O segundo problema encontrado foi o tamanho dos elementos do circuito. Quanto menor, mais discreto e mais adaptável ao corpo ele se torna, o que não foi plenamente atingido [o circuito é um pouco maior que um smartphone].
 
-
+\section{Avaliação de consumo do sistema}
 
