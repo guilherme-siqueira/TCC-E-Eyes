@@ -9,8 +9,6 @@ import br.usp.guilherme_galdino_siqueira.e_eyes.yandex_translator.Translate;
  */
 public class FeatureContent {
 
-    //private boolean isYandexTranslatorDisabled = true;
-
     private String text;
 
     public String getText() {
@@ -38,7 +36,7 @@ public class FeatureContent {
         if (Preferences.isYandexTranslatorDisabled)
             return;
 
-        Translate.setKey(ApiKeys.getYandexApiKey());
+        Translate.setKey(ApiKeys.YANDEX_API_KEY);
         text = Translate.execute(text);
     }
 }

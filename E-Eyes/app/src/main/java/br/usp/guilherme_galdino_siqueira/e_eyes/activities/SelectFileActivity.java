@@ -1,30 +1,31 @@
 package br.usp.guilherme_galdino_siqueira.e_eyes.activities;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
-import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
-import java.util.ArrayList;
 import android.view.View;
 import android.app.ListActivity;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import android.widget.TextView;
+
 
 import java.io.File;
+
+import br.usp.guilherme_galdino_siqueira.e_eyes.properties.Constants;
+
 /**
  * Created by gsiqueira on 7/24/16.
  */
 public class SelectFileActivity extends ListActivity {
 
-    ArrayList<String> realListItems =new ArrayList<String>();
+    ArrayList<String> realListItems =new ArrayList<>();
 
-    ArrayList<String> displayedListItems=new ArrayList<String>();
+    ArrayList<String> displayedListItems=new ArrayList<>();
 
     ArrayAdapter<String> adapter;
 
@@ -32,51 +33,23 @@ public class SelectFileActivity extends ListActivity {
 
     File fileList[];
 
-    ListView listView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.select_file_activity);
 
-        //listView = (ListView) findViewById(R.id.list);
-
-        //listView.addHeaderView(textView);
-
-        adapter=new ArrayAdapter<String>(this,
+        adapter=new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1,
-                displayedListItems)
-        {
-            /*@Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                View view = super.getView(position, convertView, parent);
-                if (position % 2 == 1) {
-                    //view.setBackgroundColor(Color.BLUE);
-                    view.setBackgroundResource(R.color.colorOddListItem);
-                } else {
-                    view.setBackgroundResource(R.color.colorEvenListItem);
-                    //view.setBackgroundColor(Color.CYAN);
-                }
-
-
-                return view;
-            }
-            */
-        };
+                displayedListItems);
 
         setListAdapter(adapter);
 
         listFolders();
     }
 
-    //public void addItems(String fileName) {
-       // realListItems.add(fileName);
-        //adapter.notifyDataSetChanged();
-    //}
-
     private void listFolders()
     {
-        String path = Environment.getExternalStorageDirectory().toString()+"/E-EYES/";
+        String path = Constants.DIRECTORY_PATH;
         Log.d("Files", "Path: " + path);
 
         folder = new File(path);
@@ -84,11 +57,8 @@ public class SelectFileActivity extends ListActivity {
 
         Log.d("Files", "Size: " + fileList.length);
 
-        for (int i=0; i < fileList.length; i++)
-        {
-            realListItems.add(fileList[i].getName());
-            //addItems(fileList[i].getName());
-            //Log.d("Files", "FileName:" + fileList[i].getName());
+        for (File aFileList : fileList) {
+            realListItems.add(aFileList.getName());
         }
 
         // Sorting
@@ -132,13 +102,8 @@ public class SelectFileActivity extends ListActivity {
     @Override
     protected void onListItemClick (ListView l, View v, int position, long id) {
 
-        //Toast.makeText(this, "Clicked row " + position, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, ViewFileActivity.class);
         intent.putExtra("FOLDER", realListItems.get(position));
         startActivity(intent);
     }
-
-
-
-
 }

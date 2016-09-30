@@ -27,6 +27,7 @@ import java.util.UUID;
 
 import android.bluetooth.BluetoothSocket;
 
+import br.usp.guilherme_galdino_siqueira.e_eyes.feedback_signal.Arduino;
 import br.usp.guilherme_galdino_siqueira.e_eyes.feedback_signal.Effects;
 
 //import br.usp.guilherme_galdino_siqueira.e_eyes.photo_descriptor.Voice;
@@ -63,7 +64,7 @@ public class ArduinoActivity extends Activity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arduino);
 
@@ -77,11 +78,15 @@ public class ArduinoActivity extends Activity {
 
         turnBlueToothOn();
 
+        new ArduinoCommunication().execute();
+
+        /*
+
         new AsyncTask<Object, String, Void>()
         {
             InputStream mmInputStream;
             BluetoothDevice arduino = null;
-            int value, pValue;
+            int distance, previousDistance;
             String[] obstAlert = new String[2];
             String[] info = new String[4];
 
@@ -128,26 +133,26 @@ public class ArduinoActivity extends Activity {
                     info[3] = "Arduíno Ligado";
                     publishProgress(info);
 
-                    //pValue = read(mmInputStream);
-                    value = read(mmInputStream);
+                    //previousDistance = read(mmInputStream);
+                    distance = read(mmInputStream);
 
-                    while (value != -1)
+                    while (distance != -1)
                     {
-                        obstAlert = classify(value, pValue);
+                        obstAlert = classify(distance, previousDistance);
 
                         info[0] = obstAlert[0];
 
                         info[1] = obstAlert[1];
 
-                        info[2] = String.format( "%.2f", (float)value/100);
+                        info[2] = String.format( "%.2f", (float)distance/100);
 
                         info[3] = null;
 
                         publishProgress(info);
-                        //publishProgress(""+value);
+                        //publishProgress(""+distance);
 
-                        pValue = value;
-                        value = read(mmInputStream);
+                        previousDistance = distance;
+                        distance = read(mmInputStream);
                     }
                     //publishProgress("Problema de leitura");
                 }
@@ -155,21 +160,45 @@ public class ArduinoActivity extends Activity {
             }
 
             @Override
-            protected void onProgressUpdate(String... message)
-            {
-                if (message[0] != null)
+            protected void onProgressUpdate(String... message) {
+
+                int msTime;
+
+                if (Arduino.isObstacleGettingIn())
                 {
-                    Toast.makeText(getApplicationContext(),message[0], Toast.LENGTH_LONG).show();
-                    effects.stopVibration();
-                    effects.pauseAlert();
+                    msTime = 2000;
+                    effects.vibrate(msTime);
+                    effects.playObstacleAlert(msTime);
+
+
+                }
+                if (Arduino.isObstacleGettingCloser())
+                {
+                    // Toast.makeText(getApplicationContext(),message[1], Toast.LENGTH_LONG).show();
+                    effects.vibrate(6000);
+                    effects.playObstacleAlert();
                 }
 
-                if (message[1] != null)
+                if (Arduino.isObstacleGettingAway())
                 {
-                    Toast.makeText(getApplicationContext(),message[1], Toast.LENGTH_LONG).show();
-                    effects.vibrate(6000);
-                    effects.playAlert();
+                    effects.stopVibration();
+                    effects.pauseObstacleAlert();
+
+                    msTime = 2000;
+
+                    effects.vibrate(msTime);
+                    effects.playObstacleAlert(msTime);
                 }
+
+
+                if (Arduino.isObstacleGone())
+                {
+                    //Toast.makeText(getApplicationContext(),message[0], Toast.LENGTH_LONG).show();
+                    effects.stopVibration();
+                    effects.pauseObstacleAlert();
+                }
+
+
 
                 if (message[2] != null)
                 {
@@ -187,6 +216,9 @@ public class ArduinoActivity extends Activity {
 
             }
         }.execute();
+
+        */
+
     }
 
     private void turnBlueToothOn()
@@ -271,24 +303,77 @@ public class ArduinoActivity extends Activity {
         }
     }
 
-    public String[] classify(int value, int pValue)
-    {
-        int maxValue = 50;
+    public String[] classify(int value, int pValue) {
+        int yellowSignDistance = 100;
+        int redSignDistance = 50;
 
         String[] alert = new String[2];
 
-        if (value > maxValue && pValue < maxValue)
-        {
+        //saindo do vermehlo e indo pra fora
+        if (value > yellowSignDistance && pValue < redSignDistance) {
+            Arduino.setObstacleGettingAway(false);
+            Arduino.setObstacleGettingCloser(false);
+            Arduino.setObstacleGettingIn(false);
+            Arduino.setObstacleGone(true);
+        }
+
+        //saindo do vermelho e indo pro amarelo
+        else if (value > redSignDistance && pValue < redSignDistance) {
+            Arduino.setObstacleGettingAway(true);
+            Arduino.setObstacleGettingCloser(false);
+            Arduino.setObstacleGettingIn(false);
+            Arduino.setObstacleGone(false);
+
             alert[0] = "Não há obstáculos";
             alert[1] = null;
         }
-        else if (value < maxValue && pValue > maxValue)
-        {
+        //saindo do amarelo e indo para fora
+        else if (value > yellowSignDistance && pValue < yellowSignDistance) {
+            Arduino.setObstacleGettingAway(false);
+            Arduino.setObstacleGettingCloser(false);
+            Arduino.setObstacleGettingIn(false);
+            Arduino.setObstacleGone(true);
+
+            alert[0] = "Não há obstáculos";
+            alert[1] = null;
+        }
+
+
+        //saindo de fora e entrando no vermelho
+        else if (value < redSignDistance && pValue > redSignDistance) {
+            Arduino.setObstacleGettingAway(false);
+            Arduino.setObstacleGettingCloser(true);
+            Arduino.setObstacleGettingIn(false);
+            Arduino.setObstacleGone(false);
+
             alert[0] = null;
             alert[1] = "Cuidado com obstáculos a sua frente";
         }
+
+        //saindo de fora e indo para o amarelo ou vermelho
+        else if (value < yellowSignDistance && pValue > yellowSignDistance)
+        {
+            Arduino.setObstacleGettingAway(false);
+            Arduino.setObstacleGettingCloser(false);
+            Arduino.setObstacleGettingIn(true);
+            Arduino.setObstacleGone(false);
+
+            alert[0] = null;
+            alert[1] = "Cuidado com obstáculos a sua frente";
+        }
+
+
+
+
+
+
         else
         {
+            Arduino.setObstacleGettingAway(false);
+            Arduino.setObstacleGettingCloser(false);
+            Arduino.setObstacleGettingIn(false);
+            Arduino.setObstacleGone(false);
+
             alert[0] = null;
             alert[1] = null;
 
@@ -302,5 +387,135 @@ public class ArduinoActivity extends Activity {
         active = false;
         turnBlueToothOff();
         super.onBackPressed();
+    }
+
+    private class ArduinoCommunication extends AsyncTask <Object, String, Void>
+    {
+        InputStream mmInputStream;
+        BluetoothDevice arduino = null;
+        int distance, previousDistance;
+        String[] obstAlert = new String[2];
+        String[] info = new String[4];
+
+        @Override
+        protected Void doInBackground(Object... params) {
+
+            while (active) {
+
+                if (arduino == null)
+                {
+                    info[0] = null;
+                    info[1] = null;
+                    info[2] = null;
+                    info[3] = "Procurando Arduíno";
+                    publishProgress(info);
+                }
+
+                while (arduino == null) {
+                    //play bip
+
+                    //procura Arduino
+                    arduino = getArduino();
+                }
+
+                mmInputStream = connect(arduino);
+
+                if (mmInputStream == null)
+                {
+                    info[0] = null;
+                    info[1] = null;
+                    info[2] = null;
+                    info[3] = "Arduíno Desligado";
+                    publishProgress(info);
+                }
+
+
+                while (mmInputStream == null) {
+                    mmInputStream = connect(arduino);
+                }
+
+                info[0] = null;
+                info[1] = null;
+                info[2] = null;
+                info[3] = "Arduíno Ligado";
+                publishProgress(info);
+
+                //previousDistance = read(mmInputStream);
+                distance = read(mmInputStream);
+
+                while (distance != -1)
+                {
+                    obstAlert = classify(distance, previousDistance);
+
+                    info[0] = obstAlert[0];
+
+                    info[1] = obstAlert[1];
+
+                    info[2] = String.format( "%.2f", (float) distance /100);
+
+                    info[3] = null;
+
+                    publishProgress(info);
+                    //publishProgress(""+distance);
+
+                    previousDistance = distance;
+                    distance = read(mmInputStream);
+                }
+                //publishProgress("Problema de leitura");
+            }
+            return null;
+        }
+
+        @Override
+        protected void onProgressUpdate(String... message) {
+
+            int msTime;
+
+            if (Arduino.isObstacleGettingIn())
+            {
+                msTime = 2000;
+                effects.vibrate(msTime);
+                effects.playObstacleAlert(msTime);
+
+
+            }
+            if (Arduino.isObstacleGettingCloser())
+            {
+                // Toast.makeText(getApplicationContext(),message[1], Toast.LENGTH_LONG).show();
+                effects.vibrate(6000);
+                effects.playObstacleAlert();
+            }
+
+            if (Arduino.isObstacleGettingAway())
+            {
+                effects.stopVibration();
+                effects.pauseObstacleAlert();
+
+                msTime = 2000;
+
+                effects.vibrate(msTime);
+                effects.playObstacleAlert(msTime);
+            }
+
+
+            if (Arduino.isObstacleGone())
+            {
+                //Toast.makeText(getApplicationContext(),message[0], Toast.LENGTH_LONG).show();
+                effects.stopVibration();
+                effects.pauseObstacleAlert();
+            }
+
+
+
+            if (message[2] != null)
+            {
+                textView.setText(message[2] + "m");
+            }
+
+            if (message[3] != null)
+            {
+                Toast.makeText(getApplicationContext(),message[3], Toast.LENGTH_LONG).show();
+            }
+        }
     }
 }

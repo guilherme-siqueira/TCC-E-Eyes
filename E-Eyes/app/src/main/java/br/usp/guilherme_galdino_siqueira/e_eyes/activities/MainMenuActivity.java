@@ -15,76 +15,56 @@ import android.widget.Toast;
  */
 public class MainMenuActivity extends Activity {
 
-    private boolean optionClicked = false;
-    private boolean isOnline;
-
     private int dimension;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu_activity);
-
-        isOnline = isOnline();
     }
 
     public void fullDescription(View view) {
-        if (!isOnline)
+        if (!isOnline())
         {
             String NO_CONNECTION = this.getString(R.string.no_connection);
             Toast.makeText(getApplicationContext(), NO_CONNECTION, Toast.LENGTH_LONG).show();
             return;
         }
-        dimension = 1600;
         Intent intent = new Intent(this, DescriptorActivity.class);
 
         //intent.putExtra("LABEL","LABEL_DETECTION");
         //intent.putExtra("TEXT","TEXT_DETECTION");
         intent.putExtra("FACE","FACE_DETECTION");
-        intent.putExtra("DIMENSION",dimension);
+        intent.putExtra("DIMENSION",1600);
         //intent.putExtra("LANDMARK","LANDMARK_DETECTION");
         //intent.putExtra("LOGO", "LOGO_DETECTION");
         startActivity(intent);
     }
 
-    public void labelDescription(View view)
+    public void selectFile(View view)
     {
-        /*
-        if (!isOnline)
-        {
-            String NO_CONNECTION = this.getString(R.string.no_connection);
-            Toast.makeText(getApplicationContext(), NO_CONNECTION, Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        */
-
         Intent intent = new Intent(this, SelectFileActivity.class);
         startActivity(intent);
     }
 
     public void textDescription(View view)
     {
-        if (!isOnline)
+        if (!isOnline())
         {
             String NO_CONNECTION = this.getString(R.string.no_connection);
             Toast.makeText(getApplicationContext(), NO_CONNECTION, Toast.LENGTH_LONG).show();
             return;
         }
 
-        dimension = 1024;
-
         Intent intent = new Intent(this, DescriptorActivity.class);
         intent.putExtra("TEXT","TEXT_DETECTION");
 
-        intent.putExtra("DIMENSION",dimension);
+        intent.putExtra("DIMENSION",1024);
 
         startActivity(intent);
     }
-    public void detection(View view)
+    public void obstacleDetection(View view)
     {
-
-
         Intent intent = new Intent(this, ArduinoActivity.class);
         startActivity(intent);
     }

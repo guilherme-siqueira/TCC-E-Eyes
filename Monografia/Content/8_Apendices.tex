@@ -1,5 +1,18 @@
-\chapter{Cuidados e orientações para a elaboração de texto}
-\label{Apêndice Apêndice A}
+\chapter{Diagrama de classes do aplicativo Android}
+\label{AndroidDiagram}
+
+
+
+\begin{sidewaysfigure}
+	\centering	
+	\includegraphics[scale=0.5]{./Resources/AllClassesJustName.png}
+	\captionof{figure}{Diagrama de classes do aplicativo baseado em android}
+	\label{classCompact}
+	
+\end{sidewaysfigure}
+
+
+\iffalse
 
 \begin{center}
 \textbf {\color{blue}{Dicas para a redação de uma boa monografia de TCC}}
@@ -62,12 +75,212 @@ Se você quiser verificar a porcentagem que seu texto apresenta de similaridade c
 \item [$\Rightarrow$] Anexos são materiais que não são de sua autoria, mas que são importantes e devem fazer parte da monografia para auxiliar e esclarecer o leitor;
 \end{itemize} 
 
-
+\fi
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-\chapter{Apresentação do TCC}
-\label{Apêndice  Apêndice B}
+\chapter{Códigos relevantes}
+\label{relevantCode}
 
+\definecolor{dkgreen}{rgb}{0,0.3,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{myorange}{rgb}{0.8,0.4,0}
+
+\lstset{frame=tb,
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=left,
+	numberstyle=\bfseries\tiny\color{gray},
+	keywordstyle=\bfseries\color{blue},
+	commentstyle=\color{gray},
+	stringstyle=\bfseries\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\renewcommand{\lstlistingname}{Código}
+
+Devido a dimensão do projeto, a exposição de todo o código utilizado como anexo dessa dissertação mostrou-se inviável. Por essa razão, foram selecionados para serem fazerem parte desse documento apenas os códigos considerados chave para o funcionamento do sistema. O código completo pode ser encontrado em \url{https://github.com/guilherme-siqueira/projeto_final/tree/initialBranch/E-Eyes}. No Código \ref{textAdapter}, encontra-se a rotina responsável pela adaptação textual da descrição de uma imagem. Nela, considera-se primeiramente se há alguma paisagem identificada, para então avaliar possíveis faces, rótulos ou textos presentes. Caso não haja, o campo é ignorado, e apenas os campos mais internos, faces, rótulos e textos, são considerados. Obter o número de faces, em vez de apenas saber se há ou não faces, permite que o texto possua concordância verbal. No caso de não haver faces na imagem, considera-se apenas a possível presença de rótulos e textos. 
+
+\begin{lstlisting}[caption=Rotina de construção do texto da descrição da imagem,captionpos=b,label=textAdapter]
+private void writeTextualDescription() {
+	if (landmarkElement.getText() != null) {
+		landmarkElement.translate();
+		textualDescription = LANDMARK_INTRO + landmarkElement.getText() + ". ";
+		if (nFaces == 1)
+			textualDescription += FACE_INTRO + ONE_FACE + faceElement.getText();
+		else if (nFaces == 2)
+			textualDescription += FACE_INTRO + TWO_FACES + faceElement.getText();
+		else if (nFaces > 2)
+			textualDescription += FACE_INTRO + MORE_FACES_BEGINNING + nFaces + MORE_FACES_END + faceElement.getText();
+
+		if (labelElement.getText() != null) {
+			labelElement.translate();
+			textualDescription += LABEL_INTRO + labelElement.getText();
+		}
+
+		if (textElement.getText() != null) {
+			textualDescription += TEXT_INTRO + textElement.getText();
+		}
+	} 
+	else if (nFaces != 0) {
+		textualDescription = FACE_INTRO;
+		if (nFaces == 1)
+			textualDescription += ONE_FACE + faceElement.getText();
+		else if (nFaces == 2)
+			textualDescription += TWO_FACES + faceElement.getText();
+		else if (nFaces > 2)
+			textualDescription += MORE_FACES_BEGINNING + nFaces + MORE_FACES_END + faceElement.getText();
+
+		if (labelElement.getText() != null) {
+			labelElement.translate();
+			textualDescription += LABEL_INTRO + labelElement.getText();
+		}
+
+		if (textElement.getText() != null) {
+			textualDescription += TEXT_INTRO + textElement.getText();
+		}
+	} 
+	else if (labelElement.getText() != null) {
+		labelElement.translate();
+		textualDescription = LABEL_INTRO + labelElement.getText();
+		if (textElement.getText() != null) {
+			textualDescription += TEXT_INTRO + textElement.getText();
+		}
+	} 
+	else if (textElement.getText() != null) {
+		textualDescription = TEXT_INTRO + textElement.getText();
+	}
+}
+\end{lstlisting}
+
+
+
+No código \ref{google} encontra-se o método responsável pelo envio da imagem e recebimento de sua descrição. Primeiramente uma instância das funcionalidades da API da Google é criada e construída, por meio da classe Vision. Em seguida é criada uma instância de um objeto que permite múltiplas requisições de imagens, contendo a imagem capturada pelo aplicativo devidamente comprimida, o idioma para possíveis textos escritos, e a lista de diferentes solicitações requisitadas. Então, um objeto de requisição de anotação recebe todas as preferências criadas é executado, e o resultado retornado é recolhido para posterior conversão em linguagem fluente, a partir da classe PhotoDescriptor. 
+
+\begin{lstlisting}[caption=Rotina de conexão e envio de dados para a Google Cloud Vision API,captionpos=b,label={google}]
+protected boolean connect(){
+	try {	
+		HttpTransport httpTransport = AndroidHttp.newCompatibleTransport();
+		JsonFactory jsonFactory = GsonFactory.getDefaultInstance();
+		
+		Vision.Builder builder = new Vision.Builder(httpTransport, jsonFactory, null);
+		builder.setVisionRequestInitializer(new
+		VisionRequestInitializer(CLOUD_VISION_API_KEY));
+		Vision vision = builder.build();
+		
+		BatchAnnotateImagesRequest batchAnnotateImagesRequest =
+		new BatchAnnotateImagesRequest();
+		batchAnnotateImagesRequest.setRequests(new ArrayList<AnnotateImageRequest>() {{
+		AnnotateImageRequest annotateImageRequest = new AnnotateImageRequest();
+		
+		Image base64EncodedImage = new Image();
+		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();		
+		
+		bitmap.compress(Bitmap.CompressFormat.JPEG, 90, byteArrayOutputStream);		
+		byte[] imageBytes = byteArrayOutputStream.toByteArray();
+		base64EncodedImage.encodeContent(imageBytes);
+		annotateImageRequest.setImage(base64EncodedImage);
+		
+		ImageContext imageContext = new ImageContext();
+		String [] languages = { "pt-BR" };
+		imageContext.setLanguageHints(Arrays.asList(languages));
+		annotateImageRequest.setImageContext(imageContext);		
+		annotateImageRequest.setFeatures(requestsArrayList);		
+		add(annotateImageRequest);
+		}});
+		
+		Vision.Images.Annotate annotateRequest =
+		vision.images().annotate(batchAnnotateImagesRequest);
+		
+		annotateRequest.setDisableGZipContent(true);
+		Log.d(TAG, "created Cloud Vision request object, sending request");
+		
+		BatchAnnotateImagesResponse response = annotateRequest.execute();
+		
+		photoDescriptor.callTextAdaptation(response);
+		
+		return true;
+	}
+	catch (GoogleJsonResponseException e) {
+		Log.d(TAG, "failed to make API request because " + e.getContent());
+	}
+	catch (IOException e) {
+		Log.d(TAG, "failed to make API request because of other IOException " + e.getMessage());
+	}
+	return false;
+}
+\end{lstlisting}
+
+Já o Código \ref{arduino} contém a rotina de captura dos sinais vindos do sensor de obstáculos HC-SR04, cálculo da distância, e o envio para a porta serial, onde o módulo Bluetooth HC-05 é conectado. Primeiramente, define-se a taxa de transmissão da porta serial, o pino de saída de sinal para emissão de onda pelo sensor, e o pino de entrada, para recebimento do sinal correspondente ao tempo do eco refletido. 
+
+No ciclo principal, monta-se a onda a ser emitida, com nível baixo de 2ms, e alto, de 10ms, respeitando as especificações mínimas de utilização do sensor, que podem ser encontradas no datasheet em anexo. Em seguida lê-se o valor obtido de eco na porta de entrada, e a distância do obstáculo é calculada com base na equação $  S = V\times t $, em que $V$ representa a velocidade do som no ar em centímetros por segundo, 0.034cm/s, e $t$ é a metade do tempo entre a emissão e a recepção do sinal da onda, ou seja, o tempo entre a emissão da onda e o encontro com o obstáculo. Por fim, verifica-se se o valor lido não ultrapassou o limite de precisão do sensor, de 4 metros, com o intuito de evitar valores pouco confiáveis, e a cada um segundo a rotina amostra o sinal e o envia para a porta serial, onde a entrada do bluetooth está conectada. 
+
+
+
+\lstset{frame=tb,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=left,
+	numberstyle=\bfseries\tiny\color{gray},
+	commentstyle=\color{gray},
+	stringstyle=\bfseries\color{dkgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3,
+	keywordstyle=\bfseries\color{myorange},
+	keywords={void, setup, loop, Serial, begin, delayMicroseconds, digitalWrite, pulseIn,if,println, pinMode, delay },
+	rulecolor=\color{black},
+	emphstyle=\bfseries\color{blue},
+	emph={HIGH, INPUT, OUTPUT, LOW}
+}
+
+\begin{lstlisting}[caption=Rotina executada na placa Arduino,captionpos=b,label={arduino}]
+//Define os pinos para o trigger e echo
+#define pino_trigger 4
+#define pino_echo 5
+
+long duration;
+int distance;
+
+void setup()
+{
+	Serial.begin(9600);
+	pinMode(pino_trigger, OUTPUT);
+	pinMode(pino_echo, INPUT);
+}
+
+void loop()
+{
+	digitalWrite(pino_trigger, LOW);
+	delayMicroseconds(2);
+	// Sets the trigPin on HIGH state for 10 micro seconds
+	digitalWrite(pino_trigger, HIGH);
+	delayMicroseconds(10);
+	digitalWrite(pino_trigger, LOW);
+	// Reads the echoPin, returns the sound wave travel time in microseconds
+	duration = pulseIn(pino_echo, HIGH);
+	// Calculating the distance
+	distance= duration*0.034/2;
+
+	if(distance < 400)
+	{
+		Serial.println(distance);
+		delay(1000);
+	}
+}
+\end{lstlisting}
+
+
+\iffalse
 \begin{center}
 \textbf {\color{blue}{Cuidados e orientações para a elaboração da Apresentação do TCC}}
 \end{center}
@@ -82,7 +295,7 @@ Leia no site da Elétrica (/Graduação/Trabalhos de Conclusão de Curso - TCC) as D
 onde pode-se encontrar as Fichas de Avaliação que são sugeridas pelo Depto, que não são necessariamente seguidas à risca pelos avaliadores, mas que servem de bom guia para os alunos entenderem como são feitas as avaliações.
 Tente não utilizar fundo escuro, pois escurece o ambiente e às vezes não se consegue o visual esperado. Sempre que possível teste antes no local da apresentação. 
 
-
+\fi
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \chapter{Monografia Parcial do TCC}

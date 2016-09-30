@@ -19,30 +19,30 @@ import br.usp.guilherme_galdino_siqueira.e_eyes.properties.Preferences;
 
 public class Effects {
 
-    private MediaPlayer shutter, progress, alert;
+    private MediaPlayer shutter, clockTicks, obstacleAlert;
 
     private Vibrator vibrator;
 
-    private final ImageView progressIcon;
+    private ImageView clockImageView;
 
-    private final Animation animation;
+    private Animation clockAnimation;
 
     public Effects(Context context, Activity activity) {
         shutter = MediaPlayer.create(context, R.raw.camera);
 
-        alert = MediaPlayer.create(context, R.raw.alert);
+        obstacleAlert = MediaPlayer.create(context, R.raw.alert);
 
-        alert.setLooping(true);
+        obstacleAlert.setLooping(true);
 
-        progress = MediaPlayer.create(context, R.raw.time);
+        clockTicks = MediaPlayer.create(context, R.raw.time);
 
-        progress.setLooping(true);
+        clockTicks.setLooping(true);
 
         vibrator = (Vibrator) context.getSystemService(context.VIBRATOR_SERVICE);
 
-        progressIcon = (ImageView) activity.findViewById(R.id.blinkImage);
+        clockImageView = (ImageView) activity.findViewById(R.id.blinkImage);
 
-        animation = new AlphaAnimation(1, 0);
+        clockAnimation = new AlphaAnimation(1, 0);
     }
 
     public void playCameraShutter() {
@@ -50,20 +50,34 @@ public class Effects {
             shutter.start();
     }
 
-    public void playAlert() {
+    public void playObstacleAlert(int msTime) {
 
-            alert.start();
+        obstacleAlert.start();
+
+        try {
+            Thread.sleep(msTime);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        obstacleAlert.pause();
+
     }
 
-    public void pauseAlert()
+    public void playObstacleAlert() {
+
+        obstacleAlert.start();
+    }
+
+    public void pauseObstacleAlert()
     {
-        if (alert.isPlaying())
-            alert.pause();
+        if (obstacleAlert.isPlaying())
+            obstacleAlert.pause();
     }
 
     public void playClockTicks() {
         if (Preferences.isSoundEffectEnable)
-            progress.start();
+            clockTicks.start();
     }
 
     public void vibrate(int msTime)
@@ -77,24 +91,24 @@ public class Effects {
         vibrator.cancel();
     }
 
-    public void stopSounds()
+    public void stopClockTicks()
     {
-        if (progress.isPlaying())
-            progress.stop();
+        if (clockTicks.isPlaying())
+            clockTicks.stop();
     }
 
-    public void blinkClock(int msTime)
+    public void blinkClockImage(int msTime)
     {
         if (Preferences.isImageEffectEnable)
         {
-            animation.setDuration(msTime);
-            animation.setInterpolator(new LinearInterpolator());
-            animation.setRepeatCount(Animation.INFINITE);
-            animation.setRepeatMode(Animation.REVERSE);
-            progressIcon.setVisibility(View.VISIBLE);
+            clockAnimation.setDuration(msTime);
+            clockAnimation.setInterpolator(new LinearInterpolator());
+            clockAnimation.setRepeatCount(Animation.INFINITE);
+            clockAnimation.setRepeatMode(Animation.REVERSE);
+            clockImageView.setVisibility(View.VISIBLE);
 
 
-            progressIcon.startAnimation(animation);
+            clockImageView.startAnimation(clockAnimation);
         }
     }
 
@@ -102,8 +116,8 @@ public class Effects {
     {
         if (Preferences.isImageEffectEnable)
         {
-            progressIcon.clearAnimation();
-            progressIcon.setVisibility(View.GONE);
+            clockImageView.clearAnimation();
+            clockImageView.setVisibility(View.GONE);
         }
     }
 }

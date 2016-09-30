@@ -31,6 +31,8 @@
 
 \usepackage{listings} % para importaï¿½ï¿½o de cï¿½digos fonte 
 
+
+
 \usepackage{comment}
 \usepackage[margin=2.7cm]{geometry}
 \renewcommand{\baselinestretch}{1.5}
@@ -49,6 +51,8 @@
 %Pacote para organizar apendices 
 \usepackage[titletoc]{appendix}
 
+\usepackage{rotating}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFIGURAÇÕES DE ANEXOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\annexname}{Anexo}
@@ -66,8 +70,31 @@
 
 %%%%%%%%%%%%%
 
+	\usepackage{helvet}
+	\renewcommand{\familydefault}{\sfdefault}
+	
+\renewcommand{\baselinestretch}{1.5} 	
 
+\setlength\parindent{1cm}
 
+\let\locdimen\newdimen
+
+\usepackage{etex}
+
+\usepackage{bytefield}
+
+\usepackage{titlesec}
+\titleformat{\chapter}{\fontsize{14pt}{5mm}\selectfont\bfseries}{\hspace{1cm}\thechapter}{1em}{}
+\titleformat{\section}{\fontsize{12pt}{5mm}\selectfont\bfseries}{\hspace{1cm}\thesection}{1em}{}
+\titleformat{\subsection}{\fontsize{12pt}{5mm}\selectfont\bfseries}{\hspace{1cm}\thesubsection}{1em}{}
+
+%\usepackage{titlesec}
+%\titleformat{\section}[display]
+%{\hspace{1cm}\fontsize{12pt}{5mm}\selectfont\bfseries}{\thesection}{1em}{}
+
+%\usepackage{titlesec}
+%\titleformat{\subsection}
+%{\hspace{1cm}\fontsize{12pt}{5mm}\selectfont\bfseries}{\thesubsection}{1em}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFIGURAÇÕES DE Pï¿½GINA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\topmargin -2.1cm
@@ -75,6 +102,10 @@
 %\evensidemargin 0.5cm 
 %\textwidth 15cm
 %\textheight 25.1cm
+
+%\usepackage{hyperref}
+
+\usepackage[table,xcdraw]{xcolor}
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INÍCIO DO DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -94,7 +125,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ADIÇÃO DAS BIBLIOGRAFIAS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \addcontentsline{toc}{chapter}{Referências}
 \renewcommand{\bibname}{Referências}	
-\bibliographystyle{is-unsrt} % Define o estilo da bibliografia
+\bibliographystyle{IEEEtran} % Define o estilo da bibliografia
 \bibliography{./Content/References} % Faz referencia ao arquivo ref.bib
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ADIÇÃO DOS ANEXOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	

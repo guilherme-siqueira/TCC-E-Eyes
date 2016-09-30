@@ -1,31 +1,25 @@
 package br.usp.guilherme_galdino_siqueira.e_eyes.feedback_signal;
 
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothSocket;
-import android.os.AsyncTask;
-import android.widget.Toast;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Set;
-import java.util.UUID;
-
 /**
  * Created by gsiqueira on 9/20/16.
  */
 public class Arduino {
 
-    private static boolean arduinoOn;
+    private static boolean on;
     private static int obstacleDistance;
-    private static boolean obstacleAhead;
+    private static boolean obstacleGettingCloser = false;
+    private static boolean obstacleGettingIn = false;
+    private static boolean obstacleGettingAway = false;
+    private static boolean obstacleGone = false;
+
     private static boolean lookingForArduino;
 
-    public static boolean isArduinoOn() {
-        return arduinoOn;
+    public static boolean isOn() {
+        return on;
     }
 
-    public static void setArduinoOn(boolean arduinoOn) {
-        Arduino.arduinoOn = arduinoOn;
+    public static void setOn(boolean on) {
+        Arduino.on = on;
     }
 
     public static int getObstacleDistance() {
@@ -36,12 +30,12 @@ public class Arduino {
         Arduino.obstacleDistance = obstacleDistance;
     }
 
-    public static boolean isObstacleAhead() {
-        return obstacleAhead;
+    public static boolean isObstacleGettingCloser() {
+        return obstacleGettingCloser;
     }
 
-    public static void setObstacleAhead(boolean obstacleAhead) {
-        Arduino.obstacleAhead = obstacleAhead;
+    public static void setObstacleGettingCloser(boolean obstacleGettingCloser) {
+        Arduino.obstacleGettingCloser = obstacleGettingCloser;
     }
 
     public static boolean isLookingForArduino() {
@@ -50,5 +44,29 @@ public class Arduino {
 
     public static void setLookingForArduino(boolean lookingForArduino) {
         Arduino.lookingForArduino = lookingForArduino;
+    }
+
+    public static boolean isObstacleGone() {
+        return obstacleGone;
+    }
+
+    public static void setObstacleGone(boolean obstacleGone) {
+        Arduino.obstacleGone = obstacleGone;
+    }
+
+    public static boolean isObstacleGettingIn() {
+        return obstacleGettingIn;
+    }
+
+    public static void setObstacleGettingIn(boolean obstacleGettingIn) {
+        Arduino.obstacleGettingIn = obstacleGettingIn;
+    }
+
+    public static boolean isObstacleGettingAway() {
+        return obstacleGettingAway;
+    }
+
+    public static void setObstacleGettingAway(boolean obstacleGettingAway) {
+        Arduino.obstacleGettingAway = obstacleGettingAway;
     }
 }

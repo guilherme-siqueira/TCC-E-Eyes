@@ -30,7 +30,7 @@
         <TableRow
             style="@style/TableRow"
             android:background="@color/colorButton2"
-            android:onClick="labelDescription">
+            android:onClick="selectFile">
 
             <ImageView
                 style="@style/Image"
@@ -62,7 +62,7 @@
         <TableRow
             style="@style/TableRow"
             android:background="@color/colorButton4"
-            android:onClick="detection">
+            android:onClick="obstacleDetection">
 
             <ImageView
                 style="@style/Image"

@@ -1,10 +1,10 @@
 package br.usp.guilherme_galdino_siqueira.e_eyes.photo_descriptor;
 
 import com.google.api.services.vision.v1.model.BatchAnnotateImagesResponse;
-import com.google.api.services.vision.v1.model.BoundingPoly;
 import com.google.api.services.vision.v1.model.EntityAnnotation;
 import com.google.api.services.vision.v1.model.FaceAnnotation;
-import com.google.api.services.vision.v1.model.Vertex;
+
+import static br.usp.guilherme_galdino_siqueira.e_eyes.photo_descriptor.TextAdapterConstants.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,52 +16,14 @@ public class TextAdapter {
 
     BatchAnnotateImagesResponse response;
 
-    List<EntityAnnotation> labels;
-    List<EntityAnnotation> texts;
-    List<FaceAnnotation> faces;
-    List<EntityAnnotation> landmarks;
-    List<EntityAnnotation> logos;
+    private FeatureContent labelElement = new FeatureContent();
+    private FeatureContent textElement = new FeatureContent();
+    private FeatureContent faceElement = new FeatureContent();
+    private FeatureContent landmarkElement = new FeatureContent();
+    private FeatureContent logoElement = new FeatureContent();
+    private FeatureContent statistics = new FeatureContent();
 
-    public FeatureContent labelElement = new FeatureContent();
-    public FeatureContent textElement = new FeatureContent();
-    public FeatureContent faceElement = new FeatureContent();
-    public FeatureContent landmarkElement = new FeatureContent();
-    public FeatureContent logoElement = new FeatureContent();
-    public FeatureContent statistics = new FeatureContent();
-
-    public FeatureContent facePosition = new FeatureContent();
-
-    ArrayList<BoundingPoly> boundingPolyList = new ArrayList<BoundingPoly>();
-
-    private static String LANDMARK_INTRO = "A foto parece ter sido tirada em ";
-    private static String LABEL_INTRO = "Na imagem, existem elementos como: ";
-    private static String FACE_INTRO = "A imagem mostra ";
-    private static String ONE_FACE = "a face de uma pessoa. ";
-    private static String TWO_FACES = "as faces de duas pessoas. ";
-    private static String MORE_FACES_BEGINNING = "as faces de ";
-    private static String MORE_FACES_END = " pessoas. ";
-    private static String LABEL_AFTER_FACE_INTRO = "e pode ser descrita pelas seguintes palavras: ";
-
-    private String FACE_LIKELY = " parece ";
-    private String FACE_UNLIKELY = "não parece estar";
-
-    private String FACE_ANGER = "com raiva";
-    private String FACE_NO_ANGER = "amigável";
-
-    private String FACE_JOY = "alegre";
-    private String FACE_NO_JOY = "séria";
-
-    private String FACE_SURPRISE = "surpresa";
-    private String FACE_NO_SURPRISE = "";
-
-    private String FACE_SORROW = "chateada";
-    private String FACE_NO_SORROW = ".";
-
-    private String FACE_HAT = "usando algum chapéu";
-    private String FACE_NO_HAT = "";
-
-
-    private static String TEXT_INTRO = "Nesta imagem está escrito: ";
+    private FeatureContent facePosition = new FeatureContent();
 
     private int nFaces = 0;
 
@@ -69,13 +31,8 @@ public class TextAdapter {
 
     private float minScore = 0.8f;
 
-    //private String statistics;
-
     private void writeLabel() {
-        labels = response.getResponses().get(0).getLabelAnnotations();
-
-
-
+        List<EntityAnnotation> labels = response.getResponses().get(0).getLabelAnnotations();
 
         if (labels != null) {
 
@@ -93,7 +50,7 @@ public class TextAdapter {
     }
 
     private void writeText() {
-        texts = response.getResponses().get(0).getTextAnnotations();
+        List<EntityAnnotation> texts = response.getResponses().get(0).getTextAnnotations();
 
         if (texts != null) {
 
@@ -105,24 +62,10 @@ public class TextAdapter {
     }
 
     private void writeFace() {
-        faces = response.getResponses().get(0).getFaceAnnotations();
+
+        List<FaceAnnotation> faces = response.getResponses().get(0).getFaceAnnotations();
 
         String head, anger, hat, joy, surprise, sorrow;
-
-        String VERY = "certamente ";
-        String IS_NOT = "não está ";
-        String IS = "está ";
-        String SEEMS_TO_BE = "parece estar ";
-        String NOR = ", nem ";
-        String BUT = ", mas ";
-        String COMMA = ", ";
-        String AND = " e ";
-        String END = ". ";
-
-
-
-        //String likely = FACE_LIKELY;
-        //String unlikely = FACE_UNLIKELY;
 
         int i;
 
@@ -132,27 +75,9 @@ public class TextAdapter {
 
             for (FaceAnnotation face : faces) {
 
-                ArrayList<String> unlikely = new ArrayList<String>();
-                ArrayList<String> possible = new ArrayList<String>();
-                ArrayList<String> likely = new ArrayList<String>();
-
-                //boundingPolyList.add(face.getBoundingPoly());
-
-
-/*
-                List<Vertex> vertexList = face.getBoundingPoly().getVertices();
-
-                for (int j = 0; j < vertexList.size(); j++)
-                {
-                    positionY += vertexList.get(j).getY();
-                    positionX += vertexList.get(j).getX();
-                }
-
-                positionY = PositionY/vertexList.size();
-                positionX = PositionX/vertexList.size();
-*/
-
-
+                ArrayList<String> unlikely = new ArrayList<>();
+                ArrayList<String> possible = new ArrayList<>();
+                ArrayList<String> likely = new ArrayList<>();
 
                 String content = "";
 
@@ -162,17 +87,12 @@ public class TextAdapter {
                 else {
                     i = faces.indexOf(face) + 1;
                     head = "A " + i + "ª pessoa ";
-                    //facePosition.concat(head);
                     statistics.concat(head);
 
                 }
 
                 for (int j=0; j<face.getBoundingPoly().getVertices().size();j++)
                 {
-                    //String xy = face.getBoundingPoly().getVertices().get(j).getX() + "\n" + face.getBoundingPoly().getVertices().get(j).getY();
-                    //String xy = "(" + face.getBoundingPoly().getVertices().get(j).getX() + ", " + face.getBoundingPoly().getVertices().get(j).getY() + ")";
-                    //facePosition.concat(xy);
-
                     try {
                         facePosition.concat(face.getBoundingPoly().getVertices().get(j).getX().toString());
                         facePosition.concat(face.getBoundingPoly().getVertices().get(j).getY().toString());
@@ -181,11 +101,7 @@ public class TextAdapter {
                     {
                         e.printStackTrace();
                     }
-
-
                 }
-
-
 
                 anger = face.getAngerLikelihood();
                 hat = face.getHeadwearLikelihood();
@@ -247,15 +163,16 @@ public class TextAdapter {
 
                 statistics.concat("hat: "+hat);
 
-                if (hat.contains("UNLIKELY")) {
-                    //unlikely.add(FACE_HAT);
+                if (!hat.contains("UNLIKELY")) {
+
+                    if (hat.contains("LIKELY")) {
+                        likely.add(FACE_HAT);
+                    }
+                    else if (hat.contains("POSSIBLE")) {
+                        possible.add(FACE_HAT);
+                    }
                 }
-                else if (hat.contains("LIKELY")) {
-                    likely.add(FACE_HAT);
-                }
-                else if (hat.contains("POSSIBLE")) {
-                    possible.add(FACE_HAT);
-                }
+
 
                 if (unlikely.size()>0)
                 {
@@ -300,7 +217,7 @@ public class TextAdapter {
     }
 
     private void writeLandmarks() {
-        landmarks = response.getResponses().get(0).getLandmarkAnnotations();
+        List<EntityAnnotation> landmarks = response.getResponses().get(0).getLandmarkAnnotations();
 
 
         if (landmarks != null) {
@@ -315,7 +232,8 @@ public class TextAdapter {
     }
 
     private void writeLogo() {
-        logos = response.getResponses().get(0).getLogoAnnotations();
+
+        List<EntityAnnotation> logos = response.getResponses().get(0).getLogoAnnotations();
 
         if (logos != null) {
 
@@ -438,4 +356,3 @@ public class TextAdapter {
         return facePosition.getText();
     }
 }
-

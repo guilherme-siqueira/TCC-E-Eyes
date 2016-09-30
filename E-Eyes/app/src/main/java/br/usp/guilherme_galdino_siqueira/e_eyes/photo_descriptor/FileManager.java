@@ -8,6 +8,8 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileOutputStream;
 
+import br.usp.guilherme_galdino_siqueira.e_eyes.properties.Constants;
+
 /**
  * Created by gsiqueira on 9/18/16.
  */
@@ -19,7 +21,7 @@ public class FileManager {
 
         try {
 
-            final File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/E-EYES/" + folderName + "/");
+            final File dir = new File(Constants.DIRECTORY_PATH + folderName + "/");
 
             if (!dir.exists())
             {

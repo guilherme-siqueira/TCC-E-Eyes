@@ -15,7 +15,6 @@ import java.io.File;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.os.SystemClock;
 
 import android.app.AlertDialog;
@@ -31,6 +30,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 import br.usp.guilherme_galdino_siqueira.e_eyes.photo_descriptor.FileManager;
+import br.usp.guilherme_galdino_siqueira.e_eyes.properties.Constants;
 
 /**
  * Created by gsiqueira on 7/24/16.
@@ -48,13 +48,13 @@ public class ViewFileActivity extends Activity {
     float realPhotoWidth;
     float realPhotoHeight;
 
-    float photoHeight;
-    float photoWidth;
+    float onScreenPhotoHeight;
+    float onScreenPhotoWidth;
 
-    float photoTop;
+    float photoTopMargin;
     float photoBottom;
     float photoRight;
-    float photoLeft;
+    float photoLeftMargin;
 
     String folder;
     String textFileName = "Texto";
@@ -80,11 +80,11 @@ public class ViewFileActivity extends Activity {
 
         folder = intent.getStringExtra("FOLDER");
 
-        File imgFile = new  File("/sdcard/E-EYES/" + folder + "/Imagem.jpg");
+        File imgFile = new  File(Constants.DIRECTORY_PATH + folder + "/Imagem.jpg");
 
-        File txtFile = new  File("/sdcard/E-EYES/" + folder + "/" + textFileName + ".txt");
+        File txtFile = new  File(Constants.DIRECTORY_PATH + folder + "/" + textFileName + ".txt");
 
-        File txtFaceFile = new  File("/sdcard/E-EYES/" + folder + "/PosiçãoFaces.txt");
+        File txtFaceFile = new  File(Constants.DIRECTORY_PATH + folder + "/PosiçãoFaces.txt");
 
         if(imgFile.exists()){
 
@@ -147,36 +147,36 @@ public class ViewFileActivity extends Activity {
 
             if (realPhotoWidth > realPhotoHeight)
             {
-                photoWidth = screenWidth;
-                photoHeight = photoWidth * realPhotoHeight / realPhotoWidth;
+                onScreenPhotoWidth = screenWidth;
+                onScreenPhotoHeight = onScreenPhotoWidth * realPhotoHeight / realPhotoWidth;
             }
             else
             {
-                photoHeight = screenHeight/2;
-                photoWidth = photoHeight * realPhotoWidth / realPhotoHeight;
+                onScreenPhotoHeight = screenHeight/2;
+                onScreenPhotoWidth = onScreenPhotoHeight * realPhotoWidth / realPhotoHeight;
             }
 
-            System.out.println("normalized photo: " + photoWidth + "-" + photoHeight);
+            System.out.println("normalized photo: " + onScreenPhotoWidth + "-" + onScreenPhotoHeight);
 
 
-            photoTop = (screenHeight/2 - photoHeight)/2;
+            photoTopMargin = (screenHeight/2 - onScreenPhotoHeight)/2;
 
 
 
-            //photoBottom = screenHeight/2 + photoHeight/2;
-            //photoRight = screenWidth/2 + photoWidth/2;
-            photoLeft = (screenWidth - photoWidth)/2;
+            //photoBottom = screenHeight/2 + onScreenPhotoHeight/2;
+            //photoRight = screenWidth/2 + onScreenPhotoWidth/2;
+            photoLeftMargin = (screenWidth - onScreenPhotoWidth)/2;
 
-            System.out.println("top/left: " + photoTop + "-" + photoLeft);
+            System.out.println("top/left: " + photoTopMargin + "-" + photoLeftMargin);
 
 
-            //photoBottom = photoBottom - photoTop;
-            //photoTop = 0;
-            //photoRight = photoRight - photoLeft;
-            //photoLeft = 0;
+            //photoBottom = photoBottom - photoTopMargin;
+            //photoTopMargin = 0;
+            //photoRight = photoRight - photoLeftMargin;
+            //photoLeftMargin = 0;
 
-            ////System.out.println("photoTop: "+photoTop);
-            ////System.out.println("photoLeft: "+photoLeft);
+            ////System.out.println("photoTopMargin: "+photoTopMargin);
+            ////System.out.println("photoLeftMargin: "+photoLeftMargin);
 
         }
 
@@ -201,17 +201,17 @@ public class ViewFileActivity extends Activity {
 
                         if (lineCounter == 0) {
 
-                            coord = coord* photoWidth /realPhotoWidth + photoLeft;
+                            coord = coord* onScreenPhotoWidth /realPhotoWidth + photoLeftMargin;
                             lineCounter = 1;
                             System.out.print("x"+coord+"-");
 
                         }
                         else
                         {
-                            //coord = photoWidth * realPhotoHeight / realPhotoWidth - photoTop;
+                            //coord = onScreenPhotoWidth * realPhotoHeight / realPhotoWidth - photoTopMargin;
 
                             //coord = coord*screenHeight/realPhotoHeight;
-                            coord = coord* photoHeight /realPhotoHeight + photoTop;
+                            coord = coord* onScreenPhotoHeight /realPhotoHeight + photoTopMargin;
 
                             lineCounter = 0;
                             System.out.println("y" + coord);
@@ -231,7 +231,7 @@ public class ViewFileActivity extends Activity {
                         coord = Integer.parseInt(line);
 
                         if (lineCounter == 0) {
-                            coord = photoHeight * realPhotoWidth / realPhotoHeight - photoLeft;
+                            coord = onScreenPhotoHeight * realPhotoWidth / realPhotoHeight - photoLeftMargin;
                             lineCounter = 1;
                             System.out.print("x"+coord+"-");
 
@@ -310,17 +310,17 @@ public class ViewFileActivity extends Activity {
         {
 
 
-            float x1 = faces.get(i); //- photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
-            float y1 = faces.get(i+1);// - photoTop;//*photoHeight/realPhotoHeight + photoTop;
+            float x1 = faces.get(i); //- photoLeftMargin;//*onScreenPhotoWidth/realPhotoWidth + photoLeftMargin;
+            float y1 = faces.get(i+1);// - photoTopMargin;//*onScreenPhotoHeight/realPhotoHeight + photoTopMargin;
 
 
 
-            float x2 = faces.get(i+2);// - photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
-            float y2 = faces.get(i+3);// - photoTop;//*photoHeight/realPhotoHeight + photoTop;
-            float x3 = faces.get(i+4);// - photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
-            float y3 = faces.get(i+5);// - photoTop;//*photoHeight/realPhotoHeight + photoTop;
-            float x4 = faces.get(i+6); //- photoLeft;//*photoWidth/realPhotoWidth + photoLeft;
-            float y4 = faces.get(i+7);// - photoTop;//*photoHeight/realPhotoHeight + photoTop;
+            float x2 = faces.get(i+2);// - photoLeftMargin;//*onScreenPhotoWidth/realPhotoWidth + photoLeftMargin;
+            float y2 = faces.get(i+3);// - photoTopMargin;//*onScreenPhotoHeight/realPhotoHeight + photoTopMargin;
+            float x3 = faces.get(i+4);// - photoLeftMargin;//*onScreenPhotoWidth/realPhotoWidth + photoLeftMargin;
+            float y3 = faces.get(i+5);// - photoTopMargin;//*onScreenPhotoHeight/realPhotoHeight + photoTopMargin;
+            float x4 = faces.get(i+6); //- photoLeftMargin;//*onScreenPhotoWidth/realPhotoWidth + photoLeftMargin;
+            float y4 = faces.get(i+7);// - photoTopMargin;//*onScreenPhotoHeight/realPhotoHeight + photoTopMargin;
 
 
 

@@ -51,10 +51,6 @@ public class PhotoDescriptor {
         return textAdapter.getTextualDescription();
     }
 
-    public void playAudioDescription() {
-        speaker.speak(textAdapter.getTextualDescription());
-    }
-
     public void savePicture(byte[] photo) {
         if (Preferences.isDescriptionAutoSaveEnable) {
             Date date = new Date();
@@ -64,7 +60,7 @@ public class PhotoDescriptor {
 
             folderName = dateFormat.format(date);
 
-            save(photo, "Imagem", "jpg");
+            FileManager.save(activity, photo, folderName, "Imagem", "jpg");
         }
     }
 
@@ -79,11 +75,11 @@ public class PhotoDescriptor {
 
             if (textAdapter.getTextualDescription() != null)
             {
-                save(textAdapter.getTextualDescription().getBytes(), "Texto", "txt");
+                FileManager.save(activity,textAdapter.getTextualDescription().getBytes(), folderName, "Texto", "txt");
 
                 if ((textAdapter.getFacesPosition()) != null)
                 {
-                    save(textAdapter.getFacesPosition().getBytes(), "PosiçãoFaces", "txt");
+                    FileManager.save(activity, textAdapter.getFacesPosition().getBytes(), folderName, "PosiçãoFaces", "txt");
                 }
             }
         }
@@ -117,64 +113,10 @@ public class PhotoDescriptor {
             //if (textAdapter.getStatistics() != null)
             {
                 String statistics = logData + textAdapter.getStatistics();
-                save(statistics.getBytes(),"Estatísticas","txt");
+                FileManager.save(activity, statistics.getBytes(), folderName, "Estatísticas", "txt");
             }
 
         }
-        //folderName = null;
-    }
-
-    private void save(byte[] contentInBytes, String fileName, String fileType)
-    {
-        FileManager.save(activity,contentInBytes,folderName,fileName,fileType);
-        /*
-        FileOutputStream fos = null;
-
-        try {
-
-            final File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/E-EYES/" + folderName + "/");
-
-            if (!dir.exists())
-            {
-                if(!dir.mkdirs()){
-                    Log.e("ALERT","could not create the directories");
-                }
-            }
-
-            File myFile = new File(dir, fileName + "." + fileType);
-
-            int i = 1;
-
-            while (myFile.exists())
-            {
-                myFile = new File(dir, fileName + i + "." + fileType);
-                i++;
-            }
-
-            if (!myFile.exists())
-            {
-                myFile.createNewFile();
-            }
-
-
-
-            fos = new FileOutputStream(myFile);
-
-            fos.write(contentInBytes);
-            fos.close();
-
-            //if(myFile != null )//stopFlag = mSensorManager.cancelTriggerSensor(null, null);
-            //Toast.makeText(activity.getBaseContext(), "A descrição foi salva no dispositivo.", Toast.LENGTH_SHORT).show();
-        } catch (Exception e) {
-            Toast.makeText(activity.getBaseContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
-
-        */
-    }
-
-    public void stopAudioDescription()
-    {
-        speaker.stopSpeaking();
     }
 
     public void deleteAdaptedText()

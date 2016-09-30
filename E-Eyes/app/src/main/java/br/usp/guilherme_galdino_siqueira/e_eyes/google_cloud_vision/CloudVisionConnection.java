@@ -27,7 +27,7 @@ import br.usp.guilherme_galdino_siqueira.e_eyes.properties.ApiKeys;
  */
 public class CloudVisionConnection {
 
-    private static final String CLOUD_VISION_API_KEY = ApiKeys.getCloudVisionKey();
+    private static final String CLOUD_VISION_API_KEY = ApiKeys.CLOUD_VISION_KEY;
 
     private static final String TAG = CloudVisionConnection.class.getSimpleName();
 
