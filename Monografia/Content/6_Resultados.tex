@@ -10,11 +10,11 @@ Na descrição de imagens duas variáveis foram consideradas mais importantes para 
 
 \subsection{Teste para diferentes dimensões de imagens}
 
-Por outro lado, a quantidade de dados transmitida é flexível uma vez que a imagem pode ter sua resolução reduzida e exibir um número menor de bytes para ser representada. Entretanto, essa redução resulta em um detalhamento menor da imagem, o que pode dificultar seu processamento, causar erros de interpretação de seu conteúdo e por fim não retornar resultados satisfatórios. Por essa razão, para cada solicitação de extração de informação das imagens, a mesma imagem foi enviada com diversas resoluções, e os tempos das fases do processo foram medidos. A Figura \ref{Teste-HP} foi a imagem capturada para esse fim. Como é possível observar a partir da Tabela \ref{Estat-HP} juntamente com a Figura \ref{Resultado-HP}, a resolução da imagem é proporcional ao tempo total de processamento da informação requisitada e inversamente proporcional a quantidade de erros do resultado. 
+Por outro lado, a quantidade de dados transmitida é flexível uma vez que a imagem pode ter sua resolução reduzida e exibir um número menor de bytes para ser representada. Entretanto, essa redução resulta em um detalhamento menor da imagem, o que pode dificultar seu processamento, causar erros de interpretação de seu conteúdo e por fim não retornar resultados satisfatórios. Por essa razão, para cada solicitação de extração de informação das imagens, a mesma imagem foi enviada com diversas resoluções, e os tempos das fases do processo foram medidos. A Figura \ref{Teste-HP} contém a imagem capturada para esse fim. Como é possível observar a partir da Tabela \ref{Estat-HP} juntamente com a Figura \ref{Resultado-HP}, a resolução da imagem é proporcional ao tempo total de processamento da informação requisitada e inversamente proporcional a quantidade de erros do resultado. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.15]{./Resources/Teste-HP.jpg}
+	\includegraphics[scale=0.1]{./Resources/Teste-HP.jpg}
 	\caption{Captura de imagem da etiqueta do computador HP para posterior descrição}
 	\label{Teste-HP}
 	%\caption*{Source: some source}
@@ -149,24 +149,25 @@ Por outro lado, a quantidade de dados transmitida é flexível uma vez que a image
 \end{figure}
 
 
- 
-
-
+\definecolor{googleBlue}{rgb}{0.17,0.52,0.91} 
+\newcolumntype{a}{>{\columncolor{googleBlue}\color{white}}l}
 
 \begin{table}[H]
 	
+	\centering
+	
 	\caption{Tempos das fases da transcrição de imagem sobre a etiqueta do computador HP, ilustrada pela Figura \ref{Teste-HP}}	
 	
-	\begin{tabular}{llll}
+	\begin{tabular}{!{\color{googleBlue}\vrule} a  l  l  l !{\color{googleBlue}\vrule}}
+		\arrayrulecolor{googleBlue} \hline
+										
+		Resultado					& \ref{RI} 	& \ref{RII}	& \ref{RIII}\\\hline
+		Resolução             	& 2560x1920	    	& 1024x768          & 480x360  	       \\\hline
 		
-		
-		Resultado							& Figura \ref{RI} 	& Figura \ref{RII}	& Figura \ref{RIII}\\
-		Resolução             	& 2560x1920	    	& 1024x768          & 480x360  	       \\
-		
-		Tempo de compressão     			    & 3667ms   		& 939ms		    	& 206ms  	       \\
-		Tempo de codificação    				& 570ms    	    & 69ms              & 66ms             \\
-		Tempo de transferência e processamento	& 103,849s	    & 17,871s           & 8,285s   	       \\
-		Tempo de reescrita                	    & 17ms		    & 97ms              & 4ms 	           \\
+		Tempo de compressão     		& 3667ms   		& 939ms		    	& 206ms  	       \\\hline
+		Tempo de codificação    		& 570ms    	    & 69ms              & 66ms             \\\hline
+		Tempo de transferência e processamento	& 103,849s	    & 17,871s   & 8,285s   	       \\\hline
+		Tempo de reescrita              & 17ms		    & 97ms              & 4ms 	           \\\hline
 		
 		
 	\end{tabular}
@@ -229,7 +230,30 @@ Apesar de esse resultado mostrar que há uma limitação na capacidade de API recon
 
 \subsection{Teste para reconhecimento de texto com letra cursiva}
 
-Uma das possibilidades de utilização do aplicativo seria a leitura de bilhetes escritos a mão. Alguns testes foram realização para se ter conhecimentos dos limites das capacidades da API, quanto a escrita a mão, seja ela de forma ou cursiva. Os resultados mostraram que existe uma significante limitação da API quanto a identificação de caracteres cursivos. O reconhecimento até ocorre, mas em número extremamente reduzido se comparado à letra de forma, mesmo em traços largos e cor contrastante.
+Uma das possibilidades de utilização do aplicativo seria a leitura de bilhetes escritos a mão. Alguns testes foram realização para se ter conhecimentos dos limites das capacidades da API, quanto a escrita a mão, seja ela de forma ou cursiva. Os resultados mostraram que existe maior limitação da API quanto a identificação de caracteres manuscritos, se comparada a de digitais. A Figura \ref{forma} apresenta o caso de um texto capturado com a mais alta resolução que o aplicativo oferece, de 2560x1920, e mesmo assim há alguns erros de identificação. Porém, como é possível observar nas Figuras \ref{mao} e \ref{mao2}, os resultados só ficam gravemente incorretos quando os textos são escritos em letra cursiva. Nesse cenário, o reconhecimento até ocorre, mas de uma quantidade muito pequena do total de palavras, apresentando diversos erros, mesmo em traços largos e cor contrastante. Assim, a transcrição de textos em letra cursiva se mostra, na prática, impossível pela aplicação.
+
+
+\begin{figure}[H]
+	\centering	
+	\includegraphics[scale=0.5]{./Resources/forma.png}
+	\captionof{figure}{Resultado da extração de texto sobre imagem contendo escrita manual em letra de forma.}
+	\label{forma}
+	
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\includegraphics[scale=0.5]{./Resources/mao.png}
+	\captionof{figure}{Resultados da extração de texto sobre imagem, em diferentes resoluções, contendo palavras manuscristas em letra cursiva.}
+	\label{mao}	
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\includegraphics[scale=0.5]{./Resources/mao2.png}
+	\captionof{figure}{Resultado da extração de texto sobre imagem contendo texto escrito em letra cursiva.}
+	\label{mao2}	
+\end{figure}
 
 
 \subsection{Teste para rotulação de elementos da cena}
@@ -321,16 +345,77 @@ Apesar dos acertos nas descrições das faces, os resultados não foram sempre corr
 	
 \end{figure}
 
-Uma hipótese para os resultados falhos pode ser a qualidade da imagem comprometida pela captura da câmera sobre a foto vinda da tela do computador.
-
 
 
 
 %\raggedright
-\section{Detecção de Obstáculos} 
-[tópico apenas iniciado - faltam testes]
+\section{Detecção de Obstáculos}
+
+\begin{figure}[H]
+	\centering	
+	\includegraphics[scale=0.5]{./Resources/circuito.png}
+	\captionof{figure}{Protótipo do circuito detector de obstáculos}
+	\label{circuito}
+	
+\end{figure}
+
+
+
+Para avaliar com maior precisão o consumo de energia do circuito, durante 80 segundos foi medida a corrente consumida. Inicialmente, o circuito permaneceu ligado, porém o aplicativo do smartphone estava desligado. Aos 30 segundos o aplicativo foi ligado e a função de detecção de obstáculos foi acionada. Nesse instante nota-se pela Figura \ref{ligaArduino} que houve uma queda na corrente. Isso ocorreu porque quando o módulo Bluetooth é alimentado, mas não está conectado, ele fica constantemente enviando sinais para notificar sua presença. Quando uma conexão é estabelecida, ele passa a enviar apenas os sinais de comunicação, o que requer menos energia.
+
+\begin{figure}[H]
+	\centering	
+	\includegraphics[scale=0.7]{./Resources/ligaArduino.png}
+	\captionof{figure}{Corrente elétrica consumida pelo circuito antes, durante e após a conexão com o smartphone}
+	\label{ligaArduino}
+	
+\end{figure}
+
+Além de avaliar o consumo do circuito como um todo, avaliou-se também o quanto cada módulo conectado e devidamente ligado consome do total. Os módulos foram ativados de modo alternado a fim de se medir a corrente consumida individualmente, e para cada caso teste, o valor foi medido durante 25 segundos. O resultado pode ser visualizado pela Figura \ref{Modulos}, que mostra que a maior parte do consumo é resultado do funcionamento do Bluetooth.
+
+\begin{figure}[H]
+	\centering	
+	\includegraphics[scale=0.6]{./Resources/Modulos.png}
+	\captionof{figure}{Corrente elétrica consumida pelo circuito discriminando o papel de cada módulo}
+	\label{Modulos}
+	
+\end{figure}
+
+A partir dos valores amostrados de corrente consumida pelo circuito, foi possível calcular a corrente média, o desvio padrão e a potência média, apresentados pela Tabela \ref{valoresMedios}. A potência $P$ foi calculada baseado no valor médio de corrente $I$ e na tensão $V$ de alimentação de 9.6V, pela equação: \[ P = V x I \]
+
+\definecolor{googleBlue}{rgb}{0.17,0.52,0.91} 
+\newcolumntype{a}{>{\columncolor{googleBlue}\color{white}}l}
+
+\begin{table}[H]
+	
+	\centering
+	
+	\caption{ Valores médios de corrente e potência consumidos pelos módulos do circuito}	
+	
+	\begin{tabular}{!{\color{googleBlue}\vrule} a  l  l  l l!{\color{googleBlue}\vrule}}
+		\arrayrulecolor{googleBlue} \hline
+		
+		Módulo				& Arduino 	& Sensor	& Bluetooth & Conjunto \\\hline
+		Corrente Média(mA)  & 55		& 3.04      & 42.2       & 100.55\\\hline
+		Desvio Padrão (mA)	& 1			& 0.09		& 0.42      & 0.38  \\\hline
+		Potência Média(mW)  & 529.5  	& 29.3    	& 406.2	    & 968.3 \\\hline		
+		
+	\end{tabular}
+	\label{valoresMedios}	
+\end{table}
+
+De fato, o módulo Bluetooth consome pouco menos que o Arduíno, representando quase a metade do consumo total. A Figura \ref{pizza} ilustra o resultado em percentuais de consumo.
+
+\begin{figure}[H]
+	\centering	
+	\includegraphics[scale=0.7]{./Resources/pizza.png}
+	\captionof{figure}{Porcentagem de potência dissipada por cada módulo do circuito}
+	\label{pizza}
+	
+\end{figure}
 
 Na detecção de obstáculos, duas variáveis foram consideradas para o desenvolvimento e desempenho do sistema. Primeiramente, como havia a necessidade da criação de um circuito externo, o custo benefício foi analisado. Foi necessária a utilização de um Arduíno, um sensor de obstáculos, e um módulo de comunicação. O Arduíno em termos de capacidade de processamento se mostrou adequado  para a tarefa, que necessitava de baixíssimo poder computacional: leitura de sinais e encaminhamento de dados. O sensor de obstáculos por ter uma abrangência de 4 metros, mostrou ser aplicável para o propósito do projeto por fornecer margem suficiente de tempo de reação de um usuário caminhando [velocidade de caminhada, tempo de reação audição, tato, limite do sensor = 4m]. O módulo bluetooth utilizado também foi adequado, considerando que trata-se de dispositivos muito próximos em comunicação. O segundo problema encontrado foi o tamanho dos elementos do circuito. Quanto menor, mais discreto e mais adaptável ao corpo ele se torna, o que não foi plenamente atingido [o circuito é um pouco maior que um smartphone].
 
 \section{Avaliação de consumo do sistema}
 
+O consumo de energia certamente é uma grande limitador na implementação de qualquer sistema. É importante portanto ter conhecimento da potência dissipada tanto pelo aplicativo executado no smartphone, quanto do circuito detector de obstáculos, formado pelo Arduíno e demais módulos.

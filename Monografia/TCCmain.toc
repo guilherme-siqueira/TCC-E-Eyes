@@ -42,15 +42,15 @@
 \contentsline {subsection}{\numberline {4.1.1}Teste para diferentes dimens\~oes de imagens}{55}
 \contentsline {subsection}{\numberline {4.1.2}Teste para reconhecimento de texto girado}{58}
 \contentsline {subsection}{\numberline {4.1.3}Teste para reconhecimento de texto com letra cursiva}{59}
-\contentsline {subsection}{\numberline {4.1.4}Teste para rotula\c c\~ao de elementos da cena}{60}
-\contentsline {subsection}{\numberline {4.1.5}Teste para classifica\c c\~ao de express\~ao facial}{63}
-\contentsline {section}{\numberline {4.2}Detec\c c\~ao de Obst\'aculos}{64}
-\contentsline {section}{\numberline {4.3}Avalia\c c\~ao de consumo do sistema}{65}
-\contentsline {chapter}{\numberline {5}Conclus\~ao ou Conclus\~oes}{67}
-\contentsline {chapter}{Refer\^encias}{67}
-\contentsline {chapter}{\numberline {A}Diagrama de classes do aplicativo Android}{73}
-\contentsline {chapter}{\numberline {B}C\'odigos relevantes}{75}
-\contentsline {chapter}{\numberline {C}Monografia Parcial do TCC}{81}
-\contentsline {chapter}{\numberline {I}Datasheet Arduino}{83}
-\contentsline {chapter}{\numberline {II}Datasheet HC-05}{92}
-\contentsline {chapter}{\numberline {III}Datasheet HC-SR04}{106}
+\contentsline {subsection}{\numberline {4.1.4}Teste para rotula\c c\~ao de elementos da cena}{61}
+\contentsline {subsection}{\numberline {4.1.5}Teste para classifica\c c\~ao de express\~ao facial}{65}
+\contentsline {section}{\numberline {4.2}Detec\c c\~ao de Obst\'aculos}{67}
+\contentsline {section}{\numberline {4.3}Avalia\c c\~ao de consumo do sistema}{70}
+\contentsline {chapter}{\numberline {5}Conclus\~ao ou Conclus\~oes}{73}
+\contentsline {chapter}{Refer\^encias}{73}
+\contentsline {chapter}{\numberline {A}Diagrama de classes do aplicativo Android}{79}
+\contentsline {chapter}{\numberline {B}C\'odigos relevantes}{81}
+\contentsline {chapter}{\numberline {C}Monografia Parcial do TCC}{87}
+\contentsline {chapter}{\numberline {I}Datasheet Arduino}{89}
+\contentsline {chapter}{\numberline {II}Datasheet HC-05}{98}
+\contentsline {chapter}{\numberline {III}Datasheet HC-SR04}{112}

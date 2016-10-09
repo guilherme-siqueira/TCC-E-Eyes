@@ -19,7 +19,7 @@ import br.usp.guilherme_galdino_siqueira.e_eyes.properties.Preferences;
 
 public class Effects {
 
-    private MediaPlayer shutter, clockTicks, obstacleAlert;
+    private MediaPlayer shutter, clockTicks, obstacleAlert,constantSound;
 
     private Vibrator vibrator;
 
@@ -33,6 +33,10 @@ public class Effects {
         obstacleAlert = MediaPlayer.create(context, R.raw.alert);
 
         obstacleAlert.setLooping(true);
+
+        constantSound = MediaPlayer.create(context, R.raw.constant);
+
+        constantSound.setLooping(true);
 
         clockTicks = MediaPlayer.create(context, R.raw.time);
 
@@ -62,6 +66,22 @@ public class Effects {
 
         obstacleAlert.pause();
 
+    }
+
+    public void setConstantSoundVolume(float volume)
+    {
+        constantSound.setVolume(volume, volume);
+    }
+
+    public void playConstantSound() {
+
+        constantSound.start();
+    }
+
+    public void pauseConstantSound() {
+
+        if (constantSound.isPlaying())
+            constantSound.pause();
     }
 
     public void playObstacleAlert() {
