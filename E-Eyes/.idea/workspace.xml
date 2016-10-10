@@ -44,8 +44,8 @@
       <file leaf-file-name="ArduinoActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/ArduinoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32407406">
-              <caret line="688" column="45" selection-start-line="688" selection-start-column="45" selection-end-line="688" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.6944444">
+              <caret line="669" column="69" selection-start-line="669" selection-start-column="69" selection-end-line="669" selection-end-column="69" />
               <folding>
                 <element signature="method#onStart#0;class#ArduinoActivity#0" expanded="false" />
                 <element signature="e#13360#13361#0" expanded="true" />
@@ -2906,8 +2906,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/ArduinoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32407406">
-          <caret line="688" column="45" selection-start-line="688" selection-start-column="45" selection-end-line="688" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.6944444">
+          <caret line="669" column="69" selection-start-line="669" selection-start-column="69" selection-end-line="669" selection-end-column="69" />
           <folding>
             <element signature="method#onStart#0;class#ArduinoActivity#0" expanded="false" />
             <element signature="e#13360#13361#0" expanded="true" />

@@ -656,14 +656,12 @@ public class ArduinoActivity extends Activity {
 
                 while (distance != -1)
                 {
-
-                    obstAlert = classify(distance, previousDistance);
-
                     previousDistance = distance;//Arduino.getDistance();
                     //Arduino.setPreviousDistance(previousDistance);
 
                     distance = read(mmInputStream);
 
+                    obstAlert = classify(distance, previousDistance);
 
                     arduinoData.concat("distancia = " + distance + "cm");
 
