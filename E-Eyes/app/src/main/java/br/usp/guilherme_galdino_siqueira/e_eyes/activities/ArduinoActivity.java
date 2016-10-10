@@ -337,7 +337,7 @@ public class ArduinoActivity extends Activity {
 
         String[] alert = new String[2];
 
-        if (value < redSignDistance && value > 0 && (pValue > redSignDistance || pValue < 0))
+        if (value < redSignDistance && value >= 0 && (pValue >= redSignDistance || pValue < 0))
         {
             //arduinoData.concat("entrou na area vermelha");
 
@@ -346,7 +346,7 @@ public class ArduinoActivity extends Activity {
             Arduino.setInYellowArea(false);
             Arduino.setOut(false);
         }
-        else if (value > redSignDistance  && value < yellowSignDistance  && (pValue < redSignDistance || pValue > yellowSignDistance)   )
+        else if (value >= redSignDistance  && value < yellowSignDistance  && (pValue < redSignDistance || pValue >= yellowSignDistance)   )
         {
             //arduinoData.concat("entrou na area amarela");
             Arduino.setGotInRedArea(false);
@@ -354,7 +354,7 @@ public class ArduinoActivity extends Activity {
             Arduino.setInYellowArea(true);
             Arduino.setOut(false);
         }
-        else if (value > yellowSignDistance)
+        else if (value >= yellowSignDistance)
         {
             Arduino.setOut(true);
 
@@ -376,7 +376,7 @@ public class ArduinoActivity extends Activity {
             Arduino.setGotInYellowArea(false);
         }
 
-        Arduino.setDistance(value);
+        //Arduino.setDistance(value);
 
 
 
@@ -474,7 +474,117 @@ public class ArduinoActivity extends Activity {
         super.onBackPressed();
     }
 
-    private class ArduinoCommunication extends AsyncTask <Object, String, Void>
+    private class ProgressUpdate {
+
+        private boolean out;
+
+        private boolean gotInRedArea;
+        private boolean gotInYellowArea;
+        private boolean isInYellowArea;
+
+        private int distance;
+        private int previousDistance;
+
+        private String message;
+
+        private String formattedDistance;
+
+
+
+        private float volume;
+
+
+        public ProgressUpdate()
+        {
+            clear();
+        }
+
+        public float getVolume() {
+            return volume;
+        }
+
+        public void setVolume(float volume) {
+            this.volume = volume;
+        }
+
+        public void clear()
+        {
+            setOut(false);
+            setGotInRedArea(false);
+            setGotInYellowArea(false);
+            setIsInYellowArea(false);
+            setDistance(-2);
+            setPreviousDistance(-2);
+            setMessage(null);
+            setVolume(0);
+        }
+
+        public boolean isGotInRedArea() {
+            return gotInRedArea;
+        }
+
+        public void setGotInRedArea(boolean gotInRedArea) {
+            this.gotInRedArea = gotInRedArea;
+        }
+
+        public boolean isGotInYellowArea() {
+            return gotInYellowArea;
+        }
+
+        public void setGotInYellowArea(boolean gotInYellowArea) {
+            this.gotInYellowArea = gotInYellowArea;
+        }
+
+        public boolean isInYellowArea() {
+            return isInYellowArea;
+        }
+
+        public void setIsInYellowArea(boolean isInYellowArea) {
+            this.isInYellowArea = isInYellowArea;
+        }
+
+        public int getDistance() {
+            return distance;
+        }
+
+        public void setDistance(int distance) {
+            this.distance = distance;
+            this.formattedDistance = String.format( "%.2f", (float) distance /100) + "m";
+        }
+
+        public String getFormattedDistance()
+        {
+            return formattedDistance;
+        }
+
+        public int getPreviousDistance() {
+            return previousDistance;
+        }
+
+        public void setPreviousDistance(int previousDistance) {
+            this.previousDistance = previousDistance;
+        }
+
+        public String getMessage() {
+            return message;
+        }
+
+        public void setMessage(String message) {
+            this.message = message;
+        }
+
+        public boolean isOut() {
+            return out;
+        }
+
+        public void setOut(boolean out) {
+            this.out = out;
+        }
+
+
+    }
+
+    private class ArduinoCommunication extends AsyncTask <Object, ProgressUpdate, Void>
     {
         InputStream mmInputStream;
         BluetoothDevice arduino = null;
@@ -482,6 +592,8 @@ public class ArduinoActivity extends Activity {
         int previousDistance = -2;
         String[] obstAlert = new String[2];
         String[] info = new String[4];
+
+        public ProgressUpdate progress = new ProgressUpdate();
 
         @Override
         protected Void doInBackground(Object... params) {
@@ -495,7 +607,11 @@ public class ArduinoActivity extends Activity {
                     info[2] = null;
                     info[3] = "Procurando Arduíno";
                     Arduino.setMessage("Procurando Arduíno");
-                    publishProgress(info);
+
+                    progress.setMessage("Procurando Arduíno");
+
+
+                    publishProgress(progress);
                 }
 
                 while (arduino == null) {
@@ -513,8 +629,12 @@ public class ArduinoActivity extends Activity {
                     info[1] = null;
                     info[2] = null;
                     info[3] = "Arduíno Desligado";
-                    Arduino.setMessage("Arduíno Desligado");
-                    publishProgress(info);
+                    progress.setMessage("Arduíno Desligado");
+
+
+
+
+                    publishProgress(progress);
                 }
 
 
@@ -526,8 +646,8 @@ public class ArduinoActivity extends Activity {
                 info[1] = null;
                 info[2] = null;
                 info[3] = "Arduíno Ligado";
-                Arduino.setMessage("Arduíno Ligado");
-                publishProgress(info);
+                progress.setMessage("Arduíno Ligado");
+                publishProgress(progress);
 
                 //previousDistance = read(mmInputStream);
                 distance = read(mmInputStream);
@@ -536,9 +656,6 @@ public class ArduinoActivity extends Activity {
 
                 while (distance != -1)
                 {
-
-                    Arduino.setPreviousDistance(previousDistance);
-                    Arduino.setDistance(distance);
 
                     obstAlert = classify(distance, previousDistance);
 
@@ -554,6 +671,8 @@ public class ArduinoActivity extends Activity {
 
                     arduinoData.concat("velocidade = " + v + "cm/s");
 
+
+
                     //Arduino.setDistance(distance);
 
                     /*
@@ -564,14 +683,48 @@ public class ArduinoActivity extends Activity {
                     info[2] = String.format( "%.2f", (float) distance /100);
 */
 
+                    progress.clear();
 
+                    progress.setPreviousDistance(previousDistance);
+                    progress.setDistance(distance);
+
+                    if (Arduino.isGotInRedArea())
+                    {
+                        progress.setGotInRedArea(true);
+                        arduinoData.concat("entrou na area vermelha");
+                    }
+                    else if (Arduino.isGotInYellowArea())
+                    {
+                        progress.setGotInYellowArea(true);
+                        arduinoData.concat("entrou na area amarela");
+                    }
+                    else if (Arduino.isInYellowArea())
+                    {
+
+                        progress.setIsInYellowArea(true);
+                        float maxDistVol = 0.05f;
+                        float minDistVol = 1;
+
+
+                        float volume = (float) (Math.log(((maxDistVol - minDistVol) *(distance - redSignDistance)) + minDistVol*(yellowSignDistance - redSignDistance))/Math.log(yellowSignDistance - redSignDistance));
+
+                        progress.setVolume(volume);
+                        arduinoData.concat("volume amarelo = " + volume);
+
+                    }
+
+                    else if (Arduino.isOut())
+                    {
+                        progress.setOut(true);
+                        arduinoData.concat("está fora");
+                    }
 
 
                     //Arduino.setDistance(distance);
 
                     //info[3] = null;
 
-                    publishProgress(info);
+                    publishProgress(progress);
                     //publishProgress(""+distance);
 
 
@@ -583,51 +736,51 @@ public class ArduinoActivity extends Activity {
         }
 
         @Override
-        protected void onProgressUpdate(String... message) {
+        protected void onProgressUpdate(ProgressUpdate... progress) {
 
             int msTime;
 
             float volume = -5;
 
-            if (Arduino.isGotInRedArea())
+            if (progress[0].isGotInRedArea())
             {
-                arduinoData.concat("entrou na area vermelha");
+                //arduinoData.concat("entrou na area vermelha");
 
                 effects.pauseConstantSound();
 
-                effects.vibrate(6000);
+                //effects.vibrate(6000);
                 effects.playObstacleAlert();
             }
-            else if (Arduino.isGotInYellowArea())
+            else if (progress[0].isGotInYellowArea())
             {
-                arduinoData.concat("entrou na area amarela");
+                //arduinoData.concat("entrou na area amarela");
 
-                System.out.println("entrou na area amarela");
+                //System.out.println("entrou na area amarela");
 
                 effects.pauseObstacleAlert();
 
                 effects.playConstantSound();
             }
 
-            else if (Arduino.isInYellowArea())
+            else if (progress[0].isInYellowArea())
             {
 
-                float maxDistVol = 0.05f;
-                float minDistVol = 1;
+                //float maxDistVol = 0.05f;
+                //float minDistVol = 1;
 
 
-                volume = (float) (Math.log(((maxDistVol - minDistVol) *(Arduino.getDistance() - redSignDistance)) + minDistVol*(yellowSignDistance - redSignDistance))/Math.log(yellowSignDistance - redSignDistance));
+                //volume = (float) (Math.log(((maxDistVol - minDistVol) *(progress[0].getDistance() - redSignDistance)) + minDistVol*(yellowSignDistance - redSignDistance))/Math.log(yellowSignDistance - redSignDistance));
 
-                arduinoData.concat("volume amarelo = "+volume);
+                //arduinoData.concat("volume amarelo = "+volume);
 
                 //float volume = (float) ( 1 - (Math.log(Arduino.getDistance() - 30)/Math.log(200.0 - 30)));
 
-                effects.setConstantSoundVolume(volume);
+                effects.setConstantSoundVolume(progress[0].getVolume());
             }
 
-            else if (Arduino.isOut())
+            else if (progress[0].isOut())
             {
-                arduinoData.concat("está fora");
+                //arduinoData.concat("está fora");
                 effects.pauseConstantSound();
                 effects.pauseObstacleAlert();
             }
@@ -669,16 +822,14 @@ public class ArduinoActivity extends Activity {
 
 */
 
-            if (Arduino.getDistance() > 0 /*message[2] != null*/)
+            if (progress[0].getDistance() > 0 /*message[2] != null*/)
             {
-
-                String dist = String.format( "%.2f", (float) Arduino.getDistance() /100);
-                textView.setText(dist + "m");
+                textView.setText(progress[0].getFormattedDistance());
             }
 
-            if (Arduino.getMessage() /*message[3]*/ != null)
+            if (progress[0].getMessage() /*message[3]*/ != null)
             {
-                Toast.makeText(getApplicationContext(),Arduino.getMessage() /*message[3]*/, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),progress[0].getMessage() /*message[3]*/, Toast.LENGTH_LONG).show();
                 Arduino.setMessage(null);
             }
         }
