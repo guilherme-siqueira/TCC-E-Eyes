@@ -48,6 +48,13 @@ public class ArduinoActivity extends Activity {
 
     FeatureContent arduinoData = new FeatureContent();
 
+    ArrayList<Integer> distanceSample = new ArrayList<>();
+    float arduinoMean = 0;
+    float arduinoSD = 0;
+
+    long startTime;
+    long endTime;
+
     int yellowSignDistance;
     int redSignDistance;
 
@@ -460,6 +467,11 @@ public class ArduinoActivity extends Activity {
 
     public void onBackPressed() {
 
+        int sum = 0;
+        float mean = 0;
+        double var = 0;
+        double sd = 0;
+
         active = false;
         turnBlueToothOff();
 
@@ -469,7 +481,29 @@ public class ArduinoActivity extends Activity {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
 
-        FileManager.save(this, arduinoData.getText().getBytes(), "arduinoData", dateFormat.format(date),"txt");
+        for (int sample : distanceSample)
+        {
+            sum = sum + sample;
+        }
+
+        mean = sum / distanceSample.size();
+
+        for (int sample : distanceSample)
+        {
+            var = var + (sample - mean)*(sample - mean);
+        }
+
+        var = var / distanceSample.size();
+        sd = Math.sqrt(var);
+
+        long msTime = endTime - startTime;
+
+        String arduinoStat = "amostras: " + distanceSample.size() + "\n" + "tempo: " +msTime + "ms"
+                + "\n" + "media: " + mean + "\n" + "desvio padrao: " + sd + "\n\n"
+                + arduinoData.getText();
+
+        FileManager.save(this, arduinoStat.getBytes(), "arduinoData", mean + " "
+                + dateFormat.format(date),"txt");
 
         super.onBackPressed();
     }
@@ -598,6 +632,8 @@ public class ArduinoActivity extends Activity {
         @Override
         protected Void doInBackground(Object... params) {
 
+            startTime = System.currentTimeMillis();
+
             while (active) {
 
                 if (arduino == null)
@@ -663,6 +699,8 @@ public class ArduinoActivity extends Activity {
 
                     obstAlert = classify(distance, previousDistance);
 
+                    distanceSample.add(distance);
+
                     arduinoData.concat("distancia = " + distance + "cm");
 
                     int v = distance - previousDistance;
@@ -707,7 +745,7 @@ public class ArduinoActivity extends Activity {
                         float volume = (float) (Math.log(((maxDistVol - minDistVol) *(distance - redSignDistance)) + minDistVol*(yellowSignDistance - redSignDistance))/Math.log(yellowSignDistance - redSignDistance));
 
                         progress.setVolume(volume);
-                        arduinoData.concat("volume amarelo = " + volume);
+                        arduinoData.concat("volume = " + volume);
 
                     }
 
@@ -717,6 +755,7 @@ public class ArduinoActivity extends Activity {
                         arduinoData.concat("está fora");
                     }
 
+                    arduinoData.concat("\n");
 
                     //Arduino.setDistance(distance);
 
@@ -730,6 +769,9 @@ public class ArduinoActivity extends Activity {
                 }
                 //publishProgress("Problema de leitura");
             }
+
+            endTime = System.currentTimeMillis();
+
             return null;
         }
 

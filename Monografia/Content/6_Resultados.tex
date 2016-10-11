@@ -5,12 +5,12 @@ Com as funcionalidades planejadas para o projeto concluídas, o passo seguinte fo
 
 \section{Descrição de Imagens}
 
-Na descrição de imagens duas variáveis foram consideradas mais importantes para avaliar o desempenho do sistema: o tempo de resposta, pois não é conveniente deixar o usuário esperando por muito tempo pela informação requisitada, e a qualidade dos resultados obtidos, para que o usuário receba aquilo que é esperado do sistema. Como a Google Cloud API é uma ferramenta online, a primeira dificuldade encontrada para eficiência de processamento foi o transporte de dados para o servidor da Google. Quanto mais dados são transmitidos pela rede e processados pela rotina no servidor, maior o tempo de latência para a resposta. Isso significa que a velocidade da Internet do usuário será sempre um limitador. 
+Na descrição de imagens duas considerações foram necessárias para garantir o correto desempenho do sistema: o tempo de resposta, pois não é conveniente deixar o usuário esperando por muito tempo pela informação requisitada, e a qualidade dos resultados obtidos, para que o usuário receba aquilo que é esperado do sistema. Como a Google Cloud API é uma ferramenta online, a primeira dificuldade encontrada para eficiência de processamento foi o transporte de dados para o servidor da Google. Quanto mais dados são transmitidos pela rede e processados pela rotina no servidor, maior o tempo de latência para a resposta. Isso significa que a velocidade da Internet do usuário será sempre um limitador. 
 
 
 \subsection{Teste para diferentes dimensões de imagens}
 
-Por outro lado, a quantidade de dados transmitida é flexível uma vez que a imagem pode ter sua resolução reduzida e exibir um número menor de bytes para ser representada. Entretanto, essa redução resulta em um detalhamento menor da imagem, o que pode dificultar seu processamento, causar erros de interpretação de seu conteúdo e por fim não retornar resultados satisfatórios. Por essa razão, para cada solicitação de extração de informação das imagens, a mesma imagem foi enviada com diversas resoluções, e os tempos das fases do processo foram medidos. A Figura \ref{Teste-HP} contém a imagem capturada para esse fim. Como é possível observar a partir da Tabela \ref{Estat-HP} juntamente com a Figura \ref{Resultado-HP}, a resolução da imagem é proporcional ao tempo total de processamento da informação requisitada e inversamente proporcional a quantidade de erros do resultado. 
+Apesar de a velocidade da internet ser um fator limitante, a quantidade de dados transmitida, em alguns casos, pode ser flexibilizada uma vez que a imagem pode ter sua resolução reduzida e exibir um número menor de bytes para ser representada. Entretanto, essa redução resulta em um detalhamento menor da imagem, o que pode dificultar seu processamento, causar erros de interpretação de seu conteúdo e por fim não retornar resultados satisfatórios. A fim de confrontar resolução de imagem, tempo de processamento e qualidade dos resultados, para cada solicitação de extração de informação das imagens, a mesma imagem foi enviada com diversas resoluções, e os tempos das fases do processo foram medidos. A Figura \ref{Teste-HP} contém a imagem capturada para esse fim. Como é possível observar a partir da Tabela \ref{Estat-HP} juntamente com o resultado exibido pela Figura \ref{Resultado-HP}, a resolução da imagem é proporcional ao tempo total de processamento da informação requisitada e inversamente proporcional a quantidade de erros do resultado. 
 
 \begin{figure}[H]
 	\centering
@@ -321,7 +321,7 @@ Nos casos citados, independentemente de qual foi o critério para ignorar alguns 
 	
 \end{figure}
 
-É possível que a explicação para esse resultado seja que o ambiente no qual a cadeira estava inserida tivesse afetado sua imagem capturada ao ponto de a API não ser capaz de identificar o que estava de fato em cena, e confundir o objeto com o para-choques de um veículo. Obviamente não é desejável que confusões como essa ocorram, entretanto, esse é um fenômeno comum mesmo ao olho humano, conhecido como "ilusão de óptica". Ao analisar a imagem, as faixas escuras entre a parede e o chão, atrás da cadeira, somadas a estrutura em grades do própria do objeto podem ter sido avaliados como a parte frontal de um carro: Dois faróis e com para-choques no meio.
+É possível que a explicação para esse resultado seja que o ambiente no qual a cadeira estava inserida tivesse afetado sua imagem capturada ao ponto de a API não ser capaz de identificar o que estava de fato em cena, e confundir o objeto com o para-choques de um veículo. Obviamente não é desejável que confusões como essa ocorram, entretanto, esse é um fenômeno parecido com a "ilusão de óptica". Ao analisar a imagem, percebe-se que as faixas escuras entre a parede e o chão, atrás da cadeira, somadas a sua estrutura em grades no meio podem ter sido avaliados como a parte frontal de um carro: Dois faróis pretos nas laterais, um capô branco no topo e para-choques com grades na porção centro-inferior.
 
 \subsection{Teste para classificação de expressão facial}
 
@@ -351,6 +351,19 @@ Apesar dos acertos nas descrições das faces, os resultados não foram sempre corr
 %\raggedright
 \section{Detecção de Obstáculos}
 
+Na implementação da funcionalidade de detecção de obstáculos, duas considerações precisaram ser feitas. Primeiramente, para atender aos resultados esperados pelo usuário, o sensor de obstáculos deveria ser preciso o suficiente para garantir um deslocamento confiável. Além disso, procurou-se reduzir ao máximo o tamanho do circuito, para garantir sua usabilidade.
+
+\subsection{Precisão das medidas de distância}
+
+
+Primeiramente, como havia a necessidade da criação de um circuito externo, o custo benefício foi analisado. Foi necessária a utilização de um Arduíno, um sensor de obstáculos, e um módulo de comunicação. O Arduíno em termos de capacidade de processamento se mostrou adequado  para a tarefa, que necessitava de baixíssimo poder computacional: leitura de sinais e encaminhamento de dados. O sensor de obstáculos por ter uma abrangência de 4 metros, mostrou ser aplicável para o propósito do projeto por fornecer margem suficiente de tempo de reação de um usuário caminhando [velocidade de caminhada, tempo de reação audição, tato, limite do sensor = 4m]. O módulo bluetooth utilizado também foi adequado, considerando que trata-se de dispositivos muito próximos em comunicação. 
+
+
+\subsection{Usabilidade do dispositivo}
+
+O segundo problema encontrado foi o tamanho dos elementos do circuito. Quanto menor, mais discreto e mais adaptável ao corpo ele se torna, o que não foi plenamente atingido [o circuito é um pouco maior que um smartphone].
+
+
 \begin{figure}[H]
 	\centering	
 	\includegraphics[scale=0.5]{./Resources/circuito.png}
@@ -360,6 +373,12 @@ Apesar dos acertos nas descrições das faces, os resultados não foram sempre corr
 \end{figure}
 
 
+\section{Avaliação de consumo do sistema}
+
+O consumo de energia certamente é uma grande limitador na implementação de qualquer sistema. É importante portanto ter conhecimento da potência dissipada tanto pelo aplicativo executado no smartphone, quanto do circuito detector de obstáculos, formado pelo Arduíno e demais módulos.
+
+\subsection{Consumo no smartphone}
+\subsection{Consumo no detector de obstáculos}
 
 Para avaliar com maior precisão o consumo de energia do circuito, durante 80 segundos foi medida a corrente consumida. Inicialmente, o circuito permaneceu ligado, porém o aplicativo do smartphone estava desligado. Aos 30 segundos o aplicativo foi ligado e a função de detecção de obstáculos foi acionada. Nesse instante nota-se pela Figura \ref{ligaArduino} que houve uma queda na corrente. Isso ocorreu porque quando o módulo Bluetooth é alimentado, mas não está conectado, ele fica constantemente enviando sinais para notificar sua presença. Quando uma conexão é estabelecida, ele passa a enviar apenas os sinais de comunicação, o que requer menos energia.
 
@@ -414,8 +433,7 @@ De fato, o módulo Bluetooth consome pouco menos que o Arduíno, representando qua
 	
 \end{figure}
 
-Na detecção de obstáculos, duas variáveis foram consideradas para o desenvolvimento e desempenho do sistema. Primeiramente, como havia a necessidade da criação de um circuito externo, o custo benefício foi analisado. Foi necessária a utilização de um Arduíno, um sensor de obstáculos, e um módulo de comunicação. O Arduíno em termos de capacidade de processamento se mostrou adequado  para a tarefa, que necessitava de baixíssimo poder computacional: leitura de sinais e encaminhamento de dados. O sensor de obstáculos por ter uma abrangência de 4 metros, mostrou ser aplicável para o propósito do projeto por fornecer margem suficiente de tempo de reação de um usuário caminhando [velocidade de caminhada, tempo de reação audição, tato, limite do sensor = 4m]. O módulo bluetooth utilizado também foi adequado, considerando que trata-se de dispositivos muito próximos em comunicação. O segundo problema encontrado foi o tamanho dos elementos do circuito. Quanto menor, mais discreto e mais adaptável ao corpo ele se torna, o que não foi plenamente atingido [o circuito é um pouco maior que um smartphone].
 
-\section{Avaliação de consumo do sistema}
 
-O consumo de energia certamente é uma grande limitador na implementação de qualquer sistema. É importante portanto ter conhecimento da potência dissipada tanto pelo aplicativo executado no smartphone, quanto do circuito detector de obstáculos, formado pelo Arduíno e demais módulos.
+
+

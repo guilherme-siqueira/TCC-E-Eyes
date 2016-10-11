@@ -34,7 +34,7 @@ Os materiais utilizados, bem como a descrição detalhada de suas propriedades e s
  \end{figure}
 O nó principal do sistema pode ser considerado o smartphone. Por ser um dispositivo multifuncional com câmera, saída de áudio, vibração e permitir a execução de aplicativos, além de possuir tamanho mais reduzido se comparado ao tablet, por exemplo, mostrou-se ideal para o propósito do projeto. Com a câmera foi possível a captura das imagens posteriormente tratadas para extração de informação. A saída de áudio em paralelo com a vibração foram essenciais para uma interface útil voltada para usuários com deficiência visual. O tamanho reduzido também foi importante para que o dispositivo pudesse manuseado e guardado facilmente no corpo. Bastou então o desenvolvimento de um aplicativo que gerenciasse todos os recursos de hardware necessários. O smartphone utilizado majoritariamente durante o desenvolvimento do projeto foi o Samsumg Galaxy S3 mini \ref{PhotoSmartphone}, cuja especificação técnica está descrita na tabela \ref{dataSmartphone}.
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	\caption{Especificação técnica do smartphone utilizado no projeto}
 	\label{dataSmartphone}
@@ -58,7 +58,7 @@ Uma vez que o smartphone escolhido para o projeto foi o Galaxy S3 mini, cujo sis
 \begin{figure}[H]
 	\centering
 	
-	\includegraphics[scale=0.35]{./Resources/arduino.jpg}
+	\includegraphics[scale=0.5]{./Resources/arduino.jpg}
 	\captionof{figure}{Arduíno UNO}
 	\caption*{Fonte: www.arduino.cc}
 	\label{PhotoArduino}
@@ -66,7 +66,7 @@ Uma vez que o smartphone escolhido para o projeto foi o Galaxy S3 mini, cujo sis
 
 Para a funcionalidade de detecção de obstáculos, que não poderia ser feita pelo smartphone, foi necessária a utilização de outro dispositivo. Para tanto, foi definido que essa funcionalidade poderia ser facilmente realizada pela placa de programação Arduíno UNO, figura \ref{PhotoArduino}. As especificações da placa estão na tabela \ref{dataArduino}.
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	\caption{Especificação técnica Arduíno}
 	\label{dataArduino}
@@ -87,7 +87,7 @@ Para a funcionalidade de detecção de obstáculos, que não poderia ser feita pelo 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{./Resources/sensor.jpg}
+	\includegraphics[scale=0.5]{./Resources/sensor.jpg}
 	\captionof{figure}{Sensor HC-SR04.}
 	\caption*{Fonte: www.filipeflop.com}
 	
@@ -96,23 +96,25 @@ Para a funcionalidade de detecção de obstáculos, que não poderia ser feita pelo 
 
 O Arduíno como uma placa programável, possibilita um infinidade de aplicações. Entretanto ele não possui sensores acoplados, apenas entradas e saídas genéricas. Para a detecção de obstáculos foi necessária a inserção de um sensor. O HC-SR04, figura \ref{PhotoBlueTooth}, sensor ultrassônico que se mostrou eficiente para a tarefa desejada. Emitindo ondas de frequência ultrassônica, o sensor capta o sinal refletido e baseado na intensidade permite o cálculo da distância.
 
-\subsection{BlueTooth}
+\subsection{Bluetooth}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{./Resources/bluetooth.jpg}
+	\includegraphics[scale=0.5]{./Resources/bluetooth.jpg}
 	\captionof{figure}{Módulo BlueTooth HC-05.}
 	\caption*{Fonte: www.filipeflop.com}
 	\label{PhotoBlueTooth}
 \end{figure}
 
-Para a comunicação entre o Arduíno e o smartphone haviam diversas possibilidades de implementação. A troca de dados pela internet já seria utilizada pela aplicação Android para o reconhecimento de imagens, que será apresentado com mais detalhes na seção Métodos. No entanto, havia soluções mais simples, como por exemplo, a comunicação via BlueTooth, adota pelo projeto. Assim como o sensor, foi inserido ao circuito controlado pelo Arduíno o módulo BlueTooth HC-05, apresentado pela figura \ref{PhotoBlueTooth}.
+Para a comunicação entre o Arduíno e o smartphone haviam diversas possibilidades de implementação. A troca de dados pela internet já seria utilizada pela aplicação Android para o reconhecimento de imagens, que será apresentado com mais detalhes na seção Métodos. No entanto, havia soluções mais simples, como por exemplo, a comunicação via Bluetooth, adotada pelo projeto. Assim como o sensor, foi inserido ao circuito controlado pelo Arduíno o módulo Bluetooth HC-05, apresentado pela figura \ref{PhotoBlueTooth}.
+
+\subsection{Caixa do circuito}
+
+Para fins de demonstração do protótipo, foi criado uma caixa para envolver o circuito. Para tanto foi utilizado uma garrafa PET de 2L, tesoura, fita adesiva transparente, fita isolante, um interruptor tipo navio de dois pinos e uma bateria de 9V.
 
 \subsection{Componentes eletrônicos em geral}
 
-Para a conexão dos componentes do circuito foram necessários uma variedade de fios. No total foram utilizados por volta de 10 unidades para conectar VCC, GND, emendas e conexões de entrada e saída de sinais. Foram necessários também resistores para criação de um divisor de tensão. Para tanto foram utilizados três resistores de 220$\Omega$ para transformar 5V em 3V. Além disso, para fixar os componentes e montar o circuito, foram utilizados fita isolante e um suporte de plástico. Para a programação do circuito utilizou-se um cabo USB. Os componentes citados são mostrados na Figura \ref{componentes}.
-
-
+Para a conexão dos componentes do circuito foram necessários uma variedade de fios para conectar VCC, GND, emendas e conexões de entrada e saída de sinais. Foram necessários também 3 resistores de 220$\Omega$ para criação de um divisor de tensão. e para a programação do Arduíno utilizou-se um cabo USB.
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Métodos}
@@ -247,7 +249,7 @@ Assim, cada registro correspondia a um diretório contendo apenas a foto no forma
 
 
 \subsection{Tratamento de sinais ultrassônicos}
-O tratamento de sinais vindos do sensor HC-SR04 é parte essencial do projeto, porém a mais simples de ser feita. Do ponto de vista de hardware, o sensor possui quatro pinos de conexão: VDD, GND, Trigger e Echo. O VDD foi conectado a alimentação de 5V do Arduíno, assim como o GND conectado ao terra. O Trigger e o Echo são respectivamente entrada e saída do sensor para que o sensor receba comando para emissão de ondas de 40 kHz de frequência e então retorne em sua saída o valor medido da reflexão da onda. Esses dois pinos foram conectados respectivamente nos Pinos 4 e 5 do Arduíno.
+O tratamento de sinais vindos do sensor HC-SR04 é parte essencial do projeto, porém a mais simples de ser feita. Do ponto de vista de hardware, o sensor possui quatro pinos de conexão: VDD, GND, Trigger e Echo. O VDD foi conectado a alimentação de 5V do Arduíno, assim como o GND conectado ao terra. O Trigger e o Echo são respectivamente entrada e saída do sensor, para que o sensor receba comando para emissão de ondas de 40 kHz de frequência e então retorne em sua saída o valor medido da reflexão da onda. Esses dois pinos foram conectados respectivamente nos Pinos 4 e 5 do Arduíno. Informações mais detalhadas sobre o sensor podem ser encontradas no Anexo \ref{SensorAnexo}.
 
 Do ponto de vista lógico, o programa que roda no Arduíno basicamente controla a emissão e recepção de sinais do sensor, e em seguida repassa para o módulo Bluetooth. O sensor aguarda a onda refletida, e baseado no tempo entre emissão e recepção, é possível calcular a distância percorrida até o obstáculo. O sensor tem capacidade de identificar obstáculos até 4 metros. Quando ocorre algum erro de medida, e a distância calculada é maior que esse limite, o valor é ignorado e não é reenviado ao Bluetooth.
 
@@ -271,6 +273,8 @@ O circuito completo, contendo o sensor de obstáculos, o módulo bluetooth e o Ard
 	\label{circuit}
 \end{figure}
 
+\subsection{Manufatura da caixa do circuito}
 
+Para garantir manuseio razoável do circuito, o protótipo de detector de obstáculos necessitou de uma pequena caixa de proteção. Para isso foi criada uma caixa arredondada utilizando-se da porção central de uma garrafa PET de dois litros. O topo e a base da garrafa foram removidos com uma tesoura, formando um cilindro, e duas dobras longitudinais foram feitas para se ajustar ao comprimento do circuito. Parte do trecho dessas dobras foi cortado em ambas as bases para criar duas abas, reduzir o tamanho e fechar a caixa. Foi inserido também na lateral da caixa um interruptor de tipo navio com dois pinos para facilitar o ligar e desligar. Por fim foram feitos recortes na caixa para adaptá-la ao sensor e ao Bluetooth, e o circuito todo foi inserido.
 
 

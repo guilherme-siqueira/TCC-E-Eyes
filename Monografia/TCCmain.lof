@@ -11,15 +11,15 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Smartphone Galaxy S3 mini\relax }}{40}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Ardu\IeC {\'\i }no UNO\relax }}{41}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Sensor HC-SR04.\relax }}{42}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces M\'odulo BlueTooth HC-05.\relax }}{42}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces M\'odulo BlueTooth HC-05.\relax }}{43}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Talkback\relax }}{44}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Tela inicial do aplicativo\relax }}{44}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Tela principal e respectivas funcionalidades. (a) Descri\c c\~ao facial. (b) Extra\c c\~ao de texto (c) Sele\c c\~ao de registros (d) Detec\c c\~ao de obst\'aculos\relax }}{45}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Interface gr\'afica do Tradutor Yandex acessado pelo navegador\relax }}{48}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Tela inicial do aplicativo\relax }}{45}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Tela principal e respectivas funcionalidades. (a) Descri\c c\~ao facial. (b) Extra\c c\~ao de texto (c) Sele\c c\~ao de registros (d) Detec\c c\~ao de obst\'aculos\relax }}{46}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Interface gr\'afica do Tradutor Yandex acessado pelo navegador\relax }}{49}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Imagem capturada e seu respectivo resultado\relax }}{49}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Compara\c c\~ao entre bot\~oes de solicita\c c\~ao de extra\c c\~ao de informa\c c\~ao de imagem\relax }}{50}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Lista de registros de descri\c c\~ao\relax }}{51}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Circuito Ardu\IeC {\'\i }no com m\'odulo BlueTooth e sensor de obst\'aculos\relax }}{53}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Lista de registros de descri\c c\~ao\relax }}{52}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Circuito Ardu\IeC {\'\i }no com m\'odulo BlueTooth e sensor de obst\'aculos\relax }}{54}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Captura de imagem da etiqueta do computador HP para posterior descri\c c\~ao\relax }}{56}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado da extra\c c\~ao apenas de texto sobre a imagem da Figura \ref {Teste-HP} com as resolu\c c\~oes de (\subref {RI}) 2560x1920, (\subref {RII}) 1024x768 e (\subref {RIII}) 480x360\relax }}{57}
@@ -39,7 +39,7 @@
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Porcentagem de pot\^encia dissipada por cada m\'odulo do circuito\relax }}{70}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama de classes do aplicativo baseado em android\relax }}{80}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama de classes do aplicativo baseado em android\relax }}{78}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
