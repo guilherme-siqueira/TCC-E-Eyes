@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,twoside,openright]{report}
+\documentclass[12pt,a4paper,twoside,openright]{report}
 
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{array}
@@ -15,12 +15,14 @@
 
 \usepackage{caption}
 
-
 \usepackage{subcaption}
 
 \usepackage{cleveref}
 
 \usepackage[export]{adjustbox}
+
+
+
 
 
 \usepackage{amsthm,amsfonts,amsmath,amssymb}  % Biblioteca para uso de comandos matemï¿½ticos
@@ -35,10 +37,11 @@
 
 \usepackage{listings} % para importaï¿½ï¿½o de cï¿½digos fonte 
 
-
+\usepackage{setspace}
 
 \usepackage{comment}
-\usepackage[margin=2.7cm]{geometry}
+
+%\usepackage[margin=2.7cm]{geometry}
 \renewcommand{\baselinestretch}{1.5}
 
 \setlength{\parskip}{0em}
@@ -74,8 +77,9 @@
 
 %%%%%%%%%%%%%
 
-	\usepackage{helvet}
-	\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathptmx}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 	
  %\usepackage[T1]{fontenc}
  %\usepackage[scaled]{uarial}
@@ -94,9 +98,14 @@
 \usepackage{bytefield}
 
 \usepackage{titlesec}
-\titleformat{\chapter}{\fontsize{14pt}{5mm}\selectfont\bfseries}{\hspace{1cm}\thechapter}{1em}{}
-\titleformat{\section}{\fontsize{12pt}{5mm}\selectfont\bfseries}{\hspace{1cm}\thesection}{1em}{}
-\titleformat{\subsection}{\fontsize{12pt}{5mm}\selectfont\bfseries}{\hspace{1cm}\thesubsection}{1em}{}
+\titlespacing*{\chapter}{0pt}{-0.5cm}{20pt}
+
+\titleformat{\chapter}{\fontsize{16pt}{5mm}\selectfont\bfseries}{\hspace{1cm}\thechapter}{1em}{}
+\titleformat{\section}{\fontsize{13.5pt}{5mm}\selectfont\bfseries}{\hspace{1cm}\thesection}{1em}{}
+\titleformat{\subsection}{\fontsize{13.5pt}{5mm}\selectfont\bfseries}{\hspace{1cm}\thesubsection}{1em}{}
+
+\usepackage[top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+
 
 %\usepackage{titlesec}
 %\titleformat{\section}[display]
@@ -118,11 +127,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INÍCIO DO DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-	
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  INCLUDES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ELEMENTOS PRÉ-TEXTUAIS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{./Content/1_PreTexto.tex}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ADIÇÃO DOS CAPÍTULOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 \input{./Content/2_Introducao.tex}
@@ -132,10 +142,15 @@
 \input{./Content/6_Resultados.tex}
 \input{./Content/7_Conclusao.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ADIÇÃO DAS BIBLIOGRAFIAS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setboolean{@twoside}{true}
+\cleardoublepage
+\setboolean{@twoside}{false}
 \addcontentsline{toc}{chapter}{Referências}
-\renewcommand{\bibname}{Referências}	
+\renewcommand{\bibname}{Referências}
+	
 \bibliographystyle{IEEEtran} % Define o estilo da bibliografia
 \bibliography{./Content/References} % Faz referencia ao arquivo ref.bib
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ADIÇÃO DOS ANEXOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 %\begin{appendices}

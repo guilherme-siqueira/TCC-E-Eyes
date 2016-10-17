@@ -1,28 +1,55 @@
-\chapter{Conclusão ou Conclusões}
+\chapter{Conclusão}
 \label{Conclusao}
 
-Esse projeto teve como objetivo a aplicação dos conhecimentos adquiridos durante a graduação a um problema real e que não possui tanto foco, que é o da acessibilidade de pessoas com deficiência visual. Foi possível por meio desse trabalho aplicar alguns conceitos das seguintes disciplinas:
+Esse projeto teve como objetivo a aplicação dos conhecimentos adquiridos durante a graduação a um problema real e que não possui tanto foco, que é o da acessibilidade de pessoas com deficiência visual. Os resultados mostraram que a API Google Cloud Vision é uma ferramente bastante poderosa no campo de visão computacional e seus serviços podem ser utilizados pelas mais diversas aplicações, incluindo a possibilidade de auxiliar pessoas sem o sentido visual a acessar informações visuais com autonomia. Será apresentado neste capítulo um balanço dos resultados obtidos pelo projeto, a fim de avaliar sua utilidade a aplicabilidade.
 
-Programação Orientada a Objetos
-Circuitos Elétricos
-Laboratório de Circuítos Eletrônicos
-Engenharia de software
-Estatística
-Análise e Projeto Orientados a Objeto
-Microprocessadores e Aplicações II
+\section{Falhas}
 
+Apesar de a API da Google ter se mostrado bastante eficiente para o propósito do projeto, a ferramentas causou algumas limitações para nos resultados. Um deles é o fato intrínseco de que a API é em nuvem e requer conexão com a internet. Isso poderia de certa forma impedir que pessoas com condições financeiras inferiores, e sem acesso a internet, pudessem usá-lo. Entretanto, existe uma grande tendência de os dispositivos e as pessoas se tornarem cada vez mais conectadas, devido o avanço da computação e das telecomunicações, e com os preços de smartphones mais acessíveis, e isso poderia preparar um ambiente mais propício para o uso do aplicativo. Outro ponto negativo é a limitação da gratuidade de utilização da API. Com o intuito do projeto sendo também o de inclusão digital, atribuir preço para o acesso ao aplicativo iria, de certa forma, contra esse propósito.
+
+Já com relação ao circuito detector de obstáculos, um dos problemas foi o consumo de energia pelo módulo Bluetooth, que representou quase a metade do consumo total. Num cenário em que a pessoa o utilize sempre ao caminhar poderia descarregar a bateria com mais frequência. Além disso, a utilização de um único sensor foi capaz apenas de mostrar que é possível se guiar por ele, entretanto, para um caminhar mais seguro, seria necessário mais sensores apontando para várias direções.
+
+\section{Acertos}
+
+
+Por outro lado, houve vários pontos positivos que se pode extrair desse projeto. A leitura de textos, que é a funcionalidade mais importante do sistema mostrou-se bastante acurada. Com ela seria possível a leitura de rótulos de produtos, folhetos, livros e até bulas de remédio, mesmo possuindo letras pequenas, cupons fiscais, dinheiro, entre diversos outros conteúdos escritos. Com aplicativo é possível também oferecer uma descrição superficial automática do ambiente ao redor e de expressões faciais, e permite até que o usuário insira os nomes das pessoas em uma foto. 
+
+Com relação ao detector de obstáculos, apesar da limitação do número de sensores, os resultados se mostraram muito precisos, e têm o potencial de se tornar ainda mais útil e confiável caso o número de sensores seja aumentado, mais reduzido e usável caso o esquemático pudesse ser fabricado diretamente em uma placa eletrônica.
+
+\section{Disciplinas base}
+
+Foi possível por meio desse trabalho aplicar alguns conceitos das seguintes disciplinas:
+
+\begin{itemize}
+	\item Programação Orientada a Objetos: Conceitos de orientação a objetos e linguagem Java.
+	\item Circuitos Elétricos: Modelagem de circuitos elétricos.
+	\item Laboratório de Circuítos Eletrônicos: Medidas de variáveis elétricas e construção de circuitos eletrônicos.
+	\item Laboratório de Física: Métodos de medidas físicas e amostragem.
+	\item Engenharia de software: Planejamento da estruturação e desenvolvimento de projeto.
+	\item Estatística: Cálculo de incerteza de sinais elétricos
+	\item Microprocessadores e Aplicações II: Integração entre sistemas embarcados e desenvolvimento Android.
+\end{itemize}
 
 
 
 
 \section*{Trabalhos futuros}
 
-Isso é para a Monografia Final de defesa.....
 
 
+Na possibilidade de continuidade do projeto, alguns pontos que necessitam seja de melhoria, seja de correção, poderiam ser tratados. 
 
+\begin{itemize}
+	\item Número de sensores utilizados pelo circuito: Mais sensores permitiriam maior acurácia e precisão das distâncias retornadas pelo sistema.
+	\item Tamanho do dispositivo: A fabricação do circuito diretamente em uma placa eletrônica dedicada, e de tamanho reduzido permitiria maior usabilidade ao usuário.
+	\item Taxa de uso da API: Do lado do aplicativo, é indispensável buscar maneiras de não repassar ao usuário o valor que é cobrado pela utilização da API, quando o limite é ultrapassado. Uma possibilidade seria a inserção de propaganda como um modo de compensar essa cobrança.
+	\item Integração com redes sociais: Com as redes sociais desempenhando importante papel na comunicação entre as pessoas, integrar funcionalidade de compartilhamento das descrições poderia contribuir ainda mais com a acessibilidade de outras pessoas com deficiência visual.
+	\item Expansão para outras plataformas: é importante considerar que existem usuários com smartphones rodando sistemas operacionais diferentes do Android. Uma possibilidade seria migrar o aplicativo para essas plataformas.
+\end{itemize}
 
+ 
 
+ 
 
 
 

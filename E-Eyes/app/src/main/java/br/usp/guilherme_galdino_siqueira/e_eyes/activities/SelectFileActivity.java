@@ -70,32 +70,46 @@ public class SelectFileActivity extends ListActivity {
             }
         });
 
+
+
         for (int i=0; i < realListItems.size(); i++)
         {
-            displayedListItems.add(realListItems.get(i));
+            try {
 
-            char a0 = displayedListItems.get(i).charAt(0);
-            char a1 = displayedListItems.get(i).charAt(1);
-            char a2 = displayedListItems.get(i).charAt(2);
-            char a3 = displayedListItems.get(i).charAt(3);
 
-            char m0 = displayedListItems.get(i).charAt(5);
-            char m1 = displayedListItems.get(i).charAt(6);
+                displayedListItems.add(realListItems.get(i));
 
-            char d0 = displayedListItems.get(i).charAt(8);
-            char d1 = displayedListItems.get(i).charAt(9);
+                char a0 = displayedListItems.get(i).charAt(0);
+                char a1 = displayedListItems.get(i).charAt(1);
+                char a2 = displayedListItems.get(i).charAt(2);
+                char a3 = displayedListItems.get(i).charAt(3);
 
-            char h0 = displayedListItems.get(i).charAt(11);
-            char h1 = displayedListItems.get(i).charAt(12);
+                char m0 = displayedListItems.get(i).charAt(5);
+                char m1 = displayedListItems.get(i).charAt(6);
 
-            char mi0 = displayedListItems.get(i).charAt(14);
-            char mi1 = displayedListItems.get(i).charAt(15);
+                char d0 = displayedListItems.get(i).charAt(8);
+                char d1 = displayedListItems.get(i).charAt(9);
 
-            String newName;
-            newName = "Descrição de " + d0 + d1 + "/" + m0 + m1 + "/" + a0 + a1 + a2 + a3 + " " + h0 + h1 + ":" + mi0 + mi1;
+                char h0 = displayedListItems.get(i).charAt(11);
+                char h1 = displayedListItems.get(i).charAt(12);
 
-            displayedListItems.set(i,newName);
-            adapter.notifyDataSetChanged();
+                char mi0 = displayedListItems.get(i).charAt(14);
+                char mi1 = displayedListItems.get(i).charAt(15);
+
+                String newName;
+                newName = "Descrição de " + d0 + d1 + "/" + m0 + m1 + "/" + a0 + a1 + a2 + a3 + " " + h0 + h1 + ":" + mi0 + mi1;
+
+                displayedListItems.set(i,newName);
+                adapter.notifyDataSetChanged();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+
+
         }
     }
 

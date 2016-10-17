@@ -5,7 +5,7 @@ Mais do que uma simples aplicação Android, o projeto englobou o sensoreamento de
 
 Basicamente, o usuário do smartphone, por meio do aplicativo Android captura uma imagem daquilo que deseja obter informações. A imagem é enviada aos servidores em nuvem da Google, onde é processada e tem suas informações traduzidas lexicograficamente. O resultado é então transferido de volta para o smartphone e apresentado em forma textual apropriada sob a qual pode se obter uma audiodescrição. 
 
-Por outro lado, um sensor conectado a um Arduíno emite ondas ultrassônicas periodicamente e retorna a distância estimada ao obstáculo. O resultado é então transferido ao smartphone, por meio de um módulo BlueTooth também conectado ao Arduíno, e a aplicação por fim alerta o usuário. A figura \ref{esquematico} apresenta um esquemático que exemplifica o funcionamento do sistema.
+Por outro lado, um sensor conectado a um Arduíno emite ondas ultrassônicas periodicamente e retorna a distância estimada ao obstáculo. O resultado é então transferido ao smartphone, por meio de um módulo Bluetooth também conectado ao Arduíno, e a aplicação por fim alerta o usuário. A Figura \ref{esquematico} apresenta um esquemático que exemplifica o funcionamento do sistema.
 
  \begin{figure}[H]
  	\centering
@@ -27,12 +27,12 @@ Os materiais utilizados, bem como a descrição detalhada de suas propriedades e s
  	\centering
  	
  	\includegraphics[scale=0.35]{./Resources/smartphone.jpg}
- 	\captionof{figure}{Smartphone Galaxy S3 mini}
+ 	\captionof{figure}{Smartphone Galaxy S3 Mini}
  	\caption*{Fonte: www.tudocelular.com}
  	
  	\label{PhotoSmartphone}
  \end{figure}
-O nó principal do sistema pode ser considerado o smartphone. Por ser um dispositivo multifuncional com câmera, saída de áudio, vibração e permitir a execução de aplicativos, além de possuir tamanho mais reduzido se comparado ao tablet, por exemplo, mostrou-se ideal para o propósito do projeto. Com a câmera foi possível a captura das imagens posteriormente tratadas para extração de informação. A saída de áudio em paralelo com a vibração foram essenciais para uma interface útil voltada para usuários com deficiência visual. O tamanho reduzido também foi importante para que o dispositivo pudesse manuseado e guardado facilmente no corpo. Bastou então o desenvolvimento de um aplicativo que gerenciasse todos os recursos de hardware necessários. O smartphone utilizado majoritariamente durante o desenvolvimento do projeto foi o Samsumg Galaxy S3 mini \ref{PhotoSmartphone}, cuja especificação técnica está descrita na tabela \ref{dataSmartphone}.
+O nó principal do sistema pode ser considerado o smartphone. Por ser um dispositivo multifuncional, programável, com câmera, saída de áudio, vibração e permitir a execução de aplicações, além de possuir tamanho mais reduzido se comparado ao tablet, por exemplo, e ser um dispositivo sempre presente com as pessoas, mostrou-se ideal para o sistema proposto. Com a câmera foi possível a captura das imagens posteriormente tratadas para extração de informação. A saída de áudio em paralelo com a vibração foram essenciais para uma interface útil voltada para usuários com deficiência visual. O tamanho reduzido também foi importante para que o dispositivo pudesse ser manuseado e guardado facilmente no corpo. O smartphone utilizado majoritariamente durante o desenvolvimento do projeto devido sua disponibilidade foi o Samsumg Galaxy S3 mini, Figura \ref{PhotoSmartphone}, cuja especificação técnica está descrita na Tabela \ref{dataSmartphone}.
 
 \begin{table}[H]
 	\centering
@@ -45,13 +45,13 @@ O nó principal do sistema pode ser considerado o smartphone. Por ser um disposit
 		Peso                 & 111.5 g 					\\   
 		RAM                  & 1 GB   					\\    
 		Memória              & 16 GB 					\\   
-		Resolução - Câmera   & 2592 x 1944 pixel   		\\ 
+		Resolução - Câmera   & 2592 x 1944 pixels  		\\ 
      
 	\end{tabular}
 \end{table}
 
 \subsection{Android Studio}
-Uma vez que o smartphone escolhido para o projeto foi o Galaxy S3 mini, cujo sistema operacional é o Android, para a programação do aplicativo foi necessária a utilização da IDE Android Studio 1.4.
+Uma vez que o smartphone escolhido para o projeto foi o Galaxy S3 mini, cujo sistema operacional é o Android, para a programação do aplicativo foi necessária a utilização de uma IDE voltada para esse sistema. Como já havia uma maior experiência com a linguagem Java, a IDE escolhida foi Android Studio 1.4.
 
 \subsection{Arduíno}
 
@@ -64,7 +64,7 @@ Uma vez que o smartphone escolhido para o projeto foi o Galaxy S3 mini, cujo sis
 	\label{PhotoArduino}
 \end{figure}
 
-Para a funcionalidade de detecção de obstáculos, que não poderia ser feita pelo smartphone, foi necessária a utilização de outro dispositivo. Para tanto, foi definido que essa funcionalidade poderia ser facilmente realizada pela placa de programação Arduíno UNO, figura \ref{PhotoArduino}. As especificações da placa estão na tabela \ref{dataArduino}.
+Para a funcionalidade de detecção de obstáculos, que não poderia ser feita pelo smartphone, foi necessária a utilização de um dispositivo externo a ele. Devido sua disponibilidade para o projeto, foi definido que essa funcionalidade poderia ser facilmente realizada pela placa de programação Arduíno UNO, Figura \ref{PhotoArduino}. As especificações da placa estão na Tabela \ref{dataArduino}.
 
 \begin{table}[H]
 	\centering
@@ -87,39 +87,39 @@ Para a funcionalidade de detecção de obstáculos, que não poderia ser feita pelo 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{./Resources/sensor.jpg}
+	\includegraphics[scale=0.4]{./Resources/sensor.jpg}
 	\captionof{figure}{Sensor HC-SR04.}
 	\caption*{Fonte: www.filipeflop.com}
 	
 	\label{PhotoSensor}
 \end{figure}
 
-O Arduíno como uma placa programável, possibilita um infinidade de aplicações. Entretanto ele não possui sensores acoplados, apenas entradas e saídas genéricas. Para a detecção de obstáculos foi necessária a inserção de um sensor. O HC-SR04, figura \ref{PhotoBlueTooth}, sensor ultrassônico que se mostrou eficiente para a tarefa desejada. Emitindo ondas de frequência ultrassônica, o sensor capta o sinal refletido e baseado na intensidade permite o cálculo da distância.
+O Arduíno como uma placa programável, possibilita um infinidade de aplicações. Entretanto ele não possui sensores acoplados, apenas entradas e saídas genéricas. Para a detecção de obstáculos foi necessária a inserção de um sensor. O HC-SR04, Figura \ref{PhotoBlueTooth},é um sensor ultrassônico amplamente utilizado para esse propósito, e cujo alcance se mostrou apropriado para o projeto. Emitindo ondas de frequência ultrassônica, o sensor em seguida capta o sinal refletido e baseado no tempo entre emissão e retorno, e na velocidade do som, permite o cálculo da distância.
 
 \subsection{Bluetooth}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{./Resources/bluetooth.jpg}
+	\includegraphics[scale=0.3]{./Resources/bluetooth.jpg}
 	\captionof{figure}{Módulo BlueTooth HC-05.}
 	\caption*{Fonte: www.filipeflop.com}
 	\label{PhotoBlueTooth}
 \end{figure}
 
-Para a comunicação entre o Arduíno e o smartphone haviam diversas possibilidades de implementação. A troca de dados pela internet já seria utilizada pela aplicação Android para o reconhecimento de imagens, que será apresentado com mais detalhes na seção Métodos. No entanto, havia soluções mais simples, como por exemplo, a comunicação via Bluetooth, adotada pelo projeto. Assim como o sensor, foi inserido ao circuito controlado pelo Arduíno o módulo Bluetooth HC-05, apresentado pela figura \ref{PhotoBlueTooth}.
+Para a comunicação entre o Arduíno e o smartphone haviam diversas possibilidades de implementação. A troca de dados pela internet já seria utilizada pela aplicação Android para o reconhecimento de imagens, que será apresentado com mais detalhes na seção Métodos. No entanto, como o smartphone e o dispositivo detector de obstáculos estariam ambos em contato, ou muito próximos do corpo do usuário, tornando a distância entre eles relativamente pequena, e devido a simplicidade de implementação da comunicação, a escolha foi pelo módulo Bluetooth HC-05, Figura \ref{PhotoBlueTooth}.
 
 \subsection{Caixa do circuito}
 
-Para fins de demonstração do protótipo, foi criado uma caixa para envolver o circuito. Para tanto foi utilizado uma garrafa PET de 2L, tesoura, fita adesiva transparente, fita isolante, um interruptor tipo navio de dois pinos e uma bateria de 9V.
+Para fins de demonstração do protótipo, foi criado uma caixa para envolver o circuito. Para tanto foi utilizada uma garrafa PET de 2L, tesoura, fita adesiva transparente, fita isolante, um interruptor tipo navio de dois pinos e uma bateria de 9V.
 
-\subsection{Componentes eletrônicos em geral}
+\subsection{Demais componentes eletrônicos}
 
 Para a conexão dos componentes do circuito foram necessários uma variedade de fios para conectar VCC, GND, emendas e conexões de entrada e saída de sinais. Foram necessários também 3 resistores de 220$\Omega$ para criação de um divisor de tensão. e para a programação do Arduíno utilizou-se um cabo USB.
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Métodos}
 
-Os métodos utilizados para a se atingir o objetivo do projeto são extremamente importantes não só para a compreensão de como as partes se comunicam, mas também para se expor detalhes da implementação que são essenciais para garantir ampla usabilidade e acessibilidade do usuário.
+Os métodos utilizados para a se atingir o objetivo do projeto são extremamente importantes não só para a compreensão de como as partes se comunicam, mas também para se expor detalhes da implementação voltados para a garantia de ampla usabilidade e acessibilidade do usuário.
 
 \subsection{Configurações iniciais de programação}
 
@@ -127,16 +127,16 @@ Antes de tudo, para o início da programação do aplicativo foi necessária a insta
 
 \subsection{Construção de interface acessível}
 
-O objetivo do projeto era permitir que pessoas com limitações visuais pudessem exercer algumas funções exclusivas de pessoas que podem ver. Por essa razão, o ponto mais importante, e primeiro a ser planejado foi a interface. Então, a primeira coisa a ser feita era definir se o Android 4.1 permitiria a usabilidade por pessoas a qual o projeto se destina.
+Como o objetivo do projeto era permitir que pessoas com limitações visuais pudessem exercer algumas funções exclusivas de pessoas que podem ver, e o meio escolhido para esse fim foi uma aplicação para smartphone, o ponto mais importante, e primeiro a ser planejado foi a interface, para avaliar previamente se o Android 4.1 permitiria a usabilidade por pessoas às quais o projeto se destina.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{./Resources/talkback.jpg}
-	\caption{Talkback}
+	\caption{Etapas para a ativação do Talkback no Android}
 	\label{PhotoTalkback}
 \end{figure}
 
-A princípio, foi considerada a possibilidade de implementar tradução de texto em áudio pela aplicação. Dessa forma, qualquer informação na tela do aplicativo poderia ser descrita ao usuário pelo som. No entanto isso foi desnecessário quando entrou em cena o Talkback, figura \ref{PhotoTalkback}, serviço nativo do Android que adapta a lógica de interação para pessoas com dificuldades de visão. Além de fazer automaticamente a tradução texto-áudio de qualquer informação presente na tela, o Talkback muda a lógica de cliques e insere sons e vibrações de resposta a qualquer ação realizada, desde toques em botões até deslizamento em listas. Com isso, o projeto pode avançar para outro ponto importante da interface: o tamanho dos elementos.
+De fato, o Android oferece suporte para interface com navegação voltada para pessoas com deficiência visual. A ativação do Talkback, Figura \ref{PhotoTalkback}, que é um serviço nativo do Android, adapta a lógica de interação de toda a interface do Android, facilitando a usabilidade por pessoas com dificuldades ou ausência de visão. Além de fazer automaticamente a tradução texto-áudio de qualquer informação presente na tela, o Talkback muda a lógica de cliques e insere sons e vibrações de resposta a qualquer ação realizada, desde toques em botões até deslizamento em listas. Ele só requer que uma pessoa com visão normal o ative no primeiro uso, e então, mesmo ao ser reiniciado, retorna ao estado ativado. Isso permitiu que o projeto avançasse para outro ponto importante da interface: o tamanho dos elementos.
 
 \begin{figure}[H]
 	\centering
@@ -145,20 +145,20 @@ A princípio, foi considerada a possibilidade de implementar tradução de texto em
 	\label{menu}
 \end{figure} 
 
-Uma das dificuldades enfrentadas por essas pessoas ao utilizar aplicativos é selecionar o elemento correto na tela devido o tamanho reduzido em relação aos dedos. Por essa razão, o menu principal, Figura \ref{menu}, divide a tela toda em quatro grandes áreas que servem para posicionamento dos botões. Além disso, a barra de status do Android e de título do aplicativo foram ocultadas, para garantir o melhor aproveitamento de espaço da tela. 
+Uma das dificuldades enfrentadas por essas pessoas ao utilizar aplicativos é selecionar o elemento correto na tela devido o tamanho reduzido em relação aos dedos. Por essa razão, o menu principal, Figura \ref{menu}, divide a tela toda em quatro grandes áreas que funcionam como botões. Além disso, a barra de status do Android e de título do aplicativo foram ocultadas, para garantir o melhor aproveitamento de espaço da tela. 
 
-Outro problema a ser considerado foi a navegabilidade. Um dos requisitos para que uma pessoa sem visão pudesse utilizar um aplicativo é saber onde está, ou seja, impedir que o usuário não se perdesse na sequência de menus. Por isso, além de não haver submenus na interface, o padrão de desenvolvimento de aplicações Android foi respeitado, com a inserção de descrição de conteúdo a todos os elementos da interface, como mostra a Figura \ref{nav}. Essas descrições ficam visualmente ocultas, mas são lidas apenas pelo Talkback, que transforma a informação em áudio.
+Outro problema a ser considerado foi a navegabilidade. Um dos requisitos para que uma pessoa sem visão pudesse utilizar um aplicativo é saber onde está, ou seja, impedir que o usuário se perdesse na sequência de menus. Por isso, além de não haver submenus na interface, o padrão de desenvolvimento de aplicações Android foi respeitado, com a inserção de descrição de conteúdo a todos os elementos da interface. Essas descrições ficam visualmente ocultas, mas são lidas apenas pelo Talkback, que transforma a informação em áudio.
+
+Uma vez que o aplicativo não se limita a atender apenas pessoas com ausência total de visão, outro cenário considerado foi a utilização do aplicativo por pessoas com graus menos intensos de deficiência visual. Baseado na pesquisa de acessibilidade realizada por Shaun K. Kane et al\cite{Kane} com pessoas de diferentes graus de falta de visão, constatou-se que fontes de tamanho grande e o contraste de cores são considerados características importantes para aplicações. Por isso, um esquema de cores bastante fortes e contrastantes foram utilizadas para os componentes do aplicativo. E cada cor utilizada nos botões do menu principal foi também utilizada como cor de fundo da interface correspondente à opção selecionada. Além disso, o tamanho das letras dos textos de resultado foi aumentado significativamente e formatado em negrito para facilitar uma possível leitura.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.35]{./Resources/navegabilidade.jpg}
 	\caption{Tela principal e respectivas funcionalidades. (a) Descrição facial. (b) Extração de texto (c) Seleção de registros (d) Detecção de obstáculos}
 	\label{nav}
-\end{figure} 
+\end{figure}
 
-Uma vez que o aplicativo não se limita a atender apenas pessoas com ausência total de visão, outro cenário considerado foi a utilização do aplicativo por pessoas com graus mais menos intensos de deficiência visual. Baseado na pesquisa de acessibilidade realizada por Shaun K. Kane et al com pessoas de diferentes graus de falta de visão, fontes de tamanho grande e o contraste de cores são considerados características importantes \cite{Kane}. Assim, um esquema de cores bastante fortes e contrastantes foram utilizadas. E cada cor utilizada nos botões do menu principal foi também utilizada como cor de fundo da interface correspondente à opção selecionada. Além disso, o tamanho das letras dos textos de resultado foi aumentado significativamente e formatado em negrito para facilitar uma possível leitura.
-
-Implementadas todas as características de acessibilidade no aplicado, o resultado foi:
+A Figura \ref{nav} ilustra a navegabilidade dentro do aplicativo, que por meio das medidas tomadas durante a construção, levou a obtenção das seguintes características para o aplicativo:
 
 
 \begin{itemize}
@@ -192,20 +192,23 @@ Para se ter acesso aos serviços da Google Cloud, é necessário se cadastrar no si
 
 \subsection{Adaptação textual do dado retornado}
 
-Após utilizar os serviços do Cloud Vision para a extração de informações da imagem, o passo seguinte foi adaptar as informações escritas para um conteúdo textual de fácil compreensão. O motivo é que as informações extraídas vinham em partes, separadas por categorias, nem sempre vinham preenchidas com informação, ou mesmo possuíam probabilidade baixa de estarem corretas podendo ser descartadas. Assim, foi necessário filtrar esses dados, adicionando um limite de 80\% de confiabilidade. Também, para garantir uma boa fluência no texto resultante, as informações foram filtradas por categoria e dependendo da qual pertencessem, produziriam uma saída textual específica.
+Após utilizar os serviços do Cloud Vision para a extração de informações da imagem, o passo seguinte foi adaptar as informações escritas para um conteúdo textual de fácil compreensão. O motivo é que as informações extraídas vinham em partes, separadas por categorias, nem sempre preenchidas com informação, e algumas vezes possuíam probabilidade baixa de estarem corretas podendo ser descartadas. Assim, foi necessário filtrar esses dados, acrescentando um limite mínimo de 80\% de confiabilidade, número que se mostrou um meio termo adequado entre mostrar muita informação desnecessária ou pouca informação útil. Também, para garantir uma boa fluência no texto resultante, as informações foram filtradas por categoria e dependendo da qual pertencessem, produziriam uma saída textual específica.
 
 \subsection{Tradução de rótulos}
-Outra adaptação necessária foi em relação ao idioma. Apesar de a ferramenta ser capaz de identificar um infinidade deles, os resultados retornados de rótulos relacionadas a imagem estavam sempre em inglês. A solução encontrada foi traduzir esses rótulos antes de compor a saída textual final. No entanto, não há suporte diretamente do Android para essa funcionalidade, e seguindo o exemplo da solicitação de serviços online, a solução encontrada foi utilizar novamente alguma API de tradução. Como a API de tradução da Google não oferece faixa de solicitações gratuitas, o que é extremamente importante, utilizou-se em vez disso a API de tradução Yandex, figura \ref{Yandex}, que assim como a Cloud Vision oferecia um limite de gratuidade.
+Outra adaptação necessária foi em relação ao idioma. Apesar de a ferramenta ser capaz de identificar um infinidade deles durante a OCR, os resultados retornados de rótulos relacionados a imagem estavam sempre em inglês. A solução encontrada foi traduzir esses rótulos antes de compor a saída textual final. No entanto, não há suporte diretamente do Android para essa funcionalidade, e seguindo o exemplo da solicitação de serviços online, a solução encontrada foi utilizar novamente alguma API de tradução. Como a API de tradução da Google não oferece faixa de solicitações gratuitas, o que é extremamente importante, utilizou-se em vez disso a API de tradução Yandex, que assim como a Cloud Vision oferecia um limite de gratuidade.
 
+\iffalse
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.35]{./Resources/yandex.png}
 	\caption{Interface gráfica do Tradutor Yandex acessado pelo navegador}
 	\label{Yandex}
 \end{figure}
+\fi
 
 \subsection{Captura e exibição de resultado}
-O processo de descrição de imagem inicia-se em uma tela que exibe as imagens vindas da câmera traseira do smartphone. O aplicativo, porém, não requisita em momento algum acesso a câmera frontal. Com um toque, ou dois quando o Talkback está ativado, o aplicativo captura a imagem, a salva no dispositivo no formato JPG, em uma nova pasta dentro do diretório do aplicativo e a envia para a nuvem. Enquanto o aplicativo aguarda o retorno do serviço solicitado, uma imagem de relógio pisca suave e lentamente na tela, enquanto um som de tic-tac é tocado como forma de informar o usuário que ele deve aguardar o processo. Também, a imagem capturada mantém-se como plano de fundo durante todo o processo de espera.
+
+Com o processo de obter uma descrição textual a partir de uma imagem finalizado, o passo seguinte foi conectar à entrada desse processo uma imagem capturada pela câmera, e sua saída à áudio descrição. O processo de descrição de imagem inicia-se em uma tela que exibe as imagens vindas da câmera traseira do smartphone. O aplicativo, porém, não requisita em momento algum acesso a câmera frontal. Com um toque, ou dois quando o Talkback está ativado, o aplicativo captura a imagem, a salva no dispositivo no formato JPG, em uma nova pasta dentro do diretório do aplicativo e a envia para a nuvem. Enquanto o aplicativo aguarda o retorno do serviço solicitado, uma imagem de relógio pisca suave e lentamente na tela, enquanto um som de tic-tac é tocado como forma de informar o usuário que ele deve aguardar o processo. Também, a imagem capturada mantém-se como plano de fundo durante todo o processo de espera, e o toque na permanece desabilitado.
 
 \begin{figure}[H]
 	\centering
@@ -214,16 +217,16 @@ O processo de descrição de imagem inicia-se em uma tela que exibe as imagens vin
 	\label{CapRes}
 \end{figure} 
 
-Quando o resultado enfim chega ao aplicativo, a animação e o som de processamento são interrompidos, o plano de fundo volta a mostrar as imagens da câmera, e sobre ela, abre-se uma caixa de texto translúcida e deslizável, conforme mostra a Figura \ref{CapRes}, contendo o texto descritivo em negrito e em fonte grande. Com um longo clique, ou no caso do Talkback estar ativado, um curto clique seguido de um longo sobre a tela, o texto é copiado para a área de transferência. O botão de retorno permite ao usuário voltar a câmera, e o botão de menu, o permite ativar ou desativar os efeitos visual e sonoro realizados durante a espera do processamento. Ao final, a descrição é salva na mesma pasta da imagem capturada.
+Quando o resultado enfim chega ao aplicativo, a animação e o som de processamento são interrompidos, o plano de fundo volta a mostrar as imagens da câmera, e sobre ela, abre-se uma caixa de texto translúcida e deslizável, conforme mostra a Figura \ref{CapRes}, contendo o texto descritivo em negrito e em fonte grande. Com um longo clique, ou no caso do Talkback estar ativado, um curto clique seguido de um longo sobre a tela, o texto é copiado para a área de transferência. O botão de retorno permite ao usuário voltar para a câmera, e o botão de menu, o permite ativar ou desativar os efeitos visual e sonoro realizados durante a espera do processamento. Ao final, a descrição é salva em um arquivo em formato .txt na mesma pasta da imagem capturada.
 
 \subsection{Implementação de opções de reconhecimento}
-Com todo o tratamento dado ao conteúdo transcrito das imagens, para essa funcionalidade, foram criadas duas opções ligeiramente distintas para o aplicativo, como ilustra a Figura \ref{funcoes}. A primeira requisitaria apenas detecção de caracteres da imagem capturada com o intuito de reduzir o número de requisições, e possivelmente reduzir o tempo de resposta. Essa funcionalidade seria aplicável no caso específico de o usuário ter o conhecimento prévio de que a imagem poderia estar preenchidas por algum texto, e que essa informação sozinha pudesse ser relevante e suficiente.
-A segunda funcionalidade solicitaria todas as informações possíveis ao Cloud Vision, que são: Textos, Rótulos, Logotipos, e Pontos turísticos. Por fim, ambas alternativas de extração de informação da imagens foram inseridas em dois dos quatro botões do menu principal.
+Com todo o tratamento dado ao conteúdo transcrito das imagens, para essa funcionalidade, foram criadas duas opções ligeiramente distintas para o aplicativo, como ilustra a Figura \ref{funcoes}. A primeira requisitaria apenas o serviço de OCR sobre a imagem capturada com o intuito de reduzir o número de requisições, e possivelmente reduzir o tempo de resposta. Essa funcionalidade seria aplicável no caso específico de o usuário ter o conhecimento prévio de que a imagem poderia estar preenchidas por algum texto, e que essa informação sozinha pudesse ser relevante e suficiente.
+A segunda funcionalidade solicitaria essa e outras informações ao Cloud Vision, que são: textos, faces, rótulos e pontos turísticos. Por fim, ambas alternativas de extração de informação de imagens foram inseridas nos dois botões superiores do menu principal.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.45]{./Resources/funcoes.png}
-	\caption{Comparação entre botões de solicitação de extração de informação de imagem}
+	\caption{Comparação de funções entre os botões de solicitação de extração de informação de imagem}
 	\label{funcoes}
 \end{figure} 
 
@@ -232,9 +235,9 @@ A segunda funcionalidade solicitaria todas as informações possíveis ao Cloud Vis
 
 \subsection{Registro de descrições}
 
-A funcionalidade de transcrição de imagem em texto foi perfeitamente realizada. Mas para prover ao usuário a possibilidade de resgatar resultados anteriores, foi importante permitir que o aplicativo oferecesse a opção de salvar. Nesse ponto surgiu uma questão: Qual seria melhor forma de usuário acessar esse registro? 
+Para prover ao usuário a possibilidade de resgatar resultados anteriores, foi importante também permitir que o aplicativo oferecesse a opção de salvá-los. Nesse ponto surgiu uma questão: Qual seria a melhor forma de o usuário acessar esse registro? 
 
-Nomear os registros com parte da descrição poderia causar ambiguidade de nomes e poderia dificultar encontrá-los caso houvesse muitos. Assim, foi decidido que os registros seriam nomeados com a data e hora de criação. Além disso, seriam sempre ordenados temporalmente ao serem carregados na lista pelo aplicativo. Isso facilitou muito o acesso, pois os mais recentes apareciam no topo, e data/horário são identificadores únicos e permitem fácil localização na procura por um registro. A Figura \ref{select} apresenta uma lista de registros que foi gerada pela utilização do aplicativo.
+Nomear os registros com parte da descrição poderia causar ambiguidade de nomes e poderia dificultar encontrá-los caso houvesse muitos. Assim, foi decidido que os registros seriam nomeados com a data e hora de criação. Além disso, seriam sempre ordenados temporalmente ao serem carregados em uma lista pelo aplicativo. O motivo foi facilitar o acesso, pois os mais recentes apareceriam no topo, e data/horário são identificadores únicos que permitem fácil localização na procura por um registro. A Figura \ref{select} apresenta uma lista de registros que foi gerada pela utilização do aplicativo.
 
 Com isso decidido, foi necessário planejar a estrutura desse registro. A princípio considerou-se que o áudio referente à transcrição deveria ser salvo. No entanto, o propósito principal do aplicativo era apenas extrair informações de imagens e encontrar uma forma de fazer com que o usuário com deficiência visual pudesse acessá-la. Salvar o áudio deixou de ser necessário quando se percebeu que a função de áudio descrição é parte exclusiva da interface de acessibilidade do aplicativo, e não é obrigatória para todos os usuários. A intenção de salvar os dados não é pela voz da áudio descrição, mas exclusivamente por seu conteúdo.
 
@@ -242,28 +245,46 @@ Assim, cada registro correspondia a um diretório contendo apenas a foto no forma
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{./Resources/select.png}
+	\includegraphics[scale=0.3]{./Resources/select.png}
 	\caption{Lista de registros de descrição}
 	\label{select}
-\end{figure} 
+\end{figure}
+
+\subsection{Inserção de nome de pessoas}
+
+Para os registros de descrições foi criada uma funcionalidade extra: a flexibilidade de o usuário inserir na descrição o nome das pessoas em uma foto, no caso de se ter o conhecimento prévio de quem e onde estão na foto. Basicamente, quando o usuário abre o registro da lista, na metade superior da tela se exibe a foto, e na inferior, a caixa de texto rolável contendo a descrição. Como ilustra a Figura \ref{nome}, ao clicar sobre a foto, se o toque for sobre algum rosto, o aplicativo pergunta se o usuário deseja inserir o nome da pessoa na descrição. Se sim, basta ele escrever o nome na caixa de alerta e confirmar. Automaticamente o nome é salvo na descrição, e pode ser trocado a qualquer momento. Ao tocar na parte inferior da tela, onde fica o texto, a áudio descrição é realizada pelo talkback, se ativado.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.45]{./Resources/inserirNome.png}
+	\caption{Inserção de nome de uma pessoa em descrição de foto}
+	\label{nome}
+\end{figure}
 
 
 \subsection{Tratamento de sinais ultrassônicos}
-O tratamento de sinais vindos do sensor HC-SR04 é parte essencial do projeto, porém a mais simples de ser feita. Do ponto de vista de hardware, o sensor possui quatro pinos de conexão: VDD, GND, Trigger e Echo. O VDD foi conectado a alimentação de 5V do Arduíno, assim como o GND conectado ao terra. O Trigger e o Echo são respectivamente entrada e saída do sensor, para que o sensor receba comando para emissão de ondas de 40 kHz de frequência e então retorne em sua saída o valor medido da reflexão da onda. Esses dois pinos foram conectados respectivamente nos Pinos 4 e 5 do Arduíno. Informações mais detalhadas sobre o sensor podem ser encontradas no Anexo \ref{SensorAnexo}.
+O tratamento de sinais vindos do sensor HC-SR04 é parte essencial do projeto, porém a mais simples de ser feita. Do ponto de vista de hardware, o sensor possui quatro pinos de conexão: VDD, GND, Trigger e Echo. O VDD foi conectado a alimentação de 5V do Arduíno, assim como o GND conectado ao terra. O Trigger e o Echo são respectivamente entrada e saída do sensor, para que o sensor receba comando para emissão de ondas de 40 kHz de frequência e então retorne em sua saída o valor do tempo entre a emissão e a recepção da onda refletida. Esses dois pinos foram conectados respectivamente nos Pinos 4 e 5 do Arduíno. Informações mais detalhadas sobre o sensor podem ser encontradas no Anexo \ref{SensorAnexo}.
 
-Do ponto de vista lógico, o programa que roda no Arduíno basicamente controla a emissão e recepção de sinais do sensor, e em seguida repassa para o módulo Bluetooth. O sensor aguarda a onda refletida, e baseado no tempo entre emissão e recepção, é possível calcular a distância percorrida até o obstáculo. O sensor tem capacidade de identificar obstáculos até 4 metros. Quando ocorre algum erro de medida, e a distância calculada é maior que esse limite, o valor é ignorado e não é reenviado ao Bluetooth.
+Do ponto de vista lógico, o programa que roda no Arduíno periodicamente emite um sinal baixo de 2$\mu$s seguido de um alto de 10$\mu$s para gerar a onda, lê o valor recebido de tempo entre emissão e recepção do sinal refletido, calcula a distância segundo a equação: \[ \Delta S = V\times \Delta T \] com $ \Delta T $ sendo metade do tempo recebido, pois se quer apenas o tempo entre emissão e reflexão, $ V = 0.034 cm/s$ representando a velocidade do som no ar, e $ \Delta S$ a distância em centímetros entre o sensor e obstáculo. Por fim, repassa o resultado para o módulo Bluetooth. Caso o valor da distância seja superior a 4 metros, limite de precisão do sensor, o valor não é repassado ao Bluetooth.
 
 \subsection{Comunicação Arduino-BlueTooth}
 
-Para transmitir sinais do Arduíno para o smartphone via módulo BlueTooth, bastou inserir a informação na porta Serial. O mais importante foi, na verdade, decidir que informação deveria ser transmitida. Para garantir a modularidade do sistema, o Arduíno ficou encarregado apenas de enviar ininterruptamente os sinais lidos pelo sensor ao smartphone, sem realizar qualquer verificação de proximidade de obstáculos, função que o aplicativo Android ficou encarregado de fazer.
+Para transmitir sinais do Arduíno para o smartphone via módulo Bluetooth, bastou inserir a informação na porta Serial. O mais importante foi, na verdade, decidir que informação deveria ser transmitida. Para garantir a modularidade do sistema, o Arduíno ficou encarregado apenas de enviar ininterruptamente as distâncias calculadas ao smartphone, sem realizar qualquer verificação de proximidade de obstáculos, função que o aplicativo Android ficou encarregado de fazer.
 
-Do ponto de vista de circuitos, apenas quatro dos seis pinos do módulos foram utilizados. A razão foi que o HC-05 pode ser programado para ser mestre ou escravo. No modo escravo, os pinos KEY e STATE podem ser ignorados, e como não havia necessidade de o Arduíno se conectar a nenhum outro dispositivo, nem mesmo de requisitar conexões, esse foi o modo adotado para o BlueTooth no sistema. Foram então conectados VCC e GND aos respectivos pinos do Arduíno, para alimentar o módulo. O pino TXD de transmissão do módulo foi conectado ao pino RX do Arduíno, para recepção de sinais de comunicação vindos do smartphone. Por fim, o pino TX do Arduíno foi conectado ao RXD do módulo. Para adaptar a tensão de saída do Arduíno à tensão adequada do módulo, foi necessário implementar um circuito divisor de tensão, pois o sinal proveniente do Arduíno é de 5V porém a tensão recomendada do módulo é da ordem de 3V.
+Do ponto de vista de circuitos, apenas quatro dos seis pinos do módulos foram utilizados. A razão foi que o HC-05 pode ser programado para ser mestre ou escravo. No modo escravo, os pinos KEY e STATE podem ser ignorados, e como não havia necessidade de o Arduíno se conectar a nenhum outro dispositivo, nem mesmo de requisitar conexões, esse foi o modo adotado para o Bluetooth no sistema. Foram então conectados VCC e GND aos respectivos pinos do Arduíno, para alimentar o módulo. O pino TXD de transmissão do módulo foi conectado ao pino RX do Arduíno, para recepção de sinais de comunicação vindos do smartphone. Por fim, o pino TX do Arduíno foi conectado ao RXD do módulo para receber os valores de distância a serem transmitidos ao smartphone. Para adaptar a tensão de saída do Arduíno à tensão adequada do módulo, foi necessário implementar um circuito divisor de tensão, pois o sinal proveniente do Arduíno é de 5V porém a tensão recomendada do módulo é da ordem de 3V.
 
-\subsection{Comunicação Smartphone-BlueTooth}
+\subsection{Comunicação Smartphone-Bluetooth}
 
-Do lado oposto da comunicação, no aplicativo Android foi necessário receber os dados do Arduíno. Para tanto, um ciclo de comandos foi executado em plano de fundo. Primeiramente, o BlueTooth era ligado e fazia-se uma varredura repetitiva de dispositivos ao redor. Caso encontrasse um com o nome HC-05, a varredura era interrompida e tentava-se iniciar um conexão. Ao ser iniciada, o aplicativo iniciava uma leitura contante do buffer de entrada e o dado, distância até um possível obstáculo, era tratado e gerava-se duas possíveis classificações: Surgimento de obstáculos no caminho ou Desaparecimento de obstáculos no caminho, ambos baseados em um limite mínimo definido de 1m. Quando um dos dois casos ocorresse, um alerta seria emitido, o qual seria lido pelo Talkback para informar o usuário. Essa funcionalidade por fim foi colocada com ação do último dos quatro botões do menu principal.
+Do lado oposto da comunicação, no aplicativo Android foi necessário receber os dados do Arduíno. Para tanto, um ciclo de comandos foi executado em plano de fundo. Primeiramente, o Bluetooth era ligado e fazia-se uma varredura repetitiva de dispositivos ao redor. Caso encontrasse um com o nome HC-05, a varredura era interrompida e tentava-se iniciar um conexão. Ao ser iniciada, o aplicativo iniciava uma leitura contante do buffer de entrada e o dado, distância até um possível obstáculo, era tratado e gerava-se quatro possíveis classificações:
 
-O circuito completo, contendo o sensor de obstáculos, o módulo bluetooth e o Arduíno, pode ser visualizado na figura \ref{circuit}.
+\begin{itemize}  
+	\item Entrada na área de atenção: A distância entre o sensor e o obstáculo entrou na faixa de 30cm a 200cm. Um arquivo de áudio contendo um sinal de ruído branco é executado com volume inversamente proporcional à distância.
+	\item Entrada na área de alerta: A distância entre o sensor e o obstáculo entrou na faixa inferior a 30cm. Um sinal periódico de alerta sonoro e vibração são executados.
+	\item Dentro da área de atenção: A distância entre o sensor e o obstáculo mantém-se entre 30cm e 200cm. Permanece a execução de som de atenção, atualizando seu volume de acordo com a distância.	
+	\item Fora: Desliga todos os sinais.
+\end{itemize}
+
+Essa funcionalidade por fim foi colocada como ação do último dos quatro botões do menu principal. O circuito completo, contendo o sensor de obstáculos, o módulo Bluetooth e o Arduíno, pode ser visualizado na figura \ref{circuit}.
 
 
 \begin{figure}[H]
@@ -275,6 +296,6 @@ O circuito completo, contendo o sensor de obstáculos, o módulo bluetooth e o Ard
 
 \subsection{Manufatura da caixa do circuito}
 
-Para garantir manuseio razoável do circuito, o protótipo de detector de obstáculos necessitou de uma pequena caixa de proteção. Para isso foi criada uma caixa arredondada utilizando-se da porção central de uma garrafa PET de dois litros. O topo e a base da garrafa foram removidos com uma tesoura, formando um cilindro, e duas dobras longitudinais foram feitas para se ajustar ao comprimento do circuito. Parte do trecho dessas dobras foi cortado em ambas as bases para criar duas abas, reduzir o tamanho e fechar a caixa. Foi inserido também na lateral da caixa um interruptor de tipo navio com dois pinos para facilitar o ligar e desligar. Por fim foram feitos recortes na caixa para adaptá-la ao sensor e ao Bluetooth, e o circuito todo foi inserido.
+Para facilitar o manuseio do circuito, o protótipo de detector de obstáculos necessitou de uma pequena caixa de proteção. Para isso foi criada uma caixa arredondada utilizando-se da porção central de uma garrafa PET de dois litros. O topo e a base da garrafa foram removidos com uma tesoura, formando um cilindro, e duas dobras longitudinais foram feitas para se ajustar ao comprimento do circuito. Parte do trecho dessas dobras foi cortado em ambas as bases para criar duas abas, reduzir o tamanho e fechar a caixa. Foi inserido também na lateral da caixa um interruptor de tipo navio com dois pinos para facilitar o ligar e desligar. Por fim foram feitos recortes na caixa para adaptá-la ao sensor e ao Bluetooth, e o circuito todo foi inserido.
 
 

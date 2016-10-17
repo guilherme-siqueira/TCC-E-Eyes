@@ -1,62 +1,64 @@
 \select@language {brazil}
-\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{27}
-\contentsline {section}{\numberline {1.1}Motiva\c c\~ao}{27}
-\contentsline {section}{\numberline {1.2}Estado da arte}{28}
-\contentsline {subsection}{\numberline {1.2.1}Vis\~ao computacional}{28}
-\contentsline {subsection}{\numberline {1.2.2}Ecolocaliza\c c\~ao}{28}
-\contentsline {subsection}{\numberline {1.2.3}Cen\'ario no Brasil}{29}
-\contentsline {section}{\numberline {1.3}Objetivos}{29}
-\contentsline {section}{\numberline {1.4}Justificativas}{31}
-\contentsline {section}{\numberline {1.5}Organiza\c c\~ao do Trabalho}{32}
-\contentsline {chapter}{\numberline {2}Embasamento Te\'orico}{33}
-\contentsline {section}{\numberline {2.1}Tecnologia assistiva}{33}
-\contentsline {section}{\numberline {2.2}Design universal e acessibilidade}{33}
-\contentsline {subsection}{\numberline {2.2.1}Talkback}{34}
-\contentsline {section}{\numberline {2.3}Computa\c c\~ao em nuvem}{34}
-\contentsline {section}{\numberline {2.4}Vis\~ao computacional}{35}
-\contentsline {subsection}{\numberline {2.4.1}Reconhecimento \'optico de caractere}{35}
-\contentsline {subsection}{\numberline {2.4.2}Classifica\c c\~ao de imagens}{36}
-\contentsline {section}{\numberline {2.5}Ecolocaliza\c c\~ao e localiza\c c\~ao sonora}{37}
-\contentsline {chapter}{\numberline {3}Material e M\'etodos}{39}
-\contentsline {section}{\numberline {3.1}Materiais}{40}
-\contentsline {subsection}{\numberline {3.1.1}Smartphone}{40}
-\contentsline {subsection}{\numberline {3.1.2}Android Studio}{41}
-\contentsline {subsection}{\numberline {3.1.3}Ardu\IeC {\'\i }no}{41}
-\contentsline {subsection}{\numberline {3.1.4}Sensor}{42}
-\contentsline {subsection}{\numberline {3.1.5}Bluetooth}{43}
-\contentsline {subsection}{\numberline {3.1.6}Caixa do circuito}{43}
-\contentsline {subsection}{\numberline {3.1.7}Componentes eletr\^onicos em geral}{43}
-\contentsline {section}{\numberline {3.2}M\'etodos}{44}
-\contentsline {subsection}{\numberline {3.2.1}Configura\c c\~oes iniciais de programa\c c\~ao}{44}
-\contentsline {subsection}{\numberline {3.2.2}Constru\c c\~ao de interface acess\IeC {\'\i }vel}{44}
-\contentsline {subsection}{\numberline {3.2.3}Extra\c c\~ao de dados em imagem}{47}
-\contentsline {subsection}{\numberline {3.2.4}Adapta\c c\~ao textual do dado retornado}{48}
-\contentsline {subsection}{\numberline {3.2.5}Tradu\c c\~ao de r\'otulos}{48}
-\contentsline {subsection}{\numberline {3.2.6}Captura e exibi\c c\~ao de resultado}{49}
-\contentsline {subsection}{\numberline {3.2.7}Implementa\c c\~ao de op\c c\~oes de reconhecimento}{50}
-\contentsline {subsection}{\numberline {3.2.8}Registro de descri\c c\~oes}{50}
-\contentsline {subsection}{\numberline {3.2.9}Tratamento de sinais ultrass\^onicos}{52}
-\contentsline {subsection}{\numberline {3.2.10}Comunica\c c\~ao Arduino-BlueTooth}{53}
-\contentsline {subsection}{\numberline {3.2.11}Comunica\c c\~ao Smartphone-BlueTooth}{53}
-\contentsline {subsection}{\numberline {3.2.12}Manufatura da caixa do circuito}{54}
-\contentsline {chapter}{\numberline {4}Resultados e Discuss\~oes}{55}
-\contentsline {section}{\numberline {4.1}Descri\c c\~ao de Imagens}{55}
-\contentsline {subsection}{\numberline {4.1.1}Teste para diferentes dimens\~oes de imagens}{55}
-\contentsline {subsection}{\numberline {4.1.2}Teste para reconhecimento de texto girado}{58}
-\contentsline {subsection}{\numberline {4.1.3}Teste para reconhecimento de texto com letra cursiva}{59}
-\contentsline {subsection}{\numberline {4.1.4}Teste para rotula\c c\~ao de elementos da cena}{61}
-\contentsline {subsection}{\numberline {4.1.5}Teste para classifica\c c\~ao de express\~ao facial}{65}
-\contentsline {section}{\numberline {4.2}Detec\c c\~ao de Obst\'aculos}{66}
-\contentsline {subsection}{\numberline {4.2.1}Precis\~ao das medidas de dist\^ancia}{66}
-\contentsline {subsection}{\numberline {4.2.2}Usabilidade do dispositivo}{67}
-\contentsline {section}{\numberline {4.3}Avalia\c c\~ao de consumo do sistema}{67}
-\contentsline {subsection}{\numberline {4.3.1}Consumo no smartphone}{68}
-\contentsline {subsection}{\numberline {4.3.2}Consumo no detector de obst\'aculos}{68}
-\contentsline {chapter}{\numberline {5}Conclus\~ao ou Conclus\~oes}{71}
-\contentsline {chapter}{Refer\^encias}{71}
-\contentsline {chapter}{\numberline {A}Diagrama de classes do aplicativo Android}{77}
-\contentsline {chapter}{\numberline {B}C\'odigos relevantes}{79}
-\contentsline {chapter}{\numberline {C}Monografia Parcial do TCC}{85}
-\contentsline {chapter}{\numberline {I}Especifica\c c\~ao t\'ecnica Ardu\IeC {\'\i }no}{87}
-\contentsline {chapter}{\numberline {II}Especifica\c c\~ao t\'ecnica HC-05}{90}
-\contentsline {chapter}{\numberline {III}Especifica\c c\~ao t\'ecnica HC-SR04}{93}
+\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{6}
+\contentsline {section}{\numberline {1.1}Motiva\c c\~ao}{6}
+\contentsline {section}{\numberline {1.2}Estado da arte}{7}
+\contentsline {subsection}{\numberline {1.2.1}Vis\~ao computacional}{7}
+\contentsline {subsection}{\numberline {1.2.2}Ecolocaliza\c c\~ao}{7}
+\contentsline {subsection}{\numberline {1.2.3}Cen\'ario no Brasil}{8}
+\contentsline {section}{\numberline {1.3}Objetivos}{8}
+\contentsline {section}{\numberline {1.4}Justificativas}{10}
+\contentsline {section}{\numberline {1.5}Organiza\c c\~ao do trabalho}{11}
+\contentsline {chapter}{\numberline {2}Embasamento Te\'orico}{12}
+\contentsline {section}{\numberline {2.1}Tecnologia assistiva}{12}
+\contentsline {section}{\numberline {2.2}Design universal e acessibilidade}{12}
+\contentsline {subsection}{\numberline {2.2.1}Talkback}{13}
+\contentsline {section}{\numberline {2.3}Computa\c c\~ao em nuvem}{13}
+\contentsline {section}{\numberline {2.4}Vis\~ao computacional}{14}
+\contentsline {subsection}{\numberline {2.4.1}Reconhecimento \'optico de caractere}{14}
+\contentsline {subsection}{\numberline {2.4.2}Classifica\c c\~ao de imagens}{15}
+\contentsline {section}{\numberline {2.5}Ecolocaliza\c c\~ao e localiza\c c\~ao sonora}{16}
+\contentsline {chapter}{\numberline {3}Material e M\'etodos}{18}
+\contentsline {section}{\numberline {3.1}Materiais}{19}
+\contentsline {subsection}{\numberline {3.1.1}Smartphone}{19}
+\contentsline {subsection}{\numberline {3.1.2}Android Studio}{20}
+\contentsline {subsection}{\numberline {3.1.3}Ardu\IeC {\'\i }no}{20}
+\contentsline {subsection}{\numberline {3.1.4}Sensor}{21}
+\contentsline {subsection}{\numberline {3.1.5}Bluetooth}{21}
+\contentsline {subsection}{\numberline {3.1.6}Caixa do circuito}{22}
+\contentsline {subsection}{\numberline {3.1.7}Demais componentes eletr\^onicos}{22}
+\contentsline {section}{\numberline {3.2}M\'etodos}{22}
+\contentsline {subsection}{\numberline {3.2.1}Configura\c c\~oes iniciais de programa\c c\~ao}{22}
+\contentsline {subsection}{\numberline {3.2.2}Constru\c c\~ao de interface acess\IeC {\'\i }vel}{22}
+\contentsline {subsection}{\numberline {3.2.3}Extra\c c\~ao de dados em imagem}{26}
+\contentsline {subsection}{\numberline {3.2.4}Adapta\c c\~ao textual do dado retornado}{27}
+\contentsline {subsection}{\numberline {3.2.5}Tradu\c c\~ao de r\'otulos}{27}
+\contentsline {subsection}{\numberline {3.2.6}Captura e exibi\c c\~ao de resultado}{27}
+\contentsline {subsection}{\numberline {3.2.7}Implementa\c c\~ao de op\c c\~oes de reconhecimento}{28}
+\contentsline {subsection}{\numberline {3.2.8}Registro de descri\c c\~oes}{29}
+\contentsline {subsection}{\numberline {3.2.9}Inser\c c\~ao de nome de pessoas}{30}
+\contentsline {subsection}{\numberline {3.2.10}Tratamento de sinais ultrass\^onicos}{31}
+\contentsline {subsection}{\numberline {3.2.11}Comunica\c c\~ao Arduino-BlueTooth}{32}
+\contentsline {subsection}{\numberline {3.2.12}Comunica\c c\~ao Smartphone-Bluetooth}{32}
+\contentsline {subsection}{\numberline {3.2.13}Manufatura da caixa do circuito}{33}
+\contentsline {chapter}{\numberline {4}Resultados e Discuss\~oes}{34}
+\contentsline {section}{\numberline {4.1}Descri\c c\~ao de Imagens}{34}
+\contentsline {subsection}{\numberline {4.1.1}Teste para diferentes dimens\~oes de imagens}{34}
+\contentsline {subsection}{\numberline {4.1.2}Teste para reconhecimento de texto girado}{37}
+\contentsline {subsection}{\numberline {4.1.3}Teste para reconhecimento de texto com letra cursiva}{38}
+\contentsline {subsection}{\numberline {4.1.4}Teste para rotula\c c\~ao de elementos da cena}{40}
+\contentsline {subsection}{\numberline {4.1.5}Teste para classifica\c c\~ao de express\~ao facial}{43}
+\contentsline {section}{\numberline {4.2}Detec\c c\~ao de Obst\'aculos}{45}
+\contentsline {subsection}{\numberline {4.2.1}Precis\~ao e acur\'acia das medidas de dist\^ancia}{45}
+\contentsline {subsection}{\numberline {4.2.2}Usabilidade do dispositivo}{46}
+\contentsline {section}{\numberline {4.3}Avalia\c c\~ao de consumo do sistema}{46}
+\contentsline {subsection}{\numberline {4.3.1}Consumo no smartphone}{46}
+\contentsline {subsection}{\numberline {4.3.2}Consumo no detector de obst\'aculos}{47}
+\contentsline {chapter}{\numberline {5}Conclus\~ao}{51}
+\contentsline {section}{\numberline {5.1}Falhas}{51}
+\contentsline {section}{\numberline {5.2}Acertos}{51}
+\contentsline {section}{\numberline {5.3}Disciplinas base}{52}
+\contentsline {chapter}{Refer\^encias}{55}
+\contentsline {chapter}{\numberline {A}Diagrama de classes do aplicativo Android}{59}
+\contentsline {chapter}{\numberline {B}C\'odigos relevantes}{61}
+\contentsline {chapter}{\numberline {I}Especifica\c c\~ao t\'ecnica HC-05}{67}
+\contentsline {chapter}{\numberline {II}Especifica\c c\~ao t\'ecnica HC-SR04}{71}

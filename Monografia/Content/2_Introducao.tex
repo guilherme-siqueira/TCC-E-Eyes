@@ -6,7 +6,7 @@
 
 %\textbf{De forma resumida, a Tecnologia Assistiva consiste em todo o conjunto de ferramentas tecnológicas que visam promover a melhoria da qualidade de vida de pessoas com alguma limitação. Baseado nesse conceito, o projeto procurou seguir a ideia de desenvolver um sistema para atender as necessidades de pessoas com deficiência visual.}
 
-Uma pesquisa publicada pelo Banco Mundial em 2016 procurou avaliar simultaneamente os avanços tecnológicos e a exclusão digital, principalmente com relação ao acesso a internet. Seus resultados mostraram que alguns países estão aquém da revolução digital, o que reflete na exclusão socioeconômica de parcela da população do planeta \cite{WDR}. Esse capítulo terá a intensão de introduzir o leitor ao cenário tecnológico atual, a situação vivida por pessoas com deficiência, apresentará o estado da arte, por meio de projetos e irá por fim propor um sistema para aplicar tais tecnologias a esse público alvo.
+Uma pesquisa publicada pelo Banco Mundial em 2016 procurou avaliar simultaneamente os avanços tecnológicos e a exclusão digital, principalmente com relação ao acesso a internet. Seus resultados mostraram que alguns países estão muito desvinculados da revolução digital, o que reflete na exclusão socioeconômica de parcela da população do planeta \cite{WDR}. Esse capítulo terá a intensão de introduzir o leitor ao cenário tecnológico atual, a situação vivida por pessoas com deficiência, apresentará o estado da arte, por meio de projetos e irá por fim propor um sistema para aplicar tais tecnologias a esse público alvo.
 
 
 %Referência \cite{referencia1}.
@@ -41,28 +41,32 @@ Para o desenvolvimento do projeto, diversos projetos bem sucedidos foram utiliza
 
 Na área de leitura e extração de informações de imagens, um exemplo que possui funcionalidades bastantes próximas às propostas e que serviram de inspiração é o aplicativo TapTapSee, que fotografa objetos e os identifica em voz alta, além de estar vinculado com contas de usuário, como Facebook e Twitter para compartilhamento\cite{TapTapSee}.
 
-Existe também o aplicativo móvel Be My Eyes, um sistema de auxílio em rede que conecta usuários cegos a voluntários por meio de vídeo chamadas e áudio \cite{BeMyEyes}. Mauro Avila et faz uma avaliação do aplicativo que consistiu em uma pesquisa com 15 homens e 15 mulheres através de mídias sociais. A maioria dos entrevistados tinha entre 36 e 65 anos de idade. O trabalho concluiu que os usuários consideram o aplicativo muito útil para leitura de textos, localização de objetos, assistência a compras, entre outros \cite{Mauro}.
+Existe também o aplicativo móvel Be My Eyes, um sistema de auxílio em rede que conecta usuários cegos a voluntários por meio de vídeo chamadas e áudio \cite{BeMyEyes}. Mauro Avila et al.\cite{Mauro} faz uma avaliação do aplicativo que consistiu em uma pesquisa com 15 homens e 15 mulheres através de mídias sociais. A maioria dos entrevistados tinha entre 36 e 65 anos de idade. O trabalho concluiu que os usuários consideram o aplicativo muito útil para leitura de textos, localização de objetos, assistência a compras, entre outras tarefas do dia a dia.
 
-Outro trabalho bastante interessante é o realizado pela Universidade Hamad Bin Khalifa. H. Kwak e J. An analisaram mais de 2 milhões de fotos de jornais publicadas em Janeiro de 2016 por meio da API Google Cloud Vision. A pesquisa avaliou a frequência de exibição e expressões faciais em fotos dos então candidatos a presidência dos Estados Unidos, nos principais jornais, e concluiu que a API foi o ponto chave de sucesso do trabalho devido a alta acurácia e pontuações de confiabilidade de cada resultado \cite{Kwak}.
+Outro trabalho bastante interessante é o realizado pela Universidade Hamad Bin Khalifa. H. Kwak e J. An\cite{Kwak} analisaram mais de 2 milhões de fotos de jornais publicadas em Janeiro de 2016 por meio da API Google Cloud Vision. A pesquisa avaliou a frequência de exibição e expressões faciais em fotos dos então candidatos a presidência dos Estados Unidos, nos principais jornais, e concluiu que a API foi o ponto chave de sucesso do trabalho devido a alta acurácia e pontuações de confiabilidade de cada resultado.
 
 \subsection{Ecolocalização}
 
-Na área de detecção de obstáculos, existem diversos projetos ETAs que utilizam sensores ultrassônicos. Wong et Al. na intensão de evitar maus hábitos de uso da bengala e contornar suas limitações, propôs um sistema composto por sensores que continuamente procuram por objetos também em alturas maiores. O sistema utiliza um microcontrolador para calcular a distância baseada em sinais ultrassônicos enviados e recebidos por dois transdutores fixados na bengala, um para detecção em pequenas alturas, e o outro para grandes \cite{Wong}. Então depois de emitir os sinais, captura sua reflexão, calcula a distância e gera um sinal sonoro de retorno ao usuário.
+Na área de detecção de obstáculos, existem diversos projetos ETAs que utilizam sensores ultrassônicos. Wong et al.\cite{Wong} na intensão de evitar maus hábitos de uso da bengala e contornar suas limitações, propôs um sistema composto por sensores que continuamente procuram por objetos também em alturas maiores. O sistema utiliza um microcontrolador para calcular a distância baseada em sinais ultrassônicos enviados e recebidos por dois transdutores fixados na bengala, um para detecção em pequenas alturas, e o outro para grandes. Então depois de emitir os sinais, captura sua reflexão, calcula a distância e gera um sinal sonoro de retorno ao usuário.
 
-Alternativamente, Ben Leduc-Mills et al. apresenta um projeto mais recente envolvendo uma placa IOIO, baseada em PIC, que permite que aplicações Android interajam com dispositivos eletrônicos externos \cite{Ben}. A placa recebe os sinais de sensores ultrassônicos e os envia ao aplicativo Android via Bluetooth. Então o aplicativo fica responsável por tratar o sinal e alertar o usuário se há algum objeto em um limite mínimo de distância e a que altura está. O alerta por fim se dá via audição e tato.
+Alternativamente, Ben Leduc-Mills et al\cite{Ben}. apresenta um projeto mais recente envolvendo uma placa IOIO, baseada em PIC, que permite que aplicações Android interajam com dispositivos eletrônicos externos. A placa recebe os sinais de sensores ultrassônicos e os envia ao aplicativo Android via Bluetooth. Então o aplicativo fica responsável por tratar o sinal e alertar o usuário se há algum objeto em um limite mínimo de distância e a que altura está. O alerta por fim se dá via audição e tato.
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \subsection{Cenário no Brasil}
 
-No Brasil também há diversos trabalhos nesse sentido.O CPqD Alcance, por exemplo, é um aplicativo que adapta a grande maioria das funcionalidades de um celular em uma interface de maior usabilidade destinado não só para pessoas com deficiência visual, mas também para idosos e pessoas iletradas\cite{CPqD}. Há também a Bengala Longa Eletrônica\cite{UNIVALI} e a Bengala Automática para Deficientes Visuais\cite{IFBA}, projetos universitários da UNIVALI e do IFBA, respectivamente, que acoplam a uma bengala sensores que auxiliam na identificação de obstáculos.
+No Brasil também há diversos trabalhos nesse sentido.O CPqD Alcance, por exemplo, é um aplicativo que adapta a grande maioria das funcionalidades de um celular em uma interface de maior usabilidade destinado não só para pessoas com deficiência visual, mas também para idosos e pessoas iletradas\cite{CPqD}. 
+
+Na Universidade de São Paulo, Murilo A. Gallani\cite{Gallani} apresenta um dispositivo eletrônico de aprimoramento da orientação proporcionada por bengalas à pessoas com deficiência visual. O dispositivo, que fica acoplado à ponta de uma bengala, utiliza seu movimento para fazer uma varredura de possíveis obstáculos, e alerta o usuário por meio de sons, cujas intensidades simulam sua emissão pelo obstáculo, e auxiliam na localização espacial.
+
+Nessa linha de pesquisa há também os projetos Bengala Longa Eletrônica\cite{UNIVALI} e Bengala Automática para Deficientes Visuais\cite{IFBA}, projetos universitários da Universidade do Vale do Itajaí e do Instituto Federal da Bahia, respectivamente, que de maneira similar acoplam a uma bengala sensores que auxiliam na identificação de obstáculos.
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Objetivos}
 
 
-Baseado nos projetos apresentados, esse busca portanto desenvolver uma ferramenta para suprir algumas das necessidades enfrentadas por pessoas com deficiência visual, e basicamente propõe-se a promover ao usuário as seguintes habilidades:	
+Baseado nos projetos apresentados, esse busca portanto desenvolver mais uma ferramenta alternativa para suprir algumas das necessidades enfrentadas por pessoas com deficiência visual, e basicamente propõe-se a promover ao usuário as seguintes habilidades:	
 
 \begin{itemize}  
 	\item conhecimento de conteúdo visual escrito.
@@ -80,7 +84,7 @@ Baseado nos projetos apresentados, esse busca portanto desenvolver uma ferrament
 
 	
 	
-A Figura \ref{intro} apresenta superficialmente, e de maneira meramente ilustrativa, o que se obteve do sistema proposto quanto a extração de informações de imagens capturadas. Basicamente, uma aplicação móvel será capaz, ao capturar uma imagem, de analisar seu conteúdo. Textos inseridos em rótulos de produtos ou bulas de remédio, e características faciais ou de paisagens poderiam ser total ou parcialmente compreendidos e com independência do auxilio de uma pessoa com visão normal, por meio da audiodescrição da informação.
+A Figura \ref{intro} apresenta superficialmente, e de maneira ilustrativa, o que se obteve do sistema proposto quanto a extração de informações de imagens capturadas. Basicamente, uma aplicação móvel será capaz, ao capturar uma imagem, de analisar seu conteúdo. Textos inseridos em rótulos de produtos ou bulas de remédio, e características faciais ou de paisagens poderiam ser total ou parcialmente compreendidos e com independência do auxilio de uma pessoa com visão normal, por meio da audiodescrição da informação.
 	
 \begin{figure}[H]
 	\centering		
@@ -90,7 +94,7 @@ A Figura \ref{intro} apresenta superficialmente, e de maneira meramente ilustrat
 	
 \end{figure} 
 
-Já a Figura \ref{intro2} esquematiza o funcionamento do mesmo sistema durante uma detecção de obstáculos ao caminhar. Com ele seria possível aumentar a eficiência da bengala, ferramenta bastante utilizada por deficientes visuais e que retorna muitas informações do ambiente em um percurso. Como obstáculos fora do chão dificilmente seriam percebidos pela bengala, o detector de obstáculos poderia servir de auxílio em situações como a ilustrada, em que uma bengala pode até tocar o suporte do orelhão, mas seria possível que a pessoa chegasse perto demais, e ocorresse uma colisão entre a cobertura superior e a cabeça. 
+Já a Figura \ref{intro2} esquematiza o funcionamento do sistema desenvolvido no cenário de uma detecção de obstáculos durante uma caminhada. Com ele seria possível aumentar a eficiência da bengala, ferramenta bastante utilizada por deficientes visuais e que retorna muitas informações do ambiente em um percurso. Como obstáculos fora do chão nem sempre são percebidos pela bengala, o detector de obstáculos poderia servir de auxílio em situações como a ilustrada, em que uma bengala pode até tocar o suporte do telefone público, mas seria possível que a pessoa chegasse perto demais, e ocorresse uma colisão entre a cobertura superior e a cabeça. 
 
 \begin{figure}[H]
 	\centering		
@@ -103,23 +107,23 @@ Já a Figura \ref{intro2} esquematiza o funcionamento do mesmo sistema durante um
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section {Justificativas}
 
-Em 2015 o IBGE divulgou dados da Pesquisa Nacional da Saúde que demostra a proporção de brasileiros portadores das seguintes deficiências: auditiva, visual, física e intelectual. Segundo o levantamento, dentre os tipos de deficiência analisados, a visual é a que mais afeta os brasileiros, mais de 3\% da população. A pesquisa também mostra que 11\% desse grupo é composto por pessoas acima de 60 anos, que quase 7\% utilizam algum recurso de locomoção, como bengala ou cão guia, e que o grau intenso de deficiência atinge 16\% e resulta na impossibilidade de o indivíduo realizar tarefas básicas, como trabalhar \cite{IBGE}.
+Em 2015 o IBGE divulgou dados da Pesquisa Nacional da Saúde\cite{IBGE} que demostra a proporção de brasileiros portadores das seguintes deficiências: auditiva, visual, física e intelectual. Segundo o levantamento, dentre os tipos de deficiência analisados, a visual é a que mais afeta os brasileiros, mais de 3\% da população. A pesquisa também mostra que 11\% desse grupo é composto por pessoas acima de 60 anos, que quase 7\% utilizam algum recurso de locomoção, como bengala ou cão guia, e que o grau intenso de deficiência atinge 16\% e resulta na impossibilidade de o indivíduo realizar tarefas básicas, como trabalhar.
 
 Adicionalmente do ponto de vista global, segundo a HDR, Human Development Resources, o Brasil ocupa a posição 75 no índice de desenvolvimento humano \cite{HDI}. De fato, o país historicamente apresenta algumas dificuldades em promover o bem estar social e a igualdade da população.
 
-Diante desse cenário, foi possível perceber que há uma parcela significativa da população que necessita de auxílio específico para suprir a falta de visão para realizar as mesmas atividades de quem possui visão normal. Assim, seguindo o conceito de Tecnologia Assistiva, o desafio desse projeto foi o de desenvolver um sistema que fosse capaz de amenizar as necessidades dessa parcela da população.
+Diante desse cenário, foi possível perceber que há uma parcela significativa da população que necessita de auxílio específico para suprir a falta de visão para realizar as mesmas atividades de quem possui visão normal. Assim, o desafio desse projeto foi o de desenvolver um sistema que fosse capaz de amenizar as necessidades dessa parcela da população.
 
 Espera-se que com isso seja possível contribuir minimamente com a qualidade de vida a nível pessoal de parte da sociedade que possui necessidades especiais e ao mesmo tempo permitir o desempenho da função de engenheiro na sociedade, que é o de colocar o conhecimento científico a serviço do conforto e desenvolvimento da humanidade.
 
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-\section {Organização do Trabalho}
+\section {Organização do trabalho}
 
 Este trabalho está distribuído em 5 capítulos, incluindo esta introdução, dispostos conforme a descrição que segue:
 
 \begin{itemize}
-	\item Capítulo 2: Descreve o pano de fundo sobre o qual o projeto foi desenvolvido, definindo conceitos e proporcionando explicações necessárias para a compreensão do desenvolvimento do trabalho.
+	\item Capítulo 2: Descreve o embasamento teórico sobre o qual o projeto foi desenvolvido, definindo conceitos e proporcionando explicações necessárias para a compreensão do desenvolvimento do trabalho.
 	\item Capítulo 3: Discorre sobre os materiais e métodos utilizados no andamento do projeto, explicando as características de cada um dos dispositivos eletrônicos, a razão de sua utilização, e o modo como as partes do projeto se conectam entre si. 
 	\item Capítulo 4: Apresenta os resultados obtidos por meio de teste sobre o sistema, e faz uma análise a fim de explicá-los.
 	\item Capítulo 5: Resume os principais pontos de todo o processo de desenvolvimento até a finalização do projeto, apresentando a importância da solução proposta e os problemas encontrados.

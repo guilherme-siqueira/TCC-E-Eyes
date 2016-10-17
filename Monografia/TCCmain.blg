@@ -25,45 +25,45 @@ Warning--empty booktitle in Henry
 Warning--edition ordinal word "{Second}" may be too high (or improper) for conversion in LivroCV
 
 Done.
-You've used 23 entries,
+You've used 24 entries,
             4087 wiz_defined-function locations,
-            959 strings with 11500 characters,
-and the built_in function-call counts, 11184 in all, are:
-= -- 872
-> -- 203
+            965 strings with 11702 characters,
+and the built_in function-call counts, 11596 in all, are:
+= -- 913
+> -- 207
 < -- 39
-+ -- 110
-- -- 38
-* -- 479
-:= -- 1788
-add.period$ -- 50
-call.type$ -- 23
-change.case$ -- 24
++ -- 112
+- -- 39
+* -- 493
+:= -- 1874
+add.period$ -- 52
+call.type$ -- 24
+change.case$ -- 25
 chr.to.int$ -- 93
-cite$ -- 33
-duplicate$ -- 912
-empty$ -- 1055
-format.name$ -- 46
-if$ -- 2571
+cite$ -- 34
+duplicate$ -- 947
+empty$ -- 1087
+format.name$ -- 47
+if$ -- 2660
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 191
-newline$ -- 92
-num.names$ -- 11
-pop$ -- 510
+int.to.str$ -- 24
+missing$ -- 200
+newline$ -- 95
+num.names$ -- 12
+pop$ -- 527
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 881
+skip$ -- 914
 stack$ -- 0
-substring$ -- 227
-swap$ -- 598
+substring$ -- 228
+swap$ -- 622
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 23
+type$ -- 24
 warning$ -- 10
-while$ -- 24
-width$ -- 25
-write$ -- 215
+while$ -- 25
+width$ -- 26
+write$ -- 225
 (There were 11 warnings)

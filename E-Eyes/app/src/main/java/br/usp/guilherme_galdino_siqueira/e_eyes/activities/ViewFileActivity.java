@@ -337,7 +337,7 @@ public class ViewFileActivity extends Activity {
             {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(ViewFileActivity.this);
-                builder.setTitle("Você clicou em uma pessoa.");
+                builder.setTitle("Você clicou em uma pessoa. Deseja inserir um nome?");
                 final EditText input = new EditText(ViewFileActivity.this);
 
                 input.setInputType(InputType.TYPE_CLASS_TEXT);

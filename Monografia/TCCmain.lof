@@ -1,47 +1,46 @@
 \select@language {brazil}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Aplicativo - Extra\c c\~ao de texto e caracter\IeC {\'\i }sticas faciais, respectivos resultados e sa\IeC {\'\i }da sonora para o usu\'ario\relax }}{30}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Aplicativo e circuito externo - (a) Gera\c c\~ao e captura de sinal ultrass\^onico, (b) Tratamento do sinal e reenvio para o smartphone, (c) Notifica\c c\~ao ao usu\'ario por vibra\c c\~ao e som\relax }}{31}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Aplicativo - Extra\c c\~ao de texto e caracter\IeC {\'\i }sticas faciais, respectivos resultados e sa\IeC {\'\i }da sonora para o usu\'ario\relax }}{9}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Aplicativo e circuito externo - (a) Gera\c c\~ao e captura de sinal ultrass\^onico, (b) Tratamento do sinal e reenvio para o smartphone, (c) Notifica\c c\~ao ao usu\'ario por vibra\c c\~ao e som\relax }}{10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama da computa\c c\~ao em nuvem\relax }}{35}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces An\'alise de um simbolo sobre a base de dados. (a) Simbolo de entrada. (b) Pixels coincidentes, em preto, entre o simbolo de entrada e o simbolo 'A'. (c) Pixels coincidentes, em preto, entre o simbolo de entrada e o simbolo '8'.\relax }}{36}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Classifica\c c\~ao de imagem de acordo com sua similaridade em rela\c c\~ao ao conjunto de imagens da base de dados.\relax }}{37}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama da computa\c c\~ao em nuvem\relax }}{14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces An\'alise classificat\'oria de um simbolo sobre os demais da base de dados. (a) Simbolo de entrada. (b) Pixels coincidentes, em preto, entre o simbolo de entrada e o simbolo 'A'. (c) Pixels coincidentes, em preto, entre o simbolo de entrada e o simbolo '8'.\relax }}{15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Classifica\c c\~ao de imagem de acordo com sua similaridade em rela\c c\~ao ao conjunto de imagens da base de dados.\relax }}{16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Esquem\'atico de comunica\c c\~ao entre os m\'odulos eletr\^onicos do projeto\relax }}{39}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Smartphone Galaxy S3 mini\relax }}{40}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Ardu\IeC {\'\i }no UNO\relax }}{41}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Sensor HC-SR04.\relax }}{42}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces M\'odulo BlueTooth HC-05.\relax }}{43}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Talkback\relax }}{44}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Tela inicial do aplicativo\relax }}{45}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Tela principal e respectivas funcionalidades. (a) Descri\c c\~ao facial. (b) Extra\c c\~ao de texto (c) Sele\c c\~ao de registros (d) Detec\c c\~ao de obst\'aculos\relax }}{46}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Interface gr\'afica do Tradutor Yandex acessado pelo navegador\relax }}{49}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Imagem capturada e seu respectivo resultado\relax }}{49}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Compara\c c\~ao entre bot\~oes de solicita\c c\~ao de extra\c c\~ao de informa\c c\~ao de imagem\relax }}{50}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Lista de registros de descri\c c\~ao\relax }}{52}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Circuito Ardu\IeC {\'\i }no com m\'odulo BlueTooth e sensor de obst\'aculos\relax }}{54}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Esquem\'atico de comunica\c c\~ao entre os m\'odulos eletr\^onicos do projeto\relax }}{18}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Smartphone Galaxy S3 Mini\relax }}{19}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ardu\IeC {\'\i }no UNO\relax }}{20}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Sensor HC-SR04.\relax }}{21}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces M\'odulo BlueTooth HC-05.\relax }}{21}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Etapas para a ativa\c c\~ao do Talkback no Android\relax }}{23}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Tela inicial do aplicativo\relax }}{24}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Tela principal e respectivas funcionalidades. (a) Descri\c c\~ao facial. (b) Extra\c c\~ao de texto (c) Sele\c c\~ao de registros (d) Detec\c c\~ao de obst\'aculos\relax }}{25}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Imagem capturada e seu respectivo resultado\relax }}{28}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Compara\c c\~ao de fun\c c\~oes entre os bot\~oes de solicita\c c\~ao de extra\c c\~ao de informa\c c\~ao de imagem\relax }}{29}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Lista de registros de descri\c c\~ao\relax }}{30}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Inser\c c\~ao de nome de uma pessoa em descri\c c\~ao de foto\relax }}{31}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Circuito Ardu\IeC {\'\i }no com m\'odulo BlueTooth e sensor de obst\'aculos\relax }}{33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Captura de imagem da etiqueta do computador HP para posterior descri\c c\~ao\relax }}{56}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado da extra\c c\~ao apenas de texto sobre a imagem da Figura \ref {Teste-HP} com as resolu\c c\~oes de (\subref {RI}) 2560x1920, (\subref {RII}) 1024x768 e (\subref {RIII}) 480x360\relax }}{57}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Extra\c c\~ao apenas de texto de uma imagem sob tr\^es diferentes posi\c c\~oes. (\subref {girado}) 180\IeC {\textdegree }, (\subref {girado90}) 90\IeC {\textdegree } e (\subref {semgirar}) 0\IeC {\textdegree }\relax }}{59}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultado da extra\c c\~ao de texto sobre imagem contendo escrita manual em letra de forma.\relax }}{60}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Resultados da extra\c c\~ao de texto sobre imagem, em diferentes resolu\c c\~oes, contendo palavras manuscristas em letra cursiva.\relax }}{61}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultado da extra\c c\~ao de texto sobre imagem contendo texto escrito em letra cursiva.\relax }}{61}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces R\'otulos extra\IeC {\'\i }dos da imagem de um cachorro\relax }}{62}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Primeira extra\c c\~ao de r\'otulos da imagem de um laptop\relax }}{63}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Segunda extra\c c\~ao de r\'otulos da imagem de um laptop\relax }}{64}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Extra\c c\~ao de r\'otulos da imagem de um cadeira\relax }}{64}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Express\~oes faciais detectadas em imagens de rosto\relax }}{65}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Express\~oes faciais de tristeza n\~ao detectadas em imagens de pessoas tristes\relax }}{66}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Prot\'otipo do circuito detector de obst\'aculos\relax }}{67}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Corrente el\'etrica consumida pelo circuito antes, durante e ap\'os a conex\~ao com o smartphone\relax }}{68}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Corrente el\'etrica consumida pelo circuito discriminando o papel de cada m\'odulo\relax }}{69}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Porcentagem de pot\^encia dissipada por cada m\'odulo do circuito\relax }}{70}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama de classes do aplicativo baseado em android\relax }}{78}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Captura de imagem da etiqueta do computador HP, com defeito de flash, para descri\c c\~ao\relax }}{35}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado da extra\c c\~ao apenas de texto sobre a imagem da Figura \ref {Teste-HP} com as resolu\c c\~oes de (\subref {RI}) 2560x1920, (\subref {RII}) 1024x768 e (\subref {RIII}) 480x360\relax }}{35}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Extra\c c\~ao apenas de texto de uma imagem sob tr\^es diferentes posi\c c\~oes. (\subref {girado}) 180\IeC {\textdegree }, (\subref {girado90}) 90\IeC {\textdegree } e (\subref {semgirar}) 0\IeC {\textdegree }\relax }}{37}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultado da extra\c c\~ao de texto sobre imagem contendo escrita manual em letra de forma.\relax }}{39}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Resultados da extra\c c\~ao de texto sobre imagem, em diferentes resolu\c c\~oes, contendo palavras manuscristas em letra cursiva.\relax }}{39}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultado da extra\c c\~ao de texto sobre imagem contendo texto escrito em letra cursiva.\relax }}{40}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces R\'otulos extra\IeC {\'\i }dos da imagem de um cachorro\relax }}{41}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Primeira extra\c c\~ao de r\'otulos da imagem de um laptop\relax }}{41}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Segunda extra\c c\~ao de r\'otulos da imagem de um laptop\relax }}{42}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Extra\c c\~ao de r\'otulos da imagem de um cadeira\relax }}{43}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Express\~oes faciais detectadas em imagens de rosto\relax }}{44}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Express\~oes faciais de tristeza n\~ao detectadas em imagens de pessoas tristes\relax }}{44}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Prot\'otipo do circuito detector de obst\'aculos\relax }}{46}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Pot\^encia consumida pelo aplicativo no smartphone pela solicita\c c\~ao de OCR e pela conex\~ao com o detector de obst\'aculos\relax }}{47}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Corrente el\'etrica consumida pelo circuito antes, durante e ap\'os a conex\~ao com o smartphone\relax }}{48}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Corrente el\'etrica consumida pelo circuito discriminando o papel de cada m\'odulo\relax }}{49}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Porcentagem de pot\^encia dissipada por cada m\'odulo do circuito\relax }}{50}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama de classes do aplicativo baseado em android\relax }}{59}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
