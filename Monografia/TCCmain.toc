@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {3.2.4}Adapta\c c\~ao textual do dado retornado}{27}
 \contentsline {subsection}{\numberline {3.2.5}Tradu\c c\~ao de r\'otulos}{27}
 \contentsline {subsection}{\numberline {3.2.6}Captura e exibi\c c\~ao de resultado}{27}
-\contentsline {subsection}{\numberline {3.2.7}Implementa\c c\~ao de op\c c\~oes de reconhecimento}{28}
+\contentsline {subsection}{\numberline {3.2.7}Implementa\c c\~ao de op\c c\~oes de reconhecimento}{29}
 \contentsline {subsection}{\numberline {3.2.8}Registro de descri\c c\~oes}{29}
 \contentsline {subsection}{\numberline {3.2.9}Inser\c c\~ao de nome de pessoas}{30}
 \contentsline {subsection}{\numberline {3.2.10}Tratamento de sinais ultrass\^onicos}{31}
