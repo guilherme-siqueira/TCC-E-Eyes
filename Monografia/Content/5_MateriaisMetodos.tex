@@ -1,4 +1,4 @@
-\chapter{Material e Métodos}
+\chapter{Materiais e Métodos}
 \label{Materiais}
 
 Mais do que uma simples aplicação Android, o projeto englobou o sensoreamento de sinais ultrassônicos, comunicação sem fio e um circuito gerenciado por um Arduíno. Por essa razão, diversos componentes eletrônicos e métodos de comunicação foram utilizados.	
@@ -108,18 +108,23 @@ O Arduíno como uma placa programável, possibilita um infinidade de aplicações. E
 
 Para a comunicação entre o Arduíno e o smartphone haviam diversas possibilidades de implementação. A troca de dados pela internet já seria utilizada pela aplicação Android para o reconhecimento de imagens, que será apresentado com mais detalhes na seção Métodos. No entanto, como o smartphone e o dispositivo detector de obstáculos estariam ambos em contato, ou muito próximos do corpo do usuário, tornando a distância entre eles relativamente pequena, e devido a simplicidade de implementação da comunicação, a escolha foi pelo módulo Bluetooth HC-05, Figura \ref{PhotoBlueTooth}.
 
+\subsection{Demais componentes eletrônicos}
+
+Para a conexão dos componentes do circuito foram necessários uma variedade de fios para conectar VCC, GND, emendas e conexões de entrada e saída de sinais. Foram necessários também 3 resistores de 220$\Omega$ para criação de um divisor de tensão. 
+
 \subsection{Caixa do circuito}
 
 Para fins de demonstração do protótipo, foi criado uma caixa para envolver o circuito. Para tanto foi utilizada uma garrafa PET de 2L, tesoura, fita adesiva transparente, fita isolante, um interruptor tipo navio de dois pinos e uma bateria de 9V.
 
-\subsection{Demais componentes eletrônicos}
 
-Para a conexão dos componentes do circuito foram necessários uma variedade de fios para conectar VCC, GND, emendas e conexões de entrada e saída de sinais. Foram necessários também 3 resistores de 220$\Omega$ para criação de um divisor de tensão. e para a programação do Arduíno utilizou-se um cabo USB.
+\subsection{Dispositivos auxiliares}
+
+Para a programação do Arduíno utilizou-se um cabo USB. Para a medição de valores de tensão e de corrente foi utilizado um multímetro, e para a medição das distâncias retornadas pelo detector de obstáculos, utilizou-se uma trena.
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Métodos}
 
-Os métodos utilizados para a se atingir o objetivo do projeto são extremamente importantes não só para a compreensão de como as partes se comunicam, mas também para se expor detalhes da implementação voltados para a garantia de ampla usabilidade e acessibilidade do usuário.
+Os métodos utilizados para a se atingir o objetivo do projeto são extremamente importantes não só para a compreensão de como as partes se comunicam, mas também para se expor detalhes da implementação voltados para a garantia de ampla usabilidade e acessibilidade do usuário. Para auxiliar a compreensão da modelagem, as Figuras \ref{classCompact} e \ref{flowCompact} nos Apêndices apresentam respectivamente um diagrama de classes compactado e um de fluxo referentes ao aplicativo.
 
 \subsection{Configurações iniciais de programação}
 
@@ -290,7 +295,7 @@ Essa funcionalidade por fim foi colocada como ação do último dos quatro botões d
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.7]{./Resources/circuit.png}
-	\caption{Circuito Arduíno com módulo BlueTooth e sensor de obstáculos}
+	\caption{Circuito Arduíno com módulo Bluetooth e sensor de obstáculos}
 	\label{circuit}
 \end{figure}
 

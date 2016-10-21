@@ -19,7 +19,7 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Compara\c c\~ao de fun\c c\~oes entre os bot\~oes de solicita\c c\~ao de extra\c c\~ao de informa\c c\~ao de imagem\relax }}{29}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Lista de registros de descri\c c\~ao\relax }}{30}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Inser\c c\~ao de nome de uma pessoa em descri\c c\~ao de foto\relax }}{31}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Circuito Ardu\IeC {\'\i }no com m\'odulo BlueTooth e sensor de obst\'aculos\relax }}{33}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Circuito Ardu\IeC {\'\i }no com m\'odulo Bluetooth e sensor de obst\'aculos\relax }}{33}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Captura de imagem da etiqueta do computador HP, com defeito de flash, para descri\c c\~ao\relax }}{35}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado da extra\c c\~ao apenas de texto sobre a imagem da Figura \ref {Teste-HP} com as resolu\c c\~oes de (\subref {RI}) 2560x1920, (\subref {RII}) 1024x768 e (\subref {RIII}) 480x360\relax }}{35}
@@ -41,6 +41,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama de classes do aplicativo baseado em android\relax }}{59}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Diagrama de fluxo do aplicativo baseado em android\relax }}{60}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
