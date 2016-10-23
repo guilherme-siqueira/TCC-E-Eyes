@@ -56,8 +56,10 @@
 \contentsline {subsection}{\numberline {4.3.2}Consumo no detector de obst\'aculos}{47}
 \contentsline {chapter}{\numberline {5}Conclus\~ao}{51}
 \contentsline {section}{\numberline {5.1}Falhas}{51}
-\contentsline {section}{\numberline {5.2}Acertos}{51}
-\contentsline {section}{\numberline {5.3}Disciplinas base}{52}
+\contentsline {section}{\numberline {5.2}Acertos}{52}
+\contentsline {section}{\numberline {5.3}Opini\~ao de potenciais usu\'arios}{52}
+\contentsline {section}{\numberline {5.4}Disciplinas base}{52}
+\contentsline {section}{\numberline {5.5}Trabalhos futuros}{53}
 \contentsline {chapter}{Refer\^encias}{55}
 \contentsline {chapter}{\numberline {A}Diagrama de classes do aplicativo Android}{59}
 \contentsline {chapter}{\numberline {B}Diagrama de fluxo do aplicativo Android}{60}

@@ -5,9 +5,11 @@ Esse projeto teve como objetivo a aplicação dos conhecimentos adquiridos durante
 
 \section{Falhas}
 
-Apesar de a API da Google ter se mostrado bastante eficiente para o propósito do projeto, a ferramentas causou algumas limitações para nos resultados. Um deles é o fato intrínseco de que a API é em nuvem e requer conexão com a internet. Isso poderia de certa forma impedir que pessoas com condições financeiras inferiores, e sem acesso a internet, pudessem usá-lo. Entretanto, existe uma grande tendência de os dispositivos e as pessoas se tornarem cada vez mais conectadas, devido o avanço da computação e das telecomunicações, e com os preços de smartphones mais acessíveis, e isso poderia preparar um ambiente mais propício para o uso do aplicativo. Outro ponto negativo é a limitação da gratuidade de utilização da API. Com o intuito do projeto sendo também o de inclusão digital, atribuir preço para o acesso ao aplicativo iria, de certa forma, contra esse propósito.
+Apesar de a API da Google ter se mostrado bastante eficiente para o propósito do projeto, a ferramentas causou algumas limitações para os resultados. Um deles é o fato intrínseco de que a API é em nuvem e requer conexão com a internet. Isso poderia de certa forma impedir que pessoas com condições financeiras inferiores, e sem acesso a internet, pudessem usá-lo. Entretanto, existe uma grande tendência de os dispositivos e as pessoas se tornarem cada vez mais conectadas, devido o avanço da computação e das telecomunicações, e com os preços de smartphones mais acessíveis, e isso poderia preparar um ambiente mais propício para o uso do aplicativo. Outro ponto negativo é a limitação da gratuidade de utilização da API. Com o intuito do projeto sendo também o de inclusão digital, atribuir preço para o acesso ao aplicativo iria, de certa forma, contra esse propósito.
 
-Já com relação ao circuito detector de obstáculos, um dos problemas foi o consumo de energia pelo módulo Bluetooth, que representou quase a metade do consumo total. Num cenário em que a pessoa o utilize sempre ao caminhar poderia descarregar a bateria com mais frequência. Além disso, a utilização de um único sensor foi capaz apenas de mostrar que é possível se guiar por ele, entretanto, para um caminhar mais seguro, seria necessário mais sensores apontando para várias direções.
+Já com relação ao circuito detector de obstáculos, um dos problemas foi o consumo de energia pelo módulo Bluetooth, que representou quase a metade do consumo total. Num cenário em que a pessoa o utilize sempre ao caminhar poderia descarregar a bateria com mais frequência. Além disso, a utilização de um único sensor foi capaz apenas de mostrar que é possível se guiar por ele, entretanto, para um caminhar mais seguro, seriam necessários mais sensores apontando para várias direções.
+
+Não foi possível, devido a indisponibilidade de mais recursos, não foi possível a produção de testes mais elaborados com diferentes versões do Android, e também, testes de usabilidade com usuários para o qual o projeto é dedicado.
 
 \section{Acertos}
 
@@ -15,6 +17,10 @@ Já com relação ao circuito detector de obstáculos, um dos problemas foi o consum
 Por outro lado, houve vários pontos positivos que se pode extrair desse projeto. A leitura de textos, que é a funcionalidade mais importante do sistema mostrou-se bastante acurada. Com ela seria possível a leitura de rótulos de produtos, folhetos, livros e até bulas de remédio, mesmo possuindo letras pequenas, cupons fiscais, dinheiro, entre diversos outros conteúdos escritos. Com aplicativo é possível também oferecer uma descrição superficial automática do ambiente ao redor e de expressões faciais, e permite até que o usuário insira os nomes das pessoas em uma foto. 
 
 Com relação ao detector de obstáculos, apesar da limitação do número de sensores, os resultados se mostraram muito precisos, e têm o potencial de se tornar ainda mais útil e confiável caso o número de sensores seja aumentado, mais reduzido e usável caso o esquemático pudesse ser fabricado diretamente em uma placa eletrônica.
+
+\section{Opinião de potenciais usuários}
+
+Durante o período de desenvolvimento do projeto foi importante procurar ouvir um pouco as pessoas para as quais o projeto se destinaria. Assim, os membros do grupo do Facebook "Cegos e a Tecnologia" deram algum suporte, apresentando algumas de suas dificuldades, ou sugerindo funcionalidades. Um dos problemas citados foi a dificuldade de posicionamento da câmera para utilização de aplicativos para descrição de valor de dinheiro, e o tempo gasto na procura pela posição ideal. Nesse quesito, pode se dizer que houve sucesso, uma vez que a funcionalidade de descrição de textos mostrou-se precisa para vários ângulos. Outro ponto levantado foi a facilidade do comando de voz. A ideia da descrição de expressões faciais foi considerada de modo geral útil, assim como a possibilidade de guardar seus registros junto às fotos tiradas. Uma preocupação apresentada foi o tamanho do detector de obstáculos que dificultaria seu uso e o raio de abrangência do sensor.
 
 \section{Disciplinas base}
 
@@ -33,11 +39,11 @@ Foi possível por meio desse trabalho aplicar alguns conceitos das seguintes disc
 
 
 
-\section*{Trabalhos futuros}
+\section{Trabalhos futuros}
 
 
 
-Na possibilidade de continuidade do projeto, alguns pontos que necessitam seja de melhoria, seja de correção, poderiam ser tratados. 
+Com a intenção de continuidade do projeto, alguns pontos que necessitam seja de melhoria, seja de correção, devem ser tratados. 
 
 \begin{itemize}
 	\item Número de sensores utilizados pelo circuito: Mais sensores permitiriam maior acurácia e precisão das distâncias retornadas pelo sistema.
@@ -45,7 +51,8 @@ Na possibilidade de continuidade do projeto, alguns pontos que necessitam seja d
 	\item Taxa de uso da API: Do lado do aplicativo, é indispensável buscar maneiras de não repassar ao usuário o valor que é cobrado pela utilização da API, quando o limite é ultrapassado. Uma possibilidade seria aplicar uma solução diferente ao problema, deixando de lado a API da Google. Outra possibilidade seria a inserção de propaganda como um modo de compensar essa cobrança.
 	\item Integração com redes sociais: Com as redes sociais desempenhando importante papel na comunicação entre as pessoas, integrar funcionalidade de compartilhamento das descrições poderia contribuir ainda mais com a acessibilidade de outras pessoas com deficiência visual.
 	\item Expansão para outras plataformas: é importante considerar que existem usuários com smartphones rodando sistemas operacionais diferentes do Android. Uma possibilidade seria migrar o aplicativo para essas plataformas.
-	\item Elaboração de testes de usabilidade com usuários para avaliação e melhorias das funções existentes, e inserção de novas.
+	\item Elaboração de testes de usabilidade com usuários para avaliação e melhorias das funções existentes, e inserção de novas, e testes de compatibilidade com as variadas versões do Android.
+	\item Inserção de entrada por comando de voz ao aplicativo para tornar a navegação mais fácil.
 \end{itemize}
 
  
