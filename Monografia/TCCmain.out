@@ -1,0 +1,55 @@
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Motiva\347\343o}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Estado da arte}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Vis\343o computacional}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Ecolocaliza\347\343o}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{Cen\341rio no Brasil}{section.1.2}% 6
+\BOOKMARK [1][-]{section.1.3}{Objetivos}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.4}{Justificativas}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.5}{Organiza\347\343o do Trabalho}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Embasamento Te\363rico}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Tecnologia assistiva}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Design universal e acessibilidade}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Talkback}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Computa\347\343o em nuvem}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Vis\343o computacional}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{Reconhecimento \363ptico de caractere}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.2}{Classifica\347\343o de imagens}{section.2.4}% 17
+\BOOKMARK [1][-]{section.2.5}{Ecolocaliza\347\343o e localiza\347\343o sonora}{chapter.2}% 18
+\BOOKMARK [0][-]{chapter.3}{Material e M\351todos}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Materiais}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.1.1}{Smartphone}{section.3.1}% 21
+\BOOKMARK [2][-]{subsection.3.1.2}{Android Studio}{section.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.1.3}{Ardu\355no}{section.3.1}% 23
+\BOOKMARK [2][-]{subsection.3.1.4}{Sensor}{section.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.1.5}{BlueTooth}{section.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.1.6}{Componentes eletr\364nicos em geral}{section.3.1}% 26
+\BOOKMARK [1][-]{section.3.2}{M\351todos}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.2.1}{Configura\347\365es iniciais de programa\347\343o}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.2}{Constru\347\343o de interface acess\355vel}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.3}{Extra\347\343o de dados em imagem}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.4}{Adapta\347\343o textual do dado retornado}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.5}{Tradu\347\343o de r\363tulos}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.6}{Captura e exibi\347\343o de resultado}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.7}{Implementa\347\343o de op\347\365es de reconhecimento}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.8}{Registro de descri\347\365es}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.9}{Tratamento de sinais ultrass\364nicos}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.10}{Comunica\347\343o Arduino-BlueTooth}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.11}{Comunica\347\343o Smartphone-BlueTooth}{section.3.2}% 38
+\BOOKMARK [0][-]{chapter.4}{Resultados e Discuss\365es}{}% 39
+\BOOKMARK [1][-]{section.4.1}{Descri\347\343o de Imagens}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.1.1}{Teste para diferentes dimens\365es de imagens}{section.4.1}% 41
+\BOOKMARK [2][-]{subsection.4.1.2}{Teste para reconhecimento de texto girado}{section.4.1}% 42
+\BOOKMARK [2][-]{subsection.4.1.3}{Teste para reconhecimento de texto com letra cursiva}{section.4.1}% 43
+\BOOKMARK [2][-]{subsection.4.1.4}{Teste para rotula\347\343o de elementos da cena}{section.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.1.5}{Teste para classifica\347\343o de express\343o facial}{section.4.1}% 45
+\BOOKMARK [1][-]{section.4.2}{Detec\347\343o de Obst\341culos}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.3}{Avalia\347\343o de consumo do sistema}{chapter.4}% 47
+\BOOKMARK [0][-]{chapter.5}{Conclus\343o ou Conclus\365es}{}% 48
+\BOOKMARK [0][-]{chapter.5}{Refer\352ncias}{}% 49
+\BOOKMARK [0][-]{appendix.A}{Diagrama de classes do aplicativo Android}{}% 50
+\BOOKMARK [0][-]{appendix.B}{C\363digos relevantes}{}% 51
+\BOOKMARK [0][-]{appendix.C}{Monografia Parcial do TCC}{}% 52
+\BOOKMARK [0][-]{appendix.A}{Datasheet Arduino}{}% 53
+\BOOKMARK [0][-]{appendix.B}{Datasheet HC-05}{}% 54
+\BOOKMARK [0][-]{appendix.C}{Datasheet HC-SR04}{}% 55

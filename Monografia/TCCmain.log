@@ -1,0 +1,2353 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.1.7)  23 OCT 2016 23:27
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**TCCmain.tex
+(./TCCmain.tex
+LaTeX2e <2011/06/27>
+Babel <3.9k> and hyphenation patterns for 3 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+\everycr=\toks15
+\minrowclearance=\skip45
+)
+\rownum=\count89
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/03/24 3.9k The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/03/24 3.9k Babel common definitions
+\babel@savecnt=\count90
+\U@D=\dimen107
+)
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen108
+\captionmargin@=\dimen109
+\captionwidth=\dimen110
+\caption@tempdima=\dimen111
+\caption@indent=\dimen112
+\caption@parindent=\dimen113
+\caption@hangindent=\dimen114
+)
+\c@ContinuedFloat=\count91
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count92
+\c@subtable=\count93
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
+\XKV@depth=\count94
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box26
+)
+\tc@llx=\dimen115
+\tc@lly=\dimen116
+\tc@urx=\dimen117
+\tc@ury=\dimen118
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen119
+\adjbox@Height=\dimen120
+\adjbox@Depth=\dimen121
+\adjbox@Totalheight=\dimen122
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count95
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box27
+\sift@deathcycles=\count96
+\@vwid@loff=\dimen123
+\@vwid@roff=\dimen124
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks27
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks28
+\ex@=\dimen125
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen126
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count97
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count98
+\leftroot@=\count99
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count100
+\DOTSCASE@=\count101
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen127
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
+\dotsspace@=\muskip10
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
+\tag@help=\toks29
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
+\andhelp@=\toks30
+\eqnshift@=\dimen128
+\alignsep@=\dimen129
+\tagshift@=\dimen130
+\tagwidth@=\dimen131
+\totwidth@=\dimen132
+\lineht@=\dimen133
+\@envbody=\toks31
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pslatex/pslatex.sty
+Package: pslatex 1996/07/24 v1.2 pslatex emulation (DPC)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 75.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2013/12/12 v0.60 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count109
+\pstFP@xia=\count110
+\pstFP@xib=\count111
+\pstFP@xfa=\count112
+\pstFP@xfb=\count113
+\pstFP@rega=\count114
+\pstFP@regb=\count115
+\pstFP@regs=\count116
+\pstFP@times=\count117
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks33
+\pgfutil@tempdima=\dimen134
+\pgfutil@tempdimb=\dimen135
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks34
+\pgfkeys@temptoks=\toks35
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks36
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen136
+\pgf@xa=\dimen137
+\pgf@xb=\dimen138
+\pgf@xc=\dimen139
+\pgf@y=\dimen140
+\pgf@ya=\dimen141
+\pgf@yb=\dimen142
+\pgf@yc=\dimen143
+\c@pgf@counta=\count118
+\c@pgf@countb=\count119
+\c@pgf@countc=\count120
+\c@pgf@countd=\count121
+\pgfutil@tempcnta=\count122
+\pgfutil@tempcntb=\count123
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen144
+\pgfmath@count=\count124
+\pgfmath@box=\box30
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count125
+))
+\pgffor@iter=\dimen145
+\pgffor@skip=\dimen146
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+)
+\psLoopIndex=\count126
+
+`PSTricks' v2.53a  <2014/03/30> (tvz)
+\pst@dima=\dimen147
+\pst@dimb=\dimen148
+\pst@dimc=\dimen149
+\pst@dimd=\dimen150
+\pst@dimg=\dimen151
+\pst@dimh=\dimen152
+\pst@dimm=\dimen153
+\pst@dimn=\dimen154
+\pst@dimo=\dimen155
+\pst@dimp=\dimen156
+\pst@hbox=\box31
+\pst@ibox=\box32
+\pst@boxg=\box33
+\pst@cnta=\count127
+\pst@cntb=\count128
+\pst@cntc=\count129
+\pst@cntd=\count130
+\pst@cntg=\count131
+\pst@cnth=\count132
+\pst@cntm=\count133
+\pst@cntn=\count134
+\pst@cnto=\count135
+\pst@cntp=\count136
+\@zero=\count137
+\pst@toks=\toks42
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen157
+\psxunit=\dimen158
+\psyunit=\dimen159
+\pst@C@@rType=\count138
+\pslinewidth=\dimen160
+\psk@startLW=\dimen161
+\psk@endLW=\dimen162
+\pst@customdefs=\toks43
+\pslinearc=\dimen163
+\pst@symbolStep=\dimen164
+\pst@symbolWidth=\dimen165
+\pst@symbolLinewidth=\dimen166
+\everypsbox=\toks44
+\psframesep=\dimen167
+\pslabelsep=\dimen168
+\sh@wgridXunit=\dimen169
+\sh@wgridYunit=\dimen170
+\pst@shift=\dimen171
+)
+File: pstricks.tex 2014/03/30 v2.53a `PSTricks' (tvz,hv)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2014/03/30 v2.53a `PST-fp' (hv)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pst-node/pst-node.sty
+Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex
+ v1.33, 2014/03/25
+\psrow=\count139
+\pscol=\count140
+\psmatrixcnt=\count141
+\psrowsep=\skip52
+\pscolsep=\skip53
+\pst@args=\count142
+\num@pts=\count143
+\pst@argcnt=\count144
+)
+File: pst-node.tex 2014/03/25 1.33 `pst-node' (tvz,hv)
+) (./pst-gantt.sty
+Package: pst-gantt 2011/03/20 Some macros for drawing gantt diagrams using tkiz
+ v.1.3
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks45
+\pgfutil@tempdima=\dimen172
+\pgfutil@tempdimb=\dimen173
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box34
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+))
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+\pgf@x=\dimen174
+\pgf@y=\dimen175
+\pgf@xa=\dimen176
+\pgf@ya=\dimen177
+\pgf@xb=\dimen178
+\pgf@yb=\dimen179
+\pgf@xc=\dimen180
+\pgf@yc=\dimen181
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count145
+\c@pgf@countb=\count146
+\c@pgf@countc=\count147
+\c@pgf@countd=\count148
+\t@pgf@toka=\toks46
+\t@pgf@tokb=\toks47
+\t@pgf@tokc=\toks48
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count149
+\pgfsyssoftpath@bigbuffer@items=\count150
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen182
+\pgf@picmaxx=\dimen183
+\pgf@picminy=\dimen184
+\pgf@picmaxy=\dimen185
+\pgf@pathminx=\dimen186
+\pgf@pathmaxx=\dimen187
+\pgf@pathminy=\dimen188
+\pgf@pathmaxy=\dimen189
+\pgf@xx=\dimen190
+\pgf@xy=\dimen191
+\pgf@yx=\dimen192
+\pgf@yy=\dimen193
+\pgf@zx=\dimen194
+\pgf@zy=\dimen195
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen196
+\pgf@path@lasty=\dimen197
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen198
+\pgf@shorten@start@additional=\dimen199
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+\pgfpic=\box35
+\pgf@hbox=\box36
+\pgf@layerbox@main=\box37
+\pgf@picture@serial@count=\count151
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen200
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen201
+\pgf@pt@y=\dimen202
+\pgf@pt@temp=\dimen203
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen204
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen205
+\pgf@sys@shading@range@num=\count152
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+\pgfexternal@startupbox=\box38
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+\pgfnodeparttextbox=\box39
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen206
+\pgf@nodesepend=\dimen207
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen208
+\pgffor@skip=\dimen209
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count153
+\pgfplotmarksize=\dimen210
+)
+\tikz@lastx=\dimen211
+\tikz@lasty=\dimen212
+\tikz@lastxsaved=\dimen213
+\tikz@lastysaved=\dimen214
+\tikzleveldistance=\dimen215
+\tikzsiblingdistance=\dimen216
+\tikz@figbox=\box40
+\tikz@figbox@bg=\box41
+\tikz@tempbox=\box42
+\tikz@tempbox@bg=\box43
+\tikztreelevel=\count154
+\tikznumberofchildren=\count155
+\tikznumberofcurrentchild=\count156
+\tikz@fig@count=\count157
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count158
+\pgfmatrixcurrentcolumn=\count159
+\pgf@matrix@numberofcolumns=\count160
+)
+\tikz@expandcount=\count161
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count162
+\calc@Bcount=\count163
+\calc@Adimen=\dimen217
+\calc@Bdimen=\dimen218
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count164
+\calc@Cskip=\skip56
+) (./forloop.sty
+Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.0 (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
+e.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.0 (rcs-revision 1.13)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
+\arrowsize=\dimen219
+))
+\c@ganttnum=\count165
+\c@ganttwidth=\count166
+\ganttlastx=\skip57
+\nextganttlastx=\skip58
+\gantttmpa=\skip59
+\gantttmpb=\skip60
+\ganttunitlength=\skip61
+\titleunitlength=\skip62
+\c@gantttitlenum=\count167
+\pgf@layerbox@background=\box44
+\pgf@layerboxsaved@background=\box45
+\pgf@layerbox@foreground=\box46
+\pgf@layerboxsaved@foreground=\box47
+) (/usr/share/texlive/texmf-dist/tex/latex/pst-coil/pst-coil.sty
+Package: pst-coil 2010/02/01 package wrapper for pst-coil.tex (hv)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-coil/pst-coil.tex
+ v1.33, 2014/03/25
+(/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex))
+File: pst-coil.tex 2011/09/17 v1.06 `PST-coil' (tvz,hv)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count168
+\float@exts=\toks51
+\float@box=\box48
+\@float@everytoks=\toks52
+\@floatcapt=\box49
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box50
+\AM@toc@title=\toks53
+\c@AM@survey=\count169
+\AM@templatesizebox=\box51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count170
+\lst@gtempboxa=\box53
+\lst@token=\toks54
+\lst@length=\count171
+\lst@currlwidth=\dimen220
+\lst@column=\count172
+\lst@pos=\count173
+\lst@lostspace=\dimen221
+\lst@width=\dimen222
+\lst@newlines=\count174
+\lst@lineno=\count175
+\lst@maxwidth=\dimen223
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count176
+\lst@skipnumbers=\count177
+\lst@framebox=\box54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (./comment.sty) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.st
+y
+\fancy@headwidth=\skip63
+\f@ncyO@elh=\skip64
+\f@ncyO@erh=\skip65
+\f@ncyO@olh=\skip66
+\f@ncyO@orh=\skip67
+\f@ncyO@elf=\skip68
+\f@ncyO@erf=\skip69
+\f@ncyO@olf=\skip70
+\f@ncyO@orf=\skip71
+)
+(./appendix.sty
+Package: appendix 2002/08/06 v1.2 extra appendix facilities
+\c@@pps=\count178
+\c@@ppsavesec=\count179
+\c@@ppsaveapp=\count180
+) (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count181
+\rotFPtop=\skip72
+\rotFPbot=\skip73
+\rot@float@box=\box55
+\rot@mess@toks=\toks55
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/ptmcm/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/ptmcm/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/ptmcm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ptmcm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/pzccm/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/pzccm/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/psycm/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/psycm/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `bold' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `bold' in version `normal'
+(Font)                  OT1/ptm/bx/n --> OT1/ptm/bx/n on input line 32.
+LaTeX Font Info:    Overwriting symbol font `bold' in version `bold'
+(Font)                  OT1/ptm/bx/n --> OT1/ptm/bx/n on input line 32.
+LaTeX Font Info:    Redeclaring symbol font `italic' on input line 33.
+LaTeX Font Info:    Overwriting symbol font `italic' in version `normal'
+(Font)                  OT1/ptm/m/it --> OT1/ptm/m/it on input line 33.
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/ptm/m/it --> OT1/ptm/m/it on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/ptm/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/ptm/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/ptm/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/ptm/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Redeclaring math symbol \omicron on input line 36.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count182
+) (./bytefield.sty
+Package: bytefield 2011/06/19 v2.1 Network protocol diagrams
+\bytefield@height=\skip74
+\bytefield@height@increment=\skip75
+\entire@bytefield@picture=\box56
+\bf@bitwidth=\skip76
+\bf@bitheight=\skip77
+\units@wide=\skip78
+\units@tall=\skip79
+\units@high=\skip80
+\header@xpos=\skip81
+\c@header@val=\count183
+\c@max@header@val=\count184
+\curly@box=\box57
+\wordlabelr@start=\skip82
+\wordlabelr@end=\skip83
+\wordlabell@start=\skip84
+\wordlabell@end=\skip85
+\total@lbox@width=\skip86
+\label@box@width=\skip87
+\label@box@height=\skip88
+\word@label@box=\box58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box59
+\beforetitleunit=\skip89
+\aftertitleunit=\skip90
+\ttl@plus=\dimen224
+\ttl@minus=\dimen225
+\ttl@toksa=\toks56
+\titlewidth=\dimen226
+\titlewidthlast=\dimen227
+\titlewidthfirst=\dimen228
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count185
+\Gm@cntv=\count186
+\c@Gm@tempcnt=\count187
+\Gm@bindingoffset=\dimen229
+\Gm@wd@mp=\dimen230
+\Gm@odd@mp=\dimen231
+\Gm@even@mp=\dimen232
+\Gm@layoutwidth=\dimen233
+Normal \dimen register pool exhausted, switching to extended pool.
+\Gm@layoutheight=\dimen256
+\Gm@layouthoffset=\dimen257
+\Gm@layoutvoffset=\dimen258
+\Gm@dimlist=\toks57
+) (./TCCmain.aux)
+\openout1 = `TCCmain.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 129.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 12
+9.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 129.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count188
+\scratchdimen=\dimen259
+\scratchbox=\box60
+\nofMPsegments=\count189
+\nofMParguments=\count190
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count191
+\MPscratchDim=\dimen260
+\MPnumerator=\count192
+\makeMPintoPDFobject=\count193
+\everyMPtoPDFconversion=\toks59
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box61
+\c@lstlisting=\count194
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=85.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./Content/1_PreTexto.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 9.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 11.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 13.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 20
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 20
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 20
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 20
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 21.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 21.
+ [1
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/
+pdftex.map}] [2
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 15.7499pt on input line 44.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.5> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 44.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 15.7499pt on input line 44.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <26> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 46.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 23.39984pt on input line 46.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.8699pt on input line 74.
+ [1] [2
+
+] [3] [4]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 14.3999pt on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <16> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 14.3999pt on input line 134.
+ [5
+
+] [6
+
+] [1] [2
+
+] [3] [4
+
+] [5] [6
+
+] (./TCCmain.lof
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7
+
+])
+\tf@lof=\write4
+\openout4 = `TCCmain.lof'.
+
+
+[8] (./TCCmain.lot)
+\tf@lot=\write5
+\openout5 = `TCCmain.lot'.
+
+ [9
+
+] [10
+
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 242.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 242.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 250.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 10.79993pt on input line 250.
+ [1] [2
+
+] (./TCCmain.toc
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3
+
+]
+Underfull \vbox (badness 1052) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4])
+\tf@toc=\write6
+\openout6 = `TCCmain.toc'.
+
+) (./Content/2_Introducao.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.14992pt on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <13.5> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.14992pt on input line 25.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 72.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
+File: omsphv.fd 
+)
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8] <./Resources/intro.jpg, id=93, 747.79375pt x 687.56876pt>
+File: ./Resources/intro.jpg Graphic file (type jpg)
+
+<use ./Resources/intro.jpg>
+Package pdftex.def Info: ./Resources/intro.jpg used on input line 91.
+(pdftex.def)             Requested size: 373.89595pt x 343.78354pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./Resources/intro.jpg>]
+<./Resources/intro2.jpg, id=97, 1215.54124pt x 740.7675pt>
+File: ./Resources/intro2.jpg Graphic file (type jpg)
+
+<use ./Resources/intro2.jpg>
+Package pdftex.def Info: ./Resources/intro2.jpg used on input line 101.
+(pdftex.def)             Requested size: 425.44582pt x 259.2725pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./Resources/intro2.jpg>]) (./Content/4_EmbasamentoTeorico.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+Cap\'{\i }tulo 2.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12
+
+] <./Resources/cloud.png, id=107, 855.195pt x 541.02126pt>
+File: ./Resources/cloud.png Graphic file (type png)
+
+<use ./Resources/cloud.png>
+Package pdftex.def Info: ./Resources/cloud.png used on input line 32.
+(pdftex.def)             Requested size: 342.07195pt x 216.40466pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./Resources/cloud.png>]
+<./Resources/ocr.png, id=117, 598.235pt x 429.605pt>
+File: ./Resources/ocr.png Graphic file (type png)
+ <use ./Resources/ocr.png>
+Package pdftex.def Info: ./Resources/ocr.png used on input line 51.
+(pdftex.def)             Requested size: 239.28975pt x 171.83894pt.
+
+<./Resources/imageRecog.png, id=118, 455.7025pt x 310.15875pt>
+File: ./Resources/imageRecog.png Graphic file (type png)
+
+<use ./Resources/imageRecog.png>
+Package pdftex.def Info: ./Resources/imageRecog.png used on input line 67.
+(pdftex.def)             Requested size: 227.85068pt x 155.079pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./Resources/ocr.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./Resources/imageRecog.png>]) (./Content/5_MateriaisMetodos.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+Cap\'{\i }tulo 3.
+<./Resources/esquematico1.jpg, id=128, 963.6pt x 722.7pt>
+File: ./Resources/esquematico1.jpg Graphic file (type jpg)
+
+<use ./Resources/esquematico1.jpg>
+Package pdftex.def Info: ./Resources/esquematico1.jpg used on input line 13.
+(pdftex.def)             Requested size: 337.26506pt x 252.94878pt.
+
+<./Resources/smartphone.jpg, id=129, 160.6pt x 305.14pt>
+File: ./Resources/smartphone.jpg Graphic file (type jpg)
+
+<use ./Resources/smartphone.jpg>
+Package pdftex.def Info: ./Resources/smartphone.jpg used on input line 29.
+(pdftex.def)             Requested size: 56.21083pt x 106.80058pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18
+
+ <./Resources/esquematico1.jpg>]
+<./Resources/arduino.jpg, id=133, 254.9525pt x 181.67876pt>
+File: ./Resources/arduino.jpg Graphic file (type jpg)
+
+<use ./Resources/arduino.jpg>
+Package pdftex.def Info: ./Resources/arduino.jpg used on input line 61.
+(pdftex.def)             Requested size: 127.47592pt x 90.83914pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19 <./Resources/smartphone.jpg>]
+Overfull \hbox (11.33727pt too wide) in paragraph at lines 67--68
+[]\T1/phv/m/n/12 Para a fun-ci-o-na-li-dade de de-tec-ção de obs-tá-cu-los, que
+ não po-de-ria ser feita pelo smartphone,
+ []
+
+<./Resources/sensor.jpg, id=138, 325.215pt x 325.215pt>
+File: ./Resources/sensor.jpg Graphic file (type jpg)
+
+<use ./Resources/sensor.jpg>
+Package pdftex.def Info: ./Resources/sensor.jpg used on input line 90.
+(pdftex.def)             Requested size: 130.0837pt x 130.0837pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20 <./Resources/arduino.jpg> <./Resources/sensor.jpg>]
+<./Resources/bluetooth.jpg, id=143, 451.6875pt x 451.6875pt>
+File: ./Resources/bluetooth.jpg Graphic file (type jpg)
+
+<use ./Resources/bluetooth.jpg>
+Package pdftex.def Info: ./Resources/bluetooth.jpg used on input line 103.
+(pdftex.def)             Requested size: 135.5073pt x 135.5073pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21 <./Resources/bluetooth.jpg>]
+<./Resources/talkback.jpg, id=148, 692.5875pt x 350.30875pt>
+File: ./Resources/talkback.jpg Graphic file (type jpg)
+
+<use ./Resources/talkback.jpg>
+Package pdftex.def Info: ./Resources/talkback.jpg used on input line 140.
+(pdftex.def)             Requested size: 346.2929pt x 175.15395pt.
+
+Underfull \vbox (badness 1960) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22] <./Resources/menu.png, id=152, 481.8pt x 803.0pt>
+File: ./Resources/menu.png Graphic file (type png)
+
+<use ./Resources/menu.png>
+Package pdftex.def Info: ./Resources/menu.png used on input line 149.
+(pdftex.def)             Requested size: 144.5411pt x 240.90186pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23 <./Resources/talkback.jpg> <./Resources/menu.png>]
+<./Resources/navegabilidade.jpg, id=156, 1179.40625pt x 735.74875pt>
+File: ./Resources/navegabilidade.jpg Graphic file (type jpg)
+
+<use ./Resources/navegabilidade.jpg>
+Package pdftex.def Info: ./Resources/navegabilidade.jpg used on input line 162.
+
+(pdftex.def)             Requested size: 412.79837pt x 257.51591pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./Resources/navegabilidade.jpg>]
+<./Resources/price.png, id=164, 1123.19624pt x 460.72125pt>
+File: ./Resources/price.png Graphic file (type png)
+
+<use ./Resources/price.png>
+Package pdftex.def Info: ./Resources/price.png used on input line 188.
+(pdftex.def)             Requested size: 449.27054pt x 184.28523pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./Resources/price.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27] <./Resources/capRes.png, id=171, 1007.765pt x 640.3925pt>
+File: ./Resources/capRes.png Graphic file (type png)
+
+<use ./Resources/capRes.png>
+Package pdftex.def Info: ./Resources/capRes.png used on input line 221.
+(pdftex.def)             Requested size: 403.09886pt x 256.15245pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./Resources/capRes.png>]
+<./Resources/funcoes.png, id=176, 963.6pt x 365.365pt>
+File: ./Resources/funcoes.png Graphic file (type png)
+
+<use ./Resources/funcoes.png>
+Package pdftex.def Info: ./Resources/funcoes.png used on input line 234.
+(pdftex.def)             Requested size: 433.616pt x 164.41272pt.
+
+Overfull \hbox (9.33864pt too wide) in paragraph at lines 248--249
+[]\T1/phv/m/n/12 Com isso de-ci-dido, foi ne-ces-sá-rio pla-ne-jar a es-tru-tur
+a desse re-gis-tro. A prin-cí-pio considerou-
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29 <./Resources/funcoes.png>]
+<./Resources/select.png, id=181, 481.8pt x 803.0pt>
+File: ./Resources/select.png Graphic file (type png)
+
+<use ./Resources/select.png>
+Package pdftex.def Info: ./Resources/select.png used on input line 254.
+(pdftex.def)             Requested size: 144.5411pt x 240.90186pt.
+
+<./Resources/inserirNome.png, id=182, 974.64125pt x 381.425pt>
+File: ./Resources/inserirNome.png Graphic file (type png)
+
+<use ./Resources/inserirNome.png>
+Package pdftex.def Info: ./Resources/inserirNome.png used on input line 265.
+(pdftex.def)             Requested size: 438.5845pt x 171.63965pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30 <./Resources/select.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31 <./Resources/inserirNome.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32] <./Resources/circuit.png, id=199, 426.393pt x 259.369pt>
+File: ./Resources/circuit.png Graphic file (type png)
+
+<use ./Resources/circuit.png>
+Package pdftex.def Info: ./Resources/circuit.png used on input line 298.
+(pdftex.def)             Requested size: 298.47305pt x 181.55705pt.
+) (./Content/6_Resultados.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33 <./Resources/circuit.png>]
+Cap\'{\i }tulo 4.
+<./Resources/Teste-HP.jpg, id=204, 1922.18124pt x 1667.22874pt>
+File: ./Resources/Teste-HP.jpg Graphic file (type jpg)
+
+<use ./Resources/Teste-HP.jpg>
+Package pdftex.def Info: ./Resources/Teste-HP.jpg used on input line 19.
+(pdftex.def)             Requested size: 192.22939pt x 166.73264pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34
+
+]
+\MBox=\box62
+ <./Resources/green.jpg, id=208, 3902.58pt x 2601.72pt>
+File: ./Resources/green.jpg Graphic file (type jpg)
+
+<use ./Resources/green.jpg>
+Package pdftex.def Info: ./Resources/green.jpg used on input line 73.
+(pdftex.def)             Requested size: 204.84683pt x 202.78249pt.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 75.
+
+Underfull \hbox (badness 1173) in paragraph at lines 85--86
+\T1/phv/b/n/12 AMD pro-ces-sor. Free 25GB li-fe-time
+ []
+
+<./Resources/yellow.jpg, id=209, 3902.58pt x 2601.72pt>
+File: ./Resources/yellow.jpg Graphic file (type jpg)
+
+<use ./Resources/yellow.jpg>
+Package pdftex.def Info: ./Resources/yellow.jpg used on input line 87.
+(pdftex.def)             Requested size: 204.84683pt x 190.3567pt.
+
+<./Resources/red.jpg, id=210, 5018.75pt x 3513.125pt>
+File: ./Resources/red.jpg Graphic file (type jpg)
+
+<use ./Resources/red.jpg>
+Package pdftex.def Info: ./Resources/red.jpg used on input line 102.
+(pdftex.def)             Requested size: 455.19069pt x 59.87779pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--106
+[]$[]$ $[]$
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35 <./Resources/Teste-HP.jpg> <./Resources/green.jpg> <./Resources/yellow.jpg>
+ <./Resources/red.jpg>]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 115.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 115.
+
+Overfull \hbox (1.06453pt too wide) in paragraph at lines 145--146
+[]\T1/phv/m/n/12 Varias ca-rac-te-rís-ti-cas im-por-tan-tes po-dem ser ex-traí-
+das des-ses re-sul-ta-dos. Pri-mei-ra-mente,
+ []
+
+<./Resources/bestPractices.png, id=214, 818.05624pt x 255.95625pt>
+File: ./Resources/bestPractices.png Graphic file (type png)
+
+<use ./Resources/bestPractices.png>
+Package pdftex.def Info: ./Resources/bestPractices.png used on input line 154.
+(pdftex.def)             Requested size: 409.02711pt x 127.9778pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36] <./Resources/girado.png, id=218, 345.29pt x 511.9125pt>
+File: ./Resources/girado.png Graphic file (type png)
+
+<use ./Resources/girado.png>
+Package pdftex.def Info: ./Resources/girado.png used on input line 170.
+(pdftex.def)             Requested size: 138.11354pt x 204.76137pt.
+
+<./Resources/girado90.png, id=219, 345.29pt x 511.9125pt>
+File: ./Resources/girado90.png Graphic file (type png)
+
+<use ./Resources/girado90.png>
+Package pdftex.def Info: ./Resources/girado90.png used on input line 178.
+(pdftex.def)             Requested size: 138.11354pt x 204.76137pt.
+
+<./Resources/semgirar.png, id=220, 345.29pt x 511.9125pt>
+File: ./Resources/semgirar.png Graphic file (type png)
+
+<use ./Resources/semgirar.png>
+Package pdftex.def Info: ./Resources/semgirar.png used on input line 186.
+(pdftex.def)             Requested size: 138.11354pt x 204.76137pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37 <./Resources/bestPractices.png> <./Resources/girado.png> <./Resources/girad
+o90.png> <./Resources/semgirar.png>]
+<./Resources/forma.png, id=228, 769.87625pt x 560.0925pt>
+File: ./Resources/forma.png Graphic file (type png)
+
+<use ./Resources/forma.png>
+Package pdftex.def Info: ./Resources/forma.png used on input line 205.
+(pdftex.def)             Requested size: 384.93718pt x 280.04556pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38] <./Resources/mao.png, id=232, 654.445pt x 466.74374pt>
+File: ./Resources/mao.png Graphic file (type png)
+
+<use ./Resources/mao.png>
+Package pdftex.def Info: ./Resources/mao.png used on input line 213.
+(pdftex.def)             Requested size: 327.2217pt x 233.37129pt.
+ <./Resources/mao2.png, id=233, 489.83pt x 453.695pt>
+File: ./Resources/mao2.png Graphic file (type png)
+
+<use ./Resources/mao2.png>
+Package pdftex.def Info: ./Resources/mao2.png used on input line 220.
+(pdftex.def)             Requested size: 244.9144pt x 226.84694pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39 <./Resources/forma.png> <./Resources/mao.png>]
+<./Resources/labels.png, id=239, 686.565pt x 581.17125pt>
+File: ./Resources/labels.png Graphic file (type png)
+
+<use ./Resources/labels.png>
+Package pdftex.def Info: ./Resources/labels.png used on input line 255.
+(pdftex.def)             Requested size: 343.28166pt x 290.58492pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40 <./Resources/mao2.png>]
+<./Resources/labelsComputer.png, id=244, 713.66624pt x 579.16376pt>
+File: ./Resources/labelsComputer.png Graphic file (type png)
+
+<use ./Resources/labelsComputer.png>
+Package pdftex.def Info: ./Resources/labelsComputer.png used on input line 265.
+
+(pdftex.def)             Requested size: 285.46143pt x 231.66139pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41 <./Resources/labels.png> <./Resources/labelsComputer.png>]
+<./Resources/labelsComputer2.png, id=250, 713.66624pt x 579.16376pt>
+File: ./Resources/labelsComputer2.png Graphic file (type png)
+
+<use ./Resources/labelsComputer2.png>
+Package pdftex.def Info: ./Resources/labelsComputer2.png used on input line 275
+.
+(pdftex.def)             Requested size: 285.46143pt x 231.66139pt.
+
+<./Resources/labelCadeira.png, id=251, 713.66624pt x 579.16376pt>
+File: ./Resources/labelCadeira.png Graphic file (type png)
+
+<use ./Resources/labelCadeira.png>
+Package pdftex.def Info: ./Resources/labelCadeira.png used on input line 285.
+(pdftex.def)             Requested size: 285.46143pt x 231.66139pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42 <./Resources/labelsComputer2.png>]
+<./Resources/expressoes.png, id=256, 1068.99374pt x 572.1375pt>
+File: ./Resources/expressoes.png Graphic file (type png)
+
+<use ./Resources/expressoes.png>
+Package pdftex.def Info: ./Resources/expressoes.png used on input line 299.
+(pdftex.def)             Requested size: 427.58992pt x 228.85094pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43 <./Resources/labelCadeira.png>]
+<./Resources/triste.png, id=262, 874.26625pt x 504.88625pt>
+File: ./Resources/triste.png Graphic file (type png)
+
+<use ./Resources/triste.png>
+Package pdftex.def Info: ./Resources/triste.png used on input line 309.
+(pdftex.def)             Requested size: 437.13205pt x 252.44249pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44 <./Resources/expressoes.png> <./Resources/triste.png>]
+Underfull \hbox (badness 4242) in paragraph at lines 339--340
+[]|\T1/phv/m/n/12 Distância mé-dia afe-rida
+ []
+
+
+Overfull \hbox (6.92528pt too wide) in paragraph at lines 335--352
+ [][] 
+ []
+
+
+Underfull \vbox (badness 5091) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45] <./Resources/circuito.png, id=271, 471.7625pt x 602.25pt>
+File: ./Resources/circuito.png Graphic file (type png)
+
+<use ./Resources/circuito.png>
+Package pdftex.def Info: ./Resources/circuito.png used on input line 366.
+(pdftex.def)             Requested size: 235.88066pt x 301.12425pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./Resources/circuito.png>]
+<./Resources/smartphoneBateria.png, id=276, 1023.825pt x 643.40375pt>
+File: ./Resources/smartphoneBateria.png Graphic file (type png)
+
+<use ./Resources/smartphoneBateria.png>
+Package pdftex.def Info: ./Resources/smartphoneBateria.png used on input line 3
+83.
+(pdftex.def)             Requested size: 307.14987pt x 193.02261pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47 <./Resources/smartphoneBateria.png>]
+<./Resources/ligaArduino.png, id=281, 655.44875pt x 403.5075pt>
+File: ./Resources/ligaArduino.png Graphic file (type png)
+
+<use ./Resources/ligaArduino.png>
+Package pdftex.def Info: ./Resources/ligaArduino.png used on input line 398.
+(pdftex.def)             Requested size: 458.81099pt x 282.45332pt.
+
+Overfull \hbox (3.56688pt too wide) in paragraph at lines 398--399
+ [][] 
+ []
+
+<./Resources/Modulos.png, id=282, 685.56125pt x 403.5075pt>
+File: ./Resources/Modulos.png Graphic file (type png)
+
+<use ./Resources/Modulos.png>
+Package pdftex.def Info: ./Resources/Modulos.png used on input line 408.
+(pdftex.def)             Requested size: 411.33992pt x 242.10637pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48 <./Resources/ligaArduino.png>]
+
+Package array Warning: Column a is already defined on input line 417.
+
+<./Resources/pizza.png, id=286, 713.66624pt x 405.515pt>
+File: ./Resources/pizza.png Graphic file (type png)
+
+<use ./Resources/pizza.png>
+Package pdftex.def Info: ./Resources/pizza.png used on input line 441.
+(pdftex.def)             Requested size: 499.56296pt x 283.85855pt.
+
+Overfull \hbox (44.31885pt too wide) in paragraph at lines 441--442
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49 <./Resources/Modulos.png>]) (./Content/7_Conclusao.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50 <./Resources/pizza.png>]
+Cap\'{\i }tulo 5.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54] (./TCCmain.bbl
+Underfull \hbox (badness 3724) in paragraph at lines 74--77
+[]\T1/phv/m/n/12 ``Bengala Longa Ele-trô-nica,'' $http : / / www . fapesc . sc 
+. gov . br / entregues -[] a -[] cegos -[] bengalas -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--82
+[]\T1/phv/m/n/12 ``Bengala Au-to-má-tica,'' $http : / / www . correio24horas . 
+com . br / detalhe / noticia / estudantes -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--82
+\T1/phv/m/n/12 baianos -[] criam -[] bengala -[] automatica -[] de -[] baixo -[
+] custo -[] para -[] de^^\cientes -[] visuais -[] entenda /
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+[]\T1/phv/m/n/12 ``Tecnologia As-sis-tiva,'' $http : / / www . pessoacomde^^\ci
+encia . gov . br / app / sites / default / ^^\les /
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 93--96
+\T1/phv/m/n/12 publicacoes / livro -[] tecnologia -[] assistiva . pdf$, Se-cre-
+ta-ria Es-pe-cial dos Di-rei-tos Hu-ma-nos,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
+[]\T1/phv/m/n/12 ``Accessibility,'' $https : / / developer . android . com / gu
+ide / topics / ui / accessibility / index . html$,
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56]
+Underfull \hbox (badness 2409) in paragraph at lines 143--146
+[]\T1/phv/m/n/12 K. Sato and R. Sa-kai, ``Ex-plore the Ga-laxy of ima-ges with 
+Cloud Vi-sion API,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--146
+\T1/phv/m/n/12 https : / / cloud . google . com / blog / big -[] data / 2016 / 
+05 / explore -[] the -[] galaxy -[] of -[] images -[] with -[] cloud -[]
+ []
+
+) (./Content/8_Apendices.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58
+
+]
+Ap\^endice A.
+<./Resources/AllClassesJustName.png, id=319, 1340.00626pt x 689.57625pt>
+File: ./Resources/AllClassesJustName.png Graphic file (type png)
+
+<use ./Resources/AllClassesJustName.png>
+Package pdftex.def Info: ./Resources/AllClassesJustName.png used on input line 
+9.
+(pdftex.def)             Requested size: 1340.00299pt x 689.57455pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59
+
+ <./Resources/AllClassesJustName.png>]
+Ap\^endice B.
+<./Resources/diagramaEstados.png, id=323, 3309.36375pt x 2409.0pt>
+File: ./Resources/diagramaEstados.png Graphic file (type png)
+
+<use ./Resources/diagramaEstados.png>
+Package pdftex.def Info: ./Resources/diagramaEstados.png used on input line 19.
+
+(pdftex.def)             Requested size: 3309.35571pt x 2408.99416pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60
+
+ <./Resources/diagramaEstados.png>]
+Ap\^endice C.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 9.85492pt on input line 127.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 5.39996pt on input line 127.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 127.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65]) (./Content/50anexooos.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66]
+Anexo I.
+<Resources/HC-05.pdf, id=349, 597.55246pt x 845.07718pt>
+File: Resources/HC-05.pdf Graphic file (type pdf)
+
+<use Resources/HC-05.pdf>
+Package pdftex.def Info: Resources/HC-05.pdf used on input line 26.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: Resources/HC-05.pdf Graphic file (type pdf)
+ <use Resources/HC-05.pdf>
+Package pdftex.def Info: Resources/HC-05.pdf used on input line 26.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67
+
+
+] <Resources/HC-05.pdf, id=356, page=1, 597.55246pt x 845.07718pt>
+File: Resources/HC-05.pdf Graphic file (type pdf)
+
+<use Resources/HC-05.pdf, page 1>
+Package pdftex.def Info: Resources/HC-05.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: Resources/HC-05.pdf Graphic file (type pdf)
+ <use Resources/HC-05.pdf, page 1>
+Package pdftex.def Info: Resources/HC-05.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Resources/HC-05.pdf Graphic file (type pdf)
+
+<use Resources/HC-05.pdf, page 1>
+Package pdftex.def Info: Resources/HC-05.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Resources/HC-05.pdf Graphic file (type pdf)
+ <use Resources/HC-05.pdf, page 1>
+Package pdftex.def Info: Resources/HC-05.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Resources/HC-05.pdf Graphic file (type pdf)
+
+<use Resources/HC-05.pdf, page 1>
+Package pdftex.def Info: Resources/HC-05.pdf, page1 used on input line 26.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [68 <./Resources/HC-05.pdf>]
+<Resources/HC-05.pdf, id=387, page=2, 597.55246pt x 845.07718pt>
+File: Resources/HC-05.pdf Graphic file (type pdf)
+
+<use Resources/HC-05.pdf, page 2>
+Package pdftex.def Info: Resources/HC-05.pdf, page2 used on input line 26.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Resources/HC-05.pdf Graphic file (type pdf)
+ <use Resources/HC-05.pdf, page 2>
+Package pdftex.def Info: Resources/HC-05.pdf, page2 used on input line 26.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Resources/HC-05.pdf Graphic file (type pdf)
+
+<use Resources/HC-05.pdf, page 2>
+Package pdftex.def Info: Resources/HC-05.pdf, page2 used on input line 26.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [69 <./Resources/HC-05.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70
+
+]
+Anexo II.
+<Resources/HCSR04.pdf, id=406, 597.23125pt x 845.1575pt>
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+
+<use Resources/HCSR04.pdf>
+Package pdftex.def Info: Resources/HCSR04.pdf used on input line 37.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+ <use Resources/HCSR04.pdf>
+Package pdftex.def Info: Resources/HCSR04.pdf used on input line 37.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71
+
+] <Resources/HCSR04.pdf, id=412, page=1, 597.23125pt x 845.1575pt>
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+
+<use Resources/HCSR04.pdf, page 1>
+Package pdftex.def Info: Resources/HCSR04.pdf, page1 used on input line 37.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+ <use Resources/HCSR04.pdf, page 1>
+Package pdftex.def Info: Resources/HCSR04.pdf, page1 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+
+<use Resources/HCSR04.pdf, page 1>
+Package pdftex.def Info: Resources/HCSR04.pdf, page1 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+ <use Resources/HCSR04.pdf, page 1>
+Package pdftex.def Info: Resources/HCSR04.pdf, page1 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+
+<use Resources/HCSR04.pdf, page 1>
+Package pdftex.def Info: Resources/HCSR04.pdf, page1 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [72 <./Resources/HCSR04.pdf>]
+<Resources/HCSR04.pdf, id=434, page=2, 597.23125pt x 845.1575pt>
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+
+<use Resources/HCSR04.pdf, page 2>
+Package pdftex.def Info: Resources/HCSR04.pdf, page2 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+ <use Resources/HCSR04.pdf, page 2>
+Package pdftex.def Info: Resources/HCSR04.pdf, page2 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+
+<use Resources/HCSR04.pdf, page 2>
+Package pdftex.def Info: Resources/HCSR04.pdf, page2 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [73 <./Resources/HCSR04.pdf>]
+<Resources/HCSR04.pdf, id=441, page=3, 597.23125pt x 845.1575pt>
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+
+<use Resources/HCSR04.pdf, page 3>
+Package pdftex.def Info: Resources/HCSR04.pdf, page3 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+ <use Resources/HCSR04.pdf, page 3>
+Package pdftex.def Info: Resources/HCSR04.pdf, page3 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Resources/HCSR04.pdf Graphic file (type pdf)
+
+<use Resources/HCSR04.pdf, page 3>
+Package pdftex.def Info: Resources/HCSR04.pdf, page3 used on input line 37.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [74 <./Resources/HCSR04.pdf>])
+(./TCCmain.aux) ) 
+Here is how much of TeX's memory you used:
+ 23875 strings out of 495001
+ 431846 string characters out of 6180681
+ 538240 words of memory out of 5000000
+ 26489 multiletter control sequences out of 15000+600000
+ 88442 words of font info for 121 fonts, out of 8000000 for 9000
+ 16 hyphenation exceptions out of 8191
+ 61i,18n,85p,1325b,1867s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/h
+elvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on TCCmain.pdf (92 pages, 12276721 bytes).
+PDF statistics:
+ 488 PDF objects out of 1000 (max. 8388607)
+ 285 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+

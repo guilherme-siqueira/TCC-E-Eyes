@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/secondView">
+
+        <ImageView
+            android:importantForAccessibility="yes"
+            android:layout_width="wrap_content"
+            android:layout_height= "wrap_content"
+            android:id = "@+id/imageFile"
+            android:contentDescription="@string/image_file"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/secondView"
+        android:orientation="horizontal"
+        android:background="@color/colorBackgroundList">
+
+        <TextView
+            android:contentDescription="@string/text_file"
+            android:focusable="true"
+            android:importantForAccessibility="yes"
+            android:padding="20sp"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorLetters"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:scrollbars = "vertical"
+            android:text=""
+            android:id="@+id/textFile"/>
+
+    </LinearLayout>
+</RelativeLayout>

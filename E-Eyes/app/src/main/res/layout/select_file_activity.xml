@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="Lista de arquivos"
+        android:textSize="25dp"
+        android:background="@color/colorTitleList"
+        android:textColor="@color/colorLetters"
+        android:layout_weight="0.90"
+        android:gravity="center_vertical"/>
+
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="438dp"
+        android:drawSelectorOnTop="false"
+        android:background="@color/colorBackgroundList"
+        />
+
+</LinearLayout>

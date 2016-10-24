@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/photo_main"
+    tools:context=".Photo">
+
+    <SurfaceView
+        android:focusable="true"
+        android:importantForAccessibility="yes"
+        android:onClick="captureImage"
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/activity_descriptor_camera"/>
+
+    <TextView
+        android:focusable="true"
+        android:importantForAccessibility="yes"
+        android:padding="20sp"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorLetters"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:scrollbars = "vertical"
+        android:text=""
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:importantForAccessibility="yes"
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        android:id = "@+id/blinkImage"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/time"
+        android:contentDescription="@string/activity_descriptor_clock"
+        android:visibility="gone"/>
+
+</RelativeLayout>

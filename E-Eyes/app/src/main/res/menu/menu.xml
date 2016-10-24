@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/menu"
+    android:contentDescription = "Menu de preferências.">
+
+    <item android:id="@+id/voiceGuide"
+        android:title="desabilitar guia de voz"
+        android:checked="true"
+        android:enabled="false"
+        android:visible="false"/>
+    <item android:id="@+id/vibrate"
+        android:title="desabilitar vibração"
+        android:checked="true"
+        android:enabled="false"
+        android:visible="false"/>
+    <item android:id="@+id/text"
+        android:title="desabilitar janela de aviso"
+        android:checked="true"
+        android:enabled="false"
+        android:visible="false"/>
+    <item android:id="@+id/savePhoto"
+        android:title="não salvar foto automaticamente"
+        android:checked="true"
+        android:enabled="false"
+        android:visible="false"/>
+    <item android:id="@+id/saveAudio"
+        android:title="não salvar audio automaticamente"
+        android:checked="true"
+        android:enabled="false"
+        android:visible="false"/>
+
+    <item android:id="@+id/saveDescription"
+        android:title="não salvar descrição automaticamente"
+        android:checked="true"/>
+    <item android:id="@+id/soundEffect"
+        android:title="desabilitar som de processamento"
+        android:checked="true"/>
+    <item android:id="@+id/animation"
+        android:title="desabilitar animação de relógio"
+        android:checked="true"/>
+    <item android:id="@+id/google"
+        android:title="haha"
+        android:checked="true"/>
+    <item android:id="@+id/yandex"
+        android:title="habilitar yandex"
+        android:checked="true"/>
+    <item android:id="@+id/seq"
+        android:title="haha"
+        android:enabled="false"
+        android:visible="false"/>
+    <item android:id="@+id/dim"
+        android:title="haha"
+        android:checked="true"
+        android:actionViewClass="android.widget.SearchView"/>
+</menu>

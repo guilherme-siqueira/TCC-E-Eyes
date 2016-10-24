@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">E-Eyes</string>
+
+    <string name="activity_detector_label">Detector de Obstáculos</string>
+    <string name="activity_descriptor_label">Descritor de imagens</string>
+    <string name="activity_menu_label">Menu Principal</string>
+
+    <string name="button_detector">Botão Detector de Obstáculos</string>
+    <string name="button_full_descriptor">Botão: detecção completa</string>
+    <string name="button_text_descriptor">Botão: detecção apenas de texto</string>
+    <string name="button_label_descriptor">Botão: detecção apenas de características</string>
+    <string name="button_selection">Botão: selecionar arquivos</string>
+
+    <string name="activity_descriptor_camera">Camera: disponível para captura</string>
+    <string name="activity_descriptor_clock">Relógio piscando: aguardando descrição de imagem</string>
+    <string name="activity_descriptor_no_camera">Câmera: indisponível atrás do texto</string>
+
+    <string name="activity_descriptor_text">Caixa de texto: Resultado: </string>
+
+    <string name="processing">A imagem está sendo processada. Por favor Aguarde.</string>
+    <string name="end_process">O processamento da imagem terminou com sucesso.</string>
+    <string name="fail_process">O processamento da imagem apresentou erros.</string>
+    <string name="copied_to_clip_board">Texto copiado para a área de transferência.</string>
+    <string name="image_stored">A imagem foi salva no dispositivo.</string>
+    <string name="text_stored">A descrição foi salva no dispositivo.</string>
+    <string name="focus_problem">Erro ao capturar a imagem. Verifique iluminação local e tente novamente.</string>
+
+    <string name="image_file">Foto.</string>
+    <string name="text_file">Descrição.</string>
+    
+    <string name="closing_activity">Voltando para o menu principal.</string>
+
+    <string name="no_connection">Essa função necessita de conexão com a Internet.</string>
+
+</resources>
