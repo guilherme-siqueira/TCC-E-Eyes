@@ -1,7 +1,7 @@
 \chapter{Resultados e Discussões}
 \label{Resultados}
 
-Com as funcionalidades planejadas para o projeto concluídas, o passo seguinte foi a realização de testes. Esse capítulo será dividido em três seções tal que na primeira serão tratados dos resultados da extração de informação de imagens, a segunda, tratará da performance do detector de obstáculos e a terceira fará uma análise de consumo do sistema.
+Com as funcionalidades planejadas para o projeto concluídas, o passo seguinte foi a realização de testes. Esse capítulo será dividido em três seções tal que na primeira serão tratados dos resultados da extração de informação de imagens, a segunda tratará da performance do detector de obstáculos e a terceira fará uma análise de consumo do sistema.
 
 \section{Descrição de Imagens}
 
@@ -10,7 +10,7 @@ Na descrição de imagens duas considerações foram necessárias para garantir o cor
 
 \subsection{Teste para diferentes dimensões de imagens}
 
-Apesar de a velocidade da internet ser um fator limitante, a quantidade de dados transmitida, em alguns casos, pode ser flexibilizada uma vez que a imagem pode ter sua resolução reduzida e exibir um número menor de bytes para ser representada. Entretanto, essa redução resulta em um detalhamento menor da imagem, o que pode dificultar seu processamento, causar erros de interpretação de seu conteúdo e por fim não retornar resultados incorretos.
+Apesar de a velocidade da internet ser um fator limitante, a quantidade de dados transmitida, em alguns casos, pode ser flexibilizada uma vez que a imagem pode ter sua resolução reduzida e exibir um número menor de bytes para ser representada. Entretanto, essa redução resulta em um detalhamento menor da imagem, o que pode dificultar seu processamento, causar erros de interpretação de seu conteúdo e por fim não retornar resultados corretos.
 
 A fim de confrontar resolução de imagem, tempo de processamento e erros dos resultados, para cada solicitação de extração de informação das imagens, a mesma imagem contida na Figura \ref{Teste-HP} foi enviada com diversas resoluções, e os tempos das fases do processo foram medidos. Já a Figura \ref{Resultado-HP} apresenta os resultados para três diferentes resoluções da Figura \ref{Teste-HP}. 
 
@@ -144,7 +144,7 @@ A Tabela \ref{Estat-HP} mostra que a resolução da imagem é proporcional ao tempo
 
 Varias características importantes podem ser extraídas desses resultados. Primeiramente, a imagem possui um defeito causado pelo brilho intenso do flash concentrado num único ponto no momento da captura, e esse defeito afeta diretamente 3 palavras do texto. Essas palavras afetadas pelo brilho correspondem exatamente as malformadas, em vermelho, do resultado apresentado pela Figura \ref{RII}, erro esse que não ocorre com o apresentado pela Figura \ref{RI}. Isso permite a inferência de que a redução da resolução pode ter tornado a OCR menos precisa e esse problema ter sido potencializado pelo brilho do flash ao ponto de distorcer completamente a grafia das palavras. 
 
-É possível que se o brilho refletido não tivesse sobreposto essas palavras, o resultado de \ref{RII} fosse muito semelhante ao de \ref{RI}. Essa hipótese pode ser confirmada pela Tabela \ref{bestPracticesTable}, pois as dimensões recomendadas pela Google para a detecção de texto correspondem as da Figura \ref{RI}. Além disso, dimensões inferiores reduzem a acurácia do resultado, o que pode ser confirmado pela Figura \ref{RIII}, enquanto superiores aumentam o tempo de processamento e uso da largura de banda sem necessariamente promover melhora significativa da acurácia\cite{bestPracticesGoogle}.
+É possível que se o brilho refletido não tivesse sobreposto essas palavras, o resultado de \ref{RII} fosse muito semelhante ao de \ref{RI}. Essa hipótese pode ser confirmada pela Tabela \ref{bestPracticesTable}, pois as dimensões recomendadas pela Google para a detecção de texto correspondem as da Figura \ref{RII}. Além disso, dimensões inferiores reduzem a acurácia do resultado, o que pode ser confirmado pela Figura \ref{RIII}, enquanto superiores aumentam o tempo de processamento e uso da largura de banda sem necessariamente promover melhora significativa da acurácia\cite{bestPracticesGoogle}.
 
 
 \begin{figure}[H]
@@ -195,7 +195,7 @@ Considerando o fato de que o usuário do aplicativo certamente não saberá de ante
 Apesar de esse resultado mostrar que há uma limitação na capacidade de API reconhecer caracteres, é possível compreender a razão. Uma hipótese é que o algoritmo apenas verifique que há linhas horizontais de textos, e não considere a possibilidade de o texto estar virado em 180°. Então, ele deve comparar o simbolo invertido com os de sua base de dados, e o que se encaixar melhor é considerado o correto. Ao analisar com mais cuidado a Figura \ref{girado}, pode-se perceber que apesar de o texto retornado não ter qualquer significado real, existe uma razão na formação de cada simbolo. Há uma considerável semelhança entre a letra "a" girada de 180° e a letra "e", entre "L" e "1", entre "w" e "m", e assim por diante. Quanto a Figura \ref{girado90}, praticamente não houve erros durante a OCR, mesmo apresentando um texto girado de 90°, assim como o teste apresentado  pela Figura \ref{semgirar}.
 
 
-\subsection{Teste para reconhecimento de texto com letra cursiva}
+\subsection{Teste para reconhecimento de texto manuscrito}
 
 Uma das possibilidades de utilização do aplicativo seria a leitura de bilhetes escritos a mão. Alguns testes foram realizados para se ter conhecimentos dos limites das capacidades da API, quanto a escrita a mão, seja ela de forma ou cursiva. Os resultados mostraram que existe maior limitação da API quanto a identificação de caracteres manuscritos, se comparada a de digitais. A Figura \ref{forma} apresenta o caso de um texto capturado com a mais alta resolução que o aplicativo oferece, de 2560x1920 pixels, e mesmo assim há alguns erros de identificação. Porém, como é possível observar nas Figuras \ref{mao} e \ref{mao2}, os resultados só ficam gravemente incorretos quando os textos são escritos em letra cursiva. Nesse cenário, o reconhecimento até ocorre, mas de uma quantidade muito pequena do total de palavras, apresentando diversos erros, mesmo em traços largos e cor contrastante. Assim, a transcrição de textos em letra cursiva se mostra, na prática, impossível pela aplicação.
 
@@ -372,7 +372,7 @@ Outro ponto considerado foi o tamanho dos elementos do circuito. Quanto menor e 
 
 \section{Avaliação de consumo do sistema}
 
-O consumo de energia certamente é uma grande limitador na implementação de qualquer sistema. É importante portanto ter conhecimento da potência dissipada tanto pelo aplicativo executado no smartphone, quanto do circuito detector de obstáculos, formado pelo Arduíno e demais módulos.
+O consumo de energia certamente é um grande limitador na implementação de qualquer sistema. É importante portanto ter conhecimento da potência dissipada tanto pelo aplicativo executado no smartphone, quanto do circuito detector de obstáculos, formado pelo Arduíno e demais módulos.
 
 \subsection{Consumo no smartphone}
 
@@ -385,7 +385,7 @@ Na avaliação de consumo do aplicativo rodando no smartphone utilizou-se o aplica
 	\label{phoneBattery}
 \end{figure}
 
-É possível notar que durante a solicitação de reconhecimento de texto houve um maior consumo da CPU do que durante o processo de detecção de obstáculos. O resultado faz sentido, uma vez que na primeira funcionalidade utiliza-se mais recursos como wifi, câmera (captura e preview), animação e som de processamento. Na detecção de obstáculos apenas o bluetooth é utilizado.
+É possível notar que durante a solicitação de reconhecimento de texto houve um maior consumo da CPU do que durante o processo de detecção de obstáculos. O resultado faz sentido, uma vez que na primeira funcionalidade utiliza-se mais recursos como wifi, câmera (captura, flash e preview), animação e som de processamento. Na detecção de obstáculos apenas o bluetooth é utilizado.
 
 Além disso, o consumo da bateria se dá muito mais pela iluminação da tela do que pela CPU. O gráfico de consumo pelo LCD apresentou descontinuidade nos dados devido o fato de o aplicativo ter sido desligado entre os testes. Na média, a potência dissipada pelo aplicativo para a utilização das duas principais funcionalidades do sistema foi de 404mW.
 

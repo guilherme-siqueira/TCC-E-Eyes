@@ -259,8 +259,7 @@ No ciclo principal, monta-se a onda a ser emitida, com nível baixo de 2ms, e alt
 	emph={HIGH, INPUT, OUTPUT, LOW}
 }
 
-\begin{lstlisting}[caption=Rotina executada na placa Arduino,captionpos=b,label={arduino}]
-//Define os pinos para o trigger e echo
+\begin{lstlisting}[caption=Rotina executada na placa Arduíno,captionpos=b,label={arduino}]
 #define pino_trigger 4
 #define pino_echo 5
 
@@ -278,11 +277,9 @@ void loop()
 {
 	digitalWrite(pino_trigger, LOW);
 	delayMicroseconds(2);
-	// Sets the trigPin on HIGH state for 10 micro seconds
 	digitalWrite(pino_trigger, HIGH);
 	delayMicroseconds(10);
 	digitalWrite(pino_trigger, LOW);
-	// Reads the echoPin, returns the sound wave travel time in microseconds
 	duration = pulseIn(pino_echo, HIGH);
 	// Calculating the distance
 	distance= duration*0.034/2;
@@ -290,7 +287,7 @@ void loop()
 	if(distance < 400)
 	{
 		Serial.println(distance);
-		delay(1000);
+		delay(100);
 	}
 }
 \end{lstlisting}
