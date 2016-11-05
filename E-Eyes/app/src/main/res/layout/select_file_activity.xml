@@ -7,20 +7,22 @@
     android:weightSum="1">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:text="Lista de arquivos"
+        android:layout_height="match_parent"
+        android:text="Lista de registros"
         android:textSize="25dp"
         android:background="@color/colorTitleList"
         android:textColor="@color/colorLetters"
         android:layout_weight="0.90"
-        android:gravity="center_vertical"/>
+        android:gravity="center_vertical"
+        android:contentDescription="Título do menu"
+        android:paddingLeft="20dp" />
 
 
 
     <ListView
         android:id="@android:id/list"
         android:layout_width="fill_parent"
-        android:layout_height="438dp"
+        android:layout_height="match_parent"
         android:drawSelectorOnTop="false"
         android:background="@color/colorBackgroundList"
         />

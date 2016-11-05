@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:onClick="autoSave"
+            android:id="@+id/saveOption">
+            <ImageView
+                style="@style/Image"
+                android:id = "@+id/buttonSave"
+                android:src="@drawable/save"
+                android:contentDescription="@string/button_text_descriptor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:onClick="clockSound"
+            android:id="@+id/soundOption">
+            <ImageView
+                style="@style/Image"
+                android:id = "@+id/buttonSound"
+                android:src="@drawable/shuttersound"
+                android:contentDescription="@string/button_text_descriptor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:onClick="clockBlink"
+            android:id="@+id/imageOption">
+
+            <ImageView
+                style="@style/Image"
+                android:id = "@+id/buttonImage"
+                android:src="@drawable/time"
+                android:contentDescription="@string/button_text_descriptor"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:onClick="increaseResolution"
+            android:id="@+id/incRel">
+            <TextView
+                android:id = "@+id/incRelText"
+                android:contentDescription="@string/button_inc_rel"
+                android:text="+"
+                android:textSize="50dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/resValue"
+                android:text="2555px"
+                android:textSize="50dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:onClick="decreaseResolution"
+            android:id="@+id/decRel">
+            <TextView
+                android:id = "@+id/decRelText"
+                android:contentDescription="@string/button_dec_rel"
+                android:text="-"
+                android:textSize="50dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:onClick="increaseFont"
+            android:id="@+id/incFont">
+            <TextView
+                android:id = "@+id/incFontText"
+                android:contentDescription="@string/button_inc_font"
+                android:text="+"
+                android:textSize="50dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/fontValue"
+                android:text="2555px"
+                android:textSize="50dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:onClick="decreaseFont"
+            android:id="@+id/decFont">
+            <TextView
+                android:id = "@+id/decFontText"
+                android:contentDescription="@string/button_dec_font"
+                android:text="-"
+                android:textSize="50dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

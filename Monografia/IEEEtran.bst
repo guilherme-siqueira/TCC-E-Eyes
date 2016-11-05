@@ -209,7 +209,7 @@ FUNCTION {bbl.patentUS}{ "U.S." }
 FUNCTION {bbl.revision}{ "Rev." }
 FUNCTION {bbl.series}{ "ser." }
 FUNCTION {bbl.standard}{ "Std." }
-FUNCTION {bbl.techrep}{ "Tech. Rep." }
+FUNCTION {bbl.techrep}{ "Relat\'orio T\'ecnico" }
 FUNCTION {bbl.mthesis}{ "Master's thesis" }
 FUNCTION {bbl.phdthesis}{ "Ph.D. dissertation" }
 FUNCTION {bbl.st}{ "st" }

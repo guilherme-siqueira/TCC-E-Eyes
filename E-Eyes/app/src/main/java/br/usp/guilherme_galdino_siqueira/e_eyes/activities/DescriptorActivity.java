@@ -13,6 +13,7 @@ import android.hardware.Camera.PictureCallback;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -26,6 +27,7 @@ import android.view.GestureDetector;
 import android.content.ClipboardManager;
 import android.content.ClipData;
 import android.widget.TextView;
+import android.graphics.Matrix;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -80,13 +82,15 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
     TextView textView;
 
-    int dimensions[] = {2560, 1600, 1200, 1024, 768, 640, 480};
+    Intent optionMenu;
+
+
 
     int dimension = 0;
 
-    int defaultDimension;
 
-    int defaultDimensionIndex;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +101,8 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
         startUpSurface();
         startUpTextView();
+
+        optionMenu = new Intent(this, OptionMenuActivity.class);
 
         effects = new Effects(getApplicationContext(), this);
         feedbackMessage = new FeedbackMessage(this);
@@ -119,6 +125,12 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
     }
 
     @Override
+    protected void onRestart() {
+        textView.setTextSize(Constants.fontSize);
+        super.onRestart();
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
     }
@@ -138,10 +150,15 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
             return;
         }
 
+        if(bitmap!=null)        {
+            bitmap.recycle();
+            bitmap=null;
+        }
+
         super.onBackPressed();
         // This above line close correctly
     }
-
+/*
     @Override
     protected void onStop() {
 
@@ -152,14 +169,30 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
         super.onStop();
     }
+*/
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
     }
 
+
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_MENU) {
+            startActivity(optionMenu);
+            return true;
+        }
+        return super.onKeyUp(keyCode, event);
+    }
+
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
+        Intent intent = new Intent(this, OptionMenuActivity.class);
+        startActivity(intent);
+
+
 
         final MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
@@ -196,8 +229,14 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
         menu.findItem(R.id.dim).setTitle("Dimensão: " + defaultDimension);
 
+
+
         return true;
+
+
     }
+
+    */
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -254,34 +293,34 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
             case R.id.dim:
                 if (Preferences.isChangeDimensionEnable)
                 {
-                    if (Preferences.increaseDimension && defaultDimensionIndex > 0)
+                    if (Preferences.increaseDimension && Constants.defaultDimensionIndex > 0)
                     {
-                        defaultDimensionIndex--;
-                        defaultDimension = dimensions[defaultDimensionIndex];
+                        Constants.defaultDimensionIndex--;
+                        Constants.defaultDimension = Constants.dimensions[Constants.defaultDimensionIndex];
                     }
 
-                    else if (!Preferences.increaseDimension && defaultDimensionIndex < dimensions.length - 1)
+                    else if (!Preferences.increaseDimension && Constants.defaultDimensionIndex < Constants.dimensions.length - 1)
                     {
-                        defaultDimensionIndex++;
-                        defaultDimension = dimensions[defaultDimensionIndex];
+                        Constants.defaultDimensionIndex++;
+                        Constants.defaultDimension = Constants.dimensions[Constants.defaultDimensionIndex];
                     }
 
-                    else if (defaultDimension == Constants.MAX_IMAGE_DIMENSION)
+                    else if (Constants.defaultDimension == Constants.MAX_IMAGE_DIMENSION)
                     {
                         Preferences.increaseDimension = false;
-                        defaultDimensionIndex++;
-                        defaultDimension = dimensions[defaultDimensionIndex];
+                        Constants.defaultDimensionIndex++;
+                        Constants.defaultDimension = Constants.dimensions[Constants.defaultDimensionIndex];
                     }
 
-                    else if (defaultDimension == Constants.MIN_IMAGE_DIMENSION)
+                    else if (Constants.defaultDimension == Constants.MIN_IMAGE_DIMENSION)
                     {
                         Preferences.increaseDimension = true;
-                        defaultDimensionIndex--;
-                        defaultDimension = dimensions[defaultDimensionIndex];
+                        Constants.defaultDimensionIndex--;
+                        Constants.defaultDimension = Constants.dimensions[Constants.defaultDimensionIndex];
                     }
 
                 }
-                item.setTitle("Dimensão: " + defaultDimension);
+                item.setTitle("Dimensão: " + Constants.defaultDimension);
                 return true;
 
             default:
@@ -344,12 +383,12 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
         addRequests(intent, "LANDMARK");
         addRequests(intent, "LOGO");
 
-        defaultDimension = intent.getIntExtra("DIMENSION",640);
+        Constants.defaultDimension = intent.getIntExtra("DIMENSION",640);
 
-        for (int i = 0; i < dimensions.length; i++) {
-            if (defaultDimension == dimensions[i])
+        for (int i = 0; i < Constants.dimensions.length; i++) {
+            if (Constants.defaultDimension == Constants.dimensions[i])
             {
-                defaultDimensionIndex = i;
+                Constants.defaultDimensionIndex = i;
                 break;
             }
         }
@@ -465,6 +504,7 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
             }
 
 
+
         }
     }
 
@@ -549,6 +589,8 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
             textView.setContentDescription(getString(R.string.activity_descriptor_text) + photoDescriptor.getAdaptedText());
 
+            textView.setTextSize(Constants.fontSize);
+
             surfaceView.setContentDescription(getString(R.string.activity_descriptor_no_camera));
 
             surfaceView.setEnabled(false);
@@ -570,13 +612,17 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
         if (bitmap != null) {
 
             try {
+
+                Matrix matrix = new Matrix();
+                matrix.postRotate(90);
+                bitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
                 // scale the image to save on bandwidth
                 //bitmap = scaleBitmapDown(bitmap, 1200);
                 if (Preferences.isSequenceRequestsEnable)
                 {
-                    if (dimension < dimensions.length)
+                    if (dimension < Constants.dimensions.length)
                     {
-                        bitmap = scaleBitmapDown(bitmap, dimensions[dimension]);
+                        bitmap = scaleBitmapDown(bitmap, Constants.dimensions[dimension]);
 
                         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                         bitmap.compress(Bitmap.CompressFormat.JPEG, 90, byteArrayOutputStream);
@@ -594,7 +640,7 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
 
                 else
                 {
-                    bitmap = scaleBitmapDown(bitmap, defaultDimension);
+                    bitmap = scaleBitmapDown(bitmap, Constants.defaultDimension);
 
                     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 90, byteArrayOutputStream);

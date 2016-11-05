@@ -23,12 +23,12 @@
 
 \bibitem{WDR}
 ``{World Development Report 2016: Digital Dividends},'' The World Bank,
-  Washington DC - EUA, Tech. Rep., 2016.
+  Washington DC - EUA, Relat\'orio T\'ecnico, 2016.
 
 \bibitem{Ericsson}
 ``{Ericsson Mobility Report ON THE PULSE OF THE NETWORKED SOCIETY},''
   \url{https://www.ericsson.com/res/docs/2016/ericsson-mobility-report-2016.pdf},
-  Ericsson, Estocolmo, Su\'ecia, Tech. Rep., Junho de 2016.
+  Ericsson, Estocolmo, Su\'ecia, Relat\'orio T\'ecnico, Junho de 2016.
 
 \bibitem{TapTapSee}
 ``{TapTapSee},'' \url{http://www.taptapseeapp.com/}, Acesso em: 01 de agosto de
@@ -59,16 +59,17 @@ C.~Wong, D.~Wee, I.~Murray, and T.~Dias, ``{A Novel Design of Integrated
 \bibitem{Ben}
 B.~Leduc-Mills, H.~Profita, S.~Bharadwaj, P.~Cromer, and R.~Han, ``{ioCane: A
   Smart-Phone and Sensor-Augmented Mobility Aid for the Blind},'' University of
-  Colorado Boulder, Boulder, Colorado - EUA, Tech. Rep., 2013.
+  Colorado Boulder, Boulder, Colorado - EUA, Relat\'orio T\'ecnico, 2013.
 
 \bibitem{CPqD}
 ``{CPqD Alcance},'' \url{https://www.cpqd.com.br/solucoes/cpqd-alcance/},
   Acesso em: 01 de agosto de 2016.
 
 \bibitem{Gallani}
-M.~A. Gallani, ``{Dispositivo microcontrolado para auxílio na orientação de
-  deficientes visuais},'' Escola de Engenharia de S\~ao Carlos,Universidade de
-  S\~ao Paulo, S\~ao Carlos, S\~ao Paulo, Tech. Rep., 2015.
+M.~A. Gallani, ``{Dispositivo microcontrolado para aux\'ilio na
+  orienta\c{c}\~ao de deficientes visuais},'' Escola de Engenharia de S\~ao
+  Carlos, Universidade de S\~ao Paulo, S\~ao Carlos, S\~ao Paulo, Relat\'orio
+  T\'ecnico, 2015.
 
 \bibitem{UNIVALI}
 ``{Bengala Longa Eletr\^onica},''
@@ -82,17 +83,29 @@ M.~A. Gallani, ``{Dispositivo microcontrolado para auxílio na orientação de
 
 \bibitem{IBGE}
 ``{Pesquisa Nacional de Sa\'ude 2013: Ciclos de Vida},'' IBGE, Rio de Janeiro -
-  Brasil, Tech. Rep., 2015.
+  Brasil, Relat\'orio T\'ecnico, 2015.
 
 \bibitem{HDI}
 ``{Human Development Reports},''
   \url{http://hdr.undp.org/en/countries/profiles/BRA}, United Nations
-  Development Programme, Tech. Rep., Acesso em: 09 de agosto de 2016.
+  Development Programme, Relat\'orio T\'ecnico, Acesso em: 09 de agosto de
+  2016.
+
+\bibitem{androidBook}
+{Paul Deitel, Harvey Deitel and Alexander Wald}, \emph{{Android 6 for
+  Programmers: An App-Driven Aproach}}, {Third}~ed.\hskip 1em plus 0.5em minus
+  0.4em\relax {Pearson Education, Inc.}, 2016.
+
+\bibitem{arduinoBook}
+{Martin Evans, Joshua Noble and Jordan Hochenbaum}, \emph{{Arduino in Action}},
+  {Third}~ed.\hskip 1em plus 0.5em minus 0.4em\relax {Greenwich, Connecticut -
+  EUA}: {Manning Publications Co.}, 2013.
 
 \bibitem{LivroTecAss}
 ``{Tecnologia Assistiva},''
   \url{http://www.pessoacomdeficiencia.gov.br/app/sites/default/files/publicacoes/livro-tecnologia-assistiva.pdf},
-  Secretaria Especial dos Direitos Humanos, Bras\'ilia, Tech. Rep., 2009.
+  Secretaria Especial dos Direitos Humanos, Bras\'ilia, Relat\'orio T\'ecnico,
+  2009.
 
 \bibitem{Henry}
 S.~L. Henry, S.~Abou-Zahra, and J.~Brewer, ``{The Role of Accessibility in a
@@ -110,7 +123,7 @@ M.~Armbrust, A.~Fox, R.~Griffith, A.~D. Joseph, R.~H. Katz, A.~Konwinski,
   G.~Lee, D.~A. Patterson, A.~Rabkin, I.~Stoica, and M.~Zaharia, ``{Above the
   Clouds: A Berkeley View of Cloud Computing},'' Electrical Engineering and
   Computer Sciences, University of California at Berkeley, Berkeley,
-  Calif\'ornia - EUA, Tech. Rep., Fevereiro de 2009.
+  Calif\'ornia - EUA, Relat\'orio T\'ecnico, Fevereiro de 2009.
 
 \bibitem{LivroCV}
 {Parker, J. R.}, \emph{{Algorithms for Image Processing and Computer Vision}},

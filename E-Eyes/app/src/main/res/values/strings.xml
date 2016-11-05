@@ -3,6 +3,9 @@
 
     <string name="activity_detector_label">Detector de Obstáculos</string>
     <string name="activity_descriptor_label">Descritor de imagens</string>
+    <string name="activity_select_file">Lista de Registros</string>
+
+    <string name="activity_view_file">Descrição de Registro</string>
     <string name="activity_menu_label">Menu Principal</string>
 
     <string name="button_detector">Botão Detector de Obstáculos</string>
@@ -11,9 +14,15 @@
     <string name="button_label_descriptor">Botão: detecção apenas de características</string>
     <string name="button_selection">Botão: selecionar arquivos</string>
 
+    <string name="button_inc_rel">Botão: Aumentar qualidade da captura</string>
+    <string name="button_dec_rel">Botão: Diminuir qualidade da captura</string>
+    <string name="button_inc_font">Botão: Aumentar tamanho da fonte</string>
+    <string name="button_dec_font">Botão: Diminuir tamanho da fonte</string>
+
     <string name="activity_descriptor_camera">Camera: disponível para captura</string>
     <string name="activity_descriptor_clock">Relógio piscando: aguardando descrição de imagem</string>
     <string name="activity_descriptor_no_camera">Câmera: indisponível atrás do texto</string>
+    <string name="activity_option_menu">Menu de preferências</string>
 
     <string name="activity_descriptor_text">Caixa de texto: Resultado: </string>
 

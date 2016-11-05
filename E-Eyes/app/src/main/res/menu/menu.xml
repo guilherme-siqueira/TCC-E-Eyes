@@ -4,7 +4,8 @@
     android:id = "@+id/menu"
     android:contentDescription = "Menu de preferências.">
 
-    <item android:id="@+id/voiceGuide"
+
+   <item android:id="@+id/voiceGuide"
         android:title="desabilitar guia de voz"
         android:checked="true"
         android:enabled="false"
@@ -32,19 +33,24 @@
 
     <item android:id="@+id/saveDescription"
         android:title="não salvar descrição automaticamente"
-        android:checked="true"/>
+        android:checked="true"
+        android:visible="false"/>
     <item android:id="@+id/soundEffect"
         android:title="desabilitar som de processamento"
-        android:checked="true"/>
+        android:checked="true"
+        android:visible="false"/>
     <item android:id="@+id/animation"
         android:title="desabilitar animação de relógio"
-        android:checked="true"/>
+        android:checked="true"
+        android:visible="false"/>
     <item android:id="@+id/google"
         android:title="haha"
+        android:visible="false"
         android:checked="true"/>
     <item android:id="@+id/yandex"
         android:title="habilitar yandex"
-        android:checked="true"/>
+        android:checked="true"
+        android:visible="false"/>
     <item android:id="@+id/seq"
         android:title="haha"
         android:enabled="false"
@@ -52,5 +58,19 @@
     <item android:id="@+id/dim"
         android:title="haha"
         android:checked="true"
-        android:actionViewClass="android.widget.SearchView"/>
+        android:actionViewClass="android.widget.SearchView"
+        android:visible="false"/>
+
+    <item android:id="@+id/fontPlus"
+        android:title="aumentar fonte"
+        android:enabled="true"
+        android:visible="true"/>
+    <item android:id="@+id/fontMinus"
+        android:title="reduzir fonte"
+        android:enabled="true"
+        android:visible="true"/>
+
+
+
+
 </menu>

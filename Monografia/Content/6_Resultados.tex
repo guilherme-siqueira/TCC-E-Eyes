@@ -107,16 +107,17 @@ A fim de confrontar resolução de imagem, tempo de processamento e erros dos resu
 	\label{Resultado-HP}
 \end{figure}
 
-A Tabela \ref{Estat-HP} mostra que a resolução da imagem é proporcional ao tempo total de processamento da informação requisitada e inversamente proporcional a quantidade de erros do resultado. É fundamental lembrar que o tempo de processamento será sempre relacionado à velocidade da internet, portanto não são valores absolutos. O erro de cada imagem é calculado pela equação:
+A Tabela \ref{Estat-HP} mostra que a resolução da imagem é proporcional ao tempo total de processamento da informação requisitada e inversamente proporcional a quantidade de erros do resultado. É fundamental lembrar que o tempo de processamento será sempre relacionado à velocidade da internet, portanto não são valores absolutos. O erro de cada imagem é calculado pela equação \ref{eqErro} a seguir:
 
 
 
-
-\[ Erro = \frac{\text{Número de caracteres na imagem} - \text{Número de caracteres corretos}}{\text{Número caracteres na imagem}}\times 100\% \]
-
+\begin{equation}
+\label{eqErro}
+ Erro = \frac{\text{Número de caracteres na imagem} - \text{Número de caracteres corretos}}{\text{Número caracteres na imagem}}\times 100\% 
+\end{equation}
 
 \definecolor{googleBlue}{rgb}{0.17,0.52,0.91} 
-\newcolumntype{a}{>{\columncolor{googleBlue}\color{white}}l}
+\newcolumntype{a}{>{\columncolor{white}\color{black}}l}
 
 \begin{table}[H]
 	
@@ -124,10 +125,10 @@ A Tabela \ref{Estat-HP} mostra que a resolução da imagem é proporcional ao tempo
 	
 	\caption{Tempos das fases da transcrição de imagem sobre a etiqueta do computador HP, ilustrada pela Figura \ref{Teste-HP}}	
 	
-	\begin{tabular}{!{\color{googleBlue}\vrule} a  c c c !{\color{googleBlue}\vrule}}
-		\arrayrulecolor{googleBlue} \hline
-		\rowcolor{googleBlue}&\multicolumn{3}{c|}{\textcolor{white}{Resultados}}  \\\hline
-		\rowcolor{googleBlue}								
+	\begin{tabular}{!{\color{black}\vrule} l  c c c !{\color{black}\vrule}}
+		\arrayrulecolor{black} \hline
+		\rowcolor{black}&\multicolumn{3}{c|}{\textcolor{white}{Resultados}}  \\\hline
+		\rowcolor{black}								
 							& \textcolor{white}{\ref{RI}} 	& \textcolor{white}{\ref{RII}}	& \textcolor{white}{\ref{RIII}}\\\hline
 		Resolução             	& 2560x1920	    	& 1024x768          & 480x360  	       \\\hline
 		Erro de reconhecimento	                & 0.8\%		    & 1.9\%              & 63.1\%	           \\\hline
@@ -144,7 +145,7 @@ A Tabela \ref{Estat-HP} mostra que a resolução da imagem é proporcional ao tempo
 
 Varias características importantes podem ser extraídas desses resultados. Primeiramente, a imagem possui um defeito causado pelo brilho intenso do flash concentrado num único ponto no momento da captura, e esse defeito afeta diretamente 3 palavras do texto. Essas palavras afetadas pelo brilho correspondem exatamente as malformadas, em vermelho, do resultado apresentado pela Figura \ref{RII}, erro esse que não ocorre com o apresentado pela Figura \ref{RI}. Isso permite a inferência de que a redução da resolução pode ter tornado a OCR menos precisa e esse problema ter sido potencializado pelo brilho do flash ao ponto de distorcer completamente a grafia das palavras. 
 
-É possível que se o brilho refletido não tivesse sobreposto essas palavras, o resultado de \ref{RII} fosse muito semelhante ao de \ref{RI}. Essa hipótese pode ser confirmada pela Tabela \ref{bestPracticesTable}, pois as dimensões recomendadas pela Google para a detecção de texto correspondem as da Figura \ref{RII}. Além disso, dimensões inferiores reduzem a acurácia do resultado, o que pode ser confirmado pela Figura \ref{RIII}, enquanto superiores aumentam o tempo de processamento e uso da largura de banda sem necessariamente promover melhora significativa da acurácia\cite{bestPracticesGoogle}.
+É possível que se o brilho refletido não tivesse sobreposto essas palavras, o resultado de \ref{RII} fosse quase idêntico ao de \ref{RI}. Essa hipótese pode ser confirmada pela Tabela \ref{bestPracticesTable}, pois as dimensões recomendadas pela Google para a detecção de texto correspondem as da Figura \ref{RII}. Além disso, dimensões inferiores reduzem a acurácia do resultado, o que pode ser confirmado pela Figura \ref{RIII}, enquanto superiores aumentam o tempo de processamento e uso da largura de banda sem necessariamente promover melhora significativa da acurácia\cite{bestPracticesGoogle}.
 
 
 \begin{figure}[H]
@@ -202,7 +203,7 @@ Uma das possibilidades de utilização do aplicativo seria a leitura de bilhetes e
 
 \begin{figure}[H]
 	\centering	
-	\includegraphics[scale=0.5]{./Resources/forma.png}
+	\includegraphics[scale=0.7]{./Resources/forma.png}
 	\captionof{figure}{Resultado da extração de texto sobre imagem contendo escrita manual em letra de forma.}
 	\label{forma}
 	
@@ -210,14 +211,14 @@ Uma das possibilidades de utilização do aplicativo seria a leitura de bilhetes e
 
 \begin{figure}[H]
 	\centering	
-	\includegraphics[scale=0.5]{./Resources/mao.png}
+	\includegraphics[scale=0.6]{./Resources/mao.png}
 	\captionof{figure}{Resultados da extração de texto sobre imagem, em diferentes resoluções, contendo palavras manuscristas em letra cursiva.}
 	\label{mao}	
 \end{figure}
 
 \begin{figure}[H]
 	\centering	
-	\includegraphics[scale=0.5]{./Resources/mao2.png}
+	\includegraphics[scale=0.6]{./Resources/mao2.png}
 	\captionof{figure}{Resultado da extração de texto sobre imagem contendo texto escrito em letra cursiva.}
 	\label{mao2}	
 \end{figure}
@@ -332,9 +333,9 @@ Assim que o circuito detector de obstáculos foi criado e apresentava resultados 
 	
 	\caption{Dados extraídos da simulação do sensor de obstáculos sobre distâncias variadas e conhecidas}	
 	
-	\begin{tabular}{!{\color{googleBlue}\vrule} b c c c c c c c c !{\color{googleBlue}\vrule}}
-		\arrayrulecolor{googleBlue} \hline
-		\rowcolor{googleBlue}   & \multicolumn{8}{c|}{\textcolor{white}{Simulações}}  \\\hline
+	\begin{tabular}{!{\color{black}\vrule} l c c c c c c c c !{\color{black}\vrule}}
+		\arrayrulecolor{black} \hline
+		\rowcolor{black}   & \multicolumn{8}{c|}{\textcolor{white}{Simulações}}  \\\hline
 		Distância Real (cm)		& 10 	& 20 	& 30 	& 40	& 50	& 100 & 200	 & 300 \\\hline
 		Distância média aferida (cm) 
 				& 15 	& 27 	& 39 	& 52	& 64 	& 127 & 256  & 384 \\\hline
@@ -351,12 +352,14 @@ Assim que o circuito detector de obstáculos foi criado e apresentava resultados 
 	\label{ErroSensor}	
 \end{table}
 
-Nota-se que o sensor produziu valores bastantes precisos, uma vez que o desvio padrão foi no entorno de apenas 1cm. Entretanto, sua acurácia, que é a medida de quão próximo do valor real está do amostrado, poderia causar erros significantes de classificação de distância pelo aplicativo. Por essa razão, foi necessário inserir uma correção nos valores de distância lidos. Por meio do método dos mínimos quadrados, e baseado nas amostras das simulações foi obtida a seguinte equação para o ajuste dos valores:
-
-\[ Da = 0.78Ds - 0.75 \]
+Nota-se que o sensor produziu valores precisos, uma vez que o desvio padrão foi no entorno de apenas 1cm. Entretanto, sua acurácia, que é a medida de quão próximo do valor real está do amostrado, poderia causar erros significantes de classificação de distância pelo aplicativo. Por essa razão, foi necessário inserir uma correção nos valores de distância lidos. Por meio do método dos mínimos quadrados, e baseado nas amostras das simulações foi obtida a equação \ref{eqDist} para o ajuste dos valores:
+\begin{equation}
+\label{eqDist}
+Da = 0.78Ds - 0.75
+\end{equation}
 em que $Da$ representa a distância ajustada e $Ds$ a medida pelo sensor. Com essa adaptação, os resultados ganharam a acurácia necessária e atribuíram maior confiabilidade ao dispositivo.
 
-\subsection{Usabilidade do dispositivo}
+\subsection{Usabilidade do detector de obstáculos}
 
 Outro ponto considerado foi o tamanho dos elementos do circuito. Quanto menor e compacto, mais usável ele poderia se tornar. Como se tratava apenas de um protótipo, e devido à limitação dos materiais disponíveis para o projeto, foi criada uma caixa para o circuito com dimensões pouco superiores a média das de um smartphone. O resultado obtido pode ser visto na Figura \ref{circuito}.
 
@@ -376,7 +379,7 @@ O consumo de energia certamente é um grande limitador na implementação de qualqu
 
 \subsection{Consumo no smartphone}
 
-Na avaliação de consumo do aplicativo rodando no smartphone utilizou-se o aplicativo Power Tutor. Uma vez ligado, ele avalia todos os processos que são executados pelo Android. A Figura \ref{phoneBattery} ilustra os resultados obtidos pela avaliação do aplicativo em um intervalo de 300 segundos. Entre os instantes 30 e 90 segundos o aplicativo se manteve conectado ao detector de obstáculos, e entre os instantes 120 e 240 segundos permaneceu na função de reconhecimento de texto. 
+Na avaliação de consumo do aplicativo rodando no smartphone utilizou-se o Power Tutor, um aplicativo que mede o consumo de outros aplicativos no Android, e pode ser baixado gratuitamente pela Play Store. Uma vez ligado, ele avalia todos os processos que são executados pelo Android. A Figura \ref{phoneBattery} ilustra os resultados obtidos pela avaliação do aplicativo em um intervalo de 300 segundos. Entre os instantes 30 e 90 segundos o aplicativo se manteve conectado ao detector de obstáculos, e entre os instantes 120 e 240 segundos permaneceu na função de reconhecimento de texto. 
 
 \begin{figure}[H]
 	\centering	
@@ -385,9 +388,9 @@ Na avaliação de consumo do aplicativo rodando no smartphone utilizou-se o aplica
 	\label{phoneBattery}
 \end{figure}
 
-É possível notar que durante a solicitação de reconhecimento de texto houve um maior consumo da CPU do que durante o processo de detecção de obstáculos. O resultado faz sentido, uma vez que na primeira funcionalidade utiliza-se mais recursos como wifi, câmera (captura, flash e preview), animação e som de processamento. Na detecção de obstáculos apenas o bluetooth é utilizado.
+É possível notar que durante a solicitação de reconhecimento de texto houve um maior consumo da CPU do que durante o processo de detecção de obstáculos. O resultado faz sentido, uma vez que na primeira funcionalidade utiliza-se mais recursos como Wifi, câmera (captura, flash e preview), animação e som de processamento. Na detecção de obstáculos apenas o dispositivo Bluetooth do smartphone é utilizado.
 
-Além disso, o consumo da bateria se dá muito mais pela iluminação da tela do que pela CPU. O gráfico de consumo pelo LCD apresentou descontinuidade nos dados devido o fato de o aplicativo ter sido desligado entre os testes. Na média, a potência dissipada pelo aplicativo para a utilização das duas principais funcionalidades do sistema foi de 404mW.
+Além disso, o consumo da bateria se dá muito mais pela iluminação da tela do que pela CPU. O gráfico de consumo pelo LCD apresentou descontinuidade nos dados devido o fato de o aplicativo ter sido desligado entre os testes. Na média, a potência consumida pelo aplicativo para a utilização das duas principais funcionalidades do sistema foi de 404mW.
 
 \subsection{Consumo no detector de obstáculos}
 
@@ -401,7 +404,7 @@ Para avaliar com maior precisão o consumo de energia do circuito, durante 80 seg
 	
 \end{figure}
 
-Além de avaliar o consumo do circuito como um todo, avaliou-se também o quanto cada módulo conectado e devidamente ligado consome do total. Os módulos foram ativados de modo alternado a fim de se medir a corrente consumida individualmente, e para cada caso teste, o valor foi medido durante 25 segundos. O resultado pode ser visualizado pela Figura \ref{Modulos}, que mostra que a maior parte do consumo é resultado do funcionamento do Bluetooth.
+Além de avaliar o consumo do circuito como um todo, avaliou-se também o quanto cada módulo conectado e devidamente ligado consome do total. Os módulos foram ativados de modo alternado a fim de se medir a corrente consumida individualmente, e para cada caso teste, o valor foi medido durante 25 segundos. O resultado pode ser visualizado pela Figura \ref{Modulos}, que mostra que a maior parte do consumo é resultado do funcionamento do dispositivo Bluetooth.
 
 \begin{figure}[H]
 	\centering	
@@ -411,7 +414,12 @@ Além de avaliar o consumo do circuito como um todo, avaliou-se também o quanto c
 	
 \end{figure}
 
-A partir dos valores amostrados de corrente consumida pelo circuito, foi possível calcular a corrente média, o desvio padrão e a potência média, apresentados pela Tabela \ref{valoresMedios}. A potência $P$ foi calculada baseado no valor médio de corrente $I$ e na tensão $V$ de alimentação de 9.6V, pela equação: \[ P = V x I \]
+A partir dos valores amostrados de corrente consumida pelo circuito, foi possível calcular a corrente média, o desvio padrão e a potência média, apresentados pela Tabela \ref{valoresMedios}. A potência $P$ foi calculada baseado no valor médio de corrente $I$ e na tensão $V$ de alimentação de 9.6V, pela equação \ref{eqPot}:
+\begin{equation}
+\label{eqPot}
+P = V x I
+\end{equation}
+
 
 \definecolor{googleBlue}{rgb}{0.17,0.52,0.91} 
 \newcolumntype{a}{>{\columncolor{googleBlue}\color{white}}l}
@@ -422,10 +430,10 @@ A partir dos valores amostrados de corrente consumida pelo circuito, foi possíve
 	
 	\caption{ Valores médios de corrente e potência consumidos pelos módulos do circuito}	
 	
-	\begin{tabular}{!{\color{googleBlue}\vrule} a  c c c c!{\color{googleBlue}\vrule}}
-		\arrayrulecolor{googleBlue} \hline
-		\rowcolor{googleBlue}\textcolor{white}
-		Módulo				& \textcolor{white}{Arduino} 	& \textcolor{white}{Sensor}	& \textcolor{white}{Bluetooth} & \textcolor{white}{Conjunto} \\\hline
+	\begin{tabular}{!{\color{black}\vrule} l  c c c c!{\color{black}\vrule}}
+		\arrayrulecolor{black} \hline
+		\rowcolor{black}
+						& \textcolor{white}{Arduíno} 	& \textcolor{white}{Sensor}	& \textcolor{white}{Bluetooth} & \textcolor{white}{Conjunto} \\\hline
 		Corrente Média(mA)  & 55		& 3.04      & 42.2       & 100.55\\\hline
 		Desvio Padrão (mA)	& 1			& 0.09		& 0.42      & 0.38  \\\hline
 		Potência Média(mW)  & 529.5  	& 29.3    	& 406.2	    & 968.3 \\\hline		
@@ -439,7 +447,7 @@ De fato, o módulo Bluetooth consome pouco menos que o Arduíno, mas isso represen
 \begin{figure}[H]
 	\centering	
 	\includegraphics[scale=0.7]{./Resources/pizza.png}
-	\captionof{figure}{Porcentagem de potência dissipada por cada módulo do circuito}
+	\captionof{figure}{Porcentagem de potência consumida por cada módulo do circuito}
 	\label{pizza}
 	
 \end{figure}

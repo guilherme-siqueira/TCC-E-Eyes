@@ -14,4 +14,12 @@ public class Constants {
 
     public static final String DIRECTORY_PATH = Environment.getExternalStorageDirectory().toString()+"/E-EYES/";
 
+    public static int defaultDimension;
+
+    public static int dimensions[] = {2560, 1600, 1200, 1024, 768, 640, 480};
+
+    public static int defaultDimensionIndex = 0;
+
+    public static int fontSize = 40;
+
 }

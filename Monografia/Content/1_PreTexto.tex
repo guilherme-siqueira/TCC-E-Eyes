@@ -43,7 +43,7 @@
 	%\thispagestyle{empty}
 		\fontsize{17.5pt}{1.5cm}\selectfont\bfseries{\textbf{Guilherme Galdino Siqueira}}\\
 		\vspace{0.1\textheight}
-		\fontsize{26pt}{36pt}\selectfont\bfseries{\textbf{SISTEMA ELETRÔNICO BASEADO EM ANDROID E ARDUINO PARA AUXÍLIO A PESSOAS COM DEFICIÊNCIA VISUAL}}
+		\fontsize{26pt}{36pt}\selectfont\bfseries{\textbf{SISTEMA ELETRÔNICO BASEADO EM ANDROID E ARDUÍNO PARA AUXÍLIO A PESSOAS COM DEFICIÊNCIA VISUAL}}
  
 		\vspace{0.1\textheight}
 	\end{center}
@@ -74,20 +74,22 @@
 \end{titlepage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FICHA CATALOGRAFICA % % % % % % % % % % % % % % % % % % %
-\cleardoublepage
 
-Página com a ficha catalográfica (em página par).
-(normalmente aparece no trabalho final)
+
+
+
+
+
 %ficha catalografica no verso
-%\includepdf{./Resources/ficha_catalografica.pdf}
+\includepdf{./Resources/ficha.pdf}
 
 % % % % % % % % % % % % % % % % % % % % % % % % Folha de aprovação % % % % % % % % % % % % % % % % % % %
 
 \newpage
 
 
-página com a folha de aprovação (página ímpar). 
-(normalmente aparece no trabalho final)
+%página com a folha de aprovação (página ímpar). 
+%(normalmente aparece no trabalho final)
 
 
 \cleardoublepage
@@ -135,7 +137,7 @@ Guilherme Galdino Siqueira.
 \end{center}
 
 						
-Agradeço primeiramente a Deus por todas as vitórias que obtive antes e durante o período que estive na universidade. Aos meus pais, Marcelo e Angélica, e meu irmão Gabriel por toda paciência e todo apoio que me deram em meio as dificuldades e desafios que enfrentei na graduação. À Universidade de São Paulo, por abrir diversas portas para minha formação, como a oportunidade de estudar no exterior onde começou a se formar a ideia desse projeto, e por oferecer a base do meu conhecimento. Agradeço de modo muito especial meus amigos de turma, com os quais convivi diariamente, e que me deram suporte nos estudos e trabalhos. Ao grupo do Facebook "Cegos e a Tecnologia", pela atenção dada em alguns momentos de dúvida durante o desenvolvimento do projeto. Agradeço ao professor Evandro pela confiança em meu trabalho e por toda orientação que me deu no desenvolver desse projeto e, enfim, aos poucos professores que tive colocaram a preocupação com o aprendizado dos alunos acima de tudo em suas avaliações.
+Agradeço primeiramente a Deus por todas as vitórias que obtive antes e durante o período que estive na universidade. Aos meus pais, Marcelo e Angélica, e meu irmão Gabriel por toda paciência e todo apoio que me deram em meio as dificuldades e desafios que enfrentei na graduação. À Universidade de São Paulo, por abrir diversas portas para minha formação, como a oportunidade de estudar no exterior onde começou a se formar a ideia desse projeto, e por oferecer a base do meu conhecimento. Agradeço de modo muito especial meus amigos de turma, com os quais convivi diariamente, e que me deram suporte nos estudos e trabalhos. Ao grupo do Facebook "Cegos e a Tecnologia", pela atenção dada em alguns momentos de dúvida durante o desenvolvimento do projeto. Agradeço ao professor Evandro pela confiança em meu trabalho e por toda orientação que me deu no desenvolver desse projeto e, enfim, aos poucos professores que tive que colocaram a preocupação com o aprendizado dos alunos acima de tudo em suas avaliações.
 
 
 \begin{flushright}
@@ -185,12 +187,12 @@ Guilherme Galdino Siqueira
 
 
 
-Esse projeto consiste no desenvolvimento de um sistema composto por um aplicativo para Smartphone baseado em Android e uma placa Arduíno, visando contribuir com a acessibilidade de pessoas sob diferentes níveis de deficiência visual. O sistema oferece ao usuário descrições simples de imagens capturadas pela câmera do Smartphone e oferece suporte de detecção de obstáculos. O reconhecimento de imagens foi plenamente realizado pela API Google Cloud Vision, que mostrou considerável precisão. A utilização da API permitiu ao projeto seguir a tendência de solicitação de serviços em nuvem, porém tornou o sistema dependente da conexão com a internet. A detecção de obstáculos por sua vez exigiu a criação de um circuito com a placa Arduíno conectada a um sensor de obstáculos e um módulo Bluetooth. A funcionalidade de detecção se mostrou eficiente por abranger distâncias de até 4 metros e alertar o usuário por sentidos não visuais. No entanto, a utilização de um único sensor limitou o potencial de precisão do projeto. De modo geral, o sistema mostrou ter boa utilidade e usabilidade.
+Esse projeto consistiu no desenvolvimento de um sistema composto por um aplicativo para smartphone baseado em Android e uma placa Arduíno, visando contribuir com a acessibilidade de pessoas sob diferentes níveis de deficiência visual. O sistema oferece ao usuário descrições simples de imagens capturadas pela câmera do smartphone e oferece suporte de detecção de obstáculos. O reconhecimento de imagens foi plenamente realizado pela API Google Cloud Vision, que mostrou considerável precisão. A utilização da API permitiu ao projeto seguir a tendência de solicitação de serviços em nuvem, porém tornou o sistema dependente da conexão com a internet. A detecção de obstáculos por sua vez exigiu a criação de um circuito com a placa Arduíno conectada a um sensor de obstáculos e um módulo Bluetooth. A funcionalidade de detecção se mostrou eficiente por abranger distâncias de até 4 metros e alertar o usuário por sentidos não visuais. De modo geral, o sistema mostrou ter boa utilidade e usabilidade.
 
 
 \vspace{0.05\textheight}
 	
-Palavras-Chave: Android, Arduíno, reconhecimento, imagem, obstáculos.
+Palavras-Chave: Android, Arduíno, visão computacional, detecção de obstáculos, deficiência visual.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INSER??O P?GINA EM BRANCO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -205,11 +207,11 @@ Palavras-Chave: Android, Arduíno, reconhecimento, imagem, obstáculos.
 \end{center}	
 
 
-This project is the development of a system composed of an Android based app and an Arduino board, to contribute to the accessibility of people with different levels of visual impairment. The system provides the user with simple descriptions of images captured by Smartphone camera and provides obstacle detection support. The image recognition was totally performed by Google Cloud Vision API, which showed considerable accuracy. The use of the API allowed the project to follow the trend of cloud services request, but made the system dependent on internet connection. The detection of obstacles in turn required the creation of a circuit with the Arduino board connected to an obstacle detection sensor and a Bluetooth module. The detection feature was efficient for covering distances of up to 4 meters and alert the user by nonvisual senses. However, the use of a single sensor has limited design potential accuracy. In general, the system proved to have good utility and usability.
+This project was the development of a system composed of an Android based app and an Arduino board, to contribute to the accessibility of people with different levels of visual impairment. The system provides the user with simple descriptions of images captured by smartphone camera and provides obstacle detection support. The image recognition was totally performed by Google Cloud Vision API, which showed considerable accuracy. The use of the API allowed the project to follow the trend of cloud services request, but made the system dependent on internet connection. The detection of obstacles in turn required the creation of a circuit with the Arduino board connected to an obstacle detection sensor and a Bluetooth module. The detection feature was efficient for covering distances of up to 4 meters and alert the user by nonvisual senses. In general, the system proved to have good utility and usability.
 
 \vspace{0.05\textheight}
 
-Keywords: Android, Arduino, recognition, image, obstacles.
+Keywords: Android, Arduino, computer vision, obstacles detection, visual impairment.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INSER??O P?GINA EM BRANCO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -222,16 +224,16 @@ Keywords: Android, Arduino, recognition, image, obstacles.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFIGURA??ES DOS ?NDICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\clearpage
 %\thispagestyle{empty}
-\setboolean{@twoside}{false}
+
 \listoffigures % ?ndice de Figuras
 \listoftables % ?ndice de Tabelas
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INSER??O P?GINA EM BRANCO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cleardoublepage
-\setboolean{@twoside}{true}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LISTA DE ABREVIATURAS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\
+
 
  
 
@@ -274,6 +276,9 @@ Keywords: Android, Arduino, recognition, image, obstacles.
 
 \fancypagestyle{plain}{\pagestyle{fancy}}
 
-\setboolean{@twoside}{false}
 
+
+
+\setcounter{page}{19}
 \tableofcontents % Índice Geral
+

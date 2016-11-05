@@ -20,50 +20,52 @@ Warning--empty booktitle in Kwak
 Warning--empty booktitle in Wong
 Warning--empty author in IBGE
 Warning--empty author in HDI
+Warning--edition ordinal word "{Third}" may be too high (or improper) for conversion in androidBook
+Warning--edition ordinal word "{Third}" may be too high (or improper) for conversion in arduinoBook
 Warning--empty author in LivroTecAss
 Warning--empty booktitle in Henry
 Warning--edition ordinal word "{Second}" may be too high (or improper) for conversion in LivroCV
 
 Done.
-You've used 24 entries,
+You've used 26 entries,
             4087 wiz_defined-function locations,
-            965 strings with 11702 characters,
-and the built_in function-call counts, 11596 in all, are:
-= -- 913
-> -- 207
-< -- 39
-+ -- 112
-- -- 39
-* -- 493
-:= -- 1874
-add.period$ -- 52
-call.type$ -- 24
-change.case$ -- 25
-chr.to.int$ -- 93
-cite$ -- 34
-duplicate$ -- 947
-empty$ -- 1087
-format.name$ -- 47
-if$ -- 2660
+            977 strings with 12017 characters,
+and the built_in function-call counts, 12423 in all, are:
+= -- 977
+> -- 219
+< -- 43
++ -- 116
+- -- 41
+* -- 532
+:= -- 1992
+add.period$ -- 56
+call.type$ -- 26
+change.case$ -- 29
+chr.to.int$ -- 105
+cite$ -- 38
+duplicate$ -- 1014
+empty$ -- 1182
+format.name$ -- 49
+if$ -- 2861
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 200
-newline$ -- 95
-num.names$ -- 12
-pop$ -- 527
+int.to.str$ -- 26
+missing$ -- 210
+newline$ -- 101
+num.names$ -- 14
+pop$ -- 563
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 4
-skip$ -- 914
+quote$ -- 8
+skip$ -- 990
 stack$ -- 0
-substring$ -- 228
-swap$ -- 622
+substring$ -- 232
+swap$ -- 653
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 24
-warning$ -- 10
-while$ -- 25
-width$ -- 26
-write$ -- 225
-(There were 11 warnings)
+type$ -- 26
+warning$ -- 12
+while$ -- 27
+width$ -- 28
+write$ -- 239
+(There were 13 warnings)

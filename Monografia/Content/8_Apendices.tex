@@ -1,23 +1,33 @@
-\setboolean{@twoside}{true}
-\cleardoublepage
-\setboolean{@twoside}{false}
+%\setboolean{@twoside}{true}
 
+
+
+\titleformat{\chapter}{\fontsize{16pt}{5mm}\selectfont\bfseries}{\hspace{1cm}Apêndice \thechapter}{1em}{}
+
+\newpage
+\newpage
+\cleardoublepage
+%\setboolean{@twoside}{false}
+
+\addcontentsline{toc}{chapter}{Apêndices}
 \chapter{Diagrama de classes do aplicativo Android}
+
 \label{AndroidClassDiagram}
 \begin{figure}[!hp]
 	\centering	
 	\includegraphics[angle=90,scale=0.46]{./Resources/AllClassesJustName.png}
-	\captionof{figure}{Diagrama de classes do aplicativo baseado em android}
+	\captionof{figure}{Diagrama de classes do aplicativo baseado em Android}
 	\label{classCompact}
 	
 \end{figure}
-
+%\newpage
+%\setboolean{@twoside}{false}
 \chapter{Diagrama de fluxo do aplicativo Android}
 \label{AndroidFlowDiagram}
 \begin{figure}[!hp]
 	\centering	
 	\includegraphics[angle=90,scale=0.18]{./Resources/diagramaEstados.png}
-	\captionof{figure}{Diagrama de fluxo do aplicativo baseado em android}
+	\captionof{figure}{Diagrama de fluxo do aplicativo baseado em Android}
 	\label{flowCompact}
 	
 \end{figure}
@@ -89,11 +99,7 @@ Se você quiser verificar a porcentagem que seu texto apresenta de similaridade c
 \fi
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-
-\setboolean{@twoside}{true}
 \cleardoublepage
-\setboolean{@twoside}{false}
-
 \chapter{Códigos relevantes}
 \label{relevantCode}
 
@@ -177,7 +183,7 @@ private void writeTextualDescription() {
 
 
 
-No código \ref{google} encontra-se o método responsável pelo envio da imagem e recebimento de sua descrição. Primeiramente uma instância das funcionalidades da API da Google é criada e construída, por meio da classe Vision. Em seguida é criada uma instância de um objeto que permite múltiplas requisições de imagens, contendo a imagem capturada pelo aplicativo devidamente comprimida, o idioma para possíveis textos escritos, e a lista de diferentes solicitações requisitadas. Então, um objeto de requisição de anotação recebe todas as preferências criadas é executado, e o resultado retornado é recolhido para posterior conversão em linguagem fluente, a partir da classe PhotoDescriptor. 
+No código \ref{google}, adaptado do exemplo fornecido pelos tutoriais da Google Cloud Vision \cite{bestPracticesGoogle}, encontra-se o método responsável pelo envio da imagem e recebimento de sua descrição. Primeiramente uma instância das funcionalidades da API da Google é criada e construída, por meio da classe Vision. Em seguida é criada uma instância de um objeto que permite múltiplas requisições de imagens, contendo a imagem capturada pelo aplicativo devidamente comprimida, o idioma para possíveis textos escritos, e a lista de diferentes solicitações requisitadas. Então, um objeto de requisição de anotação recebe todas as preferências criadas é executado, e o resultado retornado é recolhido para posterior conversão em linguagem fluente, a partir da classe PhotoDescriptor. 
 
 \begin{lstlisting}[caption=Rotina de conexão e envio de dados para a Google Cloud Vision API,captionpos=b,label={google}]
 protected boolean connect(){
@@ -235,7 +241,7 @@ protected boolean connect(){
 
 Já o Código \ref{arduino} contém a rotina de captura dos sinais vindos do sensor de obstáculos HC-SR04, cálculo da distância, e o envio para a porta serial, onde o módulo Bluetooth HC-05 é conectado. Primeiramente, define-se a taxa de transmissão da porta serial, o pino de saída de sinal para emissão de onda pelo sensor, e o pino de entrada, para recebimento do sinal correspondente ao tempo do eco refletido. 
 
-No ciclo principal, monta-se a onda a ser emitida, com nível baixo de 2ms, e alto, de 10ms, respeitando as especificações mínimas de utilização do sensor, que podem ser encontradas no datasheet no Anexo \ref{SensorAnexo} . Em seguida lê-se o valor obtido de eco na porta de entrada, e a distância do obstáculo é calculada com base na equação $  S = V\times t $, em que $V$ representa a velocidade do som no ar em centímetros por segundo, 0.034cm/s, e $t$ é a metade do tempo entre a emissão e a recepção do sinal da onda, ou seja, o tempo entre a emissão da onda e o encontro com o obstáculo. Por fim, verifica-se se o valor lido não ultrapassou o limite de precisão do sensor, de 4 metros, com o intuito de evitar valores pouco confiáveis, e a cada um segundo a rotina amostra o sinal e o envia para a porta serial, onde a entrada do bluetooth está conectada. 
+No ciclo principal, monta-se a onda a ser emitida, com nível baixo de 2ms, e alto, de 10ms, respeitando as especificações mínimas de utilização do sensor, que podem ser encontradas no datasheet no Anexo \ref{SensorAnexo} . Em seguida lê-se o valor obtido de eco na porta de entrada, e a distância do obstáculo é calculada com base na equação $  S = V\times t $, em que $V$ representa a velocidade do som no ar em centímetros por segundo, 0.034cm/s, e $t$ é a metade do tempo entre a emissão e a recepção do sinal da onda, ou seja, o tempo entre a emissão da onda e o encontro com o obstáculo. Por fim, verifica-se se o valor lido não ultrapassou o limite de precisão do sensor, de 4 metros, com o intuito de evitar valores pouco confiáveis, e a cada um segundo a rotina amostra o sinal e o envia para a porta serial, onde a entrada do módulo Bluetooth está conectada. 
 
 
 

@@ -53,7 +53,7 @@ O nó principal do sistema pode ser considerado o smartphone. Por ser um disposit
 \subsection{Android Studio}
 Uma vez que o smartphone escolhido para o projeto foi o Galaxy S3 mini, cujo sistema operacional é o Android, para a programação do aplicativo foi necessária a utilização de uma IDE voltada para esse sistema. Como já havia uma maior experiência com a linguagem Java, a IDE escolhida foi Android Studio 1.4.
 
-\subsection{Arduíno}
+\subsection{Arduíno UNO}
 
 \begin{figure}[H]
 	\centering
@@ -78,12 +78,15 @@ Para a funcionalidade de detecção de obstáculos, que não poderia ser feita pelo 
 		Peso                 & 25 g 			\\
 		Flash Memory		 & 32 KB			\\
 		SRAM				 & 2 KB				\\
-		EEPROM				 & 1 KB 			\\  		
+		EEPROM				 & 1 KB 		    \\
+		Clock				 & 16 MHz\\
+		Tensão de Operação	 & 5V\\
+				
 		
 	\end{tabular}
 \end{table}
 
-\subsection{Sensor}
+\subsection{Sensor Ultrassônico de distância}
 
 \begin{figure}[H]
 	\centering
@@ -96,7 +99,7 @@ Para a funcionalidade de detecção de obstáculos, que não poderia ser feita pelo 
 
 O Arduíno como uma placa programável, possibilita um infinidade de aplicações. Entretanto ele não possui sensores acoplados, apenas entradas e saídas genéricas. Para a detecção de obstáculos foi necessária a inserção de um sensor. O HC-SR04, Figura \ref{PhotoBlueTooth},é um sensor ultrassônico amplamente utilizado para esse propósito, e cujo alcance se mostrou apropriado para o projeto. Emitindo ondas de frequência ultrassônica, o sensor em seguida capta o sinal refletido e baseado no tempo entre emissão e retorno, e na velocidade do som, permite o cálculo da distância.
 
-\subsection{Bluetooth}
+\subsection{Módulo Bluetooth}
 
 \begin{figure}[H]
 	\centering
@@ -112,9 +115,9 @@ Para a comunicação entre o Arduíno e o smartphone haviam diversas possibilidades
 
 Para a conexão dos componentes do circuito foram necessários uma variedade de fios para conectar VCC, GND, emendas e conexões de entrada e saída de sinais. Foram necessários também 3 resistores de 220$\Omega$ para criação de um divisor de tensão. 
 
-\subsection{Módulo integrado do circuito}
+\subsection{Caixa de integração do circuito}
 
-Para fins de demonstração do protótipo, foi criado uma caixa para envolver o circuito. Para tanto foi utilizada uma garrafa PET de 2L, tesoura, fita adesiva transparente, fita isolante, um interruptor tipo navio de dois pinos e uma bateria de 9V.
+Para fins de demonstração do protótipo, foi criada uma caixa para envolver o circuito. Para tanto foram utilizados uma garrafa PET de 2L, tesoura, fita adesiva transparente, fita isolante, um interruptor tipo navio de dois pinos e uma bateria de 9V.
 
 
 \subsection{Dispositivos auxiliares}
@@ -155,7 +158,7 @@ Uma das dificuldades enfrentadas por essas pessoas ao utilizar aplicativos é sel
 
 Outro problema a ser considerado foi a navegabilidade. Um dos requisitos para que uma pessoa sem visão pudesse utilizar um aplicativo é saber onde está, ou seja, impedir que o usuário se perdesse na sequência de menus. Por isso, além de não haver submenus na interface, o padrão de desenvolvimento de aplicações Android foi respeitado, com a inserção de descrição de conteúdo a todos os elementos da interface. Essas descrições ficam visualmente ocultas, mas são lidas apenas pelo Talkback, que transforma a informação em áudio.
 
-Uma vez que o aplicativo não se limita a atender apenas pessoas com ausência total de visão, outro cenário considerado foi a utilização do aplicativo por pessoas com graus menos intensos de deficiência visual. Baseado na pesquisa de acessibilidade realizada por Shaun K. Kane et al\cite{Kane} com pessoas de diferentes graus de falta de visão, constatou-se que fontes de tamanho grande e o contraste de cores são considerados características importantes para aplicações. Por isso, um esquema de cores bastante fortes e contrastantes foram utilizadas para os componentes do aplicativo. E cada cor utilizada nos botões do menu principal foi também utilizada como cor de fundo da interface correspondente à opção selecionada. Além disso, o tamanho das letras dos textos de resultado foi aumentado significativamente e formatado em negrito para facilitar uma possível leitura.
+Uma vez que o aplicativo não se limita a atender apenas pessoas com ausência total de visão, outro cenário considerado foi a utilização do aplicativo por pessoas com graus menos intensos de deficiência visual. Baseado na pesquisa de acessibilidade realizada por Shaun K. Kane et al\cite{Kane} com pessoas de diferentes graus de falta de visão, constatou-se que fontes de tamanho grande e o contraste de cores são considerados características importantes para aplicações. Por isso, um esquema de cores fortes e contrastantes, e ícones grandes foram utilizadas para os componentes do aplicativo. E cada cor utilizada nos botões do menu principal foi também utilizada como cor de fundo da interface correspondente à opção selecionada. Além disso, o tamanho das letras dos textos de resultado foi aumentado significativamente e formatado em negrito para facilitar uma possível leitura.
 
 \begin{figure}[H]
 	\centering
@@ -179,7 +182,7 @@ A Figura \ref{nav} ilustra a navegabilidade dentro do aplicativo, que por meio d
 
 \subsection{Extração de dados em imagem}
 
-A solução adotada para o reconhecimento de dados em imagem foi o Cloud Vision, uma API em nuvem da Google de reconhecimento de imagens, e com gratuidade limitada ao número de requisições mensais, cujos valores podem ser encontrados na Tabela \ref{Price}. Como o projeto a princípio não é um produto e não é de grande porte, não exigiria muitas requisições e se mostrou uma solução muito adequada. 
+A solução adotada para o reconhecimento de dados em imagem foi o Cloud Vision, uma API em nuvem da Google de reconhecimento de imagens, e com gratuidade limitada ao número de requisições mensais, cujos valores podem ser encontrados na Tabela \ref{Price}. Como o projeto a princípio não é um produto e não é de grande porte, não exigiria muitas requisições e se mostrou uma solução adequada. 
 
 \begin{figure}[H]
 	\centering
@@ -192,7 +195,7 @@ A solução adotada para o reconhecimento de dados em imagem foi o Cloud Vision, u
 	
 \end{figure}
 
-A API criada em 2015 apesar de muito potente e ter atraído muitos usuários interessados em automatizar a classificação de imagens, ainda não tem aparecido com muita frequência em trabalhos científicos. Entretanto, para demonstrar as capacidades da API, a Google apresentou na GCP NEXT 2016 o projeto Cloud Vision Explorer, um ambiente web galáctico contendo milhares de imagens separadas por categorias, que utiliza o Cloud Vision que é modelado pelo TensorFlow, uma biblioteca de software livre para inteligência de máquina também pertencente a Google \cite{Galaxy}.
+A API criada em 2015 apesar de potente e ter atraído usuários interessados em automatizar a classificação de imagens, ainda não tem aparecido com muita frequência em trabalhos científicos. Entretanto, para demonstrar as capacidades da API, a Google apresentou na GCP NEXT 2016 o projeto Cloud Vision Explorer, um ambiente web galáctico contendo milhares de imagens separadas por categorias, que utiliza o Cloud Vision que é modelado pelo TensorFlow, uma biblioteca de software livre para inteligência de máquina também pertencente a Google \cite{Galaxy}.
 
 Para se ter acesso aos serviços da Google Cloud, é necessário se cadastrar no sistema. Uma vez dentro do sistema, foi criado um projeto sobre o Vision API. Em seguida, para permitir a utilização desse projeto pela aplicação Android, foi necessário gerar uma chave de identificação de API. Por meio da importação dos pacotes em linguagem Java e dessa chave, bastou a implementação da rotina de montagem do objeto de requisição e de início de conexão, como apresenta o Código \ref{google}, nos Apêndices. Logo depois, associou-se ao objeto a imagem fonte, o modo de compressão e de codificação da imagem a ser enviada, o português como idioma de identificação de textos e por fim as categorias que se poderia buscar na imagem, entre elas, texto, rótulo e expressões faciais. Com o objeto configurado, bastou enviar a requisição ao servidor da Google e aguardar o resultado. Ao final do processo, o retorno da requisição veio em um objeto contendo as informações pedidas separadas por categorias e suas respectivas pontuações de confiança. 
 
@@ -243,7 +246,7 @@ A segunda funcionalidade solicitaria essa e outras informações ao Cloud Vision, 
 
 Para prover ao usuário a possibilidade de resgatar resultados anteriores, foi importante também permitir que o aplicativo oferecesse a opção de salvá-los. Nesse ponto surgiu uma questão: Qual seria a melhor forma de o usuário acessar esse registro? 
 
-Nomear os registros com parte da descrição poderia causar ambiguidade de nomes e poderia dificultar encontrá-los caso houvesse muitos. Assim, foi decidido que os registros seriam nomeados com a data e hora de criação. Além disso, seriam sempre ordenados temporalmente ao serem carregados em uma lista pelo aplicativo. O motivo foi facilitar o acesso, pois os mais recentes apareceriam no topo, e data/horário são identificadores únicos que permitem fácil localização na procura por um registro. A Figura \ref{select} apresenta uma lista de registros que foi gerada pela utilização do aplicativo.
+Nomear os registros com parte da descrição poderia causar ambiguidade de nomes e poderia dificultar encontrá-los caso houvesse grande quantidade deles. Assim, foi decidido que os registros seriam nomeados com a data e hora de criação. Além disso, seriam sempre ordenados temporalmente ao serem carregados em uma lista pelo aplicativo. O motivo foi facilitar o acesso, pois os mais recentes apareceriam no topo, e data/horário são identificadores únicos que permitem fácil localização na procura por um registro. A Figura \ref{select} apresenta uma lista de registros que foi gerada pela utilização do aplicativo.
 
 Com isso decidido, foi necessário planejar a estrutura desse registro. A princípio considerou-se que o áudio referente à transcrição deveria ser salvo. No entanto, o propósito principal do aplicativo era apenas extrair informações de imagens e encontrar uma forma de fazer com que o usuário com deficiência visual pudesse acessá-la. Salvar o áudio deixou de ser necessário quando se percebeu que a função de áudio descrição é parte exclusiva da interface de acessibilidade do aplicativo, e não é obrigatória para todos os usuários. A intenção de salvar os dados não é pela voz da áudio descrição, mas exclusivamente por seu conteúdo.
 
@@ -271,9 +274,16 @@ Para os registros de descrições foi criada uma funcionalidade extra: a flexibili
 \subsection{Tratamento de sinais ultrassônicos}
 O tratamento de sinais vindos do sensor HC-SR04 é parte essencial do projeto, porém a mais simples de ser feita. Do ponto de vista de hardware, o sensor possui quatro pinos de conexão: VDD, GND, Trigger e Echo. O VDD foi conectado a alimentação de 5V do Arduíno, assim como o GND conectado ao terra. O Trigger e o Echo são respectivamente entrada e saída do sensor, para que o ele receba comando para emissão de ondas de 40 kHz de frequência e então retorne em sua saída o valor do tempo entre a emissão e a recepção da onda refletida. Esses dois pinos foram conectados respectivamente nos Pinos 4 e 5 do Arduíno. Informações mais detalhadas sobre o sensor podem ser encontradas no Anexo \ref{SensorAnexo}. Além disso o Código \ref{arduino}, nos Apêndices, apresenta a rotina executada no Arduíno.
 
-Do ponto de vista lógico, o programa que roda no Arduíno periodicamente emite um sinal baixo de 2$\mu$s seguido de um alto de 10$\mu$s para gerar a onda, lê o valor recebido de tempo entre emissão e recepção do sinal refletido, calcula a distância segundo a equação: \[ \Delta S = V\times \Delta T \] com $ \Delta T $ sendo metade do tempo recebido, pois se quer apenas o tempo entre emissão e reflexão, $ V = 0.034 cm/s$ representando a velocidade do som no ar, e $ \Delta S$ a distância em centímetros entre o sensor e obstáculo. Por fim, repassa o resultado para o módulo Bluetooth. Caso o valor da distância seja superior a 4 metros, limite de precisão do sensor, o valor não é repassado ao Bluetooth.
+Do ponto de vista lógico, o programa que roda no Arduíno periodicamente emite um sinal baixo de 2$\mu$s seguido de um alto de 10$\mu$s para gerar a onda, lê o valor recebido de tempo entre emissão e recepção do sinal refletido, calcula a distância segundo a equação \ref{eqSpace}: 
 
-\subsection{Comunicação Arduino-BlueTooth}
+\begin{equation}
+\label{eqSpace}
+\Delta S = V\times \Delta T
+\end{equation}
+
+ com $ \Delta T $ sendo metade do tempo recebido, pois se quer apenas o tempo entre emissão e reflexão, $ V = 0.034 cm/s$ representando a velocidade do som no ar, e $ \Delta S$ a distância em centímetros entre o sensor e obstáculo. Por fim, repassa o resultado para o módulo Bluetooth. Caso o valor da distância seja superior a 4 metros, limite de precisão do sensor, o valor não é repassado ao Bluetooth.
+
+\subsection{Comunicação Arduíno-Bluetooth}
 
 Para transmitir sinais do Arduíno para o smartphone via módulo Bluetooth, bastou inserir a informação na porta Serial. O mais importante foi, na verdade, decidir que informação deveria ser transmitida. Para garantir a modularidade do sistema, o Arduíno ficou encarregado apenas de enviar ininterruptamente as distâncias calculadas ao smartphone, sem realizar qualquer verificação de proximidade de obstáculos, função que o aplicativo Android ficou encarregado de fazer.
 
@@ -302,6 +312,6 @@ Essa funcionalidade por fim foi colocada como ação do último dos quatro botões d
 
 \subsection{Manufatura da caixa do circuito}
 
-Para facilitar o manuseio do circuito, o protótipo de detector de obstáculos necessitou de uma pequena caixa de proteção. Para isso foi criada uma caixa arredondada utilizando-se da porção central de uma garrafa PET de dois litros. O topo e a base da garrafa foram removidos com uma tesoura, formando um cilindro, e duas dobras longitudinais foram feitas para se ajustar ao comprimento do circuito. Parte do trecho dessas dobras foi cortado em ambas as bases para criar duas abas, reduzir o tamanho e fechar a caixa. Foi inserido também na lateral da caixa um interruptor de tipo navio com dois pinos para facilitar o ligar e desligar. Por fim foram feitos recortes na caixa para adaptá-la ao sensor e ao Bluetooth, e o circuito todo foi inserido.
+Para estudo de caso e também facilitar o manuseio do circuito, o protótipo de detector de obstáculos necessitou de uma pequena caixa de proteção. Para isso foi criada uma caixa arredondada utilizando-se da porção central de uma garrafa PET de dois litros. O topo e a base da garrafa foram removidos com uma tesoura, formando um cilindro, e duas dobras longitudinais foram feitas para se ajustar ao comprimento do circuito. Parte do trecho dessas dobras foi cortado em ambas as bases para criar duas abas, reduzir o tamanho e fechar a caixa. Foi inserido também na lateral da caixa um interruptor de tipo navio com dois pinos para facilitar o ligar e desligar. Por fim foram feitos recortes na caixa para adaptá-la ao sensor e ao Bluetooth, e o circuito todo foi inserido.
 
 

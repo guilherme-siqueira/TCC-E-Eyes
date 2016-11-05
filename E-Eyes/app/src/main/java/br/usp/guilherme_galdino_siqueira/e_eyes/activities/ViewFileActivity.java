@@ -8,6 +8,10 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Display;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -31,6 +35,7 @@ import java.util.ArrayList;
 
 import br.usp.guilherme_galdino_siqueira.e_eyes.photo_descriptor.FileManager;
 import br.usp.guilherme_galdino_siqueira.e_eyes.properties.Constants;
+import br.usp.guilherme_galdino_siqueira.e_eyes.properties.Preferences;
 
 /**
  * Created by gsiqueira on 7/24/16.
@@ -67,6 +72,8 @@ public class ViewFileActivity extends Activity {
     Canvas canvas;
     Paint paint;
 
+    Intent optionMenu;
+
     //String faces;
 
     ArrayList<Float> faces = new ArrayList<Float>();
@@ -77,6 +84,8 @@ public class ViewFileActivity extends Activity {
         setContentView(R.layout.view_file_activity);
 
         Intent intent = this.getIntent();
+
+        optionMenu = new Intent(this, OptionMenuActivity.class);
 
         folder = intent.getStringExtra("FOLDER");
 
@@ -289,6 +298,8 @@ public class ViewFileActivity extends Activity {
 
             myText = (TextView) findViewById(R.id.textFile);
 
+            myText.setTextSize(Constants.fontSize);
+
             myText.setText(text.toString());
 
             myText.setContentDescription(getString(R.string.activity_descriptor_text) + text.toString());
@@ -393,17 +404,52 @@ public class ViewFileActivity extends Activity {
         }
 
     }
+/*
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_MENU) {
+            // ........
+            startActivity(optionMenu);
+            return true;
+        }
+        return super.onKeyUp(keyCode, event);
+    }
+    */
+
+
+
+/*
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        startActivity(optionMenu);
+        return true;
+    }
+    */
 
     @Override
     public void onBackPressed() {
+        if(myBitmap!=null)        {
+            myBitmap.recycle();
+            myBitmap=null;
+        }
+        if(mutableBitmap!=null)        {
+            mutableBitmap.recycle();
+            mutableBitmap=null;
+        }
         super.onBackPressed();
+    }
+
+    @Override
+    public void onRestart() {
+        myText.setTextSize(Constants.fontSize);
+        super.onRestart();
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
     }
-
+/*
     @Override
     protected void onStop() {
         if(myBitmap!=null)        {
@@ -417,4 +463,46 @@ public class ViewFileActivity extends Activity {
 
         super.onStop();
     }
+*/
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        final MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case R.id.fontMinus:
+                if (Constants.fontSize > 10)
+                {
+                    Constants.fontSize = Constants.fontSize - 10;
+                    myText.setTextSize(Constants.fontSize);
+                    System.out.println("dec font");
+                }
+                return true;
+
+            case R.id.fontPlus:
+                if (Constants.fontSize < 200)
+                {
+                    Constants.fontSize+=10;
+                    myText.setTextSize(Constants.fontSize);
+                }
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
+
 }
+
+
+

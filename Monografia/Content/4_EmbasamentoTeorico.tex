@@ -3,6 +3,21 @@
 
 Antes de entender o funcionamento do sistema, é de extrema importância que se explique os principais conceitos que dão base a criação do projeto, a fim de que a leitura não se limite apenas a fornecer conhecimento funcional, mas também propiciar uma completa compreensão estrutural do sistema. 
 
+\section{Android}
+
+O Android é um sistema operacional desenvolvido pela Android Inc., que posteriormente foi adquirido pela Google. De acordo com Paul Deitel et al\cite{androidBook}, 
+do lançamento da primeira geração em 2008 até 2015, o Android já possuía mais de 80\% de participação no mercado global. Atualmente, ele pode ser encontrado em smartphones, \textit{tablets}, \textit{e-readers}, robôs, equipamentos eletrônicos domésticos e até em satélites da NASA.
+
+Os aplicativos Android são desenvolvidos em Java, uma das linguagens mais utilizadas no mundo. Além disso, seu código fonte é livre, o que significa que é grande a velocidade com que surgem inovações e melhorias. 
+
+\section{Arduíno}
+
+O projeto Arduíno\cite{arduinoBook} teve origem na Itália, em 2005, num momento em que se procurava encontrar uma maneira barata de fazer com que estudantes de arte e \textit{design} pudessem trabalhar com tecnologia. 
+
+As placas, baseadas no microprocessador de 8 bits da Atmel, possuem 14 pinos digitais que podem ser definidos como entrada ou saída, e seis deles podem ser programados para produzir saídas com modulação de largura de pulso. O Arduíno também possui vários protocolos de comunicação, como serial e o bus-serial de interface periférica.
+
+Com o Arduíno é possível produzir os mais variados tipos de projetos, desde jogos de bolinhas, com gráfico monocromático e efeitos de som simples, até robôs seguidores de linha e robôs auto-balanceados.
+
 \section{Tecnologia assistiva}
 
 O Comitê de Ajudas Técnicas\cite{LivroTecAss}, instituído pela PORTARIA N° 142, DE 16 DE NOVEMBRO DE 2006 por meio da Secretaria Especial dos Direitos Humanos, propôs a seguinte definição para o termo Tecnologia Assistiva: "Tecnologia Assistiva é uma área do conhecimento, de característica interdisciplinar, que engloba produtos, recursos, metodologias, estratégias, práticas e serviços que objetivam promover a funcionalidade, relacionada à atividade e participação, de pessoas com deficiência, incapacidades ou mobilidade reduzida, visando sua autonomia, independência, qualidade de vida e inclusão social."
@@ -13,13 +28,13 @@ De forma resumida, a Tecnologia Assistiva consiste em todo o conjunto de ferrame
 \section{Design universal e acessibilidade}
 Design universal é definido por S. L. Henry et al\cite{Henry} como o processo de criação de produtos que atendam a usabilidade de pessoas com as mais variadas habilidades e nas mais diversas situações. Em contra partida, o conceito de acessibilidade é mais limitado, sendo melhor definido como o planejamento voltado especificamente para pessoas com alguma deficiência. Mas apesar dessa limitação, todos os estudos focados em acessibilidade terminam por trazer benefícios para todas as pessoas.
 
-Especificamente em relação a dispositivos móveis, ferramentas que permitem a criação de sistemas com acessibilidade tem se mostrado em grande ascensão no ambiente de desenvolvedores de aplicativos. O Android, por exemplo, inclui ferramentas e serviços de auxílio a navegação, como text-to-speech, feedback tátil, navegação por gestos, entre outros, que buscam incluir usuários com limitações visuais, auditivas, físicas ou mesmo relacionadas a idade \cite{Android}.
+Especificamente em relação a dispositivos móveis, ferramentas que permitem a criação de sistemas com acessibilidade tem se mostrado em grande ascensão no ambiente de desenvolvedores de aplicativos. O Android, por exemplo, inclui ferramentas e serviços de auxílio a navegação, como text-to-speech, feedback tátil, navegação por gestos, entre outros, que buscam incluir usuários com limitações visuais, auditivas, físicas ou mesmo relacionadas a idade\cite{Android}.
 
 \subsection{Talkback}
 
-O Talkback é um recurso de acessibilidade fornecido pelo Android cuja função é permitir que deficientes visuais sejam capazes de utilizar um smartphone. Além de pronunciar todo tipo de texto presente na tela, ele também altera a lógica de toques e permite a descrição dos componentes presentes na tela.
+O Talkback\cite{androidBook} é o leitor de tela fornecido pelo Android que funciona como um recurso de acessibilidade cuja função é permitir que deficientes visuais sejam capazes de utilizar um smartphone. Além de pronunciar todo tipo de texto presente na tela, ele também altera a lógica de toques e permite a descrição dos componentes presentes na tela.
 
-Quando o Talkback está ativado, um clique sobre qualquer item da tela funciona como uma solicitação de descrição. O dispositivo vibra, o conteúdo escrito do item e o texto de acessibilidade, quando há, são pronunciados.
+Quando o Talkback está ativado, um clique sobre qualquer item da tela funciona como uma solicitação de descrição. O dispositivo vibra, e são pronunciados o conteúdo de acessibilidade inscrito no componente visual e todo texto exibido na tela.
 
 
 
@@ -77,7 +92,7 @@ Uma pergunta que poderia surgir é: Que padrão poderia ser extraído de uma imagem
 
 \section{Ecolocalização e localização sonora}
 
-A habilidade de se locomover independentemente pelo espaço, localizar lugares ocultos e planejar trajetórias é de extrema importância para se realizar as tarefas do cotidiano. Não é difícil encontrar razões para afirmar que essa capacidade, em pessoas, resulta em grande dependência do sentido visual, já que a quantidade de informações que podem ser captadas visualmente é consideravelmente maior que a dos outros sentidos. Os objetos com os quais se interage no dia-a-dia possuem partes visíveis, porém não necessariamente emitem outros sinais que possam permitir sua percepção não visual. Apesar de ser considerada uma medida muito mais imprecisa, sinais sonoros permitem uma aproximação do cálculo de distancia. O som varia sua intensidade ao se propagar de acordo com o inverso da distância até seu emissor, assim, sua intensidade se perde mais rapidamente, o que a torna um método limitado \cite{blind}.
+A habilidade de se locomover independentemente pelo espaço, localizar lugares ocultos e planejar trajetórias é de extrema importância para se realizar as tarefas do cotidiano. Não é difícil encontrar razões para afirmar que essa capacidade, em pessoas, resulta em grande dependência do sentido visual, já que a quantidade de informações que podem ser captadas visualmente é consideravelmente maior que a dos outros sentidos. Os objetos com os quais se interage no dia-a-dia possuem partes visíveis, porém não necessariamente emitem outros sinais que possam permitir sua percepção não visual. Apesar de ser considerada uma medida mais imprecisa, sinais sonoros permitem uma aproximação do cálculo de distancia. O som varia sua intensidade ao se propagar de acordo com o inverso da distância até seu emissor, assim, sua intensidade se perde mais rapidamente, o que a torna um método limitado \cite{blind}.
 
 A localização sonora se baseia nesse efeito, ao permitir que um indivíduo estime a sua distância até o objeto emissor de som, e é uma técnica utilizada e bastante desenvolvida por pessoas com deficiência visual para mapear a sua posição e a dos elementos no ambiente ao redor. Entretanto, existe também uma técnica capaz de complementar a eficiência da localização conhecida como ecolocalização. Schenkman e Nilsson\cite{echo} afirmam, num estudo que compara pessoas com e sem deficiência visual sobre a capacidade de detectar sons refletidos, que as que têm deficiência possuem a audição mais acurada e podem ser capazes de utilizar do eco de sons emitidos intencionalmente para estimar a distância e o material de objetos e possivelmente ter o caminhar facilitado. Esse fenômeno que também é encontrado em outras espécies, como golfinho e morcego, por exemplo, podem ser gerados não só biologicamente pela voz, mas também por toques com sapatos ou bengalas.
 
