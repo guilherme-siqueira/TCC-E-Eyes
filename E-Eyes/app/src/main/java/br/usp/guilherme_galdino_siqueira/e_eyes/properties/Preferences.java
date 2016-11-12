@@ -16,7 +16,7 @@ public class Preferences {
 
     public static boolean isCloudVisionDisabled = false;
 
-    public static boolean isYandexTranslatorDisabled = true;
+    public static boolean isYandexTranslatorDisabled = false;
 
     public static boolean isDescriptionAutoSaveEnable = true;
 

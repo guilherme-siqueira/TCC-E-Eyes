@@ -32,11 +32,11 @@ public class MainMenuActivity extends Activity {
         }
         Intent intent = new Intent(this, DescriptorActivity.class);
 
-        //intent.putExtra("LABEL","LABEL_DETECTION");
-        //intent.putExtra("TEXT","TEXT_DETECTION");
+        intent.putExtra("LABEL","LABEL_DETECTION");
+        intent.putExtra("TEXT","TEXT_DETECTION");
         intent.putExtra("FACE","FACE_DETECTION");
         intent.putExtra("DIMENSION",1600);
-        //intent.putExtra("LANDMARK","LANDMARK_DETECTION");
+        intent.putExtra("LANDMARK","LANDMARK_DETECTION");
         //intent.putExtra("LOGO", "LOGO_DETECTION");
         startActivity(intent);
     }

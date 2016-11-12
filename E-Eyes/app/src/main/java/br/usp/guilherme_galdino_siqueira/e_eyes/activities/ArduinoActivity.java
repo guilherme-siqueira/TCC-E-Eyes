@@ -710,7 +710,8 @@ public class ArduinoActivity extends Activity {
 
                     distanceSample.add(distance);
 
-                    arduinoData.concat("distancia = " + distance + "cm");
+                    arduinoData.concat("distancia = " + distance + "cm"
+                    );
 
                     int v = distance - previousDistance;
 
@@ -747,8 +748,8 @@ public class ArduinoActivity extends Activity {
                     {
 
                         progress.setIsInYellowArea(true);
-                        float maxDistVol = 0.05f;
-                        float minDistVol = 1;
+                        float maxDistVol = 0.005f;
+                        float minDistVol = 0.05f;
 
 
                         float volume = (float) (Math.log(((maxDistVol - minDistVol) *(distance - redSignDistance)) + minDistVol*(yellowSignDistance - redSignDistance))/Math.log(yellowSignDistance - redSignDistance));

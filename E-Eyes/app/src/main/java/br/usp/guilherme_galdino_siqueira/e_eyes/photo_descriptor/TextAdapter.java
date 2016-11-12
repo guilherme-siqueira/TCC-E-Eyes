@@ -44,8 +44,8 @@ public class TextAdapter {
                     labelElement.concat(label.getDescription());
 
             }
-            labelElement.concat("\n");
-            statistics.concat("\n");
+            //labelElement.concat("\n");
+            //statistics.concat("\n");
         }
     }
 
@@ -255,7 +255,7 @@ public class TextAdapter {
 
             landmarkElement.translate();
 
-            textualDescription = LANDMARK_INTRO + landmarkElement.getText() + ". ";
+            textualDescription = LANDMARK_INTRO + landmarkElement.getText();
 
             if (nFaces == 1)
                 textualDescription += FACE_INTRO + ONE_FACE + faceElement.getText();
@@ -265,8 +265,12 @@ public class TextAdapter {
                 textualDescription += FACE_INTRO + MORE_FACES_BEGINNING + nFaces + MORE_FACES_END + faceElement.getText();
 
             if (labelElement.getText() != null) {
-                labelElement.translate();
-                textualDescription += LABEL_INTRO + labelElement.getText();
+                if (!labelElement.getText().isEmpty())
+                {
+                    labelElement.translate();
+                    textualDescription += LABEL_INTRO + labelElement.getText();
+                }
+
             }
 
             if (textElement.getText() != null) {
@@ -282,8 +286,12 @@ public class TextAdapter {
                 textualDescription += MORE_FACES_BEGINNING + nFaces + MORE_FACES_END + faceElement.getText();
 
             if (labelElement.getText() != null) {
-                labelElement.translate();
-                textualDescription += LABEL_INTRO + labelElement.getText();
+                if (!labelElement.getText().isEmpty())
+                {
+                    labelElement.translate();
+                    textualDescription += LABEL_INTRO + labelElement.getText();
+                }
+
             }
 
             if (textElement.getText() != null) {
@@ -291,9 +299,11 @@ public class TextAdapter {
             }
         } else if (labelElement.getText() != null) {
 
-            labelElement.translate();
-
-            textualDescription = LABEL_INTRO + labelElement.getText();
+                if (!labelElement.getText().isEmpty())
+                {
+                    labelElement.translate();
+                    textualDescription = LABEL_INTRO + labelElement.getText();
+                }
 
             if (textElement.getText() != null) {
                 textualDescription += TEXT_INTRO + textElement.getText();

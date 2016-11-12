@@ -409,11 +409,11 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
         textView.setMovementMethod(new ScrollingMovementMethod());
         textView.setVisibility(View.GONE);
 
-        if (requestsArrayList.size() == 5)
-            textView.setBackgroundResource(R.color.yellowOpacity);
+        if (requestsArrayList.size() == 1)
+            textView.setBackgroundResource(R.color.redOpacity);
 
         else
-            textView.setBackgroundResource(R.color.redOpacity);
+            textView.setBackgroundResource(R.color.yellowOpacity);
 
 
 

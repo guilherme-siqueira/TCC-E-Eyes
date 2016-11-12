@@ -449,7 +449,7 @@ public class ViewFileActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
     }
-/*
+
     @Override
     protected void onStop() {
         if(myBitmap!=null)        {
@@ -463,7 +463,6 @@ public class ViewFileActivity extends Activity {
 
         super.onStop();
     }
-*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
