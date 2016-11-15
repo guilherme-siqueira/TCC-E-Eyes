@@ -1,0 +1,79 @@
+\chapter{Planejamento do projeto}
+\label{Planejamento}
+
+Antes de apresentar a implementação do projeto, é importante exibir seu planejamento. Apesar de o projeto não ter seguido estritamente uma metodologia de desenvolvimento, como sugere a Engenharia de Software, este capítulo, dividido em duas seções, será destinado a apresentar apenas a análise de requisitos e o planejamento de testes, que são parte importante do processo de desenvolvimento de qualquer projeto de software. Informações sobre decisões de projeto e a implementação podem ser encontradas no Capítulo \ref{Materiais}, assim como os resultados dos testes são apresentados no Capítulo \ref{Resultados}.
+
+\section{Análise de requisitos}
+
+Definir o que deve ser feito é a primeira tarefa, e a mais importante, durante o desenvolvimento de um sistema. Nesta seção serão apresentados os requisitos funcionais e não-funcionais.
+
+\subsection*{Requisitos funcionais}
+
+\begin{itemize}  
+	\item O sistema deve oferecer ao usuário as funcionalidade de extração de informações visuais, como textos impressos ou escritos a mão e características visuais de objetos, e do ambiente ao redor, como características de paisagens e expressões faciais.
+	
+	
+	\item O sistema deve permitir o registro das informações extraídas e permitir que o usuário acesse esses registros.
+	
+	\item O sistema deve permitir que o usuário insira nos registros o nome das pessoas detectadas pelo sistema.
+	
+	\item O sistema deve auxiliar o usuário a caminhar com autonomia, sendo alertado por sentidos não visuais a localizar obstáculos pelo caminho.
+		
+	\item O sistema deve exibir textualmente as informações extraídas e permitir a alteração da fonte do texto.
+	
+	\item O sistema deve possibilitar a leitura em voz das informações extraídas para o usuário.
+\end{itemize}
+
+
+\subsection*{Requisitos não-funcionais}
+
+\begin{itemize}  
+	\item O sistema deve garantir que pessoas com deficiência visual utilizem com facilidade o sistema.	
+	
+	\item O sistema deve ser capaz de estabelecer conexão contínua com a internet e comunicação sem fio entre dispositivos.
+	
+	\item O sistema deve possuir saída de som, incluindo a sintetização de voz.
+	
+	\item O sistema deve possuir entrada e saída de imagem, por meio de dispositivo de captura de imagem e display. Além disso, deve permitir que o usuário tenha diferentes opções de resolução de captura.
+	
+	\item O sistema deve possuir uma fonte de energia que possibilite sua fácil troca ou recarga quando necessário.	
+	
+	\item O sistema deve possuir uma fonte de energia que o atenda ininterruptamente durante no mínimo 2 horas.	
+	
+	\item O sistema deve garantir a possibilidade de utilização de suas funções ininterruptamente, respeitando possíveis limites de fonte de energia.	
+	
+	\item O sistema deve exibir os resultados da extração de informações com confiabilidade acima de 80\%.
+	
+	\item O sistema não deve exigir que o usuário segure dispositivos com peso, tamanho e formato que tornem desconfortável seu uso.
+	
+	\item Ações atribuídas a interface do sistema devem ter execução iniciada em tempo real, definido como limite máximo de 2 segundos.
+	
+	\item O sistema deve ser capaz de armazenar dados.
+	
+	
+\end{itemize}
+
+\section{Testes}
+
+Com a intenção de apresentar dados de performance do sistema, foi considerado importante realizar os seguintes testes ao final da implementação dos módulos relacionadas às respectivas funções.
+
+\begin{itemize}
+	
+	\item Verificar a relação entre resolução de captura de imagens textuais e o tempo entre a solicitação e retorno do resultado, para definir a resolução adequada que retorna resultados corretos, que possuem erros inferiores a 5\%, no menor tempo.
+	
+	\item Avaliar os resultados da extração de textos danificados, rotacionados ou escritos a mão em letra de forma e cursiva, assim como durante a extração de características de imagens não textuais para definir as limitações do sistema.
+	
+	\item Comparar o consumo de energia entre diferentes funcionalidades do sistema para evidenciar a relação entre número de recursos utilizados e consumo.
+	
+	\item Realizar sucessivas simulações de detecção de obstáculos para ao menos 5 distâncias distribuídas entre 0 e 3m para avaliar a performance da localização de obstáculos. Classificar como corretos resultados com erro inferior a 5cm de desvio padrão das amostragens.
+	
+	\item Testar o sistema sob diferentes versões da plataforma escolhida para implementação (sistema operacional e hardware) a fim de avaliar sua portabilidade.
+	
+	\item Percorrer todas as funcionalidades do sistema para verificar simultaneamente sua corretude funcional e o atendimento aos requisitos.
+	
+	\item Validar o sistema com potenciais usuários.
+		
+	
+\end{itemize}
+
+

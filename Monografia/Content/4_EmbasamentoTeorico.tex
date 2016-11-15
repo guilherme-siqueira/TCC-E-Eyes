@@ -58,17 +58,21 @@ Visão computacional é o campo da computação responsável pela análise de imagens 
 \subsection{Reconhecimento óptico de caractere}
 \label{subSectionOCR}
 
-Reconhecimento óptico de caractere (OCR) é considerado como o problema de reconhecimento automático de letras, dígitos, ou algum símbolo em imagens. A utilidade dessa abordagem está no fato de que muita informação é armazenada em palavras impressas. Ao aplicar uma página de texto, por exemplo, como entrada para um sistema que possua tal função, ocorre primeiramente uma confirmação da orientação do texto, seguida de uma segmentação em preto e branco dos pixels, uma divisão em linhas de texto, e por último em símbolos individuais. Ao fim desse processo, um algoritmo de reconhecimento é aplicado a cada símbolo. Se o sistema tiver sido previamente treinado para reconhecer tal símbolo, calcula-se uma probabilidade de sua interpretação estar correta, são agrupados em palavras e em sentenças e a informação completa é retornada em ordem \cite{LivroCV}. Na Figura \ref{OCR}, um simbolo é enviado como entrada do sistema para ser comparado com os símbolos da base de dados. Nela, o simbolo apresenta maior similaridade com o símbolo '8' (coincidência de 20 pixels), do que com 'A' (coincidência de 8 pixels), e sua classificação seria dada de acordo com o símbolo com o qual ele tivesse maior valor de semelhança, medido pelo número de pixels coincidentes.
+Reconhecimento óptico de caractere (OCR) é considerado como o problema de reconhecimento automático de letras, dígitos, ou algum símbolo em imagens. A utilidade dessa abordagem está no fato de que muita informação é armazenada em palavras impressas. Ao aplicar uma página de texto, por exemplo, como entrada para um sistema que possua tal função, ocorre primeiramente uma confirmação da orientação do texto, seguida de uma segmentação em preto e branco dos pixels, uma divisão em linhas de texto, e por último em símbolos individuais. Ao fim desse processo, um algoritmo de reconhecimento é aplicado a cada símbolo. Se o sistema tiver sido previamente treinado para reconhecer tal símbolo, calcula-se uma probabilidade de sua interpretação estar correta, são agrupados em palavras e em sentenças e a informação completa é retornada em ordem \cite{LivroCV}. 
 
 \begin{figure}[H]
 	\centering	
 	
-	\includegraphics[scale=0.4]{./Resources/ocr.png}
+	\includegraphics[scale=0.45]{./Resources/ocr.png}
 	\captionof{figure}{Análise classificatória de um simbolo sobre os demais da base de dados. (a) Simbolo de entrada. (b) Pixels coincidentes, em preto, entre o simbolo de entrada e o simbolo 'A'. (c) Pixels coincidentes, em preto, entre o simbolo de entrada e o simbolo '8'.}
 	\caption*{Fonte: Parker, J. R. \cite{LivroCV}}	
 	\label{OCR}
 	
 \end{figure}
+
+Na Figura \ref{OCR}, um simbolo é enviado como entrada do sistema para ser comparado com os símbolos da base de dados. Nela, o simbolo apresenta maior similaridade com o símbolo '8' (coincidência de 20 pixels), do que com 'A' (coincidência de 8 pixels), e sua classificação seria dada de acordo com o símbolo com o qual ele tivesse maior valor de semelhança, medido pelo número de pixels coincidentes.
+
+
 
 \subsection{Classificação de imagens}
 

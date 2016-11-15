@@ -39,31 +39,37 @@
   2016.
 
 \bibitem{Mauro}
-M.~Avila, K.~Wolf, A.~Brock, and N.~Henze, ``{Remote Assistance for Blind Users
+M.~Avila, K.~Wolf, A.~Brock, e N.~Henze, ``{Remote Assistance for Blind Users
   in Daily Life: A Survey about Be My Eyes}.''\hskip 1em plus 0.5em minus
   0.4em\relax Corfu Island, Gr\'ecia: The 9th ACM International Conference on
   Pervasive Technologies Related to Assistive Environments - PETRA'16, 2016.
 
 \bibitem{Kwak}
-H.~Kwak and J.~An, ``{Revealing the Hidden Patterns of News Photos: Analysis of
+H.~Kwak e J.~An, ``{Revealing the Hidden Patterns of News Photos: Analysis of
   Millions of News Photos through GDELT and Deep Learning-Based Vision
   APIs}.''\hskip 1em plus 0.5em minus 0.4em\relax Qatar: {The Workshops of the
   Tenth International AAAI Conference on Web and Social Media}, 2016.
 
 \bibitem{Wong}
-C.~Wong, D.~Wee, I.~Murray, and T.~Dias, ``{A Novel Design of Integrated
+C.~Wong, D.~Wee, I.~Murray, e T.~Dias, ``{A Novel Design of Integrated
   Proximity Sensors for the White Cane}.''\hskip 1em plus 0.5em minus
   0.4em\relax Austr\'alia: Seventh Australian and New Zealand Inteligent
   Information System Conference, Novembro de 2001, pp. 197--201.
 
 \bibitem{Ben}
-B.~Leduc-Mills, H.~Profita, S.~Bharadwaj, P.~Cromer, and R.~Han, ``{ioCane: A
+B.~Leduc-Mills, H.~Profita, S.~Bharadwaj, P.~Cromer, e R.~Han, ``{ioCane: A
   Smart-Phone and Sensor-Augmented Mobility Aid for the Blind},'' University of
   Colorado Boulder, Boulder, Colorado - EUA, Relat\'orio T\'ecnico, 2013.
 
 \bibitem{CPqD}
 ``{CPqD Alcance},'' \url{https://www.cpqd.com.br/solucoes/cpqd-alcance/},
   Acesso em: 01 de agosto de 2016.
+
+\bibitem{guideMe}
+``{Projeto de aux\'{i}lio \`{a}s pessoas com defici\^{e}ncia visual vence
+  concurso Intel de tecnologia},''
+  \url{http://napsol.icmc.usp.br/pt-br/node/272}, Acesso em: 12 de novembro de
+  2016.
 
 \bibitem{Gallani}
 M.~A. Gallani, ``{Dispositivo microcontrolado para aux\'ilio na
@@ -92,9 +98,9 @@ M.~A. Gallani, ``{Dispositivo microcontrolado para aux\'ilio na
   2016.
 
 \bibitem{androidBook}
-{Paul Deitel, Harvey Deitel and Alexander Wald}, \emph{{Android 6 for
-  Programmers: An App-Driven Aproach}}, {Third}~ed.\hskip 1em plus 0.5em minus
-  0.4em\relax {Pearson Education, Inc.}, 2016.
+{Paul Deitel, Harvey Deitel e Alexander Wald}, \emph{{Android 6 for
+  Programmers: An App-Driven Aproach}}, {Terceira}~ed.\hskip 1em plus 0.5em
+  minus 0.4em\relax {Pearson Education, Inc.}, 2016.
 
 \bibitem{arduinoBook}
 {Martin Evans, Joshua Noble and Jordan Hochenbaum}, \emph{{Arduino in Action}},
@@ -108,7 +114,7 @@ M.~A. Gallani, ``{Dispositivo microcontrolado para aux\'ilio na
   2009.
 
 \bibitem{Henry}
-S.~L. Henry, S.~Abou-Zahra, and J.~Brewer, ``{The Role of Accessibility in a
+S.~L. Henry, S.~Abou-Zahra, e J.~Brewer, ``{The Role of Accessibility in a
   Universal Web},'' 11th Web for All Conference.\hskip 1em plus 0.5em minus
   0.4em\relax Seoul, Rep\'ublica da Cor\'eia: Association for Computing
   Machinery, 2014.
@@ -120,29 +126,29 @@ S.~L. Henry, S.~Abou-Zahra, and J.~Brewer, ``{The Role of Accessibility in a
 
 \bibitem{Armbrust}
 M.~Armbrust, A.~Fox, R.~Griffith, A.~D. Joseph, R.~H. Katz, A.~Konwinski,
-  G.~Lee, D.~A. Patterson, A.~Rabkin, I.~Stoica, and M.~Zaharia, ``{Above the
+  G.~Lee, D.~A. Patterson, A.~Rabkin, I.~Stoica, e M.~Zaharia, ``{Above the
   Clouds: A Berkeley View of Cloud Computing},'' Electrical Engineering and
   Computer Sciences, University of California at Berkeley, Berkeley,
   Calif\'ornia - EUA, Relat\'orio T\'ecnico, Fevereiro de 2009.
 
 \bibitem{LivroCV}
 {Parker, J. R.}, \emph{{Algorithms for Image Processing and Computer Vision}},
-  {Second}~ed.\hskip 1em plus 0.5em minus 0.4em\relax {Indian\'apolis, Indiana
+  {Segunda}~ed.\hskip 1em plus 0.5em minus 0.4em\relax {Indian\'apolis, Indiana
   - EUA}: {Wiley Publishing, Inc.}, 2011.
 
 \bibitem{blind}
-{Catherine Thinus-Blanc and Florence Gaunet}, ``{Representation of Space in
-  Blind Persons: Vision as a Spatial Sense?}'' in \emph{{Psychological
-  Bulletin}}, Marseille, Fran\c{c}a, 1997, vol. 121, no.~1, pp. 20--42.
+{Catherine Thinus-Blanc e Florence Gaunet}, ``{Representation of Space in Blind
+  Persons: Vision as a Spatial Sense?}'' in \emph{{Psychological Bulletin}},
+  Marseille, Fran\c{c}a, 1997, vol. 121, no.~1, pp. 20--42.
 
 \bibitem{echo}
-{Bo N Schenkman and Mats E Nilsson}, ``{Human echolocation: Blind and sighted
+{Bo N Schenkman e Mats E Nilsson}, ``{Human echolocation: Blind and sighted
   persons' ability to detect sounds recorded in the presence of a reflecting
   object},'' in \emph{{Perception}}, Estocolmo, Su\'ecia, 2010, vol.~39, no.~1,
   pp. 483 -- 501.
 
 \bibitem{Kane}
-S.~K. Kane, C.~Jayant, J.~O. Wobbrock, and R.~E. Ladner, ``{Freedom to Roam: A
+S.~K. Kane, C.~Jayant, J.~O. Wobbrock, e R.~E. Ladner, ``{Freedom to Roam: A
   Study of Mobile Device Adoption and Accessibility for People with Visual and
   Motor Disabilities },'' {11th international ACM SIGACCESS conference on
   Computers and accessibility}, Seattle, Washington - EUA, pp. 115--122, 2009.
@@ -153,8 +159,13 @@ S.~K. Kane, C.~Jayant, J.~O. Wobbrock, and R.~E. Ladner, ``{Freedom to Roam: A
   12 de agosto de 2016.
 
 \bibitem{Galaxy}
-K.~Sato and R.~Sakai, ``{Explore the Galaxy of images with Cloud Vision API},''
+K.~Sato e R.~Sakai, ``{Explore the Galaxy of images with Cloud Vision API},''
   \url{https://cloud.google.com/blog/big-data/2016/05/explore-the-galaxy-of-images-with-cloud-vision-api},
   Acesso em: 09 de agosto de 2016.
+
+\bibitem{letraMao}
+G.~Chacra, ``{EUA abandonam ensino da letra de m\~ao},''
+  \url{http://www.estadao.com.br/noticias/geral,eua-abandonam-ensino-da-letra-de-mao-imp-,746256},
+  Acesso em: 15 de novembro de 2016.
 
 \end{thebibliography}

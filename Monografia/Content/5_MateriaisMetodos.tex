@@ -12,7 +12,7 @@ Além disso, um sensor conectado a um Arduíno emite ondas ultrassônicas periodica
  	
  	\includegraphics[scale=0.35]{./Resources/esquematico1.jpg}
  	%\caption*{Fonte: Autor}
- 	\captionof{figure}{Esquemático de comunicação entre os módulos eletrônicos do projeto}
+ 	\captionof{figure}{Esquemático de comunicação entre os módulos eletrônicos do projeto. (a) Captura da imagem. (b) Envio para processamento na nuvem. (c) Recebimento da descrição. (d) Exibição e audio-descrição. (e) Detecção de obstáculo. (f) Dados para cálculo da distãncia. (g) Distância enviada ao Módulo Bluetooth. (h) Distância enviada para o aplicativo. (i) Notificação do usuário.}
  	\label{esquematico}
  \end{figure}
 
@@ -281,7 +281,7 @@ Do ponto de vista lógico, o programa que roda no Arduíno periodicamente emite um
 \Delta S = V\times \Delta T
 \end{equation}
 
- com $ \Delta T $ sendo metade do tempo recebido, pois se quer apenas o tempo entre emissão e reflexão, $ V = 0.034 cm/s$ representando a velocidade do som no ar, e $ \Delta S$ a distância em centímetros entre o sensor e obstáculo. Por fim, repassa o resultado para o módulo Bluetooth. Caso o valor da distância seja superior a 4 metros, limite de precisão do sensor, o valor não é repassado ao Bluetooth.
+ com $ \Delta T $ sendo metade do tempo em $\mu$s recebido, pois se quer apenas o tempo entre emissão e reflexão, $ V = 34300 cm/s$ representando a velocidade do som no ar, e $ \Delta S$ a distância em centímetros entre o sensor e obstáculo. Por fim, repassa o resultado para o módulo Bluetooth. Caso o valor da distância seja superior a 4 metros, limite de precisão do sensor, o valor não é repassado ao Bluetooth.
 
 \subsection{Comunicação Arduíno-Bluetooth}
 

@@ -9,7 +9,7 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ./Content/References.bib
 Warning--entry type for "Kane" isn't style-file defined
---line 167 of file ./Content/References.bib
+--line 174 of file ./Content/References.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -20,52 +20,52 @@ Warning--empty booktitle in Kwak
 Warning--empty booktitle in Wong
 Warning--empty author in IBGE
 Warning--empty author in HDI
-Warning--edition ordinal word "{Third}" may be too high (or improper) for conversion in androidBook
+Warning--edition ordinal word "{Terceira}" may be too high (or improper) for conversion in androidBook
 Warning--edition ordinal word "{Third}" may be too high (or improper) for conversion in arduinoBook
 Warning--empty author in LivroTecAss
 Warning--empty booktitle in Henry
-Warning--edition ordinal word "{Second}" may be too high (or improper) for conversion in LivroCV
+Warning--edition ordinal word "{Segunda}" may be too high (or improper) for conversion in LivroCV
 
 Done.
-You've used 26 entries,
+You've used 28 entries,
             4087 wiz_defined-function locations,
-            977 strings with 12017 characters,
-and the built_in function-call counts, 12423 in all, are:
-= -- 977
-> -- 219
+            990 strings with 12423 characters,
+and the built_in function-call counts, 13075 in all, are:
+= -- 1028
+> -- 224
 < -- 43
-+ -- 116
-- -- 41
-* -- 532
-:= -- 1992
-add.period$ -- 56
-call.type$ -- 26
-change.case$ -- 29
++ -- 119
+- -- 42
+* -- 550
+:= -- 2105
+add.period$ -- 60
+call.type$ -- 28
+change.case$ -- 31
 chr.to.int$ -- 105
-cite$ -- 38
-duplicate$ -- 1014
-empty$ -- 1182
-format.name$ -- 49
-if$ -- 2861
+cite$ -- 40
+duplicate$ -- 1074
+empty$ -- 1254
+format.name$ -- 50
+if$ -- 3010
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 210
-newline$ -- 101
-num.names$ -- 14
-pop$ -- 563
+int.to.str$ -- 28
+missing$ -- 223
+newline$ -- 107
+num.names$ -- 15
+pop$ -- 601
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 8
-skip$ -- 990
+skip$ -- 1046
 stack$ -- 0
-substring$ -- 232
-swap$ -- 653
+substring$ -- 234
+swap$ -- 684
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 26
+type$ -- 28
 warning$ -- 12
-while$ -- 27
-width$ -- 28
-write$ -- 239
+while$ -- 28
+width$ -- 30
+write$ -- 254
 (There were 13 warnings)

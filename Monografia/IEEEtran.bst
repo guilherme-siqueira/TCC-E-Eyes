@@ -190,7 +190,7 @@ FUNCTION {completed.message}
 %% STRING CONSTANTS %%
 %%%%%%%%%%%%%%%%%%%%%%
 
-FUNCTION {bbl.and}{ "and" }
+FUNCTION {bbl.and}{ "e" }
 FUNCTION {bbl.etal}{ "et~al." }
 FUNCTION {bbl.editors}{ "eds." }
 FUNCTION {bbl.editor}{ "ed." }
@@ -948,27 +948,27 @@ FUNCTION {extract.num}
 % Arabic string form. Will be successful up to "tenth".
 FUNCTION {word.to.num}
 { duplicate$ "l" change.case$ 's :=
-  s "first" =
+  s "primeira" =
     { pop$ "1" }
     { skip$ }
   if$
-  s "second" =
+  s "segunda" =
     { pop$ "2" }
     { skip$ }
   if$
-  s "third" =
+  s "terceira" =
     { pop$ "3" }
     { skip$ }
   if$
-  s "fourth" =
+  s "quarta" =
     { pop$ "4" }
     { skip$ }
   if$
-  s "fifth" =
+  s "quinta" =
     { pop$ "5" }
     { skip$ }
   if$
-  s "sixth" =
+  s "sexta" =
     { pop$ "6" }
     { skip$ }
   if$

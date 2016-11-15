@@ -1,11 +1,13 @@
 \chapter{Resultados e Discussões}
 \label{Resultados}
 
-Com as funcionalidades planejadas para o projeto concluídas, o passo seguinte foi a realização de testes. Esse capítulo será dividido em três seções tal que na primeira serão tratados dos resultados da extração de informação de imagens, a segunda tratará da performance do detector de obstáculos e a terceira fará uma análise de consumo do sistema.
+Com as funcionalidades planejadas para o projeto finalmente implementadas, o passo seguinte foi a realização de testes. Esse capítulo será dividido em três seções tal que na primeira serão tratados dos resultados da extração de informação de imagens, a segunda tratará da performance do detector de obstáculos e a terceira fará uma análise de consumo do sistema.
 
 \section{Descrição de Imagens}
 
 Na descrição de imagens duas considerações foram necessárias para garantir o correto desempenho do sistema: o tempo de resposta, pois não é conveniente deixar o usuário esperando por muito tempo pela informação requisitada, e a porcentagem de erros dos resultados obtidos, para que o usuário receba informação confiável do aplicativo. Como a Google Cloud API é uma ferramenta online, a primeira dificuldade encontrada para eficiência de processamento foi o transporte de dados para o servidor da Google. Quanto mais dados são transmitidos pela rede e processados pela rotina no servidor, maior o tempo de latência para a resposta. Isso significa que a velocidade da Internet do usuário será sempre um limitador. 
+
+De modo geral, também foram realizados testes sobre a interface para avaliação da corretude funcional do aplicativo após o término de cada módulo desenvolvido, e sempre que erros surgiam, puderam ser corrigidos. O aplicativo foi submetido ao Android Lollipop, versões 5.0.1 e 5.1.1, onde foram encontrados e corrigidos problemas de foco da câmera e de tamanho distorcido de alguns componentes da interface.
 
 
 \subsection{Teste para diferentes dimensões de imagens}
@@ -198,27 +200,36 @@ Apesar de esse resultado mostrar que há uma limitação na capacidade de API recon
 
 \subsection{Teste para reconhecimento de texto manuscrito}
 
-Uma das possibilidades de utilização do aplicativo seria a leitura de bilhetes escritos a mão. Alguns testes foram realizados para se ter conhecimentos dos limites das capacidades da API, quanto a escrita a mão, seja ela de forma ou cursiva. Os resultados mostraram que existe maior limitação da API quanto a identificação de caracteres manuscritos, se comparada a de digitais. A Figura \ref{forma} apresenta o caso de um texto capturado com a mais alta resolução que o aplicativo oferece, de 2560x1920 pixels, e mesmo assim há alguns erros de identificação. Porém, como é possível observar nas Figuras \ref{mao} e \ref{mao2}, os resultados só ficam gravemente incorretos quando os textos são escritos em letra cursiva. Nesse cenário, o reconhecimento até ocorre, mas de uma quantidade muito pequena do total de palavras, apresentando diversos erros, mesmo em traços largos e cor contrastante. Assim, a transcrição de textos em letra cursiva se mostra, na prática, impossível pela aplicação.
-
+Uma das possibilidades de utilização do aplicativo seria a leitura de bilhetes escritos a mão. Alguns testes foram realizados para se ter conhecimentos dos limites das capacidades da API, quanto a escrita a mão, seja ela de forma ou cursiva. 
 
 \begin{figure}[H]
 	\centering	
-	\includegraphics[scale=0.7]{./Resources/forma.png}
+	\includegraphics[scale=0.5]{./Resources/forma.png}
 	\captionof{figure}{Resultado da extração de texto sobre imagem contendo escrita manual em letra de forma.}
 	\label{forma}
 	
 \end{figure}
 
+
+
+
+Os resultados mostraram que existe maior limitação da API quanto a identificação de caracteres manuscritos, se comparada a de digitais. A Figura \ref{forma} apresenta o caso de um texto capturado com a mais alta resolução que o aplicativo oferece, de 2560x1920 pixels, e mesmo assim há alguns erros de identificação. Porém, como é possível observar nas Figuras \ref{mao} e \ref{mao2}, os resultados só ficam gravemente incorretos quando os textos são escritos em letra cursiva. Nesse cenário, o reconhecimento até ocorre, mas de uma quantidade muito pequena do total de palavras, apresentando diversos erros, mesmo em traços largos e cor contrastante. 
+
+É possível que a API não ofereça suporte para modelos de letra cursiva, uma vez que nos Estados Unidos, país sede da Google, esse tipo de escrita já vem sendo abandonado com o advento dos computadores pessoais e celulares nas últimas décadas\cite{letraMao}. Apesar de ser ter sido considerada uma decisão polêmica, as escolas já não mais são obrigadas a ensinar os alunos a escreverem em letra de mão. Por essa limitação da API, a transcrição de textos em letra cursiva se mostra, na prática, impossível pela aplicação.
+
+
+
+
 \begin{figure}[H]
 	\centering	
-	\includegraphics[scale=0.6]{./Resources/mao.png}
+	\includegraphics[scale=0.5]{./Resources/mao.png}
 	\captionof{figure}{Resultados da extração de texto sobre imagem, em diferentes resoluções, contendo palavras manuscristas em letra cursiva.}
 	\label{mao}	
 \end{figure}
 
 \begin{figure}[H]
 	\centering	
-	\includegraphics[scale=0.6]{./Resources/mao2.png}
+	\includegraphics[scale=0.5]{./Resources/mao2.png}
 	\captionof{figure}{Resultado da extração de texto sobre imagem contendo texto escrito em letra cursiva.}
 	\label{mao2}	
 \end{figure}
@@ -299,6 +310,7 @@ Dentre as características que se pode obter de uma imagem, certamente a classifi
 	\centering	
 	\includegraphics[scale=0.4]{./Resources/expressoes.png}
 	\captionof{figure}{Expressões faciais detectadas em imagens de rosto}
+	\caption*{Fonte das fotos: Google Imagens}	
 	\label{expressoes}
 	
 \end{figure}
@@ -307,8 +319,9 @@ Apesar dos acertos nas descrições das faces, os resultados não foram sempre corr
 
 \begin{figure}[H]
 	\centering	
-	\includegraphics[scale=0.5]{./Resources/triste.png}
+	\includegraphics[scale=0.4]{./Resources/triste.png}
 	\captionof{figure}{Expressões faciais de tristeza não detectadas em imagens de pessoas tristes}
+	\caption*{Fonte das fotos: Google Imagens}
 	\label{triste}
 	
 \end{figure}
@@ -366,7 +379,7 @@ Outro ponto considerado foi o tamanho dos elementos do circuito. Quanto menor e 
 
 \begin{figure}[H]
 	\centering	
-	\includegraphics[scale=0.5]{./Resources/circuito.png}
+	\includegraphics[scale=0.4]{./Resources/circuito.png}
 	\captionof{figure}{Protótipo do circuito detector de obstáculos}
 	\label{circuito}
 	

@@ -3,18 +3,18 @@
 
 Esse projeto teve como objetivo a aplicação dos conhecimentos adquiridos durante a graduação a um problema real que nem sempre recebe a devida atenção de profissionais da área. Esse problema é o da acessibilidade de pessoas com deficiência visual. Os resultados mostraram que a API Google Cloud Vision é uma ferramenta poderosa no campo de visão computacional e seus serviços podem ser utilizados pelas mais diversas aplicações, incluindo a possibilidade de auxiliar pessoas sem o sentido visual a acessar informações visuais com autonomia. Será apresentado neste capítulo um balanço dos resultados obtidos pelo projeto, a fim de avaliar sua utilidade a aplicabilidade.
 
-\section{Falhas}
+\section{Limitações}
 
 Apesar de a API da Google ter se mostrado eficiente para o propósito do projeto, a ferramenta causou algumas limitações para os resultados. Um deles é o fato intrínseco de que a API está implementada para operar em nuvem e requer conexão com a internet. Isso poderia de certa forma impedir que pessoas sem acesso a internet, pudessem usá-lo. Entretanto, existe uma grande tendência de os dispositivos e as pessoas se tornarem cada vez mais conectadas, devido o avanço da computação e das telecomunicações, e com os preços de smartphones mais acessíveis, e isso poderia preparar um ambiente mais propício para o uso do aplicativo. Outro ponto negativo é a limitação da gratuidade de utilização da API. Com o intuito do projeto sendo também o de inclusão digital, atribuir preço para o acesso ao aplicativo iria, de certa forma, contra esse propósito.
 
-Já com relação ao circuito detector de obstáculos, um dos problemas foi o consumo de energia pelo módulo Bluetooth, que representou quase a metade do consumo total. Num cenário em que a pessoa o utilize sempre ao caminhar, a bateria  poderia descarregar com certa rapidez. Além disso, a utilização de um único sensor foi capaz apenas de mostrar que é possível se guiar por ele, entretanto, para um caminhar mais seguro, seriam necessários mais sensores apontando para várias direções.
+Já com relação ao circuito detector de obstáculos, um dos problemas foi o consumo de energia pelo módulo Bluetooth, que representou quase a metade do consumo total. Num cenário em que a pessoa o utilize sempre ao caminhar, a bateria  poderia descarregar com certa rapidez. Além disso, a utilização de um único sensor foi capaz apenas de mostrar que é possível se guiar por ele, entretanto, para um caminhar mais seguro, seriam necessários mais sensores apontando para várias direções. Também, o tamanho do dispositivo se mostrou relativamente grande para ser utilizado na parte frontal do corpo, o que poderia dificultar a usabilidade.
 
-Não foi possível, devido a indisponibilidade de mais recursos, a produção de testes mais elaborados com diferentes versões do Android, e também, testes de usabilidade com usuários para o qual o projeto é dedicado.
+Não foi possível, devido à indisponibilidade de mais recursos, a produção de testes mais elaborados com um número maior de versões do Android, e também, testes de usabilidade com usuários para o qual o projeto é dedicado, o que permitiria sua validação. Por essa razão, não é possível concluir se o sistema de fato atende as necessidades desses potenciais usuários.
 
 \section{Acertos}
 
 
-Por outro lado, houve vários pontos positivos que se pode extrair desse projeto. A leitura de textos, que é a funcionalidade mais importante do sistema mostrou-se acurada. Com ela seria possível a leitura de rótulos de produtos, folhetos, livros e até bulas de remédio, mesmo possuindo letras pequenas, cupons fiscais, dinheiro, entre diversos outros conteúdos escritos. Com o aplicativo é possível também oferecer uma descrição superficial automática do ambiente ao redor e de expressões faciais, e permite até que o usuário insira os nomes das pessoas em uma foto. 
+Por outro lado, houve vários pontos positivos que se podem extrair deste projeto. A leitura de textos, que é a funcionalidade mais importante do sistema mostrou-se acurada. Com ela seria possível a leitura de rótulos de produtos, folhetos, livros e até bulas de remédio, mesmo possuindo letras pequenas, cupons fiscais, dinheiro, entre diversos outros conteúdos escritos. Com o aplicativo é possível também oferecer uma descrição superficial automática do ambiente ao redor e de expressões faciais, e permite até que o usuário insira os nomes das pessoas em uma foto. 
 
 Com relação ao detector de obstáculos, apesar da limitação do número de sensores, os resultados se mostraram precisos, e o dispositivo tem o potencial de se tornar ainda mais útil e confiável caso o número de sensores seja aumentado e seu tamanho reduzido.
 
@@ -24,7 +24,7 @@ Durante o período de desenvolvimento do projeto foi importante procurar ouvir um
 
 Um dos problemas citados foi a dificuldade de posicionamento da câmera para utilização de aplicativos para descrição de valor de dinheiro, e o tempo gasto na procura pela posição ideal. Nesse quesito, pode se dizer que houve sucesso, uma vez que a funcionalidade de descrição de textos mostrou-se precisa para vários ângulos. Outro ponto levantado foi a sugestão de implementação do comando de voz. A ideia da descrição de expressões faciais foi considerada de modo geral útil, assim como a possibilidade de guardar suas informações junto às fotos tiradas. Uma preocupação apresentada foi o tamanho do detector de obstáculos que dificultaria seu uso e a limitação do raio de abrangência do sensor.
 
-Entre sugestões e críticas, os membros do grupo se mostraram contentes com um projeto que pudesse vir a auxiliá-los, o que é extremamente gratificante e incentiva a continuidade do trabalho, algo que segundo eles próprios, muitas vezes não ocorre após estudantes extraírem informações deles e o projeto ser apresentado.
+Entre sugestões e críticas, os membros do grupo se mostraram contentes com um projeto que pudesse vir a auxiliá-los, o que é extremamente gratificante e incentiva a continuidade do trabalho, algo que segundo eles próprios, muitas vezes não ocorre após estudantes extraírem informações deles e seus projetos serem apresentado.
 
 \section{Disciplinas base}
 
@@ -35,7 +35,7 @@ Foi possível por meio desse trabalho aplicar alguns conceitos das seguintes disc
 	\item Circuitos Elétricos: Modelagem de circuitos elétricos.
 	\item Laboratório de Circuítos Eletrônicos: Medidas de variáveis elétricas e construção de circuitos eletrônicos.
 	\item Laboratório de Física: Métodos de medidas físicas e amostragem.
-	\item Engenharia de software: Planejamento da estruturação e desenvolvimento de projeto.
+	\item Engenharia de software: Extração de requisitos, planejamento de testes e codificação do sistema.
 	\item Estatística: Cálculo de incerteza de sinais elétricos
 	\item Microprocessadores e Aplicações II: Integração entre sistemas embarcados e desenvolvimento Android.
 \end{itemize}

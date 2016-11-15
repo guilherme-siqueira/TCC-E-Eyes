@@ -2,14 +2,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Especifica\c c\~ao t\'ecnica do smartphone utilizado no projeto\relax }}{38}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Especifica\c c\~ao t\'ecnica Ardu\IeC {\'\i }no\relax }}{39}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Pre\c cos da API Google Cloud Vision por quantidade e tipo de solicita\c c\~ao\relax }}{45}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tempos das fases da transcri\c c\~ao de imagem sobre a etiqueta do computador HP, ilustrada pela Figura \ref {Teste-HP}\relax }}{55}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Dimens\~oes de imagem recomendadas para cada caracter\IeC {\'\i }stica buscada\relax }}{56}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Dados extra\IeC {\'\i }dos da simula\c c\~ao do sensor de obst\'aculos sobre dist\^ancias variadas e conhecidas\relax }}{64}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Valores m\'edios de corrente e pot\^encia consumidos pelos m\'odulos do circuito\relax }}{68}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Especifica\c c\~ao t\'ecnica do smartphone utilizado no projeto\relax }}{40}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Especifica\c c\~ao t\'ecnica Ardu\IeC {\'\i }no\relax }}{41}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Pre\c cos da API Google Cloud Vision por quantidade e tipo de solicita\c c\~ao\relax }}{47}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Tempos das fases da transcri\c c\~ao de imagem sobre a etiqueta do computador HP, ilustrada pela Figura \ref {Teste-HP}\relax }}{57}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Dimens\~oes de imagem recomendadas para cada caracter\IeC {\'\i }stica buscada\relax }}{58}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Dados extra\IeC {\'\i }dos da simula\c c\~ao do sensor de obst\'aculos sobre dist\^ancias variadas e conhecidas\relax }}{65}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Valores m\'edios de corrente e pot\^encia consumidos pelos m\'odulos do circuito\relax }}{69}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
