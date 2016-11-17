@@ -29,7 +29,7 @@ Warning--edition ordinal word "{Segunda}" may be too high (or improper) for conv
 Done.
 You've used 28 entries,
             4087 wiz_defined-function locations,
-            990 strings with 12423 characters,
+            990 strings with 12421 characters,
 and the built_in function-call counts, 13075 in all, are:
 = -- 1028
 > -- 224

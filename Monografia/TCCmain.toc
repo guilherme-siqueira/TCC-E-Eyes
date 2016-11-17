@@ -19,9 +19,9 @@
 \contentsline {subsection}{\numberline {2.6.1}Reconhecimento \'optico de caractere}{32}
 \contentsline {subsection}{\numberline {2.6.2}Classifica\c c\~ao de imagens}{33}
 \contentsline {section}{\numberline {2.7}Ecolocaliza\c c\~ao e localiza\c c\~ao sonora}{34}
-\contentsline {chapter}{\numberline {3}Planejamento do projeto}{35}
+\contentsline {chapter}{\numberline {3}Planejamento do Projeto}{35}
 \contentsline {section}{\numberline {3.1}An\'alise de requisitos}{35}
-\contentsline {section}{\numberline {3.2}Testes}{36}
+\contentsline {section}{\numberline {3.2}Planejamento de testes}{36}
 \contentsline {chapter}{\numberline {4}Materiais e M\'etodos}{39}
 \contentsline {section}{\numberline {4.1}Materiais}{40}
 \contentsline {subsection}{\numberline {4.1.1}Smartphone}{40}
