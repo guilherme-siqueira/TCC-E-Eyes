@@ -6,12 +6,15 @@ package br.usp.guilherme_galdino_siqueira.e_eyes.activities;
  * Created by gsiqueira on 7/14/16.
  */
 import android.app.Activity;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.hardware.Camera;
 import android.hardware.Camera.PictureCallback;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -28,6 +31,7 @@ import android.content.ClipboardManager;
 import android.content.ClipData;
 import android.widget.TextView;
 import android.graphics.Matrix;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -123,6 +127,8 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
             }
         };
     }
+
+
 
     @Override
     protected void onRestart() {
@@ -329,12 +335,40 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
     }
 
     @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case 3: {
+
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay! Do the
+                    // contacts-related task you need to do.
+
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                    Toast.makeText(this, "Permission denied to read your camera", Toast.LENGTH_SHORT).show();
+                }
+                return;
+            }
+
+            // other 'case' lines to check for other
+            // permissions this app might request
+        }
+    }
+
+    @Override
     public void surfaceCreated(SurfaceHolder holder) {
         try {
             camera = Camera.open();
         }
 
         catch (RuntimeException e) {
+
             e.printStackTrace();
             return;
         }
@@ -352,17 +386,27 @@ public class DescriptorActivity extends Activity implements SurfaceHolder.Callba
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
 
-        Camera.Parameters parameters = camera.getParameters();
 
-        //Camera.Size size = getBestPreviewSize(width, height, parameters);
+        if (camera != null){
 
-        parameters.setPreviewSize(height, width);
 
-        camera.setDisplayOrientation(90);
+            Camera.Parameters parameters;
 
-        camera.setParameters(parameters);
+            parameters = camera.getParameters();
 
-        refreshCamera();
+            //Camera.Size size = getBestPreviewSize(width, height, parameters);
+
+            parameters.setPreviewSize(height, width);
+
+            camera.setDisplayOrientation(90);
+
+            camera.setParameters(parameters);
+
+            refreshCamera();
+
+
+        }
+
     }
 
     @Override

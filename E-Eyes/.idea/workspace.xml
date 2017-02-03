@@ -35,20 +35,47 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/MainMenuActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+              <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1605#1643#0" expanded="true" />
+                <element signature="e#2452#2490#0" expanded="true" />
+                <element signature="e#3184#3185#0" expanded="true" />
+                <element signature="e#3217#3218#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ApiKeys.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/properties/ApiKeys.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42857143">
+              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/TextAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6666667">
-              <caret line="316" column="63" selection-start-line="316" selection-start-column="63" selection-end-line="316" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="337" column="57" selection-start-line="337" selection-start-column="57" selection-end-line="337" selection-end-column="57" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelectFileActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/SelectFileActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+              <folding>
+                <element signature="e#1599#1816#0" expanded="true" />
+                <element signature="e#1815#1816#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,17 +85,37 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="713" column="20" selection-start-line="713" selection-start-column="20" selection-end-line="713" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Preferences.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/properties/Preferences.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#14383#14384#0" expanded="false" />
+                <element signature="e#14414#14415#0" expanded="false" />
+                <element signature="e#14450#14451#0" expanded="false" />
+                <element signature="e#14487#14488#0" expanded="false" />
+                <element signature="e#14534#14535#0" expanded="false" />
+                <element signature="e#14578#14579#0" expanded="false" />
+                <element signature="e#14932#14933#0" expanded="false" />
+                <element signature="e#14975#14976#0" expanded="false" />
+                <element signature="e#15036#15037#0" expanded="false" />
+                <element signature="e#15092#15093#0" expanded="false" />
+                <element signature="e#15138#15139#0" expanded="false" />
+                <element signature="e#15184#15185#0" expanded="false" />
+                <element signature="e#15356#15357#0" expanded="false" />
+                <element signature="e#15401#15402#0" expanded="false" />
+                <element signature="e#15562#15563#0" expanded="false" />
+                <element signature="e#15601#15602#0" expanded="false" />
+                <element signature="e#15844#15845#0" expanded="false" />
+                <element signature="e#15892#15893#0" expanded="false" />
+                <element signature="e#15936#15937#0" expanded="false" />
+                <element signature="e#15983#15984#0" expanded="false" />
+                <element signature="e#16150#16151#0" expanded="false" />
+                <element signature="e#16188#16189#0" expanded="false" />
+                <element signature="e#16238#16239#0" expanded="false" />
+                <element signature="e#16284#16285#0" expanded="false" />
+                <element signature="e#16318#16319#0" expanded="false" />
+                <element signature="e#16352#16353#0" expanded="false" />
+                <element signature="e#16395#16396#0" expanded="false" />
+                <element signature="e#16433#16434#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,25 +135,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              <folding>
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DescriptorActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/DescriptorActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05882353">
-              <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4590#4636#0" expanded="true" />
-                <element signature="e#5159#5160#0" expanded="true" />
-                <element signature="e#5192#5193#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,10 +144,36 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+              <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DescriptorActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/DescriptorActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.2058823">
+              <caret line="101" column="53" selection-start-line="101" selection-start-column="53" selection-end-line="101" selection-end-column="53" />
               <folding>
-                <element signature="e#3361#3389#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#14964#15171#0" expanded="true" />
+                <element signature="e#15170#15171#0" expanded="true" />
+                <element signature="e#16401#16941#0" expanded="true" />
+                <element signature="e#16940#16941#0" expanded="true" />
+                <element signature="e#19769#19813#0" expanded="true" />
+                <element signature="e#19953#20002#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Camera.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Android/Sdk/sources/android-23/android/hardware/Camera.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="415" column="0" selection-start-line="415" selection-start-column="0" selection-end-line="415" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1754,12 +1809,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/feedback_signal/FeedBackMessageConstants.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/feedback_signal/FeedbackMessage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/google_cloud_vision/CloudVisionConnection.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/properties/ApiKeys.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/google_cloud_vision/GoogleCloudVisionRequest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/feedback_signal/Arduino.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_arduino.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/feedback_signal/Effects.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/SelectFileActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/select_file_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/FileManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
@@ -1768,14 +1821,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/option_menu_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/OptionMenuActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/MainMenuActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/properties/Preferences.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/FeatureContent.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/ArduinoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/ViewFileActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/TextAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/SelectFileActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/DescriptorActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/TextAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/MainMenuActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/properties/ApiKeys.java" />
       </list>
     </option>
   </component>
@@ -2080,9 +2135,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -2091,7 +2146,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="479005d9686430ac" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="42f10104" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23" />
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
@@ -2304,8 +2359,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="734" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1366" height="734" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2314,7 +2369,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26262626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41414142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2351,25 +2406,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/DescriptorActivity.java</url>
+          <line>388</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/ArduinoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/feedback_signal/Effects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/DescriptorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2468,13 +2517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-23/android/hardware/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41207814">
-          <caret line="1359" column="21" selection-start-line="1359" selection-start-column="21" selection-end-line="1359" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Android/Sdk/sources/android-23/android/graphics/Bitmap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2486,13 +2528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44186047">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="49" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/properties/ApiKeys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1744186">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2566,13 +2601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/SelectFileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0283687">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14184397">
@@ -2636,7 +2664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2702,22 +2729,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/FeatureContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/ArduinoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="713" column="20" selection-start-line="713" selection-start-column="20" selection-end-line="713" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#14383#14384#0" expanded="false" />
+            <element signature="e#14414#14415#0" expanded="false" />
+            <element signature="e#14450#14451#0" expanded="false" />
+            <element signature="e#14487#14488#0" expanded="false" />
+            <element signature="e#14534#14535#0" expanded="false" />
+            <element signature="e#14578#14579#0" expanded="false" />
+            <element signature="e#14932#14933#0" expanded="false" />
+            <element signature="e#14975#14976#0" expanded="false" />
+            <element signature="e#15036#15037#0" expanded="false" />
+            <element signature="e#15092#15093#0" expanded="false" />
+            <element signature="e#15138#15139#0" expanded="false" />
+            <element signature="e#15184#15185#0" expanded="false" />
+            <element signature="e#15356#15357#0" expanded="false" />
+            <element signature="e#15401#15402#0" expanded="false" />
+            <element signature="e#15562#15563#0" expanded="false" />
+            <element signature="e#15601#15602#0" expanded="false" />
+            <element signature="e#15844#15845#0" expanded="false" />
+            <element signature="e#15892#15893#0" expanded="false" />
+            <element signature="e#15936#15937#0" expanded="false" />
+            <element signature="e#15983#15984#0" expanded="false" />
+            <element signature="e#16150#16151#0" expanded="false" />
+            <element signature="e#16188#16189#0" expanded="false" />
+            <element signature="e#16238#16239#0" expanded="false" />
+            <element signature="e#16284#16285#0" expanded="false" />
+            <element signature="e#16318#16319#0" expanded="false" />
+            <element signature="e#16352#16353#0" expanded="false" />
+            <element signature="e#16395#16396#0" expanded="false" />
+            <element signature="e#16433#16434#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/TextAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="337" column="57" selection-start-line="337" selection-start-column="57" selection-end-line="337" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/SelectFileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding>
+            <element signature="e#1599#1816#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2729,25 +2794,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/FeatureContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/br/usp/guilherme_galdino_siqueira/e_eyes/activities/Manifest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56122446">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
           <folding>
-            <element signature="e#3361#3389#0" expanded="true" />
+            <element signature="e#0#404#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-23/android/hardware/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="415" column="0" selection-start-line="415" selection-start-column="0" selection-end-line="415" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Android/Sdk/platforms/android-23/android.jar!/android/Manifest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36956522">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/DescriptorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05882353">
-          <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.2058823">
+          <caret line="101" column="53" selection-start-line="101" selection-start-column="53" selection-end-line="101" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4590#4636#0" expanded="true" />
-            <element signature="e#5159#5160#0" expanded="true" />
-            <element signature="e#5192#5193#0" expanded="true" />
+            <element signature="e#14964#15171#0" expanded="true" />
+            <element signature="e#15170#15171#0" expanded="true" />
+            <element signature="e#16401#16941#0" expanded="true" />
+            <element signature="e#16940#16941#0" expanded="true" />
+            <element signature="e#19769#19813#0" expanded="true" />
+            <element signature="e#19953#20002#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2755,17 +2855,21 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/activities/MainMenuActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1605#1643#0" expanded="true" />
+            <element signature="e#2452#2490#0" expanded="true" />
+            <element signature="e#3184#3185#0" expanded="true" />
+            <element signature="e#3217#3218#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/photo_descriptor/TextAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/usp/guilherme_galdino_siqueira/e_eyes/properties/ApiKeys.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6666667">
-          <caret line="316" column="63" selection-start-line="316" selection-start-column="63" selection-end-line="316" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.42857143">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding />
         </state>
       </provider>

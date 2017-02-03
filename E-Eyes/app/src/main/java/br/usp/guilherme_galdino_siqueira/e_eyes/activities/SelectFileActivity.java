@@ -55,20 +55,28 @@ public class SelectFileActivity extends ListActivity {
         folder = new File(path);
         fileList = folder.listFiles();
 
-        Log.d("Files", "Size: " + fileList.length);
+        try{
+            Log.d("Files", "Size: " + fileList.length);
 
-        for (File aFileList : fileList) {
-            realListItems.add(aFileList.getName());
+            for (File aFileList : fileList) {
+                realListItems.add(aFileList.getName());
+            }
+
+            // Sorting
+            Collections.sort(realListItems, new Comparator<String>() {
+                @Override
+                public int compare(String fileName2, String fileName1) {
+
+                    return fileName1.compareTo(fileName2);
+                }
+            });
+        }
+        catch(Exception e)
+        {
+            //Log.d("Files", "Size: " + fileList.length);
         }
 
-        // Sorting
-        Collections.sort(realListItems, new Comparator<String>() {
-            @Override
-            public int compare(String fileName2, String fileName1) {
 
-                return fileName1.compareTo(fileName2);
-            }
-        });
 
 
 
